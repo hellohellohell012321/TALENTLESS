@@ -1,6 +1,3 @@
-
-
-
 -- 1
 
 
@@ -1047,6 +1044,10 @@ pressnote("C", 4, 1.5, bpm)
 pressnote("G#", 3, 1.5, bpm)
 pressnote("F#", 4, 1.5, bpm)
 pressnote("D#", 3, 1.5, bpm)
+rest(0.5, bpm)
+
+rest(0.5, bpm)
+
 rest(0.5, bpm)
 
 
