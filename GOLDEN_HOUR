@@ -1,0 +1,4177 @@
+-- 1
+
+
+pressnote("F#", 4, 0.25, 100)
+pressnote("A", 3, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 4, 0.25, 100)
+pressnote("C#", 4, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("B", 4, 0.25, 100)
+pressnote("E", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("C#", 5, 0.25, 100)
+pressnote("C#", 4, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("B", 4, 0.25, 100)
+pressnote("E", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 4, 0.25, 100)
+pressnote("C#", 4, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("F#", 4, 0.25, 100)
+pressnote("A", 3, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 4, 0.25, 100)
+pressnote("C#", 4, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("B", 4, 0.25, 100)
+pressnote("E", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("C#", 5, 0.25, 100)
+pressnote("C#", 4, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("B", 4, 0.25, 100)
+pressnote("E", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 4, 0.25, 100)
+pressnote("C#", 4, 0.25, 100)
+rest(0.25, 100)
+
+
+-- 2
+
+
+pressnote("F#", 4, 0.25, 100)
+pressnote("A", 3, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 4, 0.25, 100)
+pressnote("C#", 4, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("B", 4, 0.25, 100)
+pressnote("E", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("C#", 5, 0.25, 100)
+pressnote("C#", 4, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("B", 4, 0.25, 100)
+pressnote("E", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 4, 0.25, 100)
+pressnote("C#", 4, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("F#", 4, 0.25, 100)
+pressnote("A", 3, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 4, 0.25, 100)
+pressnote("C#", 4, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("B", 4, 0.25, 100)
+pressnote("E", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("C#", 5, 0.25, 100)
+pressnote("C#", 4, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("B", 4, 0.25, 100)
+pressnote("E", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 4, 0.25, 100)
+pressnote("C#", 4, 0.25, 100)
+rest(0.25, 100)
+
+
+-- 3
+
+
+pressnote("E", 4, 0.25, 100)
+pressnote("G#", 3, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 4, 0.25, 100)
+pressnote("B", 3, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("B", 4, 0.25, 100)
+pressnote("D#", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("C#", 5, 0.25, 100)
+pressnote("B", 3, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("B", 4, 0.25, 100)
+pressnote("D#", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 4, 0.25, 100)
+pressnote("B", 3, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("E", 4, 0.25, 100)
+pressnote("G#", 3, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 4, 0.25, 100)
+pressnote("B", 3, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("B", 4, 0.25, 100)
+pressnote("D#", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("C#", 5, 0.25, 100)
+pressnote("B", 3, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("B", 4, 0.25, 100)
+pressnote("D#", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("E", 4, 0.25, 100)
+pressnote("G#", 3, 0.25, 100)
+rest(0.25, 100)
+
+
+-- 4
+
+
+pressnote("E", 4, 0.25, 100)
+pressnote("G#", 3, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 4, 0.25, 100)
+pressnote("B", 3, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("B", 4, 0.25, 100)
+pressnote("D#", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("C#", 5, 0.25, 100)
+pressnote("B", 3, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("B", 4, 0.25, 100)
+pressnote("D#", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 4, 0.25, 100)
+pressnote("B", 3, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("E", 4, 0.25, 100)
+pressnote("G", 3, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 4, 0.25, 100)
+pressnote("B", 3, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("B", 4, 0.25, 100)
+pressnote("D#", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("C#", 5, 0.25, 100)
+pressnote("B", 3, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("B", 4, 0.25, 100)
+pressnote("D#", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 4, 0.25, 100)
+pressnote("B", 3, 0.25, 100)
+rest(0.25, 100)
+
+
+-- 5
+
+
+pressnote("E", 4, 0.25, 100)
+pressnote("F#", 3, 0.25, 100)
+rest(0.25, 100)
+pressnote("F#", 4, 0.25, 100)
+pressnote("A", 3, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("A", 4, 0.25, 100)
+pressnote("C#", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("B", 4, 0.25, 100)
+pressnote("A", 3, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("A", 4, 0.25, 100)
+pressnote("C#", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("F#", 4, 0.25, 100)
+pressnote("A", 3, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("E", 4, 0.25, 100)
+pressnote("F#", 3, 0.25, 100)
+rest(0.25, 100)
+pressnote("F#", 4, 0.25, 100)
+pressnote("A", 3, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("A", 4, 0.25, 100)
+pressnote("C#", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("B", 4, 0.25, 100)
+pressnote("A", 3, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("A", 4, 0.25, 100)
+pressnote("C#", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("F#", 4, 0.25, 100)
+pressnote("A", 3, 0.25, 100)
+rest(0.25, 100)
+
+
+-- 6
+
+
+pressnote("E", 4, 0.25, 100)
+pressnote("F#", 3, 0.25, 100)
+rest(0.25, 100)
+pressnote("F#", 4, 0.25, 100)
+pressnote("A", 3, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("A", 4, 0.25, 100)
+pressnote("C#", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("B", 4, 0.25, 100)
+pressnote("A", 3, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("A", 4, 0.25, 100)
+pressnote("C#", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("F#", 4, 0.25, 100)
+pressnote("A", 3, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("E", 4, 0.25, 100)
+pressnote("F#", 3, 0.25, 100)
+rest(0.25, 100)
+pressnote("F#", 4, 0.25, 100)
+pressnote("A", 3, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("A", 4, 0.25, 100)
+pressnote("C#", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("B", 4, 0.25, 100)
+pressnote("A", 3, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("A", 4, 0.25, 100)
+pressnote("C#", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("F#", 4, 0.25, 100)
+pressnote("A", 3, 0.25, 100)
+rest(0.25, 100)
+
+
+-- 7
+
+
+pressnote("D#", 4, 0.25, 100)
+pressnote("E", 3, 0.25, 100)
+rest(0.25, 100)
+pressnote("E", 4, 0.25, 100)
+pressnote("G#", 3, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("F#", 4, 0.25, 100)
+pressnote("B", 3, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 4, 0.25, 100)
+pressnote("G#", 3, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("F#", 4, 0.25, 100)
+pressnote("B", 3, 0.25, 100)
+rest(0.25, 100)
+pressnote("E", 4, 0.25, 100)
+pressnote("G#", 3, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("D#", 4, 0.25, 100)
+pressnote("E", 3, 0.25, 100)
+rest(0.25, 100)
+pressnote("E", 4, 0.25, 100)
+pressnote("G#", 3, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("F#", 4, 0.25, 100)
+pressnote("B", 3, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 4, 0.25, 100)
+pressnote("G#", 3, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("F#", 4, 0.25, 100)
+pressnote("B", 3, 0.25, 100)
+rest(0.25, 100)
+pressnote("E", 4, 0.25, 100)
+pressnote("G#", 3, 0.25, 100)
+rest(0.25, 100)
+
+
+-- 8
+
+
+pressnote("D#", 4, 0.25, 100)
+pressnote("E", 3, 0.25, 100)
+rest(0.25, 100)
+pressnote("E", 4, 0.25, 100)
+pressnote("G#", 3, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("F#", 4, 0.25, 100)
+pressnote("B", 3, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 4, 0.25, 100)
+pressnote("G#", 3, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("F#", 4, 0.25, 100)
+pressnote("B", 3, 0.25, 100)
+rest(0.25, 100)
+pressnote("E", 4, 0.25, 100)
+pressnote("G#", 3, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("D#", 4, 0.25, 100)
+pressnote("E", 3, 0.25, 100)
+rest(0.25, 100)
+pressnote("E", 4, 0.25, 100)
+pressnote("G#", 3, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("F#", 4, 0.25, 100)
+pressnote("B", 3, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 4, 0.25, 100)
+pressnote("G#", 3, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("F#", 4, 0.25, 100)
+pressnote("B", 3, 0.25, 100)
+rest(0.25, 100)
+pressnote("E", 4, 0.25, 100)
+pressnote("G#", 3, 0.25, 100)
+rest(0.25, 100)
+
+
+-- 9
+
+
+pressnote("G#", 3, 0.25, 100)
+pressnote("A", 2, 0.25, 100)
+pressnote("A", 1, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 3, 0.25, 100)
+pressnote("C#", 3, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("G#", 3, 0.25, 100)
+pressnote("E", 3, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 3, 0.25, 100)
+pressnote("C#", 3, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("G#", 3, 0.25, 100)
+pressnote("E", 3, 0.25, 100)
+rest(0.25, 100)
+pressnote("F#", 3, 0.25, 100)
+pressnote("C#", 3, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("G#", 5, 0.25, 100)
+pressnote("A", 2, 0.25, 100)
+pressnote("A", 1, 0.25, 100)
+rest(0.25, 100)
+pressnote("C#", 3, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("E", 3, 0.25, 100)
+rest(0.25, 100)
+pressnote("C#", 3, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("E", 3, 0.25, 100)
+rest(0.25, 100)
+pressnote("F#", 3, 0.25, 100)
+pressnote("C#", 3, 0.25, 100)
+rest(0.25, 100)
+
+
+-- 10
+
+
+pressnote("G#", 3, 0.25, 100)
+pressnote("A", 2, 0.25, 100)
+pressnote("A", 1, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 3, 0.25, 100)
+pressnote("C#", 3, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("G#", 3, 0.25, 100)
+pressnote("E", 3, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 3, 0.25, 100)
+pressnote("C#", 3, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("G#", 3, 0.5, 100)
+pressnote("E", 3, 0.25, 100)
+rest(0.25, 100)
+pressnote("C#", 3, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("G#", 3, 0.25, 100)
+pressnote("A", 2, 0.25, 100)
+pressnote("A", 1, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 3, 0.25, 100)
+pressnote("C#", 3, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("G#", 3, 0.25, 100)
+pressnote("E", 3, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 3, 0.25, 100)
+pressnote("C#", 3, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("G#", 3, 0.5, 100)
+pressnote("E", 3, 0.25, 100)
+rest(0.25, 100)
+pressnote("C#", 3, 0.25, 100)
+rest(0.25, 100)
+
+
+-- 11
+
+
+pressnote("G#", 3, 0.25, 100)
+pressnote("G#", 2, 0.25, 100)
+pressnote("G#", 1, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 3, 0.25, 100)
+pressnote("B", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("G#", 3, 0.25, 100)
+pressnote("D#", 3, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 3, 0.25, 100)
+pressnote("B", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("G#", 3, 0.25, 100)
+pressnote("D#", 3, 0.25, 100)
+rest(0.25, 100)
+pressnote("F#", 3, 0.25, 100)
+pressnote("B", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("G#", 5, 0.25, 100)
+pressnote("G#", 2, 0.25, 100)
+pressnote("G#", 1, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 3, 0.25, 100)
+pressnote("B", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("D#", 3, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 3, 0.25, 100)
+pressnote("B", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("D#", 3, 0.25, 100)
+rest(0.25, 100)
+pressnote("F#", 3, 0.25, 100)
+pressnote("B", 2, 0.25, 100)
+rest(0.25, 100)
+
+
+-- 12
+
+
+pressnote("G#", 3, 0.25, 100)
+pressnote("G#", 2, 0.25, 100)
+pressnote("G#", 1, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 3, 0.25, 100)
+pressnote("B", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("G#", 3, 0.25, 100)
+pressnote("D#", 3, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 3, 0.25, 100)
+pressnote("B", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("G#", 3, 0.5, 100)
+pressnote("D#", 3, 0.25, 100)
+rest(0.25, 100)
+pressnote("B", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("G#", 3, 0.25, 100)
+pressnote("G", 2, 0.25, 100)
+pressnote("G", 1, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 3, 0.25, 100)
+pressnote("B", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("G#", 3, 0.25, 100)
+pressnote("D#", 3, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 3, 0.25, 100)
+pressnote("B", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("G#", 3, 0.5, 100)
+pressnote("D#", 3, 0.25, 100)
+rest(0.25, 100)
+pressnote("B", 2, 0.25, 100)
+rest(0.25, 100)
+
+
+-- 13
+
+
+pressnote("G#", 3, 0.25, 100)
+pressnote("F#", 2, 0.25, 100)
+pressnote("F#", 1, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 3, 0.25, 100)
+pressnote("A", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("G#", 3, 0.25, 100)
+pressnote("C#", 3, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 3, 0.25, 100)
+pressnote("A", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("G#", 3, 0.25, 100)
+pressnote("C#", 3, 0.25, 100)
+rest(0.25, 100)
+pressnote("F#", 3, 0.25, 100)
+pressnote("A", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("G#", 5, 0.25, 100)
+pressnote("F#", 2, 0.25, 100)
+pressnote("F#", 1, 0.25, 100)
+rest(0.25, 100)
+pressnote("A", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("C#", 3, 0.25, 100)
+rest(0.25, 100)
+pressnote("A", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("C#", 3, 0.25, 100)
+rest(0.25, 100)
+pressnote("A", 2, 0.25, 100)
+rest(0.25, 100)
+
+
+-- 14
+
+
+pressnote("G#", 3, 0.25, 100)
+pressnote("F#", 2, 0.25, 100)
+pressnote("F#", 1, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 3, 0.25, 100)
+pressnote("A", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("G#", 3, 0.25, 100)
+pressnote("C#", 3, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 3, 0.25, 100)
+pressnote("A", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("G#", 3, 0.25, 100)
+pressnote("C#", 3, 0.25, 100)
+rest(0.25, 100)
+pressnote("F#", 3, 0.25, 100)
+pressnote("A", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("G#", 5, 0.25, 100)
+pressnote("F#", 2, 0.25, 100)
+pressnote("F#", 1, 0.25, 100)
+rest(0.25, 100)
+pressnote("A", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("C#", 3, 0.25, 100)
+rest(0.25, 100)
+pressnote("A", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("C#", 3, 0.25, 100)
+rest(0.25, 100)
+pressnote("A", 2, 0.25, 100)
+rest(0.25, 100)
+
+
+-- 15
+
+
+pressnote("G#", 3, 0.25, 100)
+pressnote("E", 2, 0.25, 100)
+pressnote("E", 1, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 3, 0.25, 100)
+pressnote("G#", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("G#", 3, 0.25, 100)
+pressnote("B", 2, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 3, 0.25, 100)
+pressnote("G#", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("G#", 3, 0.5, 100)
+pressnote("B#", 3, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("D#", 4, 1.5, 100)
+pressnote("G#", 3, 0.25, 100)
+pressnote("E", 2, 0.25, 100)
+pressnote("E", 1, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 3, 0.25, 100)
+pressnote("G#", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("G#", 3, 0.25, 100)
+pressnote("B", 2, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 3, 0.25, 100)
+pressnote("G#", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("G#", 3, 0.5, 100)
+pressnote("B#", 3, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 2, 0.25, 100)
+rest(0.25, 100)
+
+
+-- 16
+
+
+pressnote("E", 4, 1.5, 100)
+pressnote("G#", 3, 0.5, 100)
+pressnote("E", 2, 0.25, 100)
+pressnote("E", 1, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("G#", 3, 0.5, 100)
+pressnote("B", 2, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("G#", 3, 0.25, 100)
+pressnote("B#", 3, 0.25, 100)
+rest(0.25, 100)
+pressnote("F#", 3, 0.25, 100)
+pressnote("G#", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("F#", 4, 1.5, 100)
+pressnote("E", 3, 0.5, 100)
+pressnote("E", 2, 0.25, 100)
+pressnote("E", 1, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("G#", 3, 0.5, 100)
+pressnote("B", 2, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("B", 3, 0.5, 100)
+pressnote("B", 3, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 2, 0.25, 100)
+rest(0.25, 100)
+
+
+-- 17
+
+
+pressnote("C#", 4, 2, 100)
+pressnote("A", 3, 2, 100)
+pressnote("A", 2, 0.25, 100)
+pressnote("A", 1, 0.25, 100)
+rest(0.25, 100)
+pressnote("C#", 3, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("E", 3, 0.25, 100)
+rest(0.25, 100)
+pressnote("C#", 3, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("E", 3, 0.25, 100)
+rest(0.25, 100)
+pressnote("C#", 3, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("A", 2, 0.25, 100)
+pressnote("A", 1, 0.25, 100)
+rest(0.25, 100)
+pressnote("C#", 3, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("C#", 4, 0.5, 100)
+pressnote("E", 3, 0.25, 100)
+rest(0.25, 100)
+pressnote("C#", 3, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("D#", 4, 0.5, 100)
+pressnote("A", 3, 0.5, 100)
+pressnote("E", 3, 0.25, 100)
+rest(0.25, 100)
+pressnote("C#", 3, 0.25, 100)
+rest(0.25, 100)
+
+
+-- 18
+
+
+pressnote("E", 4, 2, 100)
+pressnote("C#", 3, 2, 100)
+pressnote("A", 3, 2, 100)
+pressnote("A", 2, 0.25, 100)
+pressnote("A", 1, 0.25, 100)
+rest(0.25, 100)
+pressnote("C#", 3, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("E", 3, 0.25, 100)
+rest(0.25, 100)
+pressnote("C#", 3, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("E", 3, 0.25, 100)
+rest(0.25, 100)
+pressnote("C#", 3, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("A", 2, 0.25, 100)
+pressnote("A", 1, 0.25, 100)
+rest(0.25, 100)
+pressnote("C#", 3, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("C#", 4, 0.5, 100)
+pressnote("A", 3, 0.5, 100)
+pressnote("E", 3, 0.25, 100)
+rest(0.25, 100)
+pressnote("C#", 3, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("E", 4, 0.5, 100)
+pressnote("G#", 3, 0.5, 100)
+pressnote("E", 3, 0.25, 100)
+rest(0.25, 100)
+pressnote("C#", 3, 0.25, 100)
+rest(0.25, 100)
+
+
+-- 19
+
+
+pressnote("D#", 4, 0.5, 100)
+pressnote("G#", 3, 0.5, 100)
+pressnote("G#", 2, 0.25, 100)
+pressnote("G#", 1, 0.25, 100)
+rest(0.25, 100)
+pressnote("B", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("C#", 4, 0.5, 100)
+pressnote("D#", 3, 0.25, 100)
+rest(0.25, 100)
+pressnote("B", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("B", 3, 0.5, 100)
+pressnote("G#", 3, 0.5, 100)
+pressnote("D#", 3, 0.25, 100)
+rest(0.25, 100)
+pressnote("B", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("B", 3, 1, 100)
+pressnote("G#", 3, 1, 100)
+pressnote("G#", 2, 0.25, 100)
+pressnote("G#", 1, 0.25, 100)
+rest(0.25, 100)
+pressnote("B", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("D#", 3, 0.25, 100)
+rest(0.25, 100)
+pressnote("B", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("G#", 3, 0.5, 100)
+pressnote("D#", 3, 0.25, 100)
+rest(0.25, 100)
+pressnote("B", 2, 0.25, 100)
+rest(0.25, 100)
+
+
+-- 20
+
+
+pressnote("D#", 4, 0.5, 100)
+pressnote("B", 3, 0.5, 100)
+pressnote("G#", 3, 0.5, 100)
+pressnote("G#", 2, 0.25, 100)
+pressnote("G#", 1, 0.25, 100)
+rest(0.25, 100)
+pressnote("B", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("C#", 4, 0.5, 100)
+pressnote("D#", 3, 0.25, 100)
+rest(0.25, 100)
+pressnote("B", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("B", 3, 0.5, 100)
+pressnote("D#", 3, 0.25, 100)
+rest(0.25, 100)
+pressnote("B", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("D#", 4, 0.5, 100)
+pressnote("G", 2, 0.25, 100)
+pressnote("G", 1, 0.25, 100)
+rest(0.25, 100)
+pressnote("B", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("C#", 4, 0.5, 100)
+pressnote("D#", 3, 0.25, 100)
+rest(0.25, 100)
+pressnote("B", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("B", 3, 0.5, 100)
+pressnote("D#", 3, 0.25, 100)
+rest(0.25, 100)
+pressnote("B", 2, 0.25, 100)
+rest(0.25, 100)
+
+
+-- 21
+
+
+pressnote("A", 3, 3, 100)
+pressnote("F#", 3, 3, 100)
+pressnote("F#", 2, 0.25, 100)
+pressnote("F#", 1, 0.25, 100)
+rest(0.25, 100)
+pressnote("A", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("C#", 3, 0.25, 100)
+rest(0.25, 100)
+pressnote("A", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("C#", 3, 0.25, 100)
+rest(0.25, 100)
+pressnote("A", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("F#", 2, 0.25, 100)
+pressnote("F#", 1, 0.25, 100)
+rest(0.25, 100)
+pressnote("A", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("C#", 3, 0.25, 100)
+rest(0.25, 100)
+pressnote("A", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("C#", 3, 0.25, 100)
+rest(0.25, 100)
+pressnote("A", 2, 0.25, 100)
+rest(0.25, 100)
+
+
+-- 22
+
+
+pressnote("F#", 2, 0.25, 100)
+pressnote("F#", 1, 0.25, 100)
+rest(0.25, 100)
+pressnote("A", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("C#", 3, 0.25, 100)
+rest(0.25, 100)
+pressnote("A", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("C#", 4, 0.5, 100)
+pressnote("E", 3, 0.5, 100)
+pressnote("C#", 3, 0.25, 100)
+rest(0.25, 100)
+pressnote("A", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("B", 3, 0.5, 100)
+pressnote("F#", 3, 0.5, 100)
+pressnote("E", 3, 0.5, 100)
+pressnote("F#", 2, 0.25, 100)
+pressnote("F#", 1, 0.25, 100)
+rest(0.25, 100)
+pressnote("A", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("A", 3, 0.5, 100)
+pressnote("F#", 3, 0.5, 100)
+pressnote("C#", 3, 0.25, 100)
+rest(0.25, 100)
+pressnote("A", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("G#", 3, 0.5, 100)
+pressnote("F#", 3, 0.5, 100)
+pressnote("C#", 3, 0.25, 100)
+rest(0.25, 100)
+pressnote("A", 2, 0.25, 100)
+rest(0.25, 100)
+
+
+-- 23
+
+
+pressnote("G#", 3, 1.5, 100)
+pressnote("D#", 3, 1.5, 100)
+pressnote("C", 3, 1.5, 100)
+pressnote("G#", 2, 0.5, 100)
+pressnote("G#", 1, 0.5, 100)
+rest(0.5, 100)
+
+pressnote("G#", 2, 0.5, 100)
+pressnote("G#", 1, 0.5, 100)
+rest(0.5, 100)
+
+pressnote("G#", 2, 0.5, 100)
+pressnote("G#", 1, 0.5, 100)
+rest(0.5, 100)
+
+pressnote("C#", 4, 1.5, 100)
+pressnote("G#", 3, 1.5, 100)
+pressnote("C#", 3, 1.5, 100)
+pressnote("G#", 2, 0.5, 100)
+pressnote("G#", 1, 0.5, 100)
+rest(0.5, 100)
+
+pressnote("G#", 2, 0.5, 100)
+pressnote("G#", 1, 0.5, 100)
+rest(0.5, 100)
+
+pressnote("G#", 2, 0.5, 100)
+pressnote("G#", 1, 0.5, 100)
+rest(0.5, 100)
+
+
+-- 24
+
+
+pressnote("E", 4, 1.5, 100)
+pressnote("G#", 3, 1.5, 100)
+pressnote("E", 3, 1.5, 100)
+pressnote("G#", 2, 0.25, 100)
+pressnote("D#", 2, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 1, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("G#", 2, 0.25, 100)
+pressnote("D#", 2, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 1, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("G#", 2, 0.25, 100)
+pressnote("D#", 2, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 1, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("F#", 4, 1.5, 100)
+pressnote("C", 4, 1.5, 100)
+pressnote("G#", 3, 1.5, 100)
+pressnote("F#", 4, 1.5, 100)
+pressnote("D#", 3, 1.5, 100)
+rest(0.5, 100)
+
+
+-- 25
+
+
+pressnote("G#", 5, 3, 100)
+pressnote("E", 5, 3, 100)
+pressnote("C#", 5, 0.5, 100)
+pressnote("A", 1, 0.5, 100)
+rest(0.25, 100)
+pressnote("G#", 4, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("B", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("C#", 5, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("B", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 4, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("E", 3, 1.5, 100)
+pressnote("C#", 3, 1.5, 100)
+pressnote("G#", 2, 1.5, 100)
+pressnote("F#", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 4, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("B", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("C#", 5, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("B", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 4, 0.25, 100)
+rest(0.25, 100)
+
+
+-- 26
+
+
+pressnote("E", 4, 1.5, 100)
+pressnote("C#", 4, 1.5, 100)
+pressnote("G#", 3, 1.5, 100)
+pressnote("F#", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 4, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("B", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("C#", 5, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("B", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 4, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("G#", 3, 1.5, 100)
+pressnote("E", 3, 1.5, 100)
+pressnote("C#", 3, 1.5, 100)
+pressnote("F#", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 4, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("B", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("C#", 5, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("B", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 4, 0.25, 100)
+rest(0.25, 100)
+
+
+-- 27
+
+
+pressnote("C#", 5, 1.5, 100)
+pressnote("G#", 4, 1.5, 100)
+pressnote("E", 4, 1.5, 100)
+pressnote("C#", 4, 1.5, 100)
+pressnote("A", 1, 0.5, 100)
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+pressnote("D#", 5, 1.5, 100)
+pressnote("G#", 4, 1.5, 100)
+pressnote("D#", 4, 1.5, 100)
+pressnote("G#", 2, 1.5, 100)
+pressnote("E", 2, 1.5, 100)
+pressnote("A", 1, 1.5, 100)
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+
+-- 28
+
+
+pressnote("E", 5, 0.125, 100)
+pressnote("B", 4, 0.125, 100)
+pressnote("C", 3, 1.5, 100)
+pressnote("E", 2, 1.5, 100)
+pressnote("A", 1, 1.5, 100)
+rest(0.125, 100)
+pressnote("B", 5, 0.125, 100)
+rest(0.125, 100)
+pressnote("E", 5, 0.125, 100)
+pressnote("B", 4, 0.125, 100)
+rest(0.125, 100)
+pressnote("B", 5, 0.125, 100)
+rest(0.125, 100)
+
+pressnote("E", 5, 0.125, 100)
+pressnote("B", 4, 0.125, 100)
+rest(0.125, 100)
+pressnote("B", 5, 0.125, 100)
+rest(0.125, 100)
+pressnote("E", 5, 0.125, 100)
+pressnote("B", 4, 0.125, 100)
+rest(0.125, 100)
+pressnote("B", 5, 0.125, 100)
+rest(0.125, 100)
+
+pressnote("E", 5, 0.125, 100)
+pressnote("B", 4, 0.125, 100)
+rest(0.125, 100)
+pressnote("B", 5, 0.125, 100)
+rest(0.125, 100)
+pressnote("E", 5, 0.125, 100)
+pressnote("B", 4, 0.125, 100)
+rest(0.125, 100)
+pressnote("B", 5, 0.125, 100)
+rest(0.125, 100)
+
+pressnote("F#", 5, 0.125, 100)
+pressnote("B", 4, 0.125, 100)
+pressnote("E", 3, 1.5, 100)
+pressnote("C", 3, 1.5, 100)
+pressnote("A", 2, 1.5, 100)
+pressnote("F#", 2, 1.5, 100)
+rest(0.125, 100)
+pressnote("A", 5, 0.125, 100)
+rest(0.125, 100)
+pressnote("F#", 5, 0.125, 100)
+pressnote("B", 4, 0.125, 100)
+rest(0.125, 100)
+pressnote("A", 5, 0.125, 100)
+rest(0.125, 100)
+
+pressnote("F#", 5, 0.125, 100)
+pressnote("B", 4, 0.125, 100)
+rest(0.125, 100)
+pressnote("A", 5, 0.125, 100)
+rest(0.125, 100)
+pressnote("F#", 5, 0.125, 100)
+pressnote("B", 4, 0.125, 100)
+rest(0.125, 100)
+pressnote("A", 5, 0.125, 100)
+rest(0.125, 100)
+
+pressnote("F#", 5, 0.125, 100)
+pressnote("B", 4, 0.125, 100)
+rest(0.125, 100)
+pressnote("A", 5, 0.125, 100)
+rest(0.125, 100)
+pressnote("F#", 5, 0.125, 100)
+pressnote("B", 4, 0.125, 100)
+rest(0.125, 100)
+pressnote("A", 5, 0.125, 100)
+rest(0.125, 100)
+
+
+-- 29
+
+
+pressnote("G#", 5, 3, 100)
+pressnote("E", 5, 3, 100)
+pressnote("D#", 5, 3, 100)
+pressnote("G#", 4, 0.75, 100)
+pressnote("E", 1, 0.5, 100)
+rest(0.25, 100)
+pressnote("E", 4, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("F#", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 4, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("E", 2, 0.5, 100)
+pressnote("E", 1, 0.5, 100)
+pressnote("F#", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("E", 4, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("D#", 3, 1.5, 100)
+pressnote("B", 2, 1.5, 100)
+pressnote("G#", 2, 1.5, 100)
+pressnote("D#", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("E", 4, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("F#", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 4, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("F#", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("E", 4, 0.25, 100)
+rest(0.25, 100)
+
+
+-- 30
+
+
+pressnote("B", 3, 1.5, 100)
+pressnote("G#", 3, 1.5, 100)
+pressnote("D#", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("E", 4, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("F#", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 4, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("F#", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("E", 4, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("G#", 3, 1.5, 100)
+pressnote("D#", 3, 1.5, 100)
+pressnote("B", 2, 1.5, 100)
+pressnote("D#", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("E", 4, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("F#", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 4, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("F#", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("E", 4, 0.25, 100)
+rest(0.25, 100)
+
+
+-- 31
+
+
+pressnote("E", 1, 0.5, 100)
+pressnote("D#", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("E", 4, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("F#", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 4, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("E", 1, 0.5, 100)
+pressnote("E", 2, 0.5, 100)
+pressnote("F#", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("E", 4, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("D#", 5, 1.5, 100)
+pressnote("D#", 3, 1.5, 100)
+pressnote("B", 2, 1.5, 100)
+pressnote("B", 2, 1.5, 100)
+pressnote("D#", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("E", 4, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("F#", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 4, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("F#", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("E", 4, 0.25, 100)
+rest(0.25, 100)
+
+
+-- 32
+
+
+pressnote("E", 5, 1.5, 100)
+pressnote("F#", 1, 1.5, 100)
+pressnote("E", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("E", 4, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("F#", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 4, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("F#", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("E", 4, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("F#", 5, 1.5, 100)
+pressnote("G#", 1, 1.5, 100)
+pressnote("F#", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("E", 4, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("F#", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 4, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("F#", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("E", 4, 0.25, 100)
+rest(0.25, 100)
+
+
+-- 33
+
+
+pressnote("G#", 5, 3, 100)
+pressnote("E", 5, 3, 100)
+pressnote("C#", 5, 0.75, 100)
+pressnote("A", 1, 0.5, 100)
+pressnote("G#", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 4, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("B", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("C#", 5, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("B", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 4, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("E", 3, 1.5, 100)
+pressnote("C#", 3, 1.5, 100)
+pressnote("G#", 2, 1.5, 100)
+pressnote("F#", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 4, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("B", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("C#", 5, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("B", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 4, 0.25, 100)
+rest(0.25, 100)
+
+
+-- 34
+
+
+pressnote("E", 4, 1.5, 100)
+pressnote("C#", 4, 1.5, 100)
+pressnote("G#", 3, 1.5, 100)
+pressnote("F#", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 4, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("B", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("C#", 5, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("B", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 4, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("G#", 3, 1.5, 100)
+pressnote("E", 3, 1.5, 100)
+pressnote("C#", 3, 1.5, 100)
+pressnote("F#", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 4, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("B", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("C#", 5, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("B", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 4, 0.25, 100)
+rest(0.25, 100)
+
+
+-- 35
+
+
+pressnote("C#", 5, 1.5, 100)
+pressnote("G#", 4, 1.5, 100)
+pressnote("E", 4, 1.5, 100)
+pressnote("C#", 4, 1.5, 100)
+pressnote("A", 1, 0.5, 100)
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+pressnote("D#", 5, 1.5, 100)
+pressnote("G#", 4, 1.5, 100)
+pressnote("D#", 4, 1.5, 100)
+pressnote("G#", 2, 1.5, 100)
+pressnote("E", 2, 1.5, 100)
+pressnote("A", 1, 1.5, 100)
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+
+-- 36
+
+
+pressnote("E", 5, 0.125, 100)
+pressnote("B", 4, 0.125, 100)
+pressnote("C", 3, 0.5, 100)
+pressnote("E", 2, 0.5, 100)
+pressnote("A", 1, 0.5, 100)
+rest(0.125, 100)
+pressnote("B", 5, 0.125, 100)
+rest(0.125, 100)
+pressnote("E", 5, 0.125, 100)
+pressnote("B", 4, 0.125, 100)
+rest(0.125, 100)
+pressnote("B", 5, 0.125, 100)
+rest(0.125, 100)
+
+pressnote("E", 5, 0.125, 100)
+pressnote("B", 4, 0.125, 100)
+rest(0.125, 100)
+pressnote("B", 5, 0.125, 100)
+rest(0.125, 100)
+pressnote("A", 1, 0.25, 100)
+pressnote("E", 5, 0.125, 100)
+pressnote("B", 4, 0.125, 100)
+rest(0.125, 100)
+pressnote("B", 5, 0.125, 100)
+rest(0.125, 100)
+
+pressnote("C", 3, 0.25, 100)
+pressnote("E", 2, 0.25, 100)
+pressnote("E", 5, 0.125, 100)
+pressnote("B", 4, 0.125, 100)
+rest(0.125, 100)
+pressnote("B", 5, 0.125, 100)
+rest(0.125, 100)
+pressnote("A", 1, 0.25, 100)
+pressnote("E", 5, 0.125, 100)
+pressnote("B", 4, 0.125, 100)
+rest(0.125, 100)
+pressnote("B", 5, 0.125, 100)
+rest(0.125, 100)
+
+pressnote("F#", 5, 0.125, 100)
+pressnote("B", 4, 0.125, 100)
+pressnote("E", 3, 1.5, 100)
+pressnote("C", 3, 1.5, 100)
+pressnote("A", 2, 1.5, 100)
+pressnote("F#", 2, 1.5, 100)
+rest(0.125, 100)
+pressnote("A", 5, 0.125, 100)
+rest(0.125, 100)
+pressnote("F#", 5, 0.125, 100)
+pressnote("B", 4, 0.125, 100)
+rest(0.125, 100)
+pressnote("A", 5, 0.125, 100)
+rest(0.125, 100)
+
+pressnote("F#", 5, 0.125, 100)
+pressnote("B", 4, 0.125, 100)
+rest(0.125, 100)
+pressnote("A", 5, 0.125, 100)
+rest(0.125, 100)
+pressnote("F#", 5, 0.125, 100)
+pressnote("B", 4, 0.125, 100)
+rest(0.125, 100)
+pressnote("A", 5, 0.125, 100)
+rest(0.125, 100)
+
+pressnote("F#", 5, 0.125, 100)
+pressnote("B", 4, 0.125, 100)
+rest(0.125, 100)
+pressnote("A", 5, 0.125, 100)
+rest(0.125, 100)
+pressnote("F#", 5, 0.125, 100)
+pressnote("B", 4, 0.125, 100)
+rest(0.125, 100)
+pressnote("A", 5, 0.125, 100)
+rest(0.125, 100)
+
+
+-- 37
+
+
+pressnote("G#", 5, 3, 100)
+pressnote("E", 5, 3, 100)
+pressnote("D#", 5, 3, 100)
+pressnote("G#", 4, 0.75, 100)
+pressnote("E", 1, 0.5, 100)
+rest(0.25, 100)
+pressnote("E", 4, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("F#", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 4, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("E", 2, 0.5, 100)
+pressnote("E", 1, 0.5, 100)
+pressnote("F#", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("E", 4, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("D#", 3, 1.5, 100)
+pressnote("B", 2, 1.5, 100)
+pressnote("G#", 2, 1.5, 100)
+pressnote("D#", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("E", 4, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("F#", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 4, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("F#", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("E", 4, 0.25, 100)
+rest(0.25, 100)
+
+
+-- 38
+
+
+pressnote("B", 3, 1.5, 100)
+pressnote("G#", 3, 1.5, 100)
+pressnote("D#", 4, 1.5, 100)
+rest(0.25, 100)
+pressnote("E", 4, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("F#", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 4, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("F#", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("E", 4, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("G#", 3, 1.5, 100)
+pressnote("D#", 3, 1.5, 100)
+pressnote("B", 2, 1.5, 100)
+pressnote("D#", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("E", 4, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("F#", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 4, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("F#", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("E", 4, 0.25, 100)
+rest(0.25, 100)
+
+
+-- 39
+
+
+pressnote("E", 1, 0.5, 100)
+pressnote("D#", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("E", 4, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("E", 1, 0.5, 100)
+pressnote("F#", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 4, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("E", 1, 0.5, 100)
+pressnote("E", 2, 0.5, 100)
+pressnote("F#", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("E", 4, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("D#", 5, 1.5, 100)
+pressnote("D#", 3, 1.5, 100)
+pressnote("B", 2, 1.5, 100)
+pressnote("B", 2, 1.5, 100)
+pressnote("D#", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("E", 4, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("F#", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 4, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("F#", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("E", 4, 0.25, 100)
+rest(0.25, 100)
+
+
+-- 40
+
+
+pressnote("F#", 1, 0.75, 100)
+pressnote("E", 1, 0.5, 100)
+rest(0.25, 100)
+pressnote("E", 4, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("F#", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("F#", 2, 0.75, 100)
+pressnote("C#", 2, 0.75, 100)
+pressnote("A", 1, 0.75, 100)
+pressnote("F#", 1, 0.75, 100)
+pressnote("G#", 4, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("F#", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("E", 4, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("G#", 1, 0.75, 100)
+pressnote("D#", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("E", 4, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("F#", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 2, 0.75, 100)
+pressnote("F#", 2, 0.75, 100)
+pressnote("D#", 2, 0.75, 100)
+pressnote("G#", 1, 0.75, 100)
+pressnote("G#", 4, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("F#", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("E", 4, 0.25, 100)
+rest(0.25, 100)
+
+
+-- 41
+
+
+pressnote("G#", 3, 0.25, 100)
+pressnote("A", 2, 0.25, 100)
+pressnote("C#", 2, 0.25, 100)
+pressnote("A", 1, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 3, 0.25, 100)
+pressnote("C#", 3, 0.25, 100)
+pressnote("A", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("G#", 3, 0.25, 100)
+pressnote("E", 3, 0.25, 100)
+pressnote("C#", 3, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 3, 0.25, 100)
+pressnote("C#", 3, 0.25, 100)
+pressnote("A", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("G#", 3, 0.25, 100)
+pressnote("E", 3, 0.25, 100)
+pressnote("C#", 3, 0.25, 100)
+rest(0.25, 100)
+pressnote("F#", 3, 0.25, 100)
+pressnote("C#", 3, 0.25, 100)
+pressnote("A", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("G#", 5, 0.25, 100)
+pressnote("G#", 4, 0.25, 100)
+pressnote("A", 2, 0.25, 100)
+pressnote("C#", 2, 0.25, 100)
+pressnote("A", 1, 0.25, 100)
+rest(0.25, 100)
+pressnote("C#", 3, 0.25, 100)
+pressnote("A", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("E", 3, 0.25, 100)
+pressnote("C#", 3, 0.25, 100)
+rest(0.25, 100)
+pressnote("C#", 3, 0.25, 100)
+pressnote("A", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("E", 3, 0.25, 100)
+pressnote("C#", 3, 0.25, 100)
+rest(0.25, 100)
+pressnote("C#", 3, 0.25, 100)
+pressnote("A", 2, 0.25, 100)
+rest(0.25, 100)
+
+
+-- 42
+
+
+pressnote("G#", 3, 0.25, 100)
+pressnote("A", 2, 0.25, 100)
+pressnote("C#", 2, 0.25, 100)
+pressnote("A", 1, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 3, 0.25, 100)
+pressnote("C#", 3, 0.25, 100)
+pressnote("A", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("G#", 3, 0.25, 100)
+pressnote("E", 3, 0.25, 100)
+pressnote("C#", 3, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 3, 0.25, 100)
+pressnote("C#", 3, 0.25, 100)
+pressnote("A", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("G#", 3, 0.5, 100)
+pressnote("E", 3, 0.25, 100)
+pressnote("C#", 3, 0.25, 100)
+rest(0.25, 100)
+pressnote("C#", 3, 0.25, 100)
+pressnote("A", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("G#", 3, 0.25, 100)
+pressnote("A", 2, 0.25, 100)
+pressnote("C#", 2, 0.25, 100)
+pressnote("A", 1, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 3, 0.25, 100)
+pressnote("C#", 3, 0.25, 100)
+pressnote("A", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("G#", 3, 0.25, 100)
+pressnote("E", 3, 0.25, 100)
+pressnote("C#", 3, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 3, 0.25, 100)
+pressnote("C#", 3, 0.25, 100)
+pressnote("A", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("G#", 3, 0.5, 100)
+pressnote("E", 3, 0.25, 100)
+pressnote("C#", 3, 0.25, 100)
+rest(0.25, 100)
+pressnote("C#", 3, 0.25, 100)
+pressnote("A", 2, 0.25, 100)
+rest(0.25, 100)
+
+
+-- 43
+
+
+pressnote("G#", 3, 0.25, 100)
+pressnote("G#", 2, 0.25, 100)
+pressnote("B", 1, 0.25, 100)
+pressnote("G#", 1, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 3, 0.25, 100)
+pressnote("B", 2, 0.25, 100)
+pressnote("G#", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("G#", 3, 0.25, 100)
+pressnote("D#", 3, 0.25, 100)
+pressnote("B", 2, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 3, 0.25, 100)
+pressnote("B", 2, 0.25, 100)
+pressnote("G#", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("G#", 3, 0.25, 100)
+pressnote("D#", 3, 0.25, 100)
+pressnote("B", 2, 0.25, 100)
+rest(0.25, 100)
+pressnote("F#", 3, 0.25, 100)
+pressnote("B", 2, 0.25, 100)
+pressnote("G#", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("G#", 5, 0.25, 100)
+pressnote("G#", 4, 0.25, 100)
+pressnote("G#", 2, 0.25, 100)
+pressnote("B", 1, 0.25, 100)
+pressnote("G#", 1, 0.25, 100)
+rest(0.25, 100)
+pressnote("B", 2, 0.25, 100)
+pressnote("G#", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("D#", 3, 0.25, 100)
+pressnote("B", 2, 0.25, 100)
+rest(0.25, 100)
+pressnote("B", 2, 0.25, 100)
+pressnote("G#", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("D#", 3, 0.25, 100)
+pressnote("B", 2, 0.25, 100)
+rest(0.25, 100)
+pressnote("B", 2, 0.25, 100)
+pressnote("G#", 2, 0.25, 100)
+rest(0.25, 100)
+
+
+-- 44
+
+
+pressnote("G#", 3, 0.25, 100)
+pressnote("G#", 2, 0.25, 100)
+pressnote("B", 1, 0.25, 100)
+pressnote("G#", 1, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 3, 0.25, 100)
+pressnote("B", 2, 0.25, 100)
+pressnote("G#", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("G#", 3, 0.25, 100)
+pressnote("D#", 3, 0.25, 100)
+pressnote("B", 2, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 3, 0.25, 100)
+pressnote("B", 2, 0.25, 100)
+pressnote("G#", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("G#", 3, 0.5, 100)
+pressnote("D#", 3, 0.25, 100)
+pressnote("B", 2, 0.25, 100)
+rest(0.25, 100)
+pressnote("B", 2, 0.25, 100)
+pressnote("G#", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("G#", 3, 0.25, 100)
+pressnote("G#", 2, 0.25, 100)
+pressnote("B", 1, 0.25, 100)
+pressnote("G", 1, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 3, 0.25, 100)
+pressnote("B", 2, 0.25, 100)
+pressnote("G#", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("G#", 3, 0.25, 100)
+pressnote("D#", 3, 0.25, 100)
+pressnote("B", 2, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 3, 0.25, 100)
+pressnote("B", 2, 0.25, 100)
+pressnote("G#", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("G#", 3, 0.5, 100)
+pressnote("D#", 3, 0.25, 100)
+pressnote("B", 2, 0.25, 100)
+rest(0.25, 100)
+pressnote("B", 2, 0.25, 100)
+pressnote("G#", 2, 0.25, 100)
+rest(0.25, 100)
+
+
+-- 45
+
+
+pressnote("G#", 3, 0.25, 100)
+pressnote("F#", 2, 0.25, 100)
+pressnote("A", 1, 0.25, 100)
+pressnote("F#", 1, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 3, 0.25, 100)
+pressnote("A", 2, 0.25, 100)
+pressnote("F#", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("G#", 3, 0.25, 100)
+pressnote("C#", 3, 0.25, 100)
+pressnote("A", 2, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 3, 0.25, 100)
+pressnote("A", 2, 0.25, 100)
+pressnote("F#", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("G#", 3, 0.25, 100)
+pressnote("C#", 3, 0.25, 100)
+pressnote("A", 2, 0.25, 100)
+rest(0.25, 100)
+pressnote("F#", 3, 0.25, 100)
+pressnote("A", 2, 0.25, 100)
+pressnote("F#", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("F#", 5, 0.25, 100)
+pressnote("F#", 4, 0.25, 100)
+pressnote("A", 1, 0.25, 100)
+pressnote("F#", 1, 0.25, 100)
+rest(0.25, 100)
+pressnote("A", 2, 0.25, 100)
+pressnote("F#", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("C#", 3, 0.25, 100)
+pressnote("A", 2, 0.25, 100)
+rest(0.25, 100)
+pressnote("A", 2, 0.25, 100)
+pressnote("F#", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("C#", 3, 0.25, 100)
+pressnote("A", 2, 0.25, 100)
+rest(0.25, 100)
+pressnote("A", 2, 0.25, 100)
+pressnote("F#", 2, 0.25, 100)
+rest(0.25, 100)
+
+
+-- 46
+
+
+pressnote("G#", 3, 0.25, 100)
+pressnote("F#", 2, 0.25, 100)
+pressnote("A", 1, 0.25, 100)
+pressnote("F#", 1, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 3, 0.25, 100)
+pressnote("A", 2, 0.25, 100)
+pressnote("F#", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("G#", 3, 0.25, 100)
+pressnote("C#", 3, 0.25, 100)
+pressnote("A", 2, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 3, 0.25, 100)
+pressnote("A", 2, 0.25, 100)
+pressnote("F#", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("G#", 3, 0.25, 100)
+pressnote("C#", 3, 0.25, 100)
+pressnote("A", 2, 0.25, 100)
+rest(0.25, 100)
+pressnote("F#", 3, 0.25, 100)
+pressnote("A", 2, 0.25, 100)
+pressnote("F#", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("F#", 5, 0.25, 100)
+pressnote("F#", 4, 0.25, 100)
+pressnote("A", 1, 0.25, 100)
+pressnote("F#", 1, 0.25, 100)
+rest(0.25, 100)
+pressnote("A", 2, 0.25, 100)
+pressnote("F#", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("C#", 3, 0.25, 100)
+pressnote("A", 2, 0.25, 100)
+rest(0.25, 100)
+pressnote("A", 2, 0.25, 100)
+pressnote("F#", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("C#", 3, 0.25, 100)
+pressnote("A", 2, 0.25, 100)
+rest(0.25, 100)
+pressnote("A", 2, 0.25, 100)
+pressnote("F#", 2, 0.25, 100)
+rest(0.25, 100)
+
+
+-- 47
+
+
+pressnote("G#", 3, 0.25, 100)
+pressnote("E", 2, 0.25, 100)
+pressnote("G#", 1, 0.25, 100)
+pressnote("E", 1, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 3, 0.25, 100)
+pressnote("G#", 2, 0.25, 100)
+pressnote("E", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("G#", 3, 0.25, 100)
+pressnote("G#", 3, 0.25, 100)
+pressnote("B", 2, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 3, 0.25, 100)
+pressnote("G#", 2, 0.25, 100)
+pressnote("E", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("G#", 3, 0.5, 100)
+pressnote("G#", 3, 0.25, 100)
+pressnote("B", 2, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 2, 0.25, 100)
+pressnote("E", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("D#", 4, 1.5, 100)
+pressnote("G#", 3, 0.25, 100)
+pressnote("E", 2, 0.25, 100)
+pressnote("G#", 1, 0.25, 100)
+pressnote("E", 1, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 3, 0.25, 100)
+pressnote("G#", 2, 0.25, 100)
+pressnote("E", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("G#", 3, 0.25, 100)
+pressnote("G#", 3, 0.25, 100)
+pressnote("B", 2, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 3, 0.25, 100)
+pressnote("G#", 2, 0.25, 100)
+pressnote("E", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("G#", 3, 0.5, 100)
+pressnote("G#", 3, 0.25, 100)
+pressnote("B", 2, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 2, 0.25, 100)
+pressnote("E", 2, 0.25, 100)
+rest(0.25, 100)
+
+
+-- 48
+
+
+pressnote("E", 4, 1.5, 100)
+pressnote("G#", 3, 0.5, 100)
+pressnote("E", 2, 0.25, 100)
+pressnote("G#", 1, 0.25, 100)
+pressnote("E", 1, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 2, 0.25, 100)
+pressnote("E", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("G#", 3, 0.5, 100)
+pressnote("G#", 3, 0.25, 100)
+pressnote("B", 2, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 2, 0.25, 100)
+pressnote("E", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("G#", 3, 0.25, 100)
+pressnote("B", 2, 0.25, 100)
+rest(0.25, 100)
+pressnote("F#", 3, 0.25, 100)
+pressnote("G#", 2, 0.25, 100)
+pressnote("E", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("F#", 4, 1.5, 100)
+pressnote("E", 3, 0.5, 100)
+pressnote("E", 2, 0.25, 100)
+pressnote("G#", 1, 0.25, 100)
+pressnote("E", 1, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 2, 0.25, 100)
+pressnote("E", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("G#", 3, 0.5, 100)
+pressnote("G#", 3, 0.25, 100)
+pressnote("B", 2, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 2, 0.25, 100)
+pressnote("E", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("B", 3, 0.5, 100)
+pressnote("B", 2, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 2, 0.25, 100)
+pressnote("E", 2, 0.25, 100)
+rest(0.25, 100)
+
+
+-- 49
+
+
+pressnote("C#", 4, 2, 100)
+pressnote("A", 3, 2, 100)
+pressnote("E", 3, 2, 100)
+pressnote("A", 1, 0.25, 100)
+rest(0.25, 100)
+pressnote("E", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("A", 2, 0.25, 100)
+rest(0.25, 100)
+pressnote("C#", 3, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("A", 2, 0.25, 100)
+rest(0.25, 100)
+pressnote("E", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("A", 1, 0.25, 100)
+rest(0.25, 100)
+pressnote("E", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("C#", 4, 0.5, 100)
+pressnote("E", 3, 0.5, 100)
+pressnote("A", 2, 0.25, 100)
+rest(0.25, 100)
+pressnote("C#", 3, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("D#", 4, 0.5, 100)
+pressnote("A", 3, 0.5, 100)
+pressnote("A", 2, 0.25, 100)
+rest(0.25, 100)
+pressnote("E", 2, 0.25, 100)
+rest(0.25, 100)
+
+
+-- 50
+
+
+pressnote("E", 4, 2, 100)
+pressnote("C#", 3, 2, 100)
+pressnote("A", 3, 2, 100)
+pressnote("A", 1, 0.25, 100)
+rest(0.25, 100)
+pressnote("E", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("A", 2, 0.25, 100)
+rest(0.25, 100)
+pressnote("C#", 3, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("A", 2, 0.25, 100)
+rest(0.25, 100)
+pressnote("E", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("A", 1, 0.25, 100)
+rest(0.25, 100)
+pressnote("E", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("E", 4, 0.5, 100)
+pressnote("A", 3, 0.5, 100)
+pressnote("A", 2, 0.25, 100)
+rest(0.25, 100)
+pressnote("C#", 3, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("F#", 4, 0.5, 100)
+pressnote("G#", 3, 0.5, 100)
+pressnote("A", 2, 0.25, 100)
+rest(0.25, 100)
+pressnote("E", 2, 0.25, 100)
+rest(0.25, 100)
+
+
+-- 51
+
+
+pressnote("D#", 4, 0.5, 100)
+pressnote("G#", 3, 0.5, 100)
+pressnote("G#", 1, 0.25, 100)
+rest(0.25, 100)
+pressnote("D#", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("C#", 4, 0.5, 100)
+pressnote("G#", 2, 0.25, 100)
+rest(0.25, 100)
+pressnote("B", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("B", 3, 0.5, 100)
+pressnote("G#", 3, 0.5, 100)
+pressnote("G#", 2, 0.25, 100)
+rest(0.25, 100)
+pressnote("D#", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("B", 3, 1, 100)
+pressnote("G#", 3, 1, 100)
+pressnote("G#", 1, 0.25, 100)
+rest(0.25, 100)
+pressnote("D#", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("G#", 2, 0.25, 100)
+rest(0.25, 100)
+pressnote("B", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("G#", 3, 0.5, 100)
+pressnote("D#", 3, 0.5, 100)
+pressnote("G#", 2, 0.25, 100)
+rest(0.25, 100)
+pressnote("D#", 2, 0.25, 100)
+rest(0.25, 100)
+
+
+-- 52
+
+
+pressnote("D#", 4, 0.5, 100)
+pressnote("B", 3, 0.5, 100)
+pressnote("G#", 3, 0.5, 100)
+pressnote("D#", 3, 0.5, 100)
+pressnote("G#", 1, 0.25, 100)
+rest(0.25, 100)
+pressnote("D#", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("C#", 4, 0.5, 100)
+pressnote("G#", 2, 0.25, 100)
+rest(0.25, 100)
+pressnote("B", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("B", 3, 0.5, 100)
+pressnote("G#", 3, 0.5, 100)
+pressnote("G#", 3, 0.5, 100)
+pressnote("D#", 3, 0.5, 100)
+pressnote("G#", 2, 0.25, 100)
+rest(0.25, 100)
+pressnote("D#", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("D#", 4, 0.5, 100)
+pressnote("G#", 3, 0.5, 100)
+pressnote("D#", 3, 0.5, 100)
+pressnote("G#", 1, 0.25, 100)
+rest(0.25, 100)
+pressnote("D#", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("C#", 4, 0.5, 100)
+pressnote("G#", 2, 0.25, 100)
+rest(0.25, 100)
+pressnote("B", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("B", 3, 0.5, 100)
+pressnote("G#", 3, 0.5, 100)
+pressnote("G#", 3, 0.5, 100)
+pressnote("D#", 3, 0.5, 100)
+pressnote("G#", 2, 0.25, 100)
+rest(0.25, 100)
+pressnote("D#", 2, 0.25, 100)
+rest(0.25, 100)
+
+
+-- 53
+
+
+pressnote("B", 3, 0.25, 100)
+pressnote("F#", 3, 0.25, 100)
+pressnote("F#", 1, 0.25, 100)
+rest(0.25, 100)
+pressnote("A", 3, 3, 100)
+pressnote("F#", 3, 3, 100)
+pressnote("C#", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("F#", 2, 0.25, 100)
+rest(0.25, 100)
+pressnote("A", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("F#", 2, 0.25, 100)
+pressnote("G#", 2, 0.25, 100)
+rest(0.25, 100)
+pressnote("C#", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("F#", 1, 0.25, 100)
+rest(0.25, 100)
+pressnote("C#", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("F#", 2, 0.25, 100)
+rest(0.25, 100)
+pressnote("A", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("G#", 2, 0.25, 100)
+rest(0.25, 100)
+pressnote("C#", 2, 0.25, 100)
+rest(0.25, 100)
+
+
+-- 54
+
+
+pressnote("F#", 1, 0.25, 100)
+rest(0.25, 100)
+pressnote("C#", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("F#", 2, 0.25, 100)
+rest(0.25, 100)
+pressnote("A", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("C#", 4, 0.5, 100)
+pressnote("E", 3, 0.5, 100)
+pressnote("C#", 3, 0.5, 100)
+pressnote("G#", 2, 0.25, 100)
+rest(0.25, 100)
+pressnote("C#", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("B", 3, 0.5, 100)
+pressnote("F#", 3, 0.5, 100)
+pressnote("E", 3, 0.5, 100)
+pressnote("E", 3, 0.5, 100)
+pressnote("C#", 1, 0.25, 100)
+rest(0.25, 100)
+pressnote("C#", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("A", 3, 0.5, 100)
+pressnote("F#", 3, 0.5, 100)
+pressnote("C#", 3, 0.5, 100)
+pressnote("F#", 2, 0.25, 100)
+rest(0.25, 100)
+pressnote("A", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("G#", 3, 0.25, 100)
+pressnote("F#", 3, 0.25, 100)
+pressnote("C#", 3, 0.25, 100)
+pressnote("G#", 2, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 3, 3, 100)
+pressnote("E", 3, 3, 100)
+pressnote("B", 2, 3, 100)
+pressnote("C#", 2, 3, 100)
+rest(0.25, 100)
+
+
+-- 55
+
+
+pressnote("E", 1, 0.25, 100)
+rest(0.25, 100)
+pressnote("B", 1, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("E", 2, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("E", 2, 0.25, 100)
+rest(0.25, 100)
+pressnote("B", 1, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("E", 1, 0.25, 100)
+rest(0.25, 100)
+pressnote("B", 1, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("E", 2, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("E", 2, 0.25, 100)
+rest(0.25, 100)
+pressnote("B", 1, 0.25, 100)
+rest(0.25, 100)
+
+
+-- 56
+
+
+pressnote("E", 1, 0.25, 100)
+rest(0.25, 100)
+pressnote("B", 1, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("E", 2, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("F#", 3, 0.5, 100)
+pressnote("E", 2, 0.25, 100)
+rest(0.25, 100)
+pressnote("B", 1, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("E", 3, 0.5, 100)
+pressnote("E", 1, 0.25, 100)
+rest(0.25, 100)
+pressnote("B", 1, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("G#", 3, 0.5, 100)
+pressnote("E", 2, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("B", 3, 0.5, 100)
+pressnote("E", 2, 0.25, 100)
+rest(0.25, 100)
+pressnote("B", 1, 0.25, 100)
+rest(0.25, 100)
+
+
+-- 57
+
+
+pressnote("C#", 4, 1, 100)
+pressnote("A", 3, 1, 100)
+pressnote("E", 3, 1, 100)
+pressnote("A", 1, 0.25, 100)
+rest(0.25, 100)
+pressnote("E", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("A", 2, 0.25, 100)
+rest(0.25, 100)
+pressnote("C#", 3, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("A", 2, 0.25, 100)
+rest(0.25, 100)
+pressnote("E", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("A", 1, 0.25, 100)
+rest(0.25, 100)
+pressnote("E", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("C#", 4, 0.5, 100)
+pressnote("E", 3, 0.5, 100)
+pressnote("A", 2, 0.25, 100)
+rest(0.25, 100)
+pressnote("C#", 3, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("D#", 4, 0.5, 100)
+pressnote("A", 3, 0.5, 100)
+pressnote("A", 2, 0.25, 100)
+rest(0.25, 100)
+pressnote("E", 2, 0.25, 100)
+rest(0.25, 100)
+
+
+-- 58
+
+
+pressnote("E", 4, 1, 100)
+pressnote("C#", 4, 1, 100)
+pressnote("A", 3, 1, 100)
+pressnote("A", 1, 0.25, 100)
+rest(0.25, 100)
+pressnote("E", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("A", 2, 0.25, 100)
+rest(0.25, 100)
+pressnote("C#", 3, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("A", 2, 0.25, 100)
+rest(0.25, 100)
+pressnote("E", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("A", 1, 0.25, 100)
+rest(0.25, 100)
+pressnote("E", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("E", 4, 0.5, 100)
+pressnote("A", 3, 0.5, 100)
+pressnote("A", 2, 0.25, 100)
+rest(0.25, 100)
+pressnote("C#", 3, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("F#", 4, 0.5, 100)
+pressnote("G#", 3, 0.5, 100)
+pressnote("A", 2, 0.25, 100)
+rest(0.25, 100)
+pressnote("E", 2, 0.25, 100)
+rest(0.25, 100)
+
+
+-- 59
+
+
+pressnote("D#", 4, 0.5, 100)
+pressnote("G#", 3, 0.5, 100)
+pressnote("G#", 1, 0.25, 100)
+rest(0.25, 100)
+pressnote("D#", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("C#", 4, 0.5, 100)
+pressnote("G#", 2, 0.25, 100)
+rest(0.25, 100)
+pressnote("B", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("B", 3, 0.5, 100)
+pressnote("G#", 3, 0.5, 100)
+pressnote("G#", 2, 0.25, 100)
+rest(0.25, 100)
+pressnote("D#", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("B", 3, 1, 100)
+pressnote("G#", 3, 1, 100)
+pressnote("G#", 1, 0.25, 100)
+rest(0.25, 100)
+pressnote("D#", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("G#", 2, 0.25, 100)
+rest(0.25, 100)
+pressnote("B", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("D#", 3, 0.5, 100)
+pressnote("G#", 3, 0.5, 100)
+pressnote("G#", 2, 0.25, 100)
+rest(0.25, 100)
+pressnote("D#", 2, 0.25, 100)
+rest(0.25, 100)
+
+
+-- 60
+
+
+pressnote("D#", 4, 0.5, 100)
+pressnote("B", 3, 0.5, 100)
+pressnote("G#", 3, 0.5, 100)
+pressnote("D#", 3, 0.5, 100)
+pressnote("G#", 1, 0.25, 100)
+rest(0.25, 100)
+pressnote("D#", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("C#", 4, 0.5, 100)
+pressnote("G#", 2, 0.25, 100)
+rest(0.25, 100)
+pressnote("B", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("B", 3, 0.5, 100)
+pressnote("G#", 3, 0.5, 100)
+pressnote("G#", 2, 0.25, 100)
+rest(0.25, 100)
+pressnote("D#", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("D#", 4, 0.5, 100)
+pressnote("G#", 3, 0.5, 100)
+pressnote("D#", 3, 0.5, 100)
+pressnote("G", 1, 0.25, 100)
+rest(0.25, 100)
+pressnote("D#", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("C#", 4, 0.5, 100)
+pressnote("G#", 2, 0.25, 100)
+rest(0.25, 100)
+pressnote("B", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("B", 3, 0.5, 100)
+pressnote("G#", 3, 0.5, 100)
+pressnote("G#", 2, 0.25, 100)
+rest(0.25, 100)
+pressnote("D#", 2, 0.25, 100)
+rest(0.25, 100)
+
+
+-- 61
+
+
+pressnote("B", 3, 0.25, 100)
+pressnote("F#", 3, 0.25, 100)
+pressnote("F#", 1, 0.25, 100)
+rest(0.25, 100)
+pressnote("A", 3, 2.5, 100)
+pressnote("F#", 3, 2.5, 100)
+pressnote("C#", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("F#", 2, 0.25, 100)
+rest(0.25, 100)
+pressnote("A", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("F#", 2, 0.25, 100)
+rest(0.25, 100)
+pressnote("C#", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("F#", 1, 0.25, 100)
+rest(0.25, 100)
+pressnote("C#", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("F#", 2, 0.25, 100)
+rest(0.25, 100)
+pressnote("A", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("F#", 2, 0.25, 100)
+rest(0.25, 100)
+pressnote("C#", 2, 0.25, 100)
+rest(0.25, 100)
+
+
+-- 62
+
+
+pressnote("F#", 1, 0.25, 100)
+rest(0.25, 100)
+pressnote("C#", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("F#", 2, 0.25, 100)
+rest(0.25, 100)
+pressnote("A", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("C#", 4, 0.5, 100)
+pressnote("E", 3, 0.5, 100)
+pressnote("C#", 3, 0.5, 100)
+pressnote("F#", 2, 0.25, 100)
+rest(0.25, 100)
+pressnote("C#", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("B", 3, 0.5, 100)
+pressnote("F#", 3, 0.5, 100)
+pressnote("E", 3, 0.5, 100)
+pressnote("C#", 3, 0.5, 100)
+pressnote("F#", 1, 0.25, 100)
+rest(0.25, 100)
+pressnote("C#", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("A", 3, 0.5, 100)
+pressnote("F#", 3, 0.5, 100)
+pressnote("C#", 3, 0.5, 100)
+pressnote("F#", 2, 0.25, 100)
+rest(0.25, 100)
+pressnote("A", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("G#", 3, 0.5, 100)
+pressnote("F#", 3, 0.5, 100)
+pressnote("C#", 3, 0.5, 100)
+pressnote("F#", 2, 0.25, 100)
+rest(0.25, 100)
+pressnote("C#", 2, 0.25, 100)
+rest(0.25, 100)
+
+
+-- 63
+
+
+pressnote("G#", 3, 1.5, 100)
+pressnote("D#", 3, 1.5, 100)
+pressnote("C", 3, 1.5, 100)
+pressnote("G#", 1, 0.5, 100)
+rest(0.5, 100)
+
+pressnote("G#", 2, 0.5, 100)
+pressnote("D#", 2, 0.5, 100)
+rest(0.5, 100)
+
+pressnote("G#", 2, 0.5, 100)
+pressnote("D#", 2, 0.5, 100)
+rest(0.5, 100)
+
+pressnote("C#", 4, 1.5, 100)
+pressnote("G#", 3, 1.5, 100)
+pressnote("C#", 3, 1.5, 100)
+pressnote("G#", 1, 0.5, 100)
+rest(0.5, 100)
+
+pressnote("G#", 2, 0.5, 100)
+pressnote("D#", 2, 0.5, 100)
+rest(0.5, 100)
+
+pressnote("G#", 2, 0.5, 100)
+pressnote("D#", 2, 0.5, 100)
+rest(0.5, 100)
+
+
+-- 64
+
+
+pressnote("E", 4, 1.5, 100)
+pressnote("G#", 3, 1.5, 100)
+pressnote("E", 3, 1.5, 100)
+pressnote("G#", 2, 0.25, 100)
+pressnote("D#", 2, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 1, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("G#", 2, 0.25, 100)
+pressnote("D#", 2, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 1, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("G#", 2, 0.25, 100)
+pressnote("D#", 2, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 1, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("F#", 4, 1.5, 100)
+pressnote("C", 4, 1.5, 100)
+pressnote("G#", 3, 1.5, 100)
+pressnote("F#", 3, 1.5, 100)
+pressnote("D#", 3, 1.5, 100)
+pressnote("C", 3, 1.5, 100)
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+
+-- 65
+
+
+pressnote("G#", 5, 3, 100)
+pressnote("E", 5, 3, 100)
+pressnote("C#", 5, 0.5, 100)
+pressnote("A", 1, 0.5, 100)
+rest(0.25, 100)
+pressnote("G#", 4, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("B", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("C#", 5, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("B", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 4, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("E", 3, 1.5, 100)
+pressnote("C#", 3, 1.5, 100)
+pressnote("G#", 2, 1.5, 100)
+pressnote("F#", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 4, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("B", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("C#", 5, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("B", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 4, 0.25, 100)
+rest(0.25, 100)
+
+
+-- 67
+
+
+pressnote("E", 4, 1.5, 100)
+pressnote("C#", 4, 1.5, 100)
+pressnote("G#", 3, 1.5, 100)
+pressnote("F#", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 4, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("B", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("C#", 5, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("B", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 4, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("G#", 3, 1.5, 100)
+pressnote("E", 3, 1.5, 100)
+pressnote("C#", 3, 1.5, 100)
+pressnote("F#", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 4, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("B", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("C#", 5, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("B", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 4, 0.25, 100)
+rest(0.25, 100)
+
+
+-- 68
+
+
+pressnote("C#", 5, 1.5, 100)
+pressnote("G#", 4, 1.5, 100)
+pressnote("E", 4, 1.5, 100)
+pressnote("C#", 4, 1.5, 100)
+pressnote("A", 1, 0.5, 100)
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+pressnote("D#", 5, 1.5, 100)
+pressnote("G#", 4, 1.5, 100)
+pressnote("D#", 4, 1.5, 100)
+pressnote("G#", 2, 1.5, 100)
+pressnote("E", 2, 1.5, 100)
+pressnote("A", 1, 1.5, 100)
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+
+-- 69
+
+
+pressnote("E", 5, 0.125, 100)
+pressnote("B", 4, 0.125, 100)
+pressnote("C", 3, 1.5, 100)
+pressnote("E", 2, 1.5, 100)
+pressnote("A", 1, 1.5, 100)
+rest(0.125, 100)
+pressnote("B", 5, 0.125, 100)
+rest(0.125, 100)
+pressnote("E", 5, 0.125, 100)
+pressnote("B", 4, 0.125, 100)
+rest(0.125, 100)
+pressnote("B", 5, 0.125, 100)
+rest(0.125, 100)
+
+pressnote("E", 5, 0.125, 100)
+pressnote("B", 4, 0.125, 100)
+rest(0.125, 100)
+pressnote("B", 5, 0.125, 100)
+rest(0.125, 100)
+pressnote("E", 5, 0.125, 100)
+pressnote("B", 4, 0.125, 100)
+rest(0.125, 100)
+pressnote("B", 5, 0.125, 100)
+rest(0.125, 100)
+
+pressnote("E", 5, 0.125, 100)
+pressnote("B", 4, 0.125, 100)
+rest(0.125, 100)
+pressnote("B", 5, 0.125, 100)
+rest(0.125, 100)
+pressnote("E", 5, 0.125, 100)
+pressnote("B", 4, 0.125, 100)
+rest(0.125, 100)
+pressnote("B", 5, 0.125, 100)
+rest(0.125, 100)
+
+pressnote("F#", 5, 0.125, 100)
+pressnote("B", 4, 0.125, 100)
+pressnote("E", 3, 1.5, 100)
+pressnote("C", 3, 1.5, 100)
+pressnote("A", 2, 1.5, 100)
+pressnote("F#", 2, 1.5, 100)
+rest(0.125, 100)
+pressnote("A", 5, 0.125, 100)
+rest(0.125, 100)
+pressnote("F#", 5, 0.125, 100)
+pressnote("B", 4, 0.125, 100)
+rest(0.125, 100)
+pressnote("A", 5, 0.125, 100)
+rest(0.125, 100)
+
+pressnote("F#", 5, 0.125, 100)
+pressnote("B", 4, 0.125, 100)
+rest(0.125, 100)
+pressnote("A", 5, 0.125, 100)
+rest(0.125, 100)
+pressnote("F#", 5, 0.125, 100)
+pressnote("B", 4, 0.125, 100)
+rest(0.125, 100)
+pressnote("A", 5, 0.125, 100)
+rest(0.125, 100)
+
+pressnote("F#", 5, 0.125, 100)
+pressnote("B", 4, 0.125, 100)
+rest(0.125, 100)
+pressnote("A", 5, 0.125, 100)
+rest(0.125, 100)
+pressnote("F#", 5, 0.125, 100)
+pressnote("B", 4, 0.125, 100)
+rest(0.125, 100)
+pressnote("A", 5, 0.125, 100)
+rest(0.125, 100)
+
+
+-- 70
+
+
+pressnote("G#", 5, 3, 100)
+pressnote("E", 5, 3, 100)
+pressnote("D#", 5, 3, 100)
+pressnote("G#", 4, 0.75, 100)
+pressnote("E", 1, 0.5, 100)
+rest(0.25, 100)
+pressnote("E", 4, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("F#", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 4, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("E", 2, 0.5, 100)
+pressnote("E", 1, 0.5, 100)
+pressnote("F#", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("E", 4, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("D#", 3, 1.5, 100)
+pressnote("B", 2, 1.5, 100)
+pressnote("G#", 2, 1.5, 100)
+pressnote("D#", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("E", 4, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("F#", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 4, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("F#", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("E", 4, 0.25, 100)
+rest(0.25, 100)
+
+
+-- 71
+
+
+pressnote("B", 3, 1.5, 100)
+pressnote("G#", 3, 1.5, 100)
+pressnote("D#", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("E", 4, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("F#", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 4, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("F#", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("E", 4, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("G#", 3, 1.5, 100)
+pressnote("D#", 3, 1.5, 100)
+pressnote("B", 2, 1.5, 100)
+pressnote("D#", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("E", 4, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("F#", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 4, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("F#", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("E", 4, 0.25, 100)
+rest(0.25, 100)
+
+
+-- 71
+
+
+pressnote("E", 1, 0.5, 100)
+pressnote("D#", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("E", 4, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("F#", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 4, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("E", 1, 0.5, 100)
+pressnote("E", 2, 0.5, 100)
+pressnote("F#", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("E", 4, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("D#", 5, 1.5, 100)
+pressnote("D#", 3, 1.5, 100)
+pressnote("B", 2, 1.5, 100)
+pressnote("B", 2, 1.5, 100)
+pressnote("D#", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("E", 4, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("F#", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 4, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("F#", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("E", 4, 0.25, 100)
+rest(0.25, 100)
+
+
+-- 72
+
+
+pressnote("E", 5, 1.5, 100)
+pressnote("F#", 1, 1.5, 100)
+pressnote("E", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("E", 4, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("F#", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 4, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("F#", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("E", 4, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("F#", 5, 1.5, 100)
+pressnote("G#", 1, 1.5, 100)
+pressnote("F#", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("E", 4, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("F#", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 4, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("F#", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("E", 4, 0.25, 100)
+rest(0.25, 100)
+
+
+-- 73
+
+
+pressnote("G#", 5, 3, 100)
+pressnote("E", 5, 3, 100)
+pressnote("C#", 5, 0.75, 100)
+pressnote("A", 1, 0.5, 100)
+pressnote("G#", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 4, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("B", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("C#", 5, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("B", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 4, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("E", 3, 1.5, 100)
+pressnote("C#", 3, 1.5, 100)
+pressnote("G#", 2, 1.5, 100)
+pressnote("F#", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 4, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("B", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("C#", 5, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("B", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 4, 0.25, 100)
+rest(0.25, 100)
+
+
+-- 74
+
+
+pressnote("E", 4, 1.5, 100)
+pressnote("C#", 4, 1.5, 100)
+pressnote("G#", 3, 1.5, 100)
+pressnote("F#", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 4, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("B", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("C#", 5, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("B", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 4, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("G#", 3, 1.5, 100)
+pressnote("E", 3, 1.5, 100)
+pressnote("C#", 3, 1.5, 100)
+pressnote("F#", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 4, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("B", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("C#", 5, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("B", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 4, 0.25, 100)
+rest(0.25, 100)
+
+
+-- 75
+
+
+pressnote("C#", 5, 1.5, 100)
+pressnote("G#", 4, 1.5, 100)
+pressnote("E", 4, 1.5, 100)
+pressnote("C#", 4, 1.5, 100)
+pressnote("A", 1, 0.5, 100)
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+pressnote("D#", 5, 1.5, 100)
+pressnote("G#", 4, 1.5, 100)
+pressnote("D#", 4, 1.5, 100)
+pressnote("G#", 2, 1.5, 100)
+pressnote("E", 2, 1.5, 100)
+pressnote("A", 1, 1.5, 100)
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+
+-- 76
+
+
+pressnote("E", 5, 0.125, 100)
+pressnote("B", 4, 0.125, 100)
+pressnote("C", 3, 0.5, 100)
+pressnote("E", 2, 0.5, 100)
+pressnote("A", 1, 0.5, 100)
+rest(0.125, 100)
+pressnote("B", 5, 0.125, 100)
+rest(0.125, 100)
+pressnote("E", 5, 0.125, 100)
+pressnote("B", 4, 0.125, 100)
+rest(0.125, 100)
+pressnote("B", 5, 0.125, 100)
+rest(0.125, 100)
+
+pressnote("E", 5, 0.125, 100)
+pressnote("B", 4, 0.125, 100)
+rest(0.125, 100)
+pressnote("B", 5, 0.125, 100)
+rest(0.125, 100)
+pressnote("A", 1, 0.25, 100)
+pressnote("E", 5, 0.125, 100)
+pressnote("B", 4, 0.125, 100)
+rest(0.125, 100)
+pressnote("B", 5, 0.125, 100)
+rest(0.125, 100)
+
+pressnote("C", 3, 0.25, 100)
+pressnote("E", 2, 0.25, 100)
+pressnote("E", 5, 0.125, 100)
+pressnote("B", 4, 0.125, 100)
+rest(0.125, 100)
+pressnote("B", 5, 0.125, 100)
+rest(0.125, 100)
+pressnote("A", 1, 0.25, 100)
+pressnote("E", 5, 0.125, 100)
+pressnote("B", 4, 0.125, 100)
+rest(0.125, 100)
+pressnote("B", 5, 0.125, 100)
+rest(0.125, 100)
+
+pressnote("F#", 5, 0.125, 100)
+pressnote("B", 4, 0.125, 100)
+pressnote("E", 3, 1.5, 100)
+pressnote("C", 3, 1.5, 100)
+pressnote("A", 2, 1.5, 100)
+pressnote("F#", 2, 1.5, 100)
+rest(0.125, 100)
+pressnote("A", 5, 0.125, 100)
+rest(0.125, 100)
+pressnote("F#", 5, 0.125, 100)
+pressnote("B", 4, 0.125, 100)
+rest(0.125, 100)
+pressnote("A", 5, 0.125, 100)
+rest(0.125, 100)
+
+pressnote("F#", 5, 0.125, 100)
+pressnote("B", 4, 0.125, 100)
+rest(0.125, 100)
+pressnote("A", 5, 0.125, 100)
+rest(0.125, 100)
+pressnote("F#", 5, 0.125, 100)
+pressnote("B", 4, 0.125, 100)
+rest(0.125, 100)
+pressnote("A", 5, 0.125, 100)
+rest(0.125, 100)
+
+pressnote("F#", 5, 0.125, 100)
+pressnote("B", 4, 0.125, 100)
+rest(0.125, 100)
+pressnote("A", 5, 0.125, 100)
+rest(0.125, 100)
+pressnote("F#", 5, 0.125, 100)
+pressnote("B", 4, 0.125, 100)
+rest(0.125, 100)
+pressnote("A", 5, 0.125, 100)
+rest(0.125, 100)
+
+
+-- 77
+
+
+pressnote("G#", 5, 3, 100)
+pressnote("E", 5, 3, 100)
+pressnote("D#", 5, 3, 100)
+pressnote("G#", 4, 0.75, 100)
+pressnote("E", 1, 0.5, 100)
+rest(0.25, 100)
+pressnote("E", 4, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("F#", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 4, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("E", 2, 0.5, 100)
+pressnote("E", 1, 0.5, 100)
+pressnote("F#", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("E", 4, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("D#", 3, 1.5, 100)
+pressnote("B", 2, 1.5, 100)
+pressnote("G#", 2, 1.5, 100)
+pressnote("D#", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("E", 4, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("F#", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 4, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("F#", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("E", 4, 0.25, 100)
+rest(0.25, 100)
+
+
+-- 78
+
+
+pressnote("B", 3, 1.5, 100)
+pressnote("G#", 3, 1.5, 100)
+pressnote("D#", 4, 1.5, 100)
+rest(0.25, 100)
+pressnote("E", 4, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("F#", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 4, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("F#", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("E", 4, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("G#", 3, 1.5, 100)
+pressnote("D#", 3, 1.5, 100)
+pressnote("B", 2, 1.5, 100)
+pressnote("D#", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("E", 4, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("F#", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 4, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("F#", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("E", 4, 0.25, 100)
+rest(0.25, 100)
+
+
+-- 79
+
+
+pressnote("E", 1, 0.5, 100)
+pressnote("D#", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("E", 4, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("E", 1, 0.5, 100)
+pressnote("F#", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 4, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("E", 1, 0.5, 100)
+pressnote("E", 2, 0.5, 100)
+pressnote("F#", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("E", 4, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("D#", 5, 1.5, 100)
+pressnote("D#", 3, 1.5, 100)
+pressnote("B", 2, 1.5, 100)
+pressnote("B", 2, 1.5, 100)
+pressnote("D#", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("E", 4, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("F#", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 4, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("F#", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("E", 4, 0.25, 100)
+rest(0.25, 100)
+
+
+-- 80
+
+
+pressnote("F#", 1, 0.75, 100)
+pressnote("E", 1, 0.5, 100)
+rest(0.25, 100)
+pressnote("E", 4, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("F#", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("F#", 2, 0.75, 100)
+pressnote("C#", 2, 0.75, 100)
+pressnote("A", 1, 0.75, 100)
+pressnote("F#", 1, 0.75, 100)
+pressnote("G#", 4, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("F#", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("E", 4, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("G#", 1, 0.75, 100)
+pressnote("D#", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("E", 4, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("F#", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 2, 0.75, 100)
+pressnote("F#", 2, 0.75, 100)
+pressnote("D#", 2, 0.75, 100)
+pressnote("G#", 1, 0.75, 100)
+pressnote("G#", 4, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("F#", 4, 0.25, 100)
+rest(0.25, 100)
+pressnote("E", 4, 0.25, 100)
+rest(0.25, 100)
+
+
+-- 81
+
+
+pressnote("G#", 5, 6, 100)
+rest(0.05, 100)
+pressnote("E", 5, 6, 100)
+rest(0.05, 100)
+pressnote("C#", 5, 6, 100)
+rest(0.05, 100)
+pressnote("G#", 5, 6, 100)
+pressnote("A", 1, 0.25, 100)
+rest(0.1, 100)
+pressnote("C#", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("E", 2, 0.25, 100)
+rest(0.25, 100)
+pressnote("G#", 2, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("C#", 3, 0.25, 100)
+rest(0.25, 100)
+pressnote("E", 3, 0.25, 100)
+rest(0.25, 100)
+
+pressnote("G#", 3, 4, 100)
+pressnote("E", 3, 4, 100)
+pressnote("C#", 3, 4, 100)
+pressnote("A", 2, 4, 100)
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+
+-- 82
+
+
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+
+-- 83
+
+
+pressnote("C#", 5, 1.5, 100)
+pressnote("C#", 4, 1.5, 100)
+pressnote("A", 1, 3, 100)
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+pressnote("D#", 5, 1.5, 100)
+pressnote("D#", 4, 1.5, 100)
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+
+-- 84
+
+
+pressnote("B", 5, 1.5, 100)
+pressnote("B", 4, 1.5, 100)
+pressnote("E", 2, 6, 100)
+pressnote("F#", 2, 6, 100)
+pressnote("A", 2, 6, 100)
+pressnote("C", 3, 6, 100)
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+pressnote("A", 5, 1.5, 100)
+pressnote("A", 4, 1.5, 100)
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+
+-- 85
+
+
+pressnote("E", 1, 3, 100)
+pressnote("G#", 5, 6, 100)
+pressnote("G#", 4, 6, 100)
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+
+-- 86
+
+
+pressnote("D#", 3, 3, 100)
+pressnote("B", 2, 3, 100)
+pressnote("G#", 2, 3, 100)
+pressnote("E", 2, 3, 100)
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+
+-- 87
+
+
+pressnote("E", 1, 3, 100)
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+pressnote("D#", 5, 1.5, 100)
+pressnote("D#", 4, 1.5, 100)
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+
+-- 88
+
+
+pressnote("E", 5, 1.5, 100)
+pressnote("E", 4, 1.5, 100)
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+pressnote("F#", 5, 1.5, 100)
+pressnote("F#", 4, 1.5, 100)
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+
+-- 89
+
+
+pressnote("A", 1, 3, 100)
+pressnote("G#", 4, 6, 100)
+rest(0.05, 100)
+pressnote("C#", 5, 6, 100)
+rest(0.05, 100)
+pressnote("E", 5, 6, 100)
+rest(0.05, 100)
+pressnote("G#", 5, 6, 100)
+rest(0.1, 100)
+rest(0.25, 100)
+
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+
+-- 90
+
+
+pressnote("G#", 3, 3, 100)
+pressnote("E", 2, 3, 100)
+pressnote("C#", 2, 3, 100)
+pressnote("A", 2, 3, 100)
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+
+-- 91
+
+
+pressnote("C#", 5, 1.5, 100)
+pressnote("C#", 4, 1.5, 100)
+pressnote("A", 1, 3, 100)
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+pressnote("D#", 5, 1.5, 100)
+pressnote("D#", 4, 1.5, 100)
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+
+-- 92
+
+
+pressnote("B", 5, 1.5, 100)
+pressnote("B", 4, 1.5, 100)
+pressnote("E", 2, 6, 100)
+pressnote("F#", 2, 6, 100)
+pressnote("A", 2, 6, 100)
+pressnote("C", 3, 6, 100)
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+pressnote("A", 5, 1.5, 100)
+pressnote("A", 4, 1.5, 100)
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+
+-- 93
+
+
+pressnote("G#", 5, 6, 100)
+pressnote("E", 5, 6, 100)
+pressnote("B", 4, 6, 100)
+pressnote("G#", 4, 6, 100)
+pressnote("E", 1, 3, 100)
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+
+-- 94
+
+
+pressnote("D#", 3, 3, 100)
+pressnote("B", 2, 3, 100)
+pressnote("G#", 2, 3, 100)
+pressnote("E", 2, 3, 100)
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+
+-- 95
+
+
+pressnote("E", 1, 3, 100)
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+
+-- 96
+
+
+pressnote("D", 3, 3, 100)
+pressnote("B", 2, 3, 100)
+pressnote("G#", 2, 3, 100)
+pressnote("E", 2, 3, 100)
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+
+-- 97
+
+
+pressnote("G#", 5, 1.5, 100)
+pressnote("G#", 4, 1.5, 100)
+pressnote("E", 3, 6, 100)
+pressnote("C#", 3, 6, 100)
+pressnote("A", 2, 6, 100)
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+pressnote("E", 5, 1.5, 100)
+pressnote("E", 4, 1.5, 100)
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+
+-- 98
+
+
+pressnote("C#", 5, 3, 100)
+pressnote("C#", 4, 3, 100)
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+
+-- 99
+
+
+pressnote("G#", 5, 1.5, 100)
+pressnote("G#", 4, 1.5, 100)
+pressnote("D#", 3, 6, 100)
+pressnote("B", 2, 6, 100)
+pressnote("G#", 2, 6, 100)
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+pressnote("D#", 5, 1.5, 100)
+pressnote("D#", 4, 1.5, 100)
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+
+-- 100
+
+
+pressnote("B", 4, 3, 100)
+pressnote("B", 3, 3, 100)
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+
+-- 101
+
+
+pressnote("F#", 5, 1.5, 100)
+pressnote("F#", 4, 1.5, 100)
+pressnote("D", 3, 6, 100)
+pressnote("B", 2, 6, 100)
+pressnote("G", 2, 6, 100)
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+pressnote("D", 5, 1.5, 100)
+pressnote("D", 4, 1.5, 100)
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+
+-- 102
+
+
+pressnote("C#", 5, 1.5, 100)
+pressnote("C#", 4, 1.5, 100)
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+pressnote("A", 4, 1.5, 100)
+pressnote("A", 3, 1.5, 100)
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+
+-- 103
+
+
+pressnote("F#", 5, 1.5, 100)
+pressnote("F#", 4, 1.5, 100)
+pressnote("E", 3, 6, 100)
+pressnote("D#", 3, 6, 100)
+pressnote("A", 2, 6, 100)
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+pressnote("D", 5, 1.5, 100)
+pressnote("D", 4, 1.5, 100)
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+
+-- 104
+
+
+pressnote("C#", 5, 3, 100)
+pressnote("C#", 4, 3, 100)
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+
+-- 105
+
+
+pressnote("E", 5, 1.5, 100)
+pressnote("E", 4, 1.5, 100)
+pressnote("B", 2, 6, 100)
+pressnote("G", 2, 6, 100)
+pressnote("E", 2, 6, 100)
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+pressnote("B", 4, 1.5, 100)
+pressnote("B", 3, 1.5, 100)
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+
+-- 106
+
+pressnote("E", 5, 1.5, 100)
+pressnote("E", 4, 1.5, 100)
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+pressnote("G", 4, 1.5, 100)
+pressnote("G", 3, 1.5, 100)
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+
+-- 107
+
+
+pressnote("F#", 5, 1, 100)
+pressnote("F#", 4, 1, 100)
+pressnote("C#", 3, 1.5, 100)
+pressnote("A#", 2, 9, 100)
+pressnote("F#", 2, 9, 100)
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+pressnote("A#", 3, 0.5, 100)
+rest(0.5, 100)
+
+pressnote("C#", 3, 7.5, 100)
+rest(0.5, 100)
+
+pressnote("F#", 3, 0.5, 100)
+rest(0.5, 100)
+
+pressnote("A#", 3, 0.5, 100)
+rest(0.5, 100)
+
+
+-- 108
+
+
+pressnote("F#", 4, 0.5, 100)
+rest(0.5, 100)
+
+pressnote("C#", 4, 7.5, 100)
+rest(0.5, 100)
+
+pressnote("A#", 4, 0.5, 100)
+rest(0.5, 100)
+
+pressnote("F#", 4, 0.5, 100)
+rest(0.5, 100)
+
+pressnote("C#", 5, 4, 100)
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+-- 109
+
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+rest(0.5, 100)
+
+rest(0.5, 100)
