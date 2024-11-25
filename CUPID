@@ -1,0 +1,1653 @@
+-- 1
+
+
+keypress("0", 0.5, bpm)
+rest(0.1, bpm)
+keypress("w", 0.5, bpm)
+rest(0.1, bpm)
+keypress("r", 0.5, bpm)
+rest(0.1, bpm)
+keypress("I", 0.5, bpm)
+rest(0.1, bpm)
+keypress("y", 0.5, bpm)
+rest(1.1, bpm)
+keypress("u", 0.5, bpm)
+rest(1.5, bpm)
+keypress("p", 0.5, bpm)
+rest(1, bpm)
+
+
+-- 2
+
+
+keypress("eTu", 0.5, bpm)
+rest(1.5, bpm)
+keypress("I", 0.5, bpm)
+rest(0.5, bpm)
+keypress("u", 0.5, bpm)
+rest(1, bpm)
+keypress("e", 0.5, bpm)
+rest(1, bpm)
+
+
+-- 3
+
+
+keypress("9uQeT", 0.5, bpm)
+rest(1.5, bpm)
+keypress("y", 0.5, bpm)
+rest(0.5, bpm)
+keypress("T", 0.5, bpm)
+rest(0.5, bpm)
+keypress("y", 0.5, bpm)
+rest(1, bpm)
+keypress("I", 0.5, bpm)
+rest(0.5, bpm)
+
+
+-- 4
+
+
+keypress("79Qe", 0.5, bpm)
+rest(1.5, bpm)
+keypress("y", 0.5, bpm)
+rest(0.5, bpm)
+keypress("T", 0.5, bpm)
+rest(1, bpm)
+keypress("r", 0.5, bpm)
+rest(1, bpm)
+
+
+-- 5
+
+
+keypress("3", 0.5, bpm)
+rest(1, bpm)
+keypress("70", 0.5, bpm)
+rest(0.5, bpm)
+keypress("r", 0.5, bpm)
+rest(0.5, bpm)
+keypress("7o", 0.5, bpm)
+rest(0.5, bpm)
+keypress("7I", 0.5, bpm)
+rest(0.5, bpm)
+keypress("5u", 0.5, bpm)
+rest(0.5, bpm)
+keypress("7T", 0.5, bpm)
+rest(0.5, bpm)
+
+
+-- 6
+
+
+keypress("6", 0.5, bpm)
+rest(0.5, bpm)
+keypress("e", 0.5, bpm)
+rest(0.5, bpm)
+keypress("0e", 0.5, bpm)
+rest(0.5, bpm)
+keypress("T", 0.5, bpm)
+rest(0.5, bpm)
+keypress("6", 0.5, bpm)
+rest(0.5, bpm)
+keypress("6u", 0.5, bpm)
+rest(0.5, bpm)
+keypress("*", 0.5, bpm)
+rest(0.5, bpm)
+keypress("0I", 0.5, bpm)
+rest(0.5, bpm)
+
+
+-- 7
+
+
+keypress("2", 0.5, bpm)
+rest(1, bpm)
+keypress("69", 0.5, bpm)
+rest(0.5, bpm)
+keypress("e", 0.5, bpm)
+rest(0.5, bpm)
+keypress("I", 0.5, bpm)
+rest(0.5, bpm)
+keypress("2u", 0.5, bpm)
+rest(0.5, bpm)
+keypress("!y", 0.5, bpm)
+rest(0.5, bpm)
+keypress("6T", 0.5, bpm)
+rest(0.5, bpm)
+
+
+-- 8
+
+
+keypress("7", 0.5, bpm)
+rest(0.5, bpm)
+keypress("e", 0.5, bpm)
+rest(0.5, bpm)
+keypress("$7", 0.5, bpm)
+rest(0.5, bpm)
+keypress("r", 0.5, bpm)
+rest(0.5, bpm)
+keypress("7", 0.5, bpm)
+rest(0.5, bpm)
+keypress("7e", 0.5, bpm)
+rest(0.5, bpm)
+keypress("2", 0.5, bpm)
+rest(0.5, bpm)
+keypress("3w", 0.5, bpm)
+rest(0.5, bpm)
+
+
+-- 9
+
+
+keypress("3", 0.5, bpm)
+rest(1, bpm)
+keypress("70", 0.5, bpm)
+rest(0.5, bpm)
+keypress("r", 0.5, bpm)
+rest(0.5, bpm)
+keypress("7o", 0.5, bpm)
+rest(0.5, bpm)
+keypress("7I", 0.5, bpm)
+rest(0.5, bpm)
+keypress("5u", 0.5, bpm)
+rest(0.5, bpm)
+keypress("7T", 0.5, bpm)
+rest(0.5, bpm)
+
+
+-- 10
+
+
+keypress("6", 0.5, bpm)
+rest(0.5, bpm)
+keypress("e", 0.5, bpm)
+rest(0.5, bpm)
+keypress("0e", 0.5, bpm)
+rest(0.5, bpm)
+keypress("T", 0.5, bpm)
+rest(0.5, bpm)
+keypress("6", 0.5, bpm)
+rest(0.5, bpm)
+keypress("6p", 0.5, bpm)
+rest(0.5, bpm)
+keypress("*", 0.5, bpm)
+rest(0.5, bpm)
+keypress("0I", 0.5, bpm)
+rest(0.5, bpm)
+
+
+-- 11
+
+
+keypress("2", 0.5, bpm)
+rest(1, bpm)
+keypress("69", 0.5, bpm)
+rest(1, bpm)
+keypress("j", 0.5, bpm)
+rest(0.5, bpm)
+keypress("2p", 0.5, bpm)
+rest(0.5, bpm)
+keypress("j", 0.5, bpm)
+rest(0.5, bpm)
+keypress("6", 0.5, bpm)
+rest(0.5, bpm)
+
+
+-- 12
+
+
+keypress("7", 0.5, bpm)
+rest(0.5, bpm)
+keypress("p", 0.5, bpm)
+rest(0.5, bpm)
+keypress("j", 0.5, bpm)
+rest(0.5, bpm)
+keypress("p", 0.5, bpm)
+rest(0.5, bpm)
+keypress("7j", 0.5, bpm)
+rest(0.5, bpm)
+keypress("7I", 0.5, bpm)
+rest(0.5, bpm)
+keypress("2I", 0.5, bpm)
+rest(0.5, bpm)
+keypress("3o", 0.5, bpm)
+rest(0.5, bpm)
+
+
+-- 13
+
+
+keypress("3p", 0.5, bpm)
+rest(1, bpm)
+keypress("70I", 0.5, bpm)
+rest(1, bpm)
+keypress("7j", 0.5, bpm)
+rest(0.5, bpm)
+keypress("7", 0.5, bpm)
+rest(0.5, bpm)
+keypress("5IG", 0.5, bpm)
+rest(0.5, bpm)
+keypress("3o", 0.5, bpm)
+rest(0.5, bpm)
+
+
+-- 14
+
+
+keypress("6p", 0.5, bpm)
+rest(0.5, bpm)
+keypress("p", 0.5, bpm)
+rest(0.5, bpm)
+keypress("0eo", 0.5, bpm)
+rest(0.5, bpm)
+keypress("o", 0.5, bpm)
+rest(0.5, bpm)
+keypress("6I", 0.5, bpm)
+rest(0.5, bpm)
+keypress("6I", 0.5, bpm)
+rest(0.5, bpm)
+keypress("*I", 0.5, bpm)
+rest(0.5, bpm)
+keypress("0o", 0.5, bpm)
+rest(0.5, bpm)
+
+
+-- 15
+
+
+keypress("2p", 0.5, bpm)
+rest(1, bpm)
+keypress("69I", 0.5, bpm)
+rest(1, bpm)
+keypress("j", 0.5, bpm)
+rest(0.5, bpm)
+keypress("2", 0.5, bpm)
+rest(0.5, bpm)
+keypress("!IG", 0.5, bpm)
+rest(0.5, bpm)
+keypress("6o", 0.5, bpm)
+rest(0.5, bpm)
+
+
+-- 16
+
+
+keypress("7p", 0.5, bpm)
+rest(0.5, bpm)
+keypress("p", 0.5, bpm)
+rest(0.5, bpm)
+keypress("7$I", 0.5, bpm)
+rest(0.5, bpm)
+keypress("I", 0.5, bpm)
+rest(0.5, bpm)
+keypress("7u", 0.5, bpm)
+rest(0.5, bpm)
+keypress("7", 0.5, bpm)
+rest(0.5, bpm)
+keypress("2", 0.5, bpm)
+rest(0.5, bpm)
+keypress("3I", 0.5, bpm)
+rest(0.5, bpm)
+
+
+-- 17
+
+
+keypress("3", 0.5, bpm)
+rest(0.5, bpm)
+keypress("u", 0.5, bpm)
+rest(0.5, bpm)
+keypress("70", 0.5, bpm)
+rest(0.5, bpm)
+keypress("p", 0.5, bpm)
+rest(0.5, bpm)
+keypress("7I", 0.5, bpm)
+rest(0.5, bpm)
+keypress("7u", 0.5, bpm)
+rest(0.5, bpm)
+keypress("5u", 0.5, bpm)
+rest(0.5, bpm)
+keypress("7u", 0.5, bpm)
+rest(0.5, bpm)
+
+
+-- 18
+
+
+keypress("6S", 0.5, bpm)
+rest(0.5, bpm)
+keypress("S", 0.5, bpm)
+rest(0.25, bpm)
+keypress("S", 0.5, bpm)
+rest(0.25, bpm)
+keypress("0ep", 0.5, bpm)
+rest(0.5, bpm)
+keypress("ep", 0.5, bpm)
+rest(0.25, bpm)
+keypress("p", 0.5, bpm)
+rest(0.25, bpm)
+keypress("6eu", 0.5, bpm)
+rest(0.5, bpm)
+keypress("6ru", 0.5, bpm)
+rest(0.5, bpm)
+keypress("yp", 0.5, bpm)
+rest(0.5, bpm)
+keypress("0u", 0.5, bpm)
+rest(0.5, bpm)
+
+
+-- 19
+
+
+keypress("2I", 0.5, bpm)
+rest(1, bpm)
+keypress("69", 0.5, bpm)
+rest(0.5, bpm)
+keypress("u", 0.5, bpm)
+rest(1, bpm)
+keypress("2", 0.5, bpm)
+rest(0.5, bpm)
+keypress("!I", 0.5, bpm)
+rest(0.5, bpm)
+keypress("6", 0.5, bpm)
+rest(0.5, bpm)
+
+
+--20
+
+
+keypress("7", 0.5, bpm)
+rest(0.5, bpm)
+keypress("p", 0.5, bpm)
+rest(0.5, bpm)
+keypress("p", 0.5, bpm)
+rest(0.5, bpm)
+keypress("p", 0.5, bpm)
+rest(0.5, bpm)
+keypress("p", 0.5, bpm)
+rest(0.5, bpm)
+keypress("p", 0.5, bpm)
+rest(0.5, bpm)
+keypress("p", 0.5, bpm)
+rest(0.5, bpm)
+keypress("p", 0.5, bpm)
+rest(0.5, bpm)
+
+
+-- 21
+
+
+keypress("a", 0.5, bpm)
+rest(1, bpm)
+keypress("30I", 0.5, bpm)
+rest(1, bpm)
+keypress("wG", 0.5, bpm)
+rest(0.5, bpm)
+keypress("7k", 0.5, bpm)
+rest(0.5, bpm)
+keypress("0", 0.5, bpm)
+rest(0.5, bpm)
+keypress("G", 0.5, bpm)
+rest(0.5, bpm)
+
+
+-- 22
+
+
+keypress("6e", 0.5, bpm)
+rest(0.5, bpm)
+keypress("0p", 0.5, bpm)
+rest(0.5, bpm)
+keypress("ep", 0.5, bpm)
+rest(0.5, bpm)
+keypress("0p", 0.5, bpm)
+rest(0.5, bpm)
+keypress("Tp", 0.5, bpm)
+rest(0.5, bpm)
+keypress("0p", 0.5, bpm)
+rest(0.5, bpm)
+keypress("eI", 0.5, bpm)
+rest(0.5, bpm)
+keypress("0p", 0.5, bpm)
+rest(0.5, bpm)
+
+
+-- 23
+
+
+keypress("29a", 0.5, bpm)
+rest(0.5, bpm)
+keypress("6", 0.5, bpm)
+rest(0.5, bpm)
+keypress("91G", 0.5, bpm)
+rest(0.5, bpm)
+keypress("6", 0.5, bpm)
+rest(0.5, bpm)
+keypress("Qf", 0.5, bpm)
+rest(0.5, bpm)
+keypress("6", 0.5, bpm)
+rest(0.5, bpm)
+keypress("9G", 0.5, bpm)
+rest(0.5, bpm)
+keypress("6k", 0.5, bpm)
+rest(0.5, bpm)
+
+
+-- 24
+
+
+keypress("7", 0.5, bpm)
+rest(0.5, bpm)
+keypress("$j", 0.5, bpm)
+rest(0.5, bpm)
+keypress("7G", 0.5, bpm)
+rest(0.5, bpm)
+keypress("$f", 0.5, bpm)
+rest(0.5, bpm)
+keypress("9I", 0.5, bpm)
+rest(0.5, bpm)
+keypress("$u", 0.5, bpm)
+rest(0.5, bpm)
+keypress("7y", 0.5, bpm)
+rest(0.5, bpm)
+keypress("$T", 0.5, bpm)
+rest(0.5, bpm)
+
+
+-- 25
+
+
+keypress("30r", 0.5, bpm)
+rest(0.5, bpm)
+keypress("7", 0.5, bpm)
+rest(0.5, bpm)
+keypress("0y", 0.5, bpm)
+rest(0.5, bpm)
+keypress("7", 0.5, bpm)
+rest(0.5, bpm)
+keypress("wu", 0.5, bpm)
+rest(0.5, bpm)
+keypress("7", 0.5, bpm)
+rest(0.5, bpm)
+keypress("0I", 0.5, bpm)
+rest(0.5, bpm)
+keypress("7p", 0.5, bpm)
+rest(0.5, bpm)
+
+
+-- 26
+
+
+keypress("6e", 0.5, bpm)
+rest(0.5, bpm)
+keypress("0p", 0.5, bpm)
+rest(0.5, bpm)
+keypress("eI", 0.5, bpm)
+rest(0.5, bpm)
+keypress("0", 0.5, bpm)
+rest(0.5, bpm)
+keypress("Tu", 0.5, bpm)
+rest(0.5, bpm)
+keypress("0e", 0.5, bpm)
+rest(0.5, bpm)
+keypress("e", 0.5, bpm)
+rest(0.5, bpm)
+keypress("0pS", 0.5, bpm)
+rest(0.5, bpm)
+
+
+-- 27
+
+
+keypress("29", 0.5, bpm)
+rest(0.5, bpm)
+keypress("6", 0.5, bpm)
+rest(0.5, bpm)
+keypress("9d", 0.5, bpm)
+rest(0.5, bpm)
+keypress("I6p", 0.5, bpm)
+rest(0.5, bpm)
+keypress("Q", 0.5, bpm)
+rest(0.5, bpm)
+keypress("6", 0.5, bpm)
+rest(0.5, bpm)
+keypress("9a", 0.5, bpm)
+rest(0.5, bpm)
+keypress("06I", 0.5, bpm)
+rest(0.5, bpm)
+
+
+-- 28
+
+
+keypress("7G", 0.5, bpm)
+rest(0.5, bpm)
+keypress("$", 0.5, bpm)
+rest(0.5, bpm)
+keypress("7f", 0.5, bpm)
+rest(0.5, bpm)
+keypress("$", 0.5, bpm)
+rest(0.5, bpm)
+keypress("9f", 0.5, bpm)
+rest(0.5, bpm)
+keypress("$", 0.5, bpm)
+rest(0.5, bpm)
+keypress("7", 0.5, bpm)
+rest(0.5, bpm)
+keypress("$", 0.5, bpm)
+rest(0.5, bpm)
+
+
+-- 29
+
+
+keypress("3579", 0.5, bpm)
+rest(1.5, bpm)
+keypress("r", 0.5, bpm)
+rest(0.5, bpm)
+keypress("o", 0.5, bpm)
+rest(0.5, bpm)
+keypress("I", 0.5, bpm)
+rest(0.5, bpm)
+keypress("u", 0.5, bpm)
+rest(0.5, bpm)
+keypress("T", 0.5, bpm)
+rest(0.5, bpm)
+
+
+-- 30
+
+
+keypress("*60", 0.5, bpm)
+rest(0.5, bpm)
+keypress("e", 0.5, bpm)
+rest(1, bpm)
+keypress("T", 0.5, bpm)
+rest(1, bpm)
+keypress("u", 0.5, bpm)
+rest(1, bpm)
+keypress("I", 0.5, bpm)
+rest(0.5, bpm)
+
+
+-- 31
+
+
+keypress("26$*", 0.5, bpm)
+rest(0.5, bpm)
+keypress("p", 0.5, bpm)
+rest(1, bpm)
+keypress("eI", 0.5, bpm)
+rest(0.5, bpm)
+keypress("I", 0.5, bpm)
+rest(0.5, bpm)
+keypress("u", 0.5, bpm)
+rest(0.5, bpm)
+keypress("y", 0.5, bpm)
+rest(0.5, bpm)
+keypress("T", 0.5, bpm)
+rest(0.5, bpm)
+
+
+-- 32
+
+
+keypress("$267", 0.5, bpm)
+rest(0.5, bpm)
+keypress("e", 0.5, bpm)
+rest(1, bpm)
+keypress("r", 0.5, bpm)
+rest(1, bpm)
+keypress("ea", 0.5, bpm)
+rest(1, bpm)
+keypress("wI", 0.5, bpm)
+rest(0.5, bpm)
+
+
+-- 33
+
+
+keypress("3I", 0.5, bpm)
+rest(0.33, bpm)
+keypress("u", 0.5, bpm)
+rest(0.33, bpm)
+keypress("e", 0.5, bpm)
+rest(0.33, bpm)
+keypress("70I", 0.5, bpm)
+rest(0.33, bpm)
+keypress("u", 0.5, bpm)
+rest(0.33, bpm)
+keypress("e", 0.5, bpm)
+rest(0.33, bpm)
+keypress("7I", 0.5, bpm)
+rest(0.5, bpm)
+keypress("7", 0.5, bpm)
+rest(0.5, bpm)
+keypress("5G", 0.5, bpm)
+rest(0.5, bpm)
+keypress("7e", 0.5, bpm)
+rest(0.5, bpm)
+
+
+-- 34
+
+
+keypress("6I", 0.5, bpm)
+rest(0.33, bpm)
+keypress("u", 0.5, bpm)
+rest(0.33, bpm)
+keypress("e", 0.5, bpm)
+rest(0.33, bpm)
+keypress("0eI", 0.5, bpm)
+rest(0.33, bpm)
+keypress("u", 0.5, bpm)
+rest(0.33, bpm)
+keypress("y", 0.5, bpm)
+rest(0.33, bpm)
+keypress("6u", 0.5, bpm)
+rest(0.5, bpm)
+keypress("6", 0.5, bpm)
+rest(0.5, bpm)
+keypress("7e", 0.5, bpm)
+rest(0.5, bpm)
+keypress("9e", 0.5, bpm)
+rest(0.5, bpm)
+
+
+-- 35
+
+
+keypress("2I", 0.5, bpm)
+rest(0.33, bpm)
+keypress("u", 0.5, bpm)
+rest(0.33, bpm)
+keypress("e", 0.5, bpm)
+rest(0.33, bpm)
+keypress("69I", 0.5, bpm)
+rest(0.33, bpm)
+keypress("u", 0.5, bpm)
+rest(0.33, bpm)
+keypress("y", 0.5, bpm)
+rest(0.33, bpm)
+keypress("2I", 0.5, bpm)
+rest(0.5, bpm)
+keypress("2p", 0.5, bpm)
+rest(0.5, bpm)
+keypress("!I", 0.5, bpm)
+rest(0.5, bpm)
+keypress("6j", 0.5, bpm)
+rest(0.5, bpm)
+
+
+-- 36
+
+
+keypress("7j", 0.5, bpm)
+rest(1, bpm)
+keypress("7$G", 0.5, bpm)
+rest(1, bpm)
+keypress("7L", 0.5, bpm)
+rest(0.5, bpm)
+keypress("7I", 0.5, bpm)
+rest(0.5, bpm)
+keypress("2I", 0.5, bpm)
+rest(0.5, bpm)
+keypress("$o", 0.5, bpm)
+rest(0.5, bpm)
+
+
+-- 37
+
+
+keypress("3p", 0.5, bpm)
+rest(1, bpm)
+keypress("70I", 0.5, bpm)
+rest(1, bpm)
+keypress("7j", 0.5, bpm)
+rest(0.5, bpm)
+keypress("7", 0.5, bpm)
+rest(0.5, bpm)
+keypress("5IG", 0.5, bpm)
+rest(0.5, bpm)
+keypress("3o", 0.5, bpm)
+rest(0.5, bpm)
+
+
+-- 38
+
+
+keypress("6p", 0.5, bpm)
+rest(0.5, bpm)
+keypress("p", 0.5, bpm)
+rest(0.5, bpm)
+keypress("0eo", 0.5, bpm)
+rest(0.5, bpm)
+keypress("o", 0.5, bpm)
+rest(0.5, bpm)
+keypress("6I", 0.5, bpm)
+rest(0.5, bpm)
+keypress("6I", 0.5, bpm)
+rest(0.5, bpm)
+keypress("*I", 0.5, bpm)
+rest(0.5, bpm)
+keypress("0o", 0.5, bpm)
+rest(0.5, bpm)
+
+
+-- 39
+
+
+keypress("2p", 0.5, bpm)
+rest(1, bpm)
+keypress("69I", 0.5, bpm)
+rest(1, bpm)
+keypress("j", 0.5, bpm)
+rest(0.5, bpm)
+keypress("2", 0.5, bpm)
+rest(0.5, bpm)
+keypress("!IG", 0.5, bpm)
+rest(0.5, bpm)
+keypress("6o", 0.5, bpm)
+rest(0.5, bpm)
+
+
+-- 40
+
+
+keypress("7p", 0.5, bpm)
+rest(0.5, bpm)
+keypress("p", 0.5, bpm)
+rest(0.5, bpm)
+keypress("7$I", 0.5, bpm)
+rest(0.5, bpm)
+keypress("I", 0.5, bpm)
+rest(0.5, bpm)
+keypress("7u", 0.5, bpm)
+rest(0.5, bpm)
+keypress("7", 0.5, bpm)
+rest(0.5, bpm)
+keypress("2", 0.5, bpm)
+rest(0.5, bpm)
+keypress("3I", 0.5, bpm)
+rest(0.5, bpm)
+
+
+-- 41
+
+
+keypress("3", 0.5, bpm)
+rest(0.5, bpm)
+keypress("u", 0.5, bpm)
+rest(0.5, bpm)
+keypress("70", 0.5, bpm)
+rest(0.5, bpm)
+keypress("p", 0.5, bpm)
+rest(0.5, bpm)
+keypress("7I", 0.5, bpm)
+rest(0.5, bpm)
+keypress("7u", 0.5, bpm)
+rest(0.5, bpm)
+keypress("5u", 0.5, bpm)
+rest(0.5, bpm)
+keypress("7u", 0.5, bpm)
+rest(0.5, bpm)
+
+
+-- 42
+
+
+keypress("6S", 0.5, bpm)
+rest(0.5, bpm)
+keypress("S", 0.5, bpm)
+rest(0.25, bpm)
+keypress("S", 0.5, bpm)
+rest(0.25, bpm)
+keypress("0ep", 0.5, bpm)
+rest(0.5, bpm)
+keypress("ep", 0.5, bpm)
+rest(0.25, bpm)
+keypress("p", 0.5, bpm)
+rest(0.25, bpm)
+keypress("6eu", 0.5, bpm)
+rest(0.5, bpm)
+keypress("6ru", 0.5, bpm)
+rest(0.5, bpm)
+keypress("yp", 0.5, bpm)
+rest(0.5, bpm)
+keypress("0u", 0.5, bpm)
+rest(0.5, bpm)
+
+
+-- 43
+
+
+keypress("2I", 0.5, bpm)
+rest(1, bpm)
+keypress("69", 0.5, bpm)
+rest(0.5, bpm)
+keypress("u", 0.5, bpm)
+rest(1, bpm)
+keypress("2", 0.5, bpm)
+rest(0.5, bpm)
+keypress("!I", 0.5, bpm)
+rest(0.5, bpm)
+keypress("6", 0.5, bpm)
+rest(0.5, bpm)
+
+
+-- 44
+
+
+keypress("7", 0.5, bpm)
+rest(0.5, bpm)
+keypress("p", 0.5, bpm)
+rest(0.5, bpm)
+keypress("p", 0.5, bpm)
+rest(0.5, bpm)
+keypress("p", 0.5, bpm)
+rest(0.5, bpm)
+keypress("p", 0.5, bpm)
+rest(0.5, bpm)
+keypress("p", 0.5, bpm)
+rest(0.5, bpm)
+keypress("p", 0.5, bpm)
+rest(0.5, bpm)
+keypress("p", 0.5, bpm)
+rest(0.5, bpm)
+
+
+-- 45
+
+
+keypress("a", 0.5, bpm)
+rest(1, bpm)
+keypress("30I", 0.5, bpm)
+rest(1, bpm)
+keypress("wG", 0.5, bpm)
+rest(0.5, bpm)
+keypress("7k", 0.5, bpm)
+rest(0.5, bpm)
+keypress("0", 0.5, bpm)
+rest(0.5, bpm)
+keypress("G", 0.5, bpm)
+rest(0.5, bpm)
+
+
+-- 46
+
+
+keypress("6e", 0.5, bpm)
+rest(0.5, bpm)
+keypress("0p", 0.5, bpm)
+rest(0.5, bpm)
+keypress("ep", 0.5, bpm)
+rest(0.5, bpm)
+keypress("0p", 0.5, bpm)
+rest(0.5, bpm)
+keypress("Tp", 0.5, bpm)
+rest(0.5, bpm)
+keypress("0p", 0.5, bpm)
+rest(0.5, bpm)
+keypress("eI", 0.5, bpm)
+rest(0.5, bpm)
+keypress("0p", 0.5, bpm)
+rest(0.5, bpm)
+
+
+-- 47
+
+
+keypress("29a", 0.5, bpm)
+rest(0.5, bpm)
+keypress("6", 0.5, bpm)
+rest(0.5, bpm)
+keypress("91G", 0.5, bpm)
+rest(0.5, bpm)
+keypress("6", 0.5, bpm)
+rest(0.5, bpm)
+keypress("Qf", 0.5, bpm)
+rest(0.5, bpm)
+keypress("6", 0.5, bpm)
+rest(0.5, bpm)
+keypress("9G", 0.5, bpm)
+rest(0.5, bpm)
+keypress("6k", 0.5, bpm)
+rest(0.5, bpm)
+
+
+-- 48
+
+
+keypress("7", 0.5, bpm)
+rest(0.5, bpm)
+keypress("$j", 0.5, bpm)
+rest(0.5, bpm)
+keypress("7G", 0.5, bpm)
+rest(0.5, bpm)
+keypress("$f", 0.5, bpm)
+rest(0.5, bpm)
+keypress("9I", 0.5, bpm)
+rest(0.5, bpm)
+keypress("$u", 0.5, bpm)
+rest(0.5, bpm)
+keypress("7y", 0.5, bpm)
+rest(0.5, bpm)
+keypress("$T", 0.5, bpm)
+rest(0.5, bpm)
+
+
+-- 49
+
+
+keypress("30r", 0.5, bpm)
+rest(0.5, bpm)
+keypress("7", 0.5, bpm)
+rest(0.5, bpm)
+keypress("0y", 0.5, bpm)
+rest(0.5, bpm)
+keypress("7", 0.5, bpm)
+rest(0.5, bpm)
+keypress("wu", 0.5, bpm)
+rest(0.5, bpm)
+keypress("7", 0.5, bpm)
+rest(0.5, bpm)
+keypress("0I", 0.5, bpm)
+rest(0.5, bpm)
+keypress("7p", 0.5, bpm)
+rest(0.5, bpm)
+
+
+-- 50
+
+
+keypress("6e", 0.5, bpm)
+rest(0.5, bpm)
+keypress("0p", 0.5, bpm)
+rest(0.5, bpm)
+keypress("eI", 0.5, bpm)
+rest(0.5, bpm)
+keypress("0", 0.5, bpm)
+rest(0.5, bpm)
+keypress("Tu", 0.5, bpm)
+rest(0.5, bpm)
+keypress("0e", 0.5, bpm)
+rest(0.5, bpm)
+keypress("e", 0.5, bpm)
+rest(0.5, bpm)
+keypress("0pS", 0.5, bpm)
+rest(0.5, bpm)
+
+
+-- 51
+
+
+keypress("29", 0.5, bpm)
+rest(0.5, bpm)
+keypress("6", 0.5, bpm)
+rest(0.5, bpm)
+keypress("9d", 0.5, bpm)
+rest(0.5, bpm)
+keypress("I6p", 0.5, bpm)
+rest(0.5, bpm)
+keypress("Q", 0.5, bpm)
+rest(0.5, bpm)
+keypress("6", 0.5, bpm)
+rest(0.5, bpm)
+keypress("9a", 0.5, bpm)
+rest(0.5, bpm)
+keypress("06I", 0.5, bpm)
+rest(0.5, bpm)
+
+
+-- 52
+
+
+keypress("7G", 0.5, bpm)
+rest(0.5, bpm)
+keypress("$", 0.5, bpm)
+rest(0.5, bpm)
+keypress("7f", 0.5, bpm)
+rest(0.5, bpm)
+keypress("$", 0.5, bpm)
+rest(0.5, bpm)
+keypress("9f", 0.5, bpm)
+rest(0.5, bpm)
+keypress("$", 0.5, bpm)
+rest(0.5, bpm)
+keypress("7", 0.5, bpm)
+rest(0.5, bpm)
+keypress("$", 0.5, bpm)
+rest(0.5, bpm)
+
+
+-- 53
+
+
+keypress("3r", 0.5, bpm)
+rest(0.5, bpm)
+keypress("y", 0.5, bpm)
+rest(0.5, bpm)
+keypress("70u", 0.5, bpm)
+rest(0.5, bpm)
+keypress("I", 0.5, bpm)
+rest(0.5, bpm)
+keypress("7r", 0.5, bpm)
+rest(0.5, bpm)
+keypress("7ya", 0.5, bpm)
+rest(0.5, bpm)
+keypress("5u", 0.5, bpm)
+rest(0.5, bpm)
+keypress("3I", 0.5, bpm)
+rest(0.5, bpm)
+
+
+-- 54
+
+
+keypress("6e", 0.5, bpm)
+rest(0.5, bpm)
+keypress("T", 0.5, bpm)
+rest(0.5, bpm)
+keypress("0ey", 0.5, bpm)
+rest(0.5, bpm)
+keypress("u", 0.5, bpm)
+rest(0.5, bpm)
+keypress("6e", 0.5, bpm)
+rest(0.5, bpm)
+keypress("6T", 0.5, bpm)
+rest(0.5, bpm)
+keypress("*y", 0.5, bpm)
+rest(0.5, bpm)
+keypress("0u", 0.5, bpm)
+rest(0.5, bpm)
+
+
+-- 55
+
+
+keypress("2e", 0.5, bpm)
+rest(0.5, bpm)
+keypress("y", 0.5, bpm)
+rest(0.5, bpm)
+keypress("69uG", 0.5, bpm)
+rest(0.5, bpm)
+keypress("I", 0.5, bpm)
+rest(0.5, bpm)
+keypress("2ef", 0.5, bpm)
+rest(0.5, bpm)
+keypress("2y", 0.5, bpm)
+rest(0.5, bpm)
+keypress("u!G", 0.5, bpm)
+rest(0.5, bpm)
+keypress("16k", 0.5, bpm)
+rest(0.5, bpm)
+
+
+-- 56
+
+
+keypress("7e", 0.5, bpm)
+rest(0.5, bpm)
+keypress("Tj", 0.5, bpm)
+rest(0.5, bpm)
+keypress("7y$G", 0.5, bpm)
+rest(0.5, bpm)
+keypress("uf", 0.5, bpm)
+rest(0.5, bpm)
+keypress("7ed", 0.5, bpm)
+rest(0.5, bpm)
+keypress("7T", 0.5, bpm)
+rest(0.5, bpm)
+keypress("27", 0.5, bpm)
+rest(0.5, bpm)
+keypress("3u", 0.5, bpm)
+rest(0.5, bpm)
+
+
+-- 57
+
+
+keypress("3r", 0.5, bpm)
+rest(0.5, bpm)
+keypress("y", 0.5, bpm)
+rest(0.5, bpm)
+keypress("70u", 0.5, bpm)
+rest(0.5, bpm)
+keypress("I", 0.5, bpm)
+rest(0.5, bpm)
+keypress("7r", 0.5, bpm)
+rest(0.5, bpm)
+keypress("7y", 0.5, bpm)
+rest(0.5, bpm)
+keypress("5u", 0.5, bpm)
+rest(0.5, bpm)
+keypress("7I", 0.5, bpm)
+rest(0.5, bpm)
+
+
+--58
+
+
+keypress("6e", 0.5, bpm)
+rest(0.5, bpm)
+keypress("T", 0.5, bpm)
+rest(0.5, bpm)
+keypress("0ey", 0.5, bpm)
+rest(0.5, bpm)
+keypress("u", 0.5, bpm)
+rest(0.5, bpm)
+keypress("6e", 0.5, bpm)
+rest(0.5, bpm)
+keypress("6T", 0.5, bpm)
+rest(0.5, bpm)
+keypress("*y", 0.5, bpm)
+rest(0.5, bpm)
+keypress("0uf", 0.5, bpm)
+rest(0.5, bpm)
+
+
+-- 59
+
+
+keypress("2e", 0.5, bpm)
+rest(0.5, bpm)
+keypress("y", 0.5, bpm)
+rest(0.5, bpm)
+keypress("69uG", 0.5, bpm)
+rest(0.5, bpm)
+keypress("Id", 0.5, bpm)
+rest(0.5, bpm)
+keypress("2e", 0.5, bpm)
+rest(0.5, bpm)
+keypress("2y", 0.5, bpm)
+rest(0.5, bpm)
+keypress("!uf", 0.5, bpm)
+rest(0.5, bpm)
+keypress("16p", 0.5, bpm)
+rest(0.5, bpm)
+
+
+-- 60
+
+
+keypress("7eG", 0.5, bpm)
+rest(0.5, bpm)
+keypress("T", 0.5, bpm)
+rest(0.5, bpm)
+keypress("$7yf", 0.5, bpm)
+rest(0.5, bpm)
+keypress("u", 0.5, bpm)
+rest(0.5, bpm)
+keypress("7ef", 0.5, bpm)
+rest(0.5, bpm)
+keypress("7T", 0.5, bpm)
+rest(0.5, bpm)
+keypress("2y", 0.5, bpm)
+rest(0.5, bpm)
+keypress("3u", 0.5, bpm)
+rest(0.5, bpm)
+
+
+-- 61
+
+
+keypress("3579I", 0.5, bpm)
+rest(1.5, bpm)
+keypress("u", 0.5, bpm)
+rest(1.5, bpm)
+keypress("p", 0.5, bpm)
+rest(1, bpm)
+
+
+-- 62
+
+
+keypress("*60", 0.5, bpm)
+rest(1.5, bpm)
+keypress("I", 0.5, bpm)
+rest(0.5, bpm)
+keypress("u", 0.5, bpm)
+rest(1, bpm)
+keypress("e", 0.5, bpm)
+rest(1, bpm)
+
+
+-- 63
+
+
+keypress("$*26u", 0.5, bpm)
+rest(1.5, bpm)
+keypress("y", 0.5, bpm)
+rest(0.5, bpm)
+keypress("T", 0.5, bpm)
+rest(0.5, bpm)
+keypress("y", 0.5, bpm)
+rest(1, bpm)
+keypress("I", 0.5, bpm)
+rest(0.5, bpm)
+
+
+-- 64
+
+
+keypress("$267", 0.5, bpm)
+rest(1.5, bpm)
+keypress("y", 0.5, bpm)
+rest(0.5, bpm)
+keypress("7T", 0.5, bpm)
+rest(0.5, bpm)
+keypress("7", 0.5, bpm)
+rest(0.5, bpm)
+keypress("2r", 0.5, bpm)
+rest(0.5, bpm)
+keypress("3", 0.5, bpm)
+rest(0.5, bpm)
+
+
+-- 65
+
+
+keypress("3579I", 0.5, bpm)
+rest(1.5, bpm)
+keypress("u", 0.5, bpm)
+rest(1.5, bpm)
+keypress("p", 0.5, bpm)
+rest(1, bpm)
+
+
+-- 66
+
+
+keypress("*60", 0.5, bpm)
+rest(1.5, bpm)
+keypress("I", 0.5, bpm)
+rest(0.5, bpm)
+keypress("u", 0.5, bpm)
+rest(1, bpm)
+keypress("e", 0.5, bpm)
+rest(0.5, bpm)
+keypress("y", 0.5, bpm)
+rest(0.5, bpm)
+
+
+-- 67
+
+
+keypress("$26", 0.5, bpm)
+rest(1.5, bpm)
+keypress("I", 0.5, bpm)
+rest(0.5, bpm)
+keypress("u", 0.5, bpm)
+rest(1, bpm)
+keypress("e", 0.5, bpm)
+rest(1, bpm)
+
+
+-- 68
+
+
+keypress("$267u", 0.5, bpm)
+rest(1.5, bpm)
+keypress("y", 0.5, bpm)
+rest(0.5, bpm)
+keypress("7", 0.5, bpm)
+rest(0.5, bpm)
+keypress("7", 0.5, bpm)
+rest(0.5, bpm)
+keypress("2", 0.5, bpm)
+rest(0.5, bpm)
+keypress("3", 0.5, bpm)
+rest(0.5, bpm)
+
+
+-- 69
+
+
+rest(0.5, bpm)
+keypress("p", 0.5, bpm)
+rest(0.5, bpm)
+keypress("p", 0.5, bpm)
+rest(0.5, bpm)
+keypress("p", 0.5, bpm)
+rest(0.5, bpm)
+keypress("p", 0.5, bpm)
+rest(0.5, bpm)
+keypress("p", 0.5, bpm)
+rest(0.5, bpm)
+keypress("p", 0.5, bpm)
+rest(0.5, bpm)
+keypress("p", 0.5, bpm)
+rest(0.5, bpm)
+
+
+-- 70
+
+
+keypress("a", 0.5, bpm)
+rest(1, bpm)
+keypress("30I", 0.5, bpm)
+rest(1, bpm)
+keypress("wG", 0.5, bpm)
+rest(0.5, bpm)
+keypress("7k", 0.5, bpm)
+rest(0.5, bpm)
+keypress("0", 0.5, bpm)
+rest(0.5, bpm)
+keypress("G", 0.5, bpm)
+rest(0.5, bpm)
+
+
+-- 71
+
+
+keypress("6e", 0.5, bpm)
+rest(0.5, bpm)
+keypress("0p", 0.5, bpm)
+rest(0.5, bpm)
+keypress("ep", 0.5, bpm)
+rest(0.5, bpm)
+keypress("0p", 0.5, bpm)
+rest(0.5, bpm)
+keypress("Tp", 0.5, bpm)
+rest(0.5, bpm)
+keypress("0p", 0.5, bpm)
+rest(0.5, bpm)
+keypress("eI", 0.5, bpm)
+rest(0.5, bpm)
+keypress("0p", 0.5, bpm)
+rest(0.5, bpm)
+
+
+-- 72
+
+
+keypress("29a", 0.5, bpm)
+rest(0.5, bpm)
+keypress("6", 0.5, bpm)
+rest(0.5, bpm)
+keypress("91G", 0.5, bpm)
+rest(0.5, bpm)
+keypress("6", 0.5, bpm)
+rest(0.5, bpm)
+keypress("Qf", 0.5, bpm)
+rest(0.5, bpm)
+keypress("6", 0.5, bpm)
+rest(0.5, bpm)
+keypress("9G", 0.5, bpm)
+rest(0.5, bpm)
+keypress("6k", 0.5, bpm)
+rest(0.5, bpm)
+
+
+-- 73
+
+keypress("7", 0.5, bpm)
+rest(0.5, bpm)
+keypress("$j", 0.5, bpm)
+rest(0.5, bpm)
+keypress("7G", 0.5, bpm)
+rest(0.5, bpm)
+keypress("$f", 0.5, bpm)
+rest(0.5, bpm)
+keypress("9I", 0.5, bpm)
+rest(0.5, bpm)
+keypress("$u", 0.5, bpm)
+rest(0.5, bpm)
+keypress("7y", 0.5, bpm)
+rest(0.5, bpm)
+keypress("$T", 0.5, bpm)
+rest(0.5, bpm)
+
+
+-- 74
+
+
+keypress("30r", 0.5, bpm)
+rest(0.5, bpm)
+keypress("7", 0.5, bpm)
+rest(0.5, bpm)
+keypress("0y", 0.5, bpm)
+rest(0.5, bpm)
+keypress("7", 0.5, bpm)
+rest(0.5, bpm)
+keypress("wu", 0.5, bpm)
+rest(0.5, bpm)
+keypress("7", 0.5, bpm)
+rest(0.5, bpm)
+keypress("0I", 0.5, bpm)
+rest(0.5, bpm)
+keypress("7p", 0.5, bpm)
+rest(0.5, bpm)
+
+
+-- 75
+
+
+keypress("6e", 0.5, bpm)
+rest(0.5, bpm)
+keypress("0p", 0.5, bpm)
+rest(0.5, bpm)
+keypress("eI", 0.5, bpm)
+rest(0.5, bpm)
+keypress("0", 0.5, bpm)
+rest(0.5, bpm)
+keypress("Tu", 0.5, bpm)
+rest(0.5, bpm)
+keypress("0e", 0.5, bpm)
+rest(0.5, bpm)
+keypress("e", 0.5, bpm)
+rest(0.5, bpm)
+keypress("0pS", 0.5, bpm)
+rest(0.5, bpm)
+
+
+-- 76
+
+
+keypress("29", 0.5, bpm)
+rest(0.5, bpm)
+keypress("6", 0.5, bpm)
+rest(0.5, bpm)
+keypress("9d", 0.5, bpm)
+rest(0.5, bpm)
+keypress("I6p", 0.5, bpm)
+rest(0.5, bpm)
+keypress("Q", 0.5, bpm)
+rest(0.5, bpm)
+keypress("6", 0.5, bpm)
+rest(0.5, bpm)
+keypress("9a", 0.5, bpm)
+rest(0.5, bpm)
+keypress("06I", 0.5, bpm)
+rest(0.5, bpm)
+
+
+-- 77
+
+
+keypress("7G", 0.5, bpm)
+rest(0.5, bpm)
+keypress("$p", 0.5, bpm)
+rest(0.5, bpm)
+keypress("7p", 0.5, bpm)
+rest(0.5, bpm)
+keypress("$p", 0.5, bpm)
+rest(0.5, bpm)
+keypress("9p", 0.5, bpm)
+rest(0.5, bpm)
+keypress("$p", 0.5, bpm)
+rest(0.5, bpm)
+keypress("7p", 0.5, bpm)
+rest(0.5, bpm)
+keypress("$p", 0.5, bpm)
+rest(0.5, bpm)
+
+
+-- 78
+
+
+keypress("I30a", 0.5, bpm)
+rest(0.5, bpm)
+keypress("7", 0.5, bpm)
+rest(0.5, bpm)
+keypress("0I", 0.5, bpm)
+rest(0.5, bpm)
+keypress("7u", 0.5, bpm)
+rest(0.5, bpm)
+keypress("wG", 0.5, bpm)
+rest(0.5, bpm)
+keypress("7k", 0.5, bpm)
+rest(0.5, bpm)
+keypress("0p", 0.5, bpm)
+rest(0.5, bpm)
+keypress("7G", 0.5, bpm)
+rest(0.5, bpm)
+
+
+-- 79
+
+
+keypress("6e", 0.5, bpm)
+rest(0.5, bpm)
+keypress("0p", 0.5, bpm)
+rest(0.5, bpm)
+keypress("ep", 0.5, bpm)
+rest(0.5, bpm)
+keypress("0up", 0.5, bpm)
+rest(0.5, bpm)
+keypress("Typ", 0.5, bpm)
+rest(0.5, bpm)
+keypress("0p", 0.5, bpm)
+rest(0.5, bpm)
+keypress("eI", 0.5, bpm)
+rest(0.5, bpm)
+keypress("0p", 0.5, bpm)
+rest(0.5, bpm)
+
+
+-- 80
+
+
+keypress("29ua", 0.5, bpm)
+rest(0.5, bpm)
+keypress("6", 0.5, bpm)
+rest(0.5, bpm)
+keypress("9IG", 0.5, bpm)
+rest(0.5, bpm)
+keypress("6y", 0.5, bpm)
+rest(0.5, bpm)
+keypress("QTf", 0.5, bpm)
+rest(0.5, bpm)
+keypress("6", 0.5, bpm)
+rest(0.5, bpm)
+keypress("9yG", 0.5, bpm)
+rest(0.5, bpm)
+keypress("I6k", 0.5, bpm)
+rest(0.5, bpm)
+
+
+-- 81
+
+
+keypress("7", 0.5, bpm)
+rest(0.5, bpm)
+keypress("$j", 0.5, bpm)
+rest(0.5, bpm)
+keypress("7G", 0.5, bpm)
+rest(0.5, bpm)
+keypress("$yf", 0.5, bpm)
+rest(0.5, bpm)
+keypress("9TI", 0.5, bpm)
+rest(0.5, bpm)
+keypress("$u", 0.5, bpm)
+rest(0.5, bpm)
+keypress("7ry", 0.5, bpm)
+rest(0.5, bpm)
+keypress("$T", 0.5, bpm)
+rest(0.5, bpm)
+
+
+-- 82
+
+
+keypress("30r", 0.5, bpm)
+rest(0.5, bpm)
+keypress("7", 0.5, bpm)
+rest(0.5, bpm)
+keypress("0y", 0.5, bpm)
+rest(0.5, bpm)
+keypress("7", 0.5, bpm)
+rest(0.5, bpm)
+keypress("wu", 0.5, bpm)
+rest(0.5, bpm)
+keypress("7", 0.5, bpm)
+rest(0.5, bpm)
+keypress("0I", 0.5, bpm)
+rest(0.5, bpm)
+keypress("7p", 0.5, bpm)
+rest(0.5, bpm)
+
+
+-- 83
+
+
+keypress("6e", 0.5, bpm)
+rest(0.5, bpm)
+keypress("0p", 0.5, bpm)
+rest(0.5, bpm)
+keypress("eI", 0.5, bpm)
+rest(0.5, bpm)
+keypress("0I", 0.5, bpm)
+rest(0.5, bpm)
+keypress("Tu", 0.5, bpm)
+rest(0.5, bpm)
+keypress("0e", 0.5, bpm)
+rest(0.5, bpm)
+keypress("e", 0.5, bpm)
+rest(0.5, bpm)
+keypress("0yS", 0.5, bpm)
+rest(0.5, bpm)
+
+
+-- 84
+
+
+keypress("29", 0.5, bpm)
+rest(0.5, bpm)
+keypress("6", 0.5, bpm)
+rest(0.5, bpm)
+keypress("9d", 0.5, bpm)
+rest(0.5, bpm)
+keypress("I6p", 0.5, bpm)
+rest(0.5, bpm)
+keypress("Qu", 0.5, bpm)
+rest(0.5, bpm)
+keypress("6", 0.5, bpm)
+rest(0.5, bpm)
+keypress("9ea", 0.5, bpm)
+rest(0.5, bpm)
+keypress("6I", 0.5, bpm)
+rest(0.5, bpm)
+
+
+-- 85
+
+
+keypress("yu", 0.5, bpm)
+rest(0.5, bpm)
+keypress("$", 0.5, bpm)
+rest(0.5, bpm)
+keypress("7", 0.5, bpm)
+rest(0.5, bpm)
+keypress("$y", 0.5, bpm)
+rest(0.5, bpm)
+keypress("7", 0.5, bpm)
+rest(0.5, bpm)
+keypress("7", 0.5, bpm)
+rest(0.5, bpm)
+keypress("2", 0.5, bpm)
+rest(0.5, bpm)
+keypress("3", 0.5, bpm)
+rest(0.5, bpm)
