@@ -1,0 +1,223 @@
+-- 1
+
+
+keypress("6", 1, bpm)
+rest(1, bpm)
+keypress("3", 1, bpm)
+rest(1, bpm)
+keypress("1", 1, bpm)
+rest(1, bpm)
+keypress("3", 1, bpm)
+rest(1, bpm)
+
+
+-- 2
+
+
+keypress("459p", 0.5, bpm)
+rest(0.5, bpm)
+keypress("qe", 0.25, bpm)
+rest(0.25, bpm)
+keypress("5", 0.25, bpm)
+rest(0.25, bpm)
+keypress("46", 0.5, bpm)
+rest(0.5, bpm)
+keypress("5qep", 0.25, bpm)
+rest(0.25, bpm)
+keypress("p", 0.25, bpm)
+rest(0.25, bpm)
+keypress("40O", 0.5, bpm)
+rest(0.5, bpm)
+keypress("W5ru", 0.25, bpm)
+rest(0.25, bpm)
+keypress("5", 0.25, bpm)
+rest(0.25, bpm)
+keypress("47o", 0.5, bpm)
+rest(0.5, bpm)
+keypress("W5ri", 0.5, bpm)
+rest(0.5, bpm)
+
+
+-- 3
+
+
+keypress("46u", 0.5, bpm)
+rest(0.5, bpm)
+keypress("80", 0.25, bpm)
+rest(0.25, bpm)
+keypress("5", 0.25, bpm)
+rest(0.25, bpm)
+keypress("34", 0.5, bpm)
+rest(0.5, bpm)
+keypress("580u", 0.25, bpm)
+rest(0.25, bpm)
+keypress("u", 0.25, bpm)
+rest(0.25, bpm)
+keypress("46y", 0.5, bpm)
+rest(0.5, bpm)
+keypress("580r", 0.25, bpm)
+rest(0.25, bpm)
+keypress("5", 0.25, bpm)
+rest(0.25, bpm)
+keypress("34y", 0.5, bpm)
+rest(0.5, bpm)
+keypress("580t", 0.5, bpm)
+rest(0.5, bpm)
+
+
+-- 4
+
+
+keypress("459e", 0.5, bpm)
+rest(0.5, bpm)
+keypress("qe", 0.25, bpm)
+rest(0.25, bpm)
+keypress("5", 0.25, bpm)
+rest(0.25, bpm)
+keypress("46", 0.5, bpm)
+rest(0.5, bpm)
+keypress("5qey", 0.25, bpm)
+rest(0.25, bpm)
+keypress("y", 0.25, bpm)
+rest(0.25, bpm)
+keypress("40t", 0.5, bpm)
+rest(0.5, bpm)
+keypress("W5ry", 0.25, bpm)
+rest(0.25, bpm)
+keypress("5", 0.25, bpm)
+rest(0.25, bpm)
+keypress("47o", 0.5, bpm)
+rest(0.5, bpm)
+keypress("W5ri", 0.5, bpm)
+rest(0.5, bpm)
+
+
+-- 5
+
+
+keypress("46u", 0.5, bpm)
+rest(0.5, bpm)
+keypress("80", 0.25, bpm)
+rest(0.25, bpm)
+keypress("5", 0.25, bpm)
+rest(0.25, bpm)
+keypress("34", 0.5, bpm)
+rest(0.5, bpm)
+keypress("580u", 0.5, bpm)
+rest(0.5, bpm)
+keypress("46y", 0.5, bpm)
+rest(0.5, bpm)
+keypress("580t", 0.25, bpm)
+rest(0.25, bpm)
+keypress("5", 0.25, bpm)
+rest(0.25, bpm)
+keypress("34y", 0.5, bpm)
+rest(0.5, bpm)
+keypress("580t", 0.5, bpm)
+rest(0.5, bpm)
+
+
+-- 6
+
+
+keypress("459p", 0.5, bpm)
+rest(0.5, bpm)
+keypress("qe", 0.25, bpm)
+rest(0.25, bpm)
+keypress("5", 0.25, bpm)
+rest(0.25, bpm)
+keypress("46", 0.5, bpm)
+rest(0.5, bpm)
+keypress("5qep", 0.25, bpm)
+rest(0.25, bpm)
+keypress("p", 0.25, bpm)
+rest(0.25, bpm)
+keypress("40O", 0.5, bpm)
+rest(0.5, bpm)
+keypress("W5ru", 0.25, bpm)
+rest(0.25, bpm)
+keypress("5", 0.25, bpm)
+rest(0.25, bpm)
+keypress("47o", 0.5, bpm)
+rest(0.5, bpm)
+keypress("W5ri", 0.5, bpm)
+rest(0.5, bpm)
+
+
+-- 7
+
+
+keypress("46u", 0.5, bpm)
+rest(0.5, bpm)
+keypress("80", 0.25, bpm)
+rest(0.25, bpm)
+keypress("5", 0.25, bpm)
+rest(0.25, bpm)
+keypress("34", 0.5, bpm)
+rest(0.5, bpm)
+keypress("580u", 0.25, bpm)
+rest(0.25, bpm)
+keypress("u", 0.25, bpm)
+rest(0.25, bpm)
+keypress("46y", 0.5, bpm)
+rest(0.5, bpm)
+keypress("580r", 0.25, bpm)
+rest(0.25, bpm)
+keypress("5", 0.25, bpm)
+rest(0.25, bpm)
+keypress("34y", 0.5, bpm)
+rest(0.5, bpm)
+keypress("580t", 0.5, bpm)
+rest(0.5, bpm)
+
+
+-- 8
+
+
+keypress("459e", 0.5, bpm)
+rest(0.5, bpm)
+keypress("qe", 0.25, bpm)
+rest(0.25, bpm)
+keypress("5", 0.25, bpm)
+rest(0.25, bpm)
+keypress("46", 0.5, bpm)
+rest(0.5, bpm)
+keypress("5qey", 0.25, bpm)
+rest(0.25, bpm)
+keypress("y", 0.25, bpm)
+rest(0.25, bpm)
+keypress("40t", 0.5, bpm)
+rest(0.5, bpm)
+keypress("W5ry", 0.25, bpm)
+rest(0.25, bpm)
+keypress("5", 0.25, bpm)
+rest(0.25, bpm)
+keypress("47o", 0.5, bpm)
+rest(0.5, bpm)
+keypress("W5ri", 0.5, bpm)
+rest(0.5, bpm)
+
+
+-- 9
+
+
+keypress("46u", 0.5, bpm)
+rest(0.5, bpm)
+keypress("80", 0.25, bpm)
+rest(0.25, bpm)
+keypress("5", 0.25, bpm)
+rest(0.25, bpm)
+keypress("34", 0.5, bpm)
+rest(0.5, bpm)
+keypress("580u", 0.5, bpm)
+rest(0.5, bpm)
+keypress("46y", 0.5, bpm)
+rest(0.5, bpm)
+keypress("580t", 0.25, bpm)
+rest(0.25, bpm)
+keypress("5", 0.25, bpm)
+rest(0.25, bpm)
+keypress("34y", 0.5, bpm)
+rest(0.5, bpm)
+keypress("580t", 0.5, bpm)
+rest(0.5, bpm)
