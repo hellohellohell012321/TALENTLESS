@@ -73,4 +73,17 @@ local function C_c()
 end
 task.spawn(C_c)
 
+confirmyes.MouseButton1Click:Connect(function()
+    playingall = false
+    if STOPLOOP then
+        STOPLOOP:Destroy()
+    end
+end)
+
+confirmno.MouseButton1Click:Connect(function()
+    if STOPLOOP then
+        STOPLOOP:Destroy()
+    end
+end)
+
 return G2L["1"], require;
