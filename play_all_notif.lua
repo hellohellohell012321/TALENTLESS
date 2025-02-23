@@ -1,7 +1,7 @@
 local G2L = {};
 
 -- StarterGui.notifscreen
-notifscreen = Instance.new("notifscreen", game:GetService("CoreGui"));
+notifscreen = Instance.new("ScreenGui", game:GetService("CoreGui"));
 notifscreen["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
 
 -- StarterGui.notifscreen.Frame
