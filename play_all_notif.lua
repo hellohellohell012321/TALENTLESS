@@ -77,6 +77,7 @@ confirmyes.MouseButton1Click:Connect(function()
     playingall = false
     STOPLOOP:Destroy()
     notifscreen:Destroy()
+    STOPLOOP = nil
 end)
 
 confirmno.MouseButton1Click:Connect(function()
