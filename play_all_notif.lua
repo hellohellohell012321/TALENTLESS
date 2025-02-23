@@ -1,11 +1,11 @@
 local G2L = {};
 
--- StarterGui.ScreenGui
-G2L["1"] = Instance.new("ScreenGui", game:GetService("CoreGui"));
-G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
+-- StarterGui.notifscreen
+notifscreen = Instance.new("notifscreen", game:GetService("CoreGui"));
+notifscreen["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
 
--- StarterGui.ScreenGui.Frame
-G2L["2"] = Instance.new("Frame", G2L["1"]);
+-- StarterGui.notifscreen.Frame
+G2L["2"] = Instance.new("Frame", notifscreen);
 G2L["2"]["BorderSizePixel"] = 0;
 G2L["2"]["BackgroundColor3"] = Color3.fromRGB(69, 72, 76);
 G2L["2"]["Size"] = UDim2.new(0, 333, 0, 127);
@@ -13,7 +13,7 @@ G2L["2"]["AnchorPoint"] = Vector2.new(0.5, 0.5)
 G2L["2"]["Position"] = UDim2.new(0.5, 0, 0.5, 0)
 G2L["2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 
--- StarterGui.ScreenGui.Frame.yes
+-- StarterGui.notifscreen.Frame.yes
 confirmyes = Instance.new("TextButton", G2L["2"]);
 confirmyes["BorderSizePixel"] = 0;
 confirmyes["TextSize"] = 23;
@@ -26,7 +26,7 @@ confirmyes["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 confirmyes["Text"] = [[yes]];
 confirmyes["Position"] = UDim2.new(0.73324, -65, 0.66338, 0);
 
--- StarterGui.ScreenGui.Frame.title
+-- StarterGui.notifscreen.Frame.title
 G2L["4"] = Instance.new("TextLabel", G2L["2"]);
 G2L["4"]["TextWrapped"] = true;
 G2L["4"]["BorderSizePixel"] = 0;
@@ -41,11 +41,11 @@ G2L["4"]["Text"] = [[wait! you are currently queueing all of the songs. are you 
 G2L["4"]["Name"] = [[title]];
 G2L["4"]["Position"] = UDim2.new(0.32781, -100, -0.0034, 0);
 
--- StarterGui.ScreenGui.Frame.UICorner
+-- StarterGui.notifscreen.Frame.UICorner
 G2L["5"] = Instance.new("UICorner", G2L["2"]);
 G2L["5"]["CornerRadius"] = UDim.new(0, 4);
 
--- StarterGui.ScreenGui.Frame.no
+-- StarterGui.notifscreen.Frame.no
 confirmno = Instance.new("TextButton", G2L["2"]);
 confirmno["BorderSizePixel"] = 0;
 confirmno["TextSize"] = 23;
@@ -61,8 +61,8 @@ confirmno["Position"] = UDim2.new(0.26385, -65, 0.66338, 0);
 local function C_c()
 	local TweenService = game:GetService("TweenService")
 	local player = game.Players.LocalPlayer
-	local screenGui = G2L["1"]
-	local frame = screenGui:WaitForChild("Frame")
+	local notifscreen = notifscreen
+	local frame = notifscreen:WaitForChild("Frame")
 	local popOutTime = 0.5
 	frame.Size = UDim2.new(0, 0, 0, 0)
 	frame.Visible = true
@@ -75,15 +75,12 @@ task.spawn(C_c)
 
 confirmyes.MouseButton1Click:Connect(function()
     playingall = false
-    if STOPLOOP then
-        STOPLOOP:Destroy()
-    end
+    STOPLOOP:Destroy()
+    notifscreen:Destroy()
 end)
 
 confirmno.MouseButton1Click:Connect(function()
-    if STOPLOOP then
-        STOPLOOP:Destroy()
-    end
+    notifscreen:Destroy()
 end)
 
-return G2L["1"], require;
+return notifscreen, require;
