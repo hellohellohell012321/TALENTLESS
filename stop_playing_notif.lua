@@ -37,7 +37,7 @@ G2L["4"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["4"]["BackgroundTransparency"] = 1;
 G2L["4"]["Size"] = UDim2.new(0, 313, 0, 81);
 G2L["4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["4"]["Text"] = [[wait! you are currently queueing all of the songs. are you sure you want to stop? if you do, then you will stop playing after the current piece finished.]];
+G2L["4"]["Text"] = [[wait! you are currently queueing all of the songs. are you sure you want to stop?]];
 G2L["4"]["Name"] = [[title]];
 G2L["4"]["Position"] = UDim2.new(0.32781, -100, -0.0034, 0);
 
@@ -77,7 +77,7 @@ confirmyes.MouseButton1Click:Connect(function()
     playingall = false
     STOPLOOP:Destroy()
     notifscreen:Destroy()
-    STOPLOOP = nil
+    stopPlayingSongs()
 end)
 
 confirmno.MouseButton1Click:Connect(function()
