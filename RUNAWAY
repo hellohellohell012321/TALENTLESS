@@ -1,112 +1,112 @@
 -- 1
 
 
-keypress("x", 0.5, bpm)
+keypress("x", 0.25, bpm)
 rest(2, bpm)
 
 
 -- 2
 
 
-keypress("x", 0.5, bpm)
+keypress("x", 0.25, bpm)
 rest(2, bpm)
 
 
 -- 3
 
 
-keypress("x", 0.5, bpm)
+keypress("x", 0.25, bpm)
 rest(2, bpm)
 
 
 -- 4
 
 
-keypress("f", 0.5, bpm)
+keypress("f", 0.25, bpm)
 rest(2, bpm)
 
 
 -- 5
 
 
-keypress("Z", 0.5, bpm)
+keypress("Z", 0.25, bpm)
 rest(2, bpm)
 
 
 -- 6
 
 
-keypress("Z", 0.5, bpm)
+keypress("Z", 0.25, bpm)
 rest(2, bpm)
 
 
 -- 7
 
 
-keypress("Z", 0.5, bpm)
+keypress("Z", 0.25, bpm)
 rest(2, bpm)
 
 
 -- 8
 
 
-keypress("D", 0.5, bpm)
+keypress("D", 0.25, bpm)
 rest(2, bpm)
 
 
 -- 9
 
 
-keypress("L", 0.5, bpm)
+keypress("L", 0.25, bpm)
 rest(2, bpm)
 
 
 -- 10
 
 
-keypress("L", 0.5, bpm)
+keypress("L", 0.25, bpm)
 rest(2, bpm)
 
 
 -- 11
 
 
-keypress("L", 0.5, bpm)
+keypress("L", 0.25, bpm)
 rest(2, bpm)
 
 
 -- 12
 
 
-keypress("S", 0.5, bpm)
+keypress("S", 0.25, bpm)
 rest(2, bpm)
 
 
 -- 13
 
 
-keypress("j", 0.5, bpm)
+keypress("j", 0.25, bpm)
 rest(2, bpm)
 
 
 -- 14
 
 
-keypress("j", 0.5, bpm)
+keypress("j", 0.25, bpm)
 rest(2, bpm)
 
 
 -- 15
 
 
-keypress("H", 0.5, bpm)
+keypress("H", 0.25, bpm)
 rest(2, bpm)
 
 
 -- 16
 
 
-keypress("x", 0.5, bpm)
+keypress("x", 0.25, bpm)
 rest(1, bpm)
 
 
@@ -1677,110 +1677,110 @@ rest(2, bpm)
 -- 1
 
 
-keypress("x", 0.5, bpm)
+keypress("x", 0.25, bpm)
 rest(2, bpm)
 
 
 -- 2
 
 
-keypress("x", 0.5, bpm)
+keypress("x", 0.25, bpm)
 rest(2, bpm)
 
 
 -- 3
 
 
-keypress("x", 0.5, bpm)
+keypress("x", 0.25, bpm)
 rest(2, bpm)
 
 
 -- 4
 
 
-keypress("f", 0.5, bpm)
+keypress("f", 0.25, bpm)
 rest(2, bpm)
 
 
 -- 5
 
 
-keypress("Z", 0.5, bpm)
+keypress("Z", 0.25, bpm)
 rest(2, bpm)
 
 
 -- 6
 
 
-keypress("Z", 0.5, bpm)
+keypress("Z", 0.25, bpm)
 rest(2, bpm)
 
 
 -- 7
 
 
-keypress("Z", 0.5, bpm)
+keypress("Z", 0.25, bpm)
 rest(2, bpm)
 
 
 -- 8
 
 
-keypress("D", 0.5, bpm)
+keypress("D", 0.25, bpm)
 rest(2, bpm)
 
 
 -- 9
 
 
-keypress("L", 0.5, bpm)
+keypress("L", 0.25, bpm)
 rest(2, bpm)
 
 
 -- 10
 
 
-keypress("L", 0.5, bpm)
+keypress("L", 0.25, bpm)
 rest(2, bpm)
 
 
 -- 11
 
 
-keypress("L", 0.5, bpm)
+keypress("L", 0.25, bpm)
 rest(2, bpm)
 
 
 -- 12
 
 
-keypress("S", 0.5, bpm)
+keypress("S", 0.25, bpm)
 rest(2, bpm)
 
 
 -- 13
 
 
-keypress("j", 0.5, bpm)
+keypress("j", 0.25, bpm)
 rest(2, bpm)
 
 
 -- 14
 
 
-keypress("j", 0.5, bpm)
+keypress("j", 0.25, bpm)
 rest(2, bpm)
 
 
 -- 15
 
 
-keypress("H", 0.5, bpm)
+keypress("H", 0.25, bpm)
 rest(2, bpm)
 
 
 -- 16
 
 
-keypress("x", 0.5, bpm)
+keypress("x", 0.25, bpm)
 rest(1, bpm)
