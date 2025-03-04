@@ -1,4 +1,4 @@
-keypress("8", 0.21, bpm)
+keypress("8", 0.14, bpm)
 rest(0.25, bpm)
 keypress("r", 0.21, bpm)
 rest(0.5, bpm)
