@@ -224,25 +224,35 @@ UserInputService.InputChanged:Connect(
 )
 
 function stopPlayingSongs()
+
+    print("stopped.")
+
+    function finishedSong()
+        print("")
+    end
+
     function pressKey(keys, beats, bpm)
+        print("")
     end
 
     function pressnote(note, octave, beats, bpm)
+        print("")
     end
 
     function rest(beats, bpm)
+        print("")
     end
 
     function keypress(keys, beats, bpm)
+        print("")
     end
 
     function keysequence16(keys, beats, bpm)
-    end
-
-    function finishedSong()
+        print("")print("")
     end
 
     function adjustVelocity(h)
+        print("")
     end
 
     songisplaying = false
@@ -250,7 +260,6 @@ function stopPlayingSongs()
     playSound("6493287948", 0.1)
     NotificationLibrary:SendNotification("Success", "Stopping...", 1)
     lilgui:Destroy()
-    lilgui = nil
 end
 
 function finishedSong()
