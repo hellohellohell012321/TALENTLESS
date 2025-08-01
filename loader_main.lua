@@ -1,6 +1,8 @@
 -- some parts are skidded from chatgpt
 -- the comments are not from chatgpt though becvause i legitamately need them for debugging and to easily know whats going on if theres an issue
 
+_G.STOPIT = false
+
 local NotificationLibrary =
     loadstring(game:HttpGet("https://raw.githubusercontent.com/hellohellohell012321/TALENTLESS/main/notif_lib.lua"))()
 
@@ -226,34 +228,7 @@ UserInputService.InputChanged:Connect(
 function stopPlayingSongs()
 
     print("stopped.")
-
-    function finishedSong()
-        print("")
-    end
-
-    function pressKey(keys, beats, bpm)
-        print("")
-    end
-
-    function pressnote(note, octave, beats, bpm)
-        print("")
-    end
-
-    function rest(beats, bpm)
-        print("")
-    end
-
-    function keypress(keys, beats, bpm)
-        print("")
-    end
-
-    function keysequence16(keys, beats, bpm)
-        print("")print("")
-    end
-
-    function adjustVelocity(h)
-        print("")
-    end
+    _G.STOPIT = true
 
     songisplaying = false
 
@@ -469,6 +444,9 @@ local keyMappings = {
 }
 
 local function pressKey(keys, beats, bpm)
+
+    if _G.STOPIT then return end
+
     local shiftApplied = false
     local unshiftApplied = false
     local shorts
@@ -608,6 +586,7 @@ local function pressKey(keys, beats, bpm)
 end
 
 function adjustVelocity(vel)
+    if _G.STOPIT then return end
     local velocityMap = "58qrupdhl"
 
     vel = math.clamp(vel, 0, 1)
@@ -645,6 +624,7 @@ local noteMappings = {
 
 -- press function
 function pressnote(note, octave, beats, bpm)
+    if _G.STOPIT then return end
     if pausing then
         resumeEvent.Event:Wait()
     end
@@ -667,6 +647,7 @@ end
 -- REST FUNCTION
 
 function rest(beats, bpm)
+    if _G.STOPIT then return end
     local waitTime = (beats / bpm) * 60 -- beats to secs
     if errormargin == 0 then
         task.wait(waitTime)
@@ -681,6 +662,7 @@ end
 -- KEYPRESS FUNCTION
 
 function keypress(keys, beats, bpm)
+    if _G.STOPIT then return end
     if pausing then
         resumeEvent.Event:Wait()
     else
@@ -697,6 +679,7 @@ end
 -- KEYSEQUENCE16 FUNCTION
 
 function keysequence16(keys, beats, bpm)
+    if _G.STOPIT then return end
     if pausing then
         resumeEvent.Event:Wait()
     else
@@ -714,9 +697,11 @@ function keysequence16(keys, beats, bpm)
 end
 
 function pedalDown()
+    if _G.STOPIT then return end
     VirtualInputManager:SendKeyEvent(true, Enum.KeyCode.Space, false, game)
 end
 
 function pedalUp()
+    if _G.STOPIT then return end
     VirtualInputManager:SendKeyEvent(false, Enum.KeyCode.Space, false, game)
 end
