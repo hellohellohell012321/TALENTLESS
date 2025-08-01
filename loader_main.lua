@@ -22,7 +22,7 @@ playSound("6493287948", 0.1)
 NotificationLibrary:SendNotification("Success", "Began playing song.", 1)
 
 -- StarterGui.ScreenGui
-local lilgui = Instance.new("ScreenGui", game:GetService("CoreGui"))
+lilgui = Instance.new("ScreenGui", game:GetService("CoreGui"))
 lilgui["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling
 
 -- StarterGui.ScreenGui.Frame
@@ -49,7 +49,7 @@ pausebutton["Position"] = UDim2.new(0.04171, 0, 0.09428, 0)
 pausebutton.BackgroundTransparency = 1
 
 -- StarterGui.ScreenGui.Frame.stop
-local stopbutton = Instance.new("ImageButton", fram)
+stopbutton = Instance.new("ImageButton", fram)
 stopbutton["BorderSizePixel"] = 0
 stopbutton["BackgroundColor3"] = Color3.fromRGB(255, 255, 255)
 stopbutton["Image"] = [[http://www.roblox.com/asset/?id=99665585363395]]
