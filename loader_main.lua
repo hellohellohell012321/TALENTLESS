@@ -586,9 +586,7 @@ local function pressKey(keys, beats, bpm)
     end
 
     if errormargin ~= 0 then
-        if math.random() < 0.66 then -- 2/3% chance to apply delay
-            task.wait(math.random() * (errormargin * 1.5)) -- make the delay 0-half of the error margin
-        end
+        task.wait(math.random() * (errormargin * 2)) -- make the delay 0-half of the error margin
     else end
 end
 
@@ -659,7 +657,7 @@ function rest(beats, bpm)
     if errormargin == 0 then
         task.wait(waitTime)
     else
-        local randomOffset = (math.random() * 2 - 1) * (errormargin * 1.15) -- generate a random number between -errormargin / 2 and +errormargin / 2
+        local randomOffset = (math.random() * 2 - 1) * (errormargin / 2) -- generate a random number between -errormargin / 2 and +errormargin / 2
         wait(waitTime + randomOffset) -- add num above to the og wait
     end
 end
