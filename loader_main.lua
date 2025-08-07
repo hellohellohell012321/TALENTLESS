@@ -476,7 +476,7 @@ local function pressKey(keys, beats, bpm)
     for _, key in ipairs(nonShift) do
 
         local agf = errormargin * 100 -- so 0.01 is 1
-        if math.random(1, 300) <= agf then -- 0.01 is 1/175 chance, 0.04 is 4/175 which is a 2.3%
+        if math.random(1, 500) <= agf then -- 0.01 is 1/175 chance, 0.04 is 4/175 which is a 2.3%
             VirtualInputManager:SendKeyEvent(true, Enum.KeyCode.LeftShift, false, game) -- shift if it applies
             shiftApplied = true
             print("shift applied")
@@ -532,7 +532,7 @@ local function pressKey(keys, beats, bpm)
             VirtualInputManager:SendKeyEvent(true, Enum.KeyCode.LeftShift, false, game)
             
             local agf = errormargin * 100 -- so 0.01 is 1
-            if math.random(1, 300) <= agf then -- 0.01 is 1/200 chance, 0.04 is 4/200
+            if math.random(1, 500) <= agf then -- 0.01 is 1/200 chance, 0.04 is 4/200
                 VirtualInputManager:SendKeyEvent(false, Enum.KeyCode.LeftShift, false, game) -- unshift if it applies
                 unshiftApplied = true
                 print("unshift applied")
@@ -586,8 +586,8 @@ local function pressKey(keys, beats, bpm)
     end
 
     if errormargin ~= 0 then
-        if math.random() < 0.5 then -- 50% chance to apply delay
-            task.wait(math.random() * errormargin / 2) -- make the delay 0-half of the error margin
+        if math.random() < 0.66 then -- 2/3% chance to apply delay
+            task.wait(math.random() * (errormargin * 1.5)) -- make the delay 0-half of the error margin
         end
     else end
 end
@@ -659,7 +659,7 @@ function rest(beats, bpm)
     if errormargin == 0 then
         task.wait(waitTime)
     else
-        local randomOffset = math.random() * errormargin - (errormargin / 3) -- generate a random number between -errormargin / 2 and +errormargin / 2
+        local randomOffset = (math.random() * 2 - 1) * (errormargin * 1.15) -- generate a random number between -errormargin / 2 and +errormargin / 2
         wait(waitTime + randomOffset) -- add num above to the og wait
     end
 end
