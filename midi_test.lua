@@ -497,17 +497,17 @@ local function pressKey(keys, beats, bpm)
             function()
 
                 -- You need to add this before sending the 4 digits:
+                -- Note-ON sequence
                 VirtualInputManager:SendKeyEvent(true, Enum.KeyCode.KeypadMultiply, false, game)
+                VirtualInputManager:SendKeyEvent(false, Enum.KeyCode.KeypadMultiply, false, game)
                 VirtualInputManager:SendKeyEvent(true, numpadMappings[digit1], false, game)
-                VirtualInputManager:SendKeyEvent(true, numpadMappings[digit2], false, game)
-                VirtualInputManager:SendKeyEvent(true, numpadMappings[digit3], false, game)
-                VirtualInputManager:SendKeyEvent(true, numpadMappings[digit4], false, game)
-
-
                 VirtualInputManager:SendKeyEvent(false, numpadMappings[digit1], false, game)
+                VirtualInputManager:SendKeyEvent(true, numpadMappings[digit2], false, game)
                 VirtualInputManager:SendKeyEvent(false, numpadMappings[digit2], false, game)
-                VirtualInputManager:SendKeyEvent(false, numpadMappings[0], false, game)
-                VirtualInputManager:SendKeyEvent(false, numpadMappings[0], false, game)
+                VirtualInputManager:SendKeyEvent(true, numpadMappings[digit3], false, game)
+                VirtualInputManager:SendKeyEvent(false, numpadMappings[digit3], false, game)
+                VirtualInputManager:SendKeyEvent(true, numpadMappings[digit4], false, game)
+                VirtualInputManager:SendKeyEvent(false, numpadMappings[digit4], false, game)
 
                 local waittime
                 local randomOff
@@ -522,6 +522,18 @@ local function pressKey(keys, beats, bpm)
                 end
                 
                 task.wait(waittime)
+
+                -- Note-OFF sequence (multiply + octave + note + 0 + 0)
+                VirtualInputManager:SendKeyEvent(true, Enum.KeyCode.KeypadMultiply, false, game)
+                VirtualInputManager:SendKeyEvent(false, Enum.KeyCode.KeypadMultiply, false, game)
+                VirtualInputManager:SendKeyEvent(true, numpadMappings[digit1], false, game)  -- same octave
+                VirtualInputManager:SendKeyEvent(false, numpadMappings[digit1], false, game)
+                VirtualInputManager:SendKeyEvent(true, numpadMappings[digit2], false, game)  -- same note
+                VirtualInputManager:SendKeyEvent(false, numpadMappings[digit2], false, game)
+                VirtualInputManager:SendKeyEvent(true, numpadMappings[0], false, game)       -- vel=0
+                VirtualInputManager:SendKeyEvent(false, numpadMappings[0], false, game)
+                VirtualInputManager:SendKeyEvent(true, numpadMappings[0], false, game)       -- vel=0
+                VirtualInputManager:SendKeyEvent(false, numpadMappings[0], false, game)
             
             end
         )()
