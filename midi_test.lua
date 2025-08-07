@@ -503,6 +503,12 @@ local function pressKey(keys, beats, bpm)
                 VirtualInputManager:SendKeyEvent(true, numpadMappings[digit3], false, game)
                 VirtualInputManager:SendKeyEvent(true, numpadMappings[digit4], false, game)
 
+
+                VirtualInputManager:SendKeyEvent(false, numpadMappings[digit1], false, game)
+                VirtualInputManager:SendKeyEvent(false, numpadMappings[digit2], false, game)
+                VirtualInputManager:SendKeyEvent(false, numpadMappings[0], false, game)
+                VirtualInputManager:SendKeyEvent(false, numpadMappings[0], false, game)
+
                 local waittime
                 local randomOff
 
@@ -516,11 +522,6 @@ local function pressKey(keys, beats, bpm)
                 end
                 
                 task.wait(waittime)
-
-                VirtualInputManager:SendKeyEvent(false, numpadMappings[digit1], false, game)
-                VirtualInputManager:SendKeyEvent(false, numpadMappings[digit2], false, game)
-                VirtualInputManager:SendKeyEvent(false, numpadMappings[0], false, game)
-                VirtualInputManager:SendKeyEvent(false, numpadMappings[0], false, game)
             
             end
         )()
