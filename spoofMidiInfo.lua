@@ -7,8 +7,10 @@ local ScreenGui = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
 local title = Instance.new("TextLabel")
 local uic2 = Instance.new("UICorner")
-local songname = Instance.new("TextLabel")
+local info = Instance.new("TextLabel")
 local closeButton = Instance.new("TextButton")
+local ImageLabel = Instance.new("ImageLabel")
+local TextLabel = Instance.new("TextLabel")
 
 --Properties:
 
@@ -20,15 +22,15 @@ Frame.AnchorPoint = Vector2.new(0.5, 0.5)
 Frame.BackgroundColor3 = Color3.fromRGB(33, 33, 41)
 Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Frame.BorderSizePixel = 0
-Frame.Position = UDim2.new(0.5, 0, 0.5, 0)
-Frame.Size = UDim2.new(0, 384, 0, 165)
+Frame.Position = UDim2.new(0.524622738, 0, 0.440348536, 0)
+Frame.Size = UDim2.new(0, 384, 0, 296)
 
 title.Name = "title"
 title.Parent = Frame
 title.BackgroundColor3 = Color3.fromRGB(50, 57, 73)
 title.BorderColor3 = Color3.fromRGB(0, 0, 0)
 title.BorderSizePixel = 0
-title.Size = UDim2.new(1, 0, -0.0787878782, 50)
+title.Size = UDim2.new(1, 0, -0.0414047241, 50)
 title.Font = Enum.Font.SourceSansBold
 title.Text = "spoof midi: what is it?"
 title.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -38,21 +40,20 @@ uic2.CornerRadius = UDim.new(0, 4)
 uic2.Name = "uic2"
 uic2.Parent = title
 
-songname.Name = "songname"
-songname.Parent = Frame
-songname.BackgroundColor3 = Color3.fromRGB(76, 82, 101)
-songname.BorderColor3 = Color3.fromRGB(64, 68, 90)
-songname.BorderSizePixel = 4
-songname.LayoutOrder = 1
-songname.Position = UDim2.new(0.0480766296, 0, 0.334014326, 0)
-songname.Size = UDim2.new(0, 347, 0, 84)
-songname.ZIndex = -5
-songname.Font = Enum.Font.SourceSans
-songname.Text = "this option is showing because you're in the game \"piano rooms\". when \"spoof midi\" is turned ON, talentless will tell the game that all of your inputs are coming from a real midi keyboard, not a qwerty keyboard! this makes the autoplay so much more believable, because people will think you are playing on a real piano. to use it, just turn on spoof midi, and play any song!"
-songname.TextColor3 = Color3.fromRGB(255, 255, 255)
-songname.TextScaled = true
-songname.TextSize = 23.000
-songname.TextWrapped = true
+info.Name = "info"
+info.Parent = Frame
+info.BackgroundColor3 = Color3.fromRGB(76, 82, 101)
+info.BorderColor3 = Color3.fromRGB(64, 68, 90)
+info.BorderSizePixel = 4
+info.LayoutOrder = 1
+info.Position = UDim2.new(0.0480766296, 0, 0.620982587, 0)
+info.Size = UDim2.new(0, 347, 0, 98)
+info.Font = Enum.Font.SourceSans
+info.Text = "this option is showing because you're in the game \"piano rooms\". when \"spoof midi\" is turned ON, talentless will tell the game that all of your inputs are coming from a real midi keyboard, not a qwerty keyboard! this makes the autoplay so much more believable, because people will think you are playing on a real piano. to use it, just turn on spoof midi, and play any song!"
+info.TextColor3 = Color3.fromRGB(255, 255, 255)
+info.TextScaled = true
+info.TextSize = 23.000
+info.TextWrapped = true
 
 closeButton.Name = "closeButton"
 closeButton.Parent = Frame
@@ -67,12 +68,34 @@ closeButton.TextColor3 = Color3.fromRGB(255, 255, 255)
 closeButton.TextScaled = true
 closeButton.TextWrapped = true
 
+ImageLabel.Parent = Frame
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageLabel.BorderSizePixel = 0
+ImageLabel.Position = UDim2.new(0.046875, 0, 0.176975965, 0)
+ImageLabel.Size = UDim2.new(0, 258, 0, 204)
+ImageLabel.ZIndex = 0
+ImageLabel.Image = "rbxassetid://136739056545816"
+
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.75, 0, 0.14994894, 0)
+TextLabel.Size = UDim2.new(0, 89, 0, 131)
+TextLabel.Font = Enum.Font.SourceSansBold
+TextLabel.Text = "make sure to turn on midi connect!"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
 closeButton.MouseButton1Click:Connect(
 	function()
 		ScreenGui:Destroy()
 	end
 )
-
 
 -- drag script (not mince)
 
