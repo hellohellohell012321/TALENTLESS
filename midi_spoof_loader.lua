@@ -611,10 +611,8 @@ end
 
 function pedalDown()
     if _G.STOPIT then return end
-    VirtualInputManager:SendKeyEvent(true, Enum.KeyCode.Space, false, game)
 end
 
 function pedalUp()
     if _G.STOPIT then return end
-    VirtualInputManager:SendKeyEvent(false, Enum.KeyCode.Space, false, game)
 end
