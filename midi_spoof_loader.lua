@@ -472,14 +472,18 @@ local function pressKey(keys, beats, bpm)
     local nonShift = {}
 
     -- seperate shift and no shift
-    for i = 1, #keys do
-        local key = keys:sub(i, i)
-        table.insert(nonShift, key)
+
+    if keys:sub(1, 5) == "Ctrl+" then
+        table.insert(nonShift, keys)
+    else 
+        for i = 1, #keys do
+            local key = keys:sub(i, i)
+            table.insert(nonShift, key)
+        end
     end
 
     -- Press non-shift keys first
     for _, key in ipairs(nonShift) do
-        print(key .. ": " .. tostring(keyMappings[key]))
         local digit1 = math.floor(keyMappings[key] / 12) -- get the octave number
         local digit2 = math.floor(keyMappings[key] % 12) -- get the note number within the octave
 
