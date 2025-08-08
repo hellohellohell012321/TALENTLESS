@@ -40,6 +40,7 @@ local songname = Instance.new("TextLabel")
 local bpmbox = Instance.new("TextBox")
 local playsong = Instance.new("TextButton")
 local minimizeButton = Instance.new("TextButton")
+local toggle = Instance.new("TextButton")
 
 --Properties:
 
@@ -264,6 +265,29 @@ minimizeButton.Text = "—"
 minimizeButton.TextColor3 = Color3.fromRGB(255, 255, 255)
 minimizeButton.TextScaled = true
 minimizeButton.TextWrapped = true
+
+toggle.Name = "toggle"
+toggle.Parent = ScreenGui
+toggle.BackgroundColor3 = Color3.fromRGB(50, 57, 73)
+toggle.BorderColor3 = Color3.fromRGB(64, 68, 90)
+toggle.BorderSizePixel = 4
+toggle.AnchorPoint = Vector2.new(0, 0.5)
+toggle.Position = UDim2.new(0, 0, 0.5, 0)
+toggle.Size = UDim2.new(0, 136, 0, 40)
+toggle.Font = Enum.Font.SourceSansBold
+toggle.Text = "toggle ui"
+toggle.TextColor3 = Color3.fromRGB(255, 255, 255)
+toggle.TextSize = 29.000
+
+toggle.MouseButton1Click:Connect(function()
+    frame.Visible = not frame.Visible
+    if frame.Visible then
+        playSound(70452176150315, 0.1)
+    else
+        playSound(1524549907, 0.1) 
+    end
+end)
+
 
 local minimized = false
 minimizeButton.MouseButton1Click:Connect(function()
