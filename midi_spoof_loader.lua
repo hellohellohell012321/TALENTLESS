@@ -230,6 +230,27 @@ function stopPlayingSongs()
     print("stopped.")
     _G.STOPIT = true
 
+    function pressKey(keys, beats, bpm)
+    end
+
+    function pressnote(note, octave, beats, bpm)
+    end
+
+    function rest(beats, bpm)
+    end
+
+    function keypress(keys, beats, bpm)
+    end
+
+    function keysequence16(keys, beats, bpm)
+    end
+
+    function finishedSong()
+    end
+
+    function adjustVelocity(h)
+    end
+
     songisplaying = false
 
     playSound("6493287948", 0.1)
