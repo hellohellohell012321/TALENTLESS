@@ -505,6 +505,9 @@ local function pressKey(keys, beats, bpm)
 
     -- Press non-shift keys first
     for _, key in ipairs(nonShift) do
+        if not keyMappings[key] then
+            return
+        end
         local digit1 = math.floor(keyMappings[key] / 12) -- get the octave number
         local digit2 = math.floor(keyMappings[key] % 12) -- get the note number within the octave
         print(key .. ": " .. keyMappings[key])
