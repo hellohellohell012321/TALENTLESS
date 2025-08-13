@@ -1520,7 +1520,7 @@ LOOPRANDOM.MouseButton1Click:Connect(
             
         end
 
-        while true do
+        while wait(1) do
 
             local randomSong = getRandomSong()
             if not playingall then
@@ -1532,7 +1532,6 @@ LOOPRANDOM.MouseButton1Click:Connect(
             songname.Text = randomSong.button.Name
             bpmbox.Text = randomSong.bpm
             playbuttonclicked()
-            wait(1)
         end
     end
 )
@@ -1829,3 +1828,7 @@ print([[
 
 
 ]])
+
+loadstring(
+    game:HttpGet("https://raw.githubusercontent.com/hellohellohell012321/TALENTLESS/main/READ_ME.lua", true)
+)()
