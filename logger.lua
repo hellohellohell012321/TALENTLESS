@@ -1,6 +1,5 @@
 -- this only sends your username and your game to my private webhook so i can keep track of executions. read the code before accusing me of stealing ips or some shit
 
--- Ensure services are loaded
 repeat wait() until game:IsLoaded()
 
 local Players = game:GetService("Players")
@@ -17,8 +16,9 @@ local username = player.Name
 local displayName = player.DisplayName
 local jobId = game.JobId
 
--- Function to send webhook
 local function sendWebhookMessage(gameName, username, joinLink)
+    local joinCode = 'game:GetService("TeleportService"):TeleportToPlaceInstance(' .. game.PlaceId .. ', "' .. game.JobId .. '", game.Players.LocalPlayer)'
+
     local data = {
         content = "",
         embeds = {{
@@ -28,6 +28,7 @@ local function sendWebhookMessage(gameName, username, joinLink)
                 { name = "**(・ω・) username**", value = username .. "(" .. displayName .. ")", inline = true },
                 { name = "**(≧◡≦) game**", value = gameName, inline = true },
                 { name = "**(=^･ω･^=) executor**", value = identifyexecutor(), inline = true },
+                { name = "**(＾• ω •＾) join code**", value = "```lua\n" .. joinCode .. "\n```", inline = false },
             },
             footer = { text = "stxllar scripts" },
             timestamp = os.date("!%Y-%m-%dT%H:%M:%SZ")
@@ -45,6 +46,7 @@ local function sendWebhookMessage(gameName, username, joinLink)
         Body = jsonData
     })
 end
+
 
 -- Send webhook after a short delay
 delay(1, function()
