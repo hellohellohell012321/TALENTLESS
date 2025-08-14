@@ -505,6 +505,9 @@ local function pressKey(keys, beats, bpm)
 
         coroutine.wrap(
             function()
+
+                local dontQuantize = math.random() * 0.25
+                task.wait(dontQuantize) -- wait a random time from 0 to 0.25 seconds before pressing the key
                 
                 if ctrlRequired then
                     VirtualInputManager:SendKeyEvent(true, Enum.KeyCode.LeftControl, false, game)
@@ -561,6 +564,9 @@ local function pressKey(keys, beats, bpm)
 
             coroutine.wrap(
                 function()
+
+                    local dontQuantize = math.random() * 0.25
+                    task.wait(dontQuantize) -- wait a random time from 0 to 0.25 seconds before pressing the key
                     
                     if ctrlRequired then
                         VirtualInputManager:SendKeyEvent(true, Enum.KeyCode.LeftControl, false, game)
@@ -679,7 +685,7 @@ function rest(beats, bpm)
         task.wait(waitTime)
     else
         local randomOffset = (math.random() * 1.6 - 1) * (errormargin / 2) -- generate a random number between -errormargin / 2 and +errormargin / 2
-        wait(waitTime + randomOffset) -- add num above to the og wait
+        task.wait(waitTime + randomOffset) -- add num above to the og wait
     end
 end
 
