@@ -679,7 +679,7 @@ function rest(beats, bpm)
         task.wait(waitTime)
     else
         local randomOffset = (math.random() * 1.6 - 1) * (errormargin / 2) -- generate a random number between -errormargin / 2 and +errormargin / 2
-        task.wait(waitTime + randomOffset) -- add num above to the og wait
+        wait(waitTime + randomOffset) -- add num above to the og wait
     end
 end
 
