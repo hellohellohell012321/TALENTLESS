@@ -1,0 +1,1437 @@
+-- 1
+
+
+pressnote("E", 3, 0.5, bpm)
+rest(0.5, bpm)
+pressnote("C", 3, 0.5, bpm)
+rest(0.5, bpm)
+
+pressnote("E", 3, 0.5, bpm)
+rest(0.5, bpm)
+pressnote("C", 3, 0.5, bpm)
+rest(0.5, bpm)
+
+pressnote("E", 3, 0.5, bpm)
+rest(0.5, bpm)
+pressnote("C", 3, 0.5, bpm)
+rest(0.5, bpm)
+
+pressnote("E", 3, 0.5, bpm)
+rest(0.5, bpm)
+pressnote("C", 3, 0.5, bpm)
+rest(0.5, bpm)
+
+
+-- 2
+
+
+pressnote("E", 3, 0.5, bpm)
+rest(0.5, bpm)
+pressnote("C", 3, 0.5, bpm)
+rest(0.5, bpm)
+
+pressnote("E", 3, 0.5, bpm)
+rest(0.5, bpm)
+pressnote("C", 3, 0.5, bpm)
+rest(0.5, bpm)
+
+pressnote("E", 3, 0.5, bpm)
+rest(0.5, bpm)
+pressnote("C", 3, 0.5, bpm)
+rest(0.5, bpm)
+
+pressnote("E", 3, 0.5, bpm)
+rest(0.5, bpm)
+pressnote("C", 3, 0.5, bpm)
+rest(0.5, bpm)
+
+
+-- 3
+
+
+pressnote("E", 3, 0.5, bpm)
+rest(0.5, bpm)
+pressnote("C", 3, 0.5, bpm)
+rest(0.5, bpm)
+
+pressnote("E", 3, 0.5, bpm)
+rest(0.5, bpm)
+pressnote("C", 3, 0.5, bpm)
+rest(0.5, bpm)
+
+pressnote("E", 3, 0.5, bpm)
+rest(0.5, bpm)
+pressnote("C", 3, 0.5, bpm)
+rest(0.5, bpm)
+
+pressnote("E", 3, 0.5, bpm)
+rest(0.5, bpm)
+pressnote("C", 3, 0.5, bpm)
+rest(0.5, bpm)
+
+
+-- 4
+
+
+pressnote("E", 3, 0.5, bpm)
+rest(0.5, bpm)
+pressnote("C", 3, 0.5, bpm)
+rest(0.5, bpm)
+
+pressnote("A", 2, 1, bpm)
+pressnote("A", 3, 1, bpm)
+pressnote("E", 3, 0.5, bpm)
+rest(0.5, bpm)
+pressnote("C", 3, 0.5, bpm)
+rest(0.5, bpm)
+
+pressnote("E", 3, 0.5, bpm)
+rest(0.5, bpm)
+pressnote("C", 3, 0.5, bpm)
+rest(0.5, bpm)
+
+pressnote("E", 3, 0.5, bpm)
+rest(0.5, bpm)
+pressnote("C", 3, 0.5, bpm)
+rest(0.5, bpm)
+
+
+-- 5
+
+
+pressnote("B", 2, 1, bpm)
+pressnote("B", 3, 1, bpm)
+pressnote("E", 3, 0.5, bpm)
+rest(0.5, bpm)
+pressnote("D", 3, 0.5, bpm)
+rest(0.5, bpm)
+
+pressnote("E", 3, 0.5, bpm)
+rest(0.5, bpm)
+pressnote("D", 3, 0.5, bpm)
+rest(0.5, bpm)
+
+pressnote("E", 3, 0.5, bpm)
+rest(0.5, bpm)
+pressnote("D", 3, 0.5, bpm)
+rest(0.5, bpm)
+
+pressnote("E", 3, 0.5, bpm)
+rest(0.5, bpm)
+pressnote("D", 3, 0.5, bpm)
+rest(0.5, bpm)
+
+
+-- 6
+
+
+pressnote("E", 3, 0.5, bpm)
+rest(0.5, bpm)
+pressnote("D", 3, 0.5, bpm)
+rest(0.5, bpm)
+
+pressnote("E", 3, 0.5, bpm)
+rest(0.5, bpm)
+pressnote("D", 3, 0.5, bpm)
+rest(0.5, bpm)
+
+pressnote("A", 2, 1, bpm)
+pressnote("A", 3, 1, bpm)
+pressnote("E", 3, 0.5, bpm)
+rest(0.5, bpm)
+pressnote("C", 3, 0.5, bpm)
+rest(0.5, bpm)
+
+pressnote("B", 2, 1, bpm)
+pressnote("B", 3, 1, bpm)
+pressnote("E", 3, 0.5, bpm)
+rest(0.5, bpm)
+pressnote("D", 3, 0.5, bpm)
+rest(0.5, bpm)
+
+
+-- 7
+
+
+pressnote("C", 3, 1, bpm)
+pressnote("C", 4, 1, bpm)
+pressnote("E", 3, 0.5, bpm)
+rest(0.5, bpm)
+pressnote("D", 3, 0.5, bpm)
+rest(0.5, bpm)
+
+pressnote("B", 2, 1, bpm)
+pressnote("B", 3, 1, bpm)
+pressnote("E", 3, 0.5, bpm)
+rest(0.5, bpm)
+pressnote("D", 3, 0.5, bpm)
+rest(0.5, bpm)
+
+pressnote("A", 2, 1, bpm)
+pressnote("A", 3, 1, bpm)
+pressnote("E", 3, 0.5, bpm)
+rest(0.5, bpm)
+pressnote("D", 3, 0.5, bpm)
+rest(0.5, bpm)
+
+pressnote("B", 2, 1, bpm)
+pressnote("B", 3, 1, bpm)
+pressnote("E", 3, 0.5, bpm)
+rest(0.5, bpm)
+pressnote("D", 3, 0.5, bpm)
+rest(0.5, bpm)
+
+
+-- 8
+
+
+pressnote("C", 3, 3, bpm)
+pressnote("C", 4, 3, bpm)
+pressnote("E", 3, 0.5, bpm)
+rest(0.5, bpm)
+pressnote("D", 3, 0.5, bpm)
+rest(0.5, bpm)
+
+pressnote("E", 3, 0.5, bpm)
+rest(0.5, bpm)
+pressnote("D", 3, 0.5, bpm)
+rest(0.5, bpm)
+
+pressnote("E", 3, 0.5, bpm)
+rest(0.5, bpm)
+pressnote("D", 3, 0.5, bpm)
+rest(0.5, bpm)
+
+pressnote("B", 3, 3, bpm)
+pressnote("E", 3, 0.5, bpm)
+rest(0.5, bpm)
+pressnote("D", 3, 0.5, bpm)
+rest(0.5, bpm)
+
+
+-- 9
+
+
+pressnote("E", 3, 0.5, bpm)
+rest(0.5, bpm)
+pressnote("D", 3, 0.5, bpm)
+rest(0.5, bpm)
+
+pressnote("E", 3, 0.5, bpm)
+rest(0.5, bpm)
+pressnote("D", 3, 0.5, bpm)
+rest(0.5, bpm)
+
+pressnote("E", 3, 1, bpm)
+pressnote("A", 3, 1, bpm)
+pressnote("C", 2, 1, bpm)
+rest(1, bpm)
+
+pressnote("F", 2, 1, bpm)
+pressnote("E", 4, 1, bpm)
+rest(1, bpm)
+
+
+-- 10
+
+
+pressnote("A", 2, 1, bpm)
+rest(1, bpm)
+
+pressnote("C", 3, 3, bpm)
+pressnote("E", 3, 1, bpm)
+pressnote("A", 3, 1, bpm)
+rest(1, bpm)
+
+pressnote("E", 4, 1, bpm)
+rest(1, bpm)
+
+rest(1, bpm)
+
+
+-- 11
+
+
+pressnote("D", 2, 1, bpm)
+pressnote("E", 3, 1, bpm)
+pressnote("A", 3, 1, bpm)
+rest(1, bpm)
+
+pressnote("E", 4, 1, bpm)
+pressnote("G", 2, 1, bpm)
+rest(1, bpm)
+
+pressnote("A", 2, 1, bpm)
+rest(1, bpm)
+
+pressnote("E", 3, 1, bpm)
+pressnote("B", 3, 1, bpm)
+pressnote("D", 3, 3, bpm)
+rest(1, bpm)
+
+
+-- 12
+
+
+pressnote("E", 4, 1, bpm)
+rest(1, bpm)
+
+pressnote("B", 3, 1, bpm)
+rest(1, bpm)
+
+pressnote("E", 3, 1, bpm)
+pressnote("E", 2, 1, bpm)
+rest(1, bpm)
+
+pressnote("A", 2, 1, bpm)
+pressnote("E", 4, 1, bpm)
+rest(1, bpm)
+
+
+-- 13
+
+
+pressnote("C", 3, 1, bpm)
+rest(1, bpm)
+
+pressnote("E", 3, 3, bpm)
+pressnote("C", 4, 1, bpm)
+rest(1, bpm)
+
+pressnote("E", 4, 1, bpm)
+rest(1, bpm)
+
+pressnote("C", 4, 1, bpm)
+rest(1, bpm)
+
+
+-- 14
+
+
+pressnote("G", 2, 1, bpm)
+pressnote("D", 4, 1, bpm)
+rest(1, bpm)
+
+pressnote("B", 2, 1, bpm)
+pressnote("E", 4, 1, bpm)
+rest(1, bpm)
+
+pressnote("D", 3, 1, bpm)
+rest(1, bpm)
+
+pressnote("D", 3, 1, bpm)
+pressnote("G", 3, 3, bpm)
+pressnote("D", 4, 1, bpm)
+rest(1, bpm)
+
+
+-- 15
+
+
+pressnote("E", 4, 1, bpm)
+rest(1, bpm)
+
+pressnote("B", 3, 1, bpm)
+rest(1, bpm)
+
+pressnote("C", 2, 2, bpm)
+pressnote("F", 2, 3, bpm)
+pressnote("A", 2, 1, bpm)
+pressnote("E", 3, 1, bpm)
+pressnote("A", 3, 1, bpm)
+rest(1, bpm)
+
+pressnote("E", 4, 1, bpm)
+rest(1, bpm)
+
+
+-- 16
+
+
+pressnote("C", 2, 1, bpm)
+rest(1, bpm)
+
+pressnote("F", 1, 3, bpm)
+pressnote("F", 2, 3, bpm)
+pressnote("A", 2, 1, bpm)
+pressnote("E", 3, 1, bpm)
+pressnote("A", 3, 1, bpm)
+rest(1, bpm)
+
+pressnote("E", 4, 1, bpm)
+rest(1, bpm)
+
+pressnote("C", 4, 1, bpm)
+rest(1, bpm)
+
+
+-- 17
+
+
+pressnote("D", 2, 2, bpm)
+pressnote("G", 2, 3, bpm)
+pressnote("B", 2, 1, bpm)
+pressnote("E", 3, 1, bpm)
+pressnote("B", 3, 1, bpm)
+rest(1, bpm)
+
+pressnote("E", 4, 1, bpm)
+rest(1, bpm)
+
+pressnote("D", 2, 1, bpm)
+rest(1, bpm)
+
+pressnote("G", 1, 3, bpm)
+pressnote("G", 2, 3, bpm)
+pressnote("B", 2, 1, bpm)
+pressnote("E", 3, 1, bpm)
+pressnote("B", 3, 1, bpm)
+rest(1, bpm)
+
+
+-- 18
+
+
+pressnote("E", 4, 1, bpm)
+rest(1, bpm)
+
+pressnote("D", 4, 1, bpm)
+rest(1, bpm)
+
+pressnote("E", 2, 2, bpm)
+pressnote("A", 2, 3, bpm)
+pressnote("C", 3, 1, bpm)
+pressnote("E", 3, 1, bpm)
+rest(1, bpm)
+
+pressnote("E", 4, 1, bpm)
+rest(1, bpm)
+
+
+-- 19
+
+
+pressnote("E", 2, 1, bpm)
+rest(1, bpm)
+
+pressnote("A", 1, 3, bpm)
+pressnote("A", 2, 3, bpm)
+pressnote("C", 3, 1, bpm)
+pressnote("E", 3, 1, bpm)
+rest(1, bpm)
+
+pressnote("E", 4, 1, bpm)
+rest(1, bpm)
+
+pressnote("C", 4, 1, bpm)
+rest(1, bpm)
+
+
+-- 20
+
+
+pressnote("D", 2, 2, bpm)
+pressnote("G", 2, 3, bpm)
+pressnote("D", 3, 1, bpm)
+pressnote("D", 4, 1, bpm)
+rest(1, bpm)
+
+pressnote("E", 4, 1, bpm)
+rest(1, bpm)
+
+pressnote("D", 2, 1, bpm)
+rest(1, bpm)
+
+pressnote("G", 1, 3, bpm)
+pressnote("G", 2, 3, bpm)
+pressnote("D", 3, 1, bpm)
+pressnote("D", 4, 1, bpm)
+rest(1, bpm)
+
+
+-- 21
+
+
+pressnote("E", 4, 1, bpm)
+rest(1, bpm)
+
+pressnote("B", 3, 1, bpm)
+rest(1, bpm)
+
+pressnote("E", 1, 3, bpm)
+pressnote("C", 2, 2, bpm)
+pressnote("F", 2, 3, bpm)
+pressnote("A", 2, 1, bpm)
+pressnote("E", 3, 1, bpm)
+pressnote("A", 3, 1, bpm)
+rest(1, bpm)
+
+pressnote("E", 4, 1, bpm)
+rest(1, bpm)
+
+
+-- 22
+
+
+pressnote("C", 2, 1, bpm)
+pressnote("A", 3, 1, bpm)
+rest(1, bpm)
+
+pressnote("F", 1, 3, bpm)
+pressnote("C", 2, 3, bpm)
+pressnote("F", 2, 3, bpm)
+pressnote("A", 2, 1, bpm)
+pressnote("E", 3, 1, bpm)
+pressnote("A", 3, 1, bpm)
+rest(1, bpm)
+
+pressnote("E", 4, 1, bpm)
+rest(1, bpm)
+
+pressnote("A", 3, 1, bpm)
+rest(1, bpm)
+
+
+-- 23
+
+
+pressnote("G", 1, 3, bpm)
+pressnote("D", 2, 2, bpm)
+pressnote("G", 2, 3, bpm)
+pressnote("B", 2, 1, bpm)
+pressnote("E", 3, 1, bpm)
+pressnote("B", 3, 1, bpm)
+rest(1, bpm)
+
+pressnote("E", 4, 1, bpm)
+rest(1, bpm)
+
+pressnote("D", 2, 1, bpm)
+rest(1, bpm)
+
+pressnote("G", 1, 3, bpm)
+pressnote("D", 2, 3, bpm)
+pressnote("G", 2, 3, bpm)
+pressnote("B", 2, 1, bpm)
+pressnote("E", 3, 1, bpm)
+pressnote("B", 3, 1, bpm)
+rest(1, bpm)
+
+
+-- 24
+
+
+pressnote("E", 4, 1, bpm)
+rest(1, bpm)
+
+pressnote("B", 3, 1, bpm)
+rest(1, bpm)
+
+pressnote("A", 1, 3, bpm)
+pressnote("E", 2, 2, bpm)
+pressnote("A", 2, 3, bpm)
+pressnote("C", 3, 1, bpm)
+pressnote("E", 3, 1, bpm)
+pressnote("C", 4, 1, bpm)
+rest(1, bpm)
+
+pressnote("E", 4, 1, bpm)
+rest(1, bpm)
+
+
+-- 25
+
+
+pressnote("E", 2, 1, bpm)
+pressnote("C", 4, 1, bpm)
+rest(1, bpm)
+
+pressnote("A", 1, 3, bpm)
+pressnote("E", 2, 3, bpm)
+pressnote("A", 2, 3, bpm)
+pressnote("C", 3, 1, bpm)
+pressnote("E", 3, 1, bpm)
+pressnote("C", 4, 1, bpm)
+rest(1, bpm)
+
+pressnote("E", 4, 1, bpm)
+rest(1, bpm)
+
+pressnote("C", 4, 1, bpm)
+rest(1, bpm)
+
+
+-- 26
+
+pressnote("G", 1, 3, bpm)
+pressnote("D", 2, 6, bpm)
+pressnote("G", 2, 3, bpm)
+pressnote("D", 3, 1, bpm)
+pressnote("D", 4, 1, bpm)
+rest(1, bpm)
+
+pressnote("E", 4, 1, bpm)
+rest(1, bpm)
+
+pressnote("D", 4, 1, bpm)
+rest(1, bpm)
+
+pressnote("G", 1, 3, bpm)
+pressnote("G", 2, 3, bpm)
+pressnote("D", 3, 1, bpm)
+pressnote("D", 4, 1, bpm)
+rest(1, bpm)
+
+
+-- 27
+
+
+pressnote("E", 4, 1, bpm)
+rest(1, bpm)
+
+pressnote("B", 3, 1, bpm)
+rest(1, bpm)
+
+pressnote("C", 2, 3, bpm)
+pressnote("F", 2, 3, bpm)
+pressnote("A", 2, 1, bpm)
+pressnote("E", 3, 1, bpm)
+pressnote("A", 3, 1, bpm)
+rest(1, bpm)
+
+pressnote("E", 4, 1, bpm)
+rest(1, bpm)
+
+
+-- 28
+
+
+pressnote("A", 3, 1, bpm)
+rest(1, bpm)
+
+pressnote("F", 1, 3, bpm)
+pressnote("C", 2, 3, bpm)
+pressnote("F", 2, 3, bpm)
+pressnote("A", 2, 1, bpm)
+pressnote("E", 3, 1, bpm)
+pressnote("A", 3, 1, bpm)
+rest(1, bpm)
+
+pressnote("E", 4, 1, bpm)
+rest(1, bpm)
+
+pressnote("A", 3, 1, bpm)
+rest(1, bpm)
+
+
+-- 29
+
+
+pressnote("D", 1, 3, bpm)
+pressnote("G", 1, 3, bpm)
+pressnote("B", 2, 1, bpm)
+pressnote("E", 3, 1, bpm)
+pressnote("B", 3, 1, bpm)
+rest(1, bpm)
+
+pressnote("E", 4, 1, bpm)
+rest(1, bpm)
+
+pressnote("B", 3, 1, bpm)
+rest(1, bpm)
+
+pressnote("G", 1, 3, bpm)
+pressnote("D", 2, 3, bpm)
+pressnote("G", 2, 3, bpm)
+pressnote("B", 2, 1, bpm)
+pressnote("E", 3, 1, bpm)
+pressnote("B", 3, 1, bpm)
+rest(1, bpm)
+
+
+-- 30
+
+
+pressnote("E", 4, 1, bpm)
+rest(1, bpm)
+
+pressnote("B", 3, 1, bpm)
+rest(1, bpm)
+
+pressnote("E", 1, 3, bpm)
+pressnote("A", 1, 3, bpm)
+pressnote("C", 3, 1, bpm)
+pressnote("E", 3, 1, bpm)
+pressnote("C", 4, 1, bpm)
+rest(1, bpm)
+
+pressnote("E", 4, 1, bpm)
+rest(1, bpm)
+
+
+-- 31
+
+
+pressnote("C", 4, 1, bpm)
+rest(1, bpm)
+
+pressnote("A", 1, 3, bpm)
+pressnote("E", 2, 3, bpm)
+pressnote("A", 2, 3, bpm)
+pressnote("C", 3, 1, bpm)
+pressnote("E", 3, 1, bpm)
+pressnote("C", 4, 1, bpm)
+rest(1, bpm)
+
+pressnote("E", 4, 1, bpm)
+rest(1, bpm)
+
+pressnote("C", 4, 1, bpm)
+rest(1, bpm)
+
+
+-- 32
+
+
+pressnote("D", 1, 3, bpm)
+pressnote("G", 1, 3, bpm)
+pressnote("D", 3, 1, bpm)
+pressnote("D", 4, 1, bpm)
+rest(1, bpm)
+
+pressnote("E", 4, 1, bpm)
+rest(1, bpm)
+
+pressnote("D", 4, 1, bpm)
+rest(1, bpm)
+
+pressnote("G", 1, 3, bpm)
+pressnote("D", 2, 3, bpm)
+pressnote("G", 2, 3, bpm)
+pressnote("D", 3, 1, bpm)
+pressnote("D", 4, 1, bpm)
+rest(1, bpm)
+
+
+-- 33
+
+
+pressnote("E", 4, 1, bpm)
+rest(1, bpm)
+
+pressnote("D", 4, 1, bpm)
+rest(1, bpm)
+
+pressnote("E", 1, 2, bpm)
+pressnote("A", 1, 8, bpm)
+pressnote("E", 3, 8, bpm)
+pressnote("A", 3, 8, bpm)
+pressnote("E", 4, 8, bpm)
+rest(1, bpm)
+
+
+-- 34
+
+
+pressnote("E", 1, 2, bpm)
+rest(1, bpm)
+
+rest(1, bpm)
+
+pressnote("E", 1, 2, bpm)
+rest(1, bpm)
+
+rest(1, bpm)
+
+
+-- 35
+
+
+pressnote("E", 1, 2, bpm)
+rest(1, bpm)
+
+rest(1, bpm)
+
+-- extra (not part of bar)
+pressnote("E", 1, 2, bpm)
+rest(1, bpm)
+-- end of extra
+
+-- chords
+pressnote("E", 1, 4, bpm)
+pressnote("A", 1, 1, bpm)
+--arp
+pressnote("E", 2, 0.25, bpm)
+pressnote("A", 2, 0.25, bpm)
+pressnote("E", 3, 0.25, bpm)
+pressnote("C", 4, 0.25, bpm)
+rest(0.25, bpm)
+pressnote("E", 2, 0.25, bpm)
+pressnote("A", 2, 0.25, bpm)
+pressnote("E", 3, 0.25, bpm)
+pressnote("A", 3, 0.25, bpm)
+rest(0.25, bpm)
+pressnote("E", 2, 0.25, bpm)
+pressnote("A", 2, 0.25, bpm)
+pressnote("E", 3, 0.25, bpm)
+pressnote("C", 4, 0.25, bpm)
+rest(0.25, bpm)
+pressnote("E", 2, 0.25, bpm)
+pressnote("A", 2, 0.25, bpm)
+pressnote("E", 3, 0.25, bpm)
+pressnote("A", 3, 0.25, bpm)
+rest(0.25, bpm)
+
+--chords
+pressnote("A", 1, 1, bpm)
+--arp
+pressnote("E", 2, 0.25, bpm)
+pressnote("A", 2, 0.25, bpm)
+pressnote("E", 3, 0.25, bpm)
+pressnote("C", 4, 0.25, bpm)
+rest(0.25, bpm)
+pressnote("E", 2, 0.25, bpm)
+pressnote("A", 2, 0.25, bpm)
+pressnote("E", 3, 0.25, bpm)
+pressnote("A", 3, 0.25, bpm)
+rest(0.25, bpm)
+pressnote("E", 2, 0.25, bpm)
+pressnote("A", 2, 0.25, bpm)
+pressnote("E", 3, 0.25, bpm)
+pressnote("C", 4, 0.25, bpm)
+rest(0.25, bpm)
+pressnote("E", 2, 0.25, bpm)
+pressnote("A", 2, 0.25, bpm)
+pressnote("E", 3, 0.25, bpm)
+pressnote("A", 3, 0.25, bpm)
+rest(0.25, bpm)
+
+
+-- 36
+
+
+--chords
+pressnote("A", 1, 1, bpm)
+--arp
+pressnote("E", 2, 0.25, bpm)
+pressnote("A", 2, 0.25, bpm)
+pressnote("E", 3, 0.25, bpm)
+pressnote("C", 4, 0.25, bpm)
+rest(0.25, bpm)
+pressnote("E", 2, 0.25, bpm)
+pressnote("A", 2, 0.25, bpm)
+pressnote("E", 3, 0.25, bpm)
+pressnote("A", 3, 0.25, bpm)
+rest(0.25, bpm)
+pressnote("E", 2, 0.25, bpm)
+pressnote("A", 2, 0.25, bpm)
+pressnote("E", 3, 0.25, bpm)
+pressnote("C", 4, 0.25, bpm)
+rest(0.25, bpm)
+pressnote("E", 2, 0.25, bpm)
+pressnote("A", 2, 0.25, bpm)
+pressnote("E", 3, 0.25, bpm)
+pressnote("A", 3, 0.25, bpm)
+rest(0.25, bpm)
+
+--chords
+pressnote("A", 1, 1, bpm)
+--arp
+pressnote("E", 2, 0.25, bpm)
+pressnote("A", 2, 0.25, bpm)
+pressnote("E", 3, 0.25, bpm)
+pressnote("D", 4, 0.25, bpm)
+rest(0.25, bpm)
+pressnote("E", 2, 0.25, bpm)
+pressnote("A", 2, 0.25, bpm)
+pressnote("E", 3, 0.25, bpm)
+pressnote("A", 3, 0.25, bpm)
+rest(0.25, bpm)
+pressnote("E", 2, 0.25, bpm)
+pressnote("A", 2, 0.25, bpm)
+pressnote("E", 3, 0.25, bpm)
+pressnote("C", 4, 0.25, bpm)
+rest(0.25, bpm)
+pressnote("E", 2, 0.25, bpm)
+pressnote("A", 2, 0.25, bpm)
+pressnote("E", 3, 0.25, bpm)
+pressnote("A", 3, 0.25, bpm)
+rest(0.25, bpm)
+
+--chords
+pressnote("G", 1, 1, bpm)
+pressnote("D", 1, 4, bpm)
+--arp
+pressnote("E", 2, 0.25, bpm)
+pressnote("A", 2, 0.25, bpm)
+pressnote("E", 3, 0.25, bpm)
+pressnote("D", 4, 0.25, bpm)
+rest(0.25, bpm)
+pressnote("E", 2, 0.25, bpm)
+pressnote("A", 2, 0.25, bpm)
+pressnote("E", 3, 0.25, bpm)
+pressnote("A", 3, 0.25, bpm)
+rest(0.25, bpm)
+pressnote("E", 2, 0.25, bpm)
+pressnote("A", 2, 0.25, bpm)
+pressnote("E", 3, 0.25, bpm)
+pressnote("D", 4, 0.25, bpm)
+rest(0.25, bpm)
+pressnote("E", 2, 0.25, bpm)
+pressnote("A", 2, 0.25, bpm)
+pressnote("E", 3, 0.25, bpm)
+pressnote("A", 3, 0.25, bpm)
+rest(0.25, bpm)
+
+--chords
+pressnote("G", 1, 1, bpm)
+--arp
+pressnote("E", 2, 0.25, bpm)
+pressnote("A", 2, 0.25, bpm)
+pressnote("E", 3, 0.25, bpm)
+pressnote("D", 4, 0.25, bpm)
+rest(0.25, bpm)
+pressnote("E", 2, 0.25, bpm)
+pressnote("A", 2, 0.25, bpm)
+pressnote("E", 3, 0.25, bpm)
+pressnote("A", 3, 0.25, bpm)
+rest(0.25, bpm)
+pressnote("E", 2, 0.25, bpm)
+pressnote("A", 2, 0.25, bpm)
+pressnote("E", 3, 0.25, bpm)
+pressnote("D", 4, 0.25, bpm)
+rest(0.25, bpm)
+pressnote("E", 2, 0.25, bpm)
+pressnote("A", 2, 0.25, bpm)
+pressnote("E", 3, 0.25, bpm)
+pressnote("A", 3, 0.25, bpm)
+rest(0.25, bpm)
+
+
+-- 37
+
+
+--chords
+pressnote("G", 1, 1, bpm)
+--arp
+pressnote("E", 2, 0.25, bpm)
+pressnote("A", 2, 0.25, bpm)
+pressnote("E", 3, 0.25, bpm)
+pressnote("D", 4, 0.25, bpm)
+rest(0.25, bpm)
+pressnote("E", 2, 0.25, bpm)
+pressnote("A", 2, 0.25, bpm)
+pressnote("E", 3, 0.25, bpm)
+pressnote("A", 3, 0.25, bpm)
+rest(0.25, bpm)
+pressnote("E", 2, 0.25, bpm)
+pressnote("A", 2, 0.25, bpm)
+pressnote("E", 3, 0.25, bpm)
+pressnote("D", 4, 0.25, bpm)
+rest(0.25, bpm)
+pressnote("E", 2, 0.25, bpm)
+pressnote("A", 2, 0.25, bpm)
+pressnote("E", 3, 0.25, bpm)
+pressnote("A", 3, 0.25, bpm)
+rest(0.25, bpm)
+
+--chords
+pressnote("G", 1, 1, bpm)
+--arp
+pressnote("E", 2, 0.25, bpm)
+pressnote("A", 2, 0.25, bpm)
+pressnote("E", 3, 0.25, bpm)
+pressnote("D", 4, 0.25, bpm)
+rest(0.25, bpm)
+pressnote("E", 2, 0.25, bpm)
+pressnote("A", 2, 0.25, bpm)
+pressnote("E", 3, 0.25, bpm)
+pressnote("A", 3, 0.25, bpm)
+rest(0.25, bpm)
+pressnote("E", 2, 0.25, bpm)
+pressnote("A", 2, 0.25, bpm)
+pressnote("E", 3, 0.25, bpm)
+pressnote("D", 4, 0.25, bpm)
+rest(0.25, bpm)
+pressnote("E", 2, 0.25, bpm)
+pressnote("A", 2, 0.25, bpm)
+pressnote("E", 3, 0.25, bpm)
+pressnote("A", 3, 0.25, bpm)
+rest(0.25, bpm)
+
+--chords
+pressnote("C", 2, 1, bpm)
+pressnote("F", 1, 4, bpm)
+--arp
+pressnote("F", 2, 0.25, bpm)
+pressnote("A", 2, 0.25, bpm)
+pressnote("F", 3, 0.25, bpm)
+pressnote("A", 3, 0.25, bpm)
+pressnote("F", 4, 0.25, bpm)
+rest(0.25, bpm)
+pressnote("F", 2, 0.25, bpm)
+pressnote("A", 2, 0.25, bpm)
+pressnote("F", 3, 0.25, bpm)
+pressnote("A", 3, 0.25, bpm)
+pressnote("C", 4, 0.25, bpm)
+rest(0.25, bpm)
+pressnote("F", 2, 0.25, bpm)
+pressnote("A", 2, 0.25, bpm)
+pressnote("F", 3, 0.25, bpm)
+pressnote("A", 3, 0.25, bpm)
+pressnote("F", 4, 0.25, bpm)
+rest(0.25, bpm)
+pressnote("F", 2, 0.25, bpm)
+pressnote("A", 2, 0.25, bpm)
+pressnote("F", 3, 0.25, bpm)
+pressnote("A", 3, 0.25, bpm)
+pressnote("C", 4, 0.25, bpm)
+rest(0.25, bpm)
+
+--chords
+pressnote("C", 2, 1, bpm)
+--arp
+pressnote("F", 2, 0.25, bpm)
+pressnote("A", 2, 0.25, bpm)
+pressnote("F", 3, 0.25, bpm)
+pressnote("A", 3, 0.25, bpm)
+pressnote("F", 4, 0.25, bpm)
+rest(0.25, bpm)
+pressnote("F", 2, 0.25, bpm)
+pressnote("A", 2, 0.25, bpm)
+pressnote("F", 3, 0.25, bpm)
+pressnote("A", 3, 0.25, bpm)
+pressnote("C", 4, 0.25, bpm)
+rest(0.25, bpm)
+pressnote("F", 2, 0.25, bpm)
+pressnote("A", 2, 0.25, bpm)
+pressnote("F", 3, 0.25, bpm)
+pressnote("A", 3, 0.25, bpm)
+pressnote("F", 4, 0.25, bpm)
+rest(0.25, bpm)
+pressnote("F", 2, 0.25, bpm)
+pressnote("A", 2, 0.25, bpm)
+pressnote("F", 3, 0.25, bpm)
+pressnote("A", 3, 0.25, bpm)
+pressnote("C", 4, 0.25, bpm)
+rest(0.25, bpm)
+
+
+--38
+
+
+--chords
+pressnote("C", 2, 1, bpm)
+--arp
+pressnote("F", 2, 0.25, bpm)
+pressnote("A", 2, 0.25, bpm)
+pressnote("F", 3, 0.25, bpm)
+pressnote("A", 3, 0.25, bpm)
+pressnote("G", 4, 0.25, bpm)
+rest(0.25, bpm)
+pressnote("F", 2, 0.25, bpm)
+pressnote("A", 2, 0.25, bpm)
+pressnote("F", 3, 0.25, bpm)
+pressnote("A", 3, 0.25, bpm)
+pressnote("C", 4, 0.25, bpm)
+rest(0.25, bpm)
+pressnote("F", 2, 0.25, bpm)
+pressnote("A", 2, 0.25, bpm)
+pressnote("F", 3, 0.25, bpm)
+pressnote("A", 3, 0.25, bpm)
+pressnote("G", 4, 0.25, bpm)
+rest(0.25, bpm)
+pressnote("F", 2, 0.25, bpm)
+pressnote("A", 2, 0.25, bpm)
+pressnote("F", 3, 0.25, bpm)
+pressnote("A", 3, 0.25, bpm)
+pressnote("C", 4, 0.25, bpm)
+rest(0.25, bpm)
+
+--chords
+pressnote("C", 2, 1, bpm)
+--arp
+pressnote("F", 2, 0.25, bpm)
+pressnote("A", 2, 0.25, bpm)
+pressnote("F", 3, 0.25, bpm)
+pressnote("A", 3, 0.25, bpm)
+pressnote("G", 4, 0.25, bpm)
+rest(0.25, bpm)
+pressnote("F", 2, 0.25, bpm)
+pressnote("A", 2, 0.25, bpm)
+pressnote("F", 3, 0.25, bpm)
+pressnote("A", 3, 0.25, bpm)
+pressnote("C", 4, 0.25, bpm)
+rest(0.25, bpm)
+pressnote("F", 2, 0.25, bpm)
+pressnote("A", 2, 0.25, bpm)
+pressnote("F", 3, 0.25, bpm)
+pressnote("A", 3, 0.25, bpm)
+pressnote("G", 4, 0.25, bpm)
+rest(0.25, bpm)
+pressnote("F", 2, 0.25, bpm)
+pressnote("A", 2, 0.25, bpm)
+pressnote("F", 3, 0.25, bpm)
+pressnote("A", 3, 0.25, bpm)
+pressnote("C", 4, 0.25, bpm)
+rest(0.25, bpm)
+
+--chords
+pressnote("D", 2, 1, bpm)
+pressnote("G", 2, 4, bpm)
+--arp
+pressnote("G", 2, 0.25, bpm)
+pressnote("E", 3, 0.25, bpm)
+pressnote("B", 3, 0.25, bpm)
+pressnote("E", 4, 0.25, bpm)
+pressnote("A", 4, 0.25, bpm)
+rest(0.25, bpm)
+pressnote("G", 2, 0.25, bpm)
+pressnote("E", 3, 0.25, bpm)
+pressnote("B", 3, 0.25, bpm)
+pressnote("E", 4, 0.25, bpm)
+pressnote("G", 4, 0.25, bpm)
+rest(0.25, bpm)
+pressnote("G", 2, 0.25, bpm)
+pressnote("E", 3, 0.25, bpm)
+pressnote("B", 3, 0.25, bpm)
+pressnote("E", 4, 0.25, bpm)
+pressnote("A", 4, 0.25, bpm)
+rest(0.25, bpm)
+pressnote("G", 2, 0.25, bpm)
+pressnote("E", 3, 0.25, bpm)
+pressnote("B", 3, 0.25, bpm)
+pressnote("E", 4, 0.25, bpm)
+pressnote("G", 4, 0.25, bpm)
+rest(0.25, bpm)
+
+--chords
+pressnote("D", 2, 1, bpm)
+--arp
+pressnote("G", 2, 0.25, bpm)
+pressnote("E", 3, 0.25, bpm)
+pressnote("B", 3, 0.25, bpm)
+pressnote("E", 4, 0.25, bpm)
+pressnote("A", 4, 0.25, bpm)
+rest(0.25, bpm)
+pressnote("G", 2, 0.25, bpm)
+pressnote("E", 3, 0.25, bpm)
+pressnote("B", 3, 0.25, bpm)
+pressnote("E", 4, 0.25, bpm)
+pressnote("G", 4, 0.25, bpm)
+rest(0.25, bpm)
+pressnote("G", 2, 0.25, bpm)
+pressnote("E", 3, 0.25, bpm)
+pressnote("B", 3, 0.25, bpm)
+pressnote("E", 4, 0.25, bpm)
+pressnote("A", 4, 0.25, bpm)
+rest(0.25, bpm)
+pressnote("G", 2, 0.25, bpm)
+pressnote("E", 3, 0.25, bpm)
+pressnote("B", 3, 0.25, bpm)
+pressnote("E", 4, 0.25, bpm)
+pressnote("G", 4, 0.25, bpm)
+rest(0.25, bpm)
+
+
+--39
+
+
+--chords
+pressnote("D", 2, 1, bpm)
+--arp
+pressnote("G", 2, 0.25, bpm)
+pressnote("E", 3, 0.25, bpm)
+pressnote("B", 3, 0.25, bpm)
+pressnote("E", 4, 0.25, bpm)
+pressnote("A", 4, 0.25, bpm)
+rest(0.25, bpm)
+pressnote("G", 2, 0.25, bpm)
+pressnote("E", 3, 0.25, bpm)
+pressnote("B", 3, 0.25, bpm)
+pressnote("E", 4, 0.25, bpm)
+pressnote("G", 4, 0.25, bpm)
+rest(0.25, bpm)
+pressnote("G", 2, 0.25, bpm)
+pressnote("E", 3, 0.25, bpm)
+pressnote("B", 3, 0.25, bpm)
+pressnote("E", 4, 0.25, bpm)
+pressnote("A", 4, 0.25, bpm)
+rest(0.25, bpm)
+pressnote("G", 2, 0.25, bpm)
+pressnote("E", 3, 0.25, bpm)
+pressnote("B", 3, 0.25, bpm)
+pressnote("E", 4, 0.25, bpm)
+pressnote("G", 4, 0.25, bpm)
+rest(0.25, bpm)
+
+--chords
+pressnote("D", 2, 1, bpm)
+--arp
+pressnote("G", 2, 0.25, bpm)
+pressnote("E", 3, 0.25, bpm)
+pressnote("B", 3, 0.25, bpm)
+pressnote("E", 4, 0.25, bpm)
+pressnote("A", 4, 0.25, bpm)
+rest(0.25, bpm)
+pressnote("G", 2, 0.25, bpm)
+pressnote("E", 3, 0.25, bpm)
+pressnote("B", 3, 0.25, bpm)
+pressnote("E", 4, 0.25, bpm)
+pressnote("G", 4, 0.25, bpm)
+rest(0.25, bpm)
+pressnote("G", 2, 0.25, bpm)
+pressnote("E", 3, 0.25, bpm)
+pressnote("B", 3, 0.25, bpm)
+pressnote("E", 4, 0.25, bpm)
+pressnote("A", 4, 0.25, bpm)
+rest(0.25, bpm)
+pressnote("G", 2, 0.25, bpm)
+pressnote("E", 3, 0.25, bpm)
+pressnote("B", 3, 0.25, bpm)
+pressnote("E", 4, 0.25, bpm)
+pressnote("G", 4, 0.25, bpm)
+rest(0.25, bpm)
+
+--chords
+pressnote("A", 1, 4, bpm)
+pressnote("E", 2, 1, bpm)
+--arp
+pressnote("A", 2, 0.25, bpm)
+pressnote("E", 3, 0.25, bpm)
+pressnote("C", 4, 0.25, bpm)
+pressnote("E", 4, 0.25, bpm)
+pressnote("C", 5, 0.25, bpm)
+rest(0.25, bpm)
+pressnote("A", 2, 0.25, bpm)
+pressnote("E", 3, 0.25, bpm)
+pressnote("C", 4, 0.25, bpm)
+pressnote("E", 4, 0.25, bpm)
+pressnote("G", 4, 0.25, bpm)
+rest(0.25, bpm)
+pressnote("A", 2, 0.25, bpm)
+pressnote("E", 3, 0.25, bpm)
+pressnote("C", 4, 0.25, bpm)
+pressnote("E", 4, 0.25, bpm)
+pressnote("C", 5, 0.25, bpm)
+rest(0.25, bpm)
+pressnote("A", 2, 0.25, bpm)
+pressnote("E", 3, 0.25, bpm)
+pressnote("C", 4, 0.25, bpm)
+pressnote("E", 4, 0.25, bpm)
+pressnote("G", 4, 0.25, bpm)
+rest(0.25, bpm)
+
+--chords
+pressnote("E", 2, 1, bpm)
+--arp
+pressnote("A", 2, 0.25, bpm)
+pressnote("E", 3, 0.25, bpm)
+pressnote("C", 4, 0.25, bpm)
+pressnote("E", 4, 0.25, bpm)
+pressnote("C", 5, 0.25, bpm)
+rest(0.25, bpm)
+pressnote("A", 2, 0.25, bpm)
+pressnote("E", 3, 0.25, bpm)
+pressnote("C", 4, 0.25, bpm)
+pressnote("E", 4, 0.25, bpm)
+pressnote("G", 4, 0.25, bpm)
+rest(0.25, bpm)
+pressnote("A", 2, 0.25, bpm)
+pressnote("E", 3, 0.25, bpm)
+pressnote("C", 4, 0.25, bpm)
+pressnote("E", 4, 0.25, bpm)
+pressnote("C", 5, 0.25, bpm)
+rest(0.25, bpm)
+pressnote("A", 2, 0.25, bpm)
+pressnote("E", 3, 0.25, bpm)
+pressnote("C", 4, 0.25, bpm)
+pressnote("E", 4, 0.25, bpm)
+pressnote("G", 4, 0.25, bpm)
+rest(0.25, bpm)
+
+
+-- 40
+
+
+--chords
+pressnote("E", 2, 1, bpm)
+--arp
+pressnote("A", 2, 0.25, bpm)
+pressnote("E", 3, 0.25, bpm)
+pressnote("C", 4, 0.25, bpm)
+pressnote("E", 4, 0.25, bpm)
+pressnote("C", 5, 0.25, bpm)
+rest(0.25, bpm)
+pressnote("A", 2, 0.25, bpm)
+pressnote("E", 3, 0.25, bpm)
+pressnote("C", 4, 0.25, bpm)
+pressnote("E", 4, 0.25, bpm)
+pressnote("G", 4, 0.25, bpm)
+rest(0.25, bpm)
+pressnote("A", 2, 0.25, bpm)
+pressnote("E", 3, 0.25, bpm)
+pressnote("C", 4, 0.25, bpm)
+pressnote("E", 4, 0.25, bpm)
+pressnote("C", 5, 0.25, bpm)
+rest(0.25, bpm)
+pressnote("A", 2, 0.25, bpm)
+pressnote("E", 3, 0.25, bpm)
+pressnote("C", 4, 0.25, bpm)
+pressnote("E", 4, 0.25, bpm)
+pressnote("G", 4, 0.25, bpm)
+rest(0.25, bpm)
+
+--chords
+pressnote("E", 2, 1, bpm)
+--arp
+pressnote("A", 2, 0.25, bpm)
+pressnote("E", 3, 0.25, bpm)
+pressnote("C", 4, 0.25, bpm)
+pressnote("E", 4, 0.25, bpm)
+pressnote("C", 5, 0.25, bpm)
+rest(0.25, bpm)
+pressnote("A", 2, 0.25, bpm)
+pressnote("E", 3, 0.25, bpm)
+pressnote("C", 4, 0.25, bpm)
+pressnote("E", 4, 0.25, bpm)
+pressnote("G", 4, 0.25, bpm)
+rest(0.25, bpm)
+pressnote("A", 2, 0.25, bpm)
+pressnote("E", 3, 0.25, bpm)
+pressnote("C", 4, 0.25, bpm)
+pressnote("E", 4, 0.25, bpm)
+pressnote("C", 5, 0.25, bpm)
+rest(0.25, bpm)
+pressnote("A", 2, 0.25, bpm)
+pressnote("E", 3, 0.25, bpm)
+pressnote("C", 4, 0.25, bpm)
+pressnote("E", 4, 0.25, bpm)
+pressnote("G", 4, 0.25, bpm)
+rest(0.25, bpm)
+
+--chords
+pressnote("G", 1, 4, bpm)
+pressnote("D", 2, 1, bpm)
+--arp
+pressnote("G", 2, 0.25, bpm)
+pressnote("E", 3, 0.25, bpm)
+pressnote("D", 4, 0.25, bpm)
+pressnote("E", 4, 0.25, bpm)
+pressnote("D", 5, 0.25, bpm)
+rest(0.25, bpm)
+pressnote("G", 2, 0.25, bpm)
+pressnote("E", 3, 0.25, bpm)
+pressnote("D", 4, 0.25, bpm)
+pressnote("E", 4, 0.25, bpm)
+pressnote("A", 4, 0.25, bpm)
+rest(0.25, bpm)
+pressnote("G", 2, 0.25, bpm)
+pressnote("E", 3, 0.25, bpm)
+pressnote("D", 4, 0.25, bpm)
+pressnote("E", 4, 0.25, bpm)
+pressnote("D", 5, 0.25, bpm)
+rest(0.25, bpm)
+pressnote("G", 2, 0.25, bpm)
+pressnote("E", 3, 0.25, bpm)
+pressnote("D", 4, 0.25, bpm)
+pressnote("E", 4, 0.25, bpm)
+pressnote("A", 4, 0.25, bpm)
+rest(0.25, bpm)
+
+--chords
+pressnote("D", 2, 1, bpm)
+--arp
+pressnote("G", 2, 0.25, bpm)
+pressnote("E", 3, 0.25, bpm)
+pressnote("D", 4, 0.25, bpm)
+pressnote("E", 4, 0.25, bpm)
+pressnote("D", 5, 0.25, bpm)
+rest(0.25, bpm)
+pressnote("G", 2, 0.25, bpm)
+pressnote("E", 3, 0.25, bpm)
+pressnote("D", 4, 0.25, bpm)
+pressnote("E", 4, 0.25, bpm)
+pressnote("A", 4, 0.25, bpm)
+rest(0.25, bpm)
+pressnote("G", 2, 0.25, bpm)
+pressnote("E", 3, 0.25, bpm)
+pressnote("D", 4, 0.25, bpm)
+pressnote("E", 4, 0.25, bpm)
+pressnote("D", 5, 0.25, bpm)
+rest(0.25, bpm)
+pressnote("G", 2, 0.25, bpm)
+pressnote("E", 3, 0.25, bpm)
+pressnote("D", 4, 0.25, bpm)
+pressnote("E", 4, 0.25, bpm)
+pressnote("A", 4, 0.25, bpm)
+rest(0.25, bpm)
+
+
+-- 41
+
+
+--chords
+pressnote("D", 2, 1, bpm)
+--arp
+pressnote("G", 2, 0.25, bpm)
+pressnote("E", 3, 0.25, bpm)
+pressnote("D", 4, 0.25, bpm)
+pressnote("E", 4, 0.25, bpm)
+pressnote("D", 5, 0.25, bpm)
+rest(0.25, bpm)
+pressnote("G", 2, 0.25, bpm)
+pressnote("E", 3, 0.25, bpm)
+pressnote("D", 4, 0.25, bpm)
+pressnote("E", 4, 0.25, bpm)
+pressnote("A", 4, 0.25, bpm)
+rest(0.25, bpm)
+pressnote("G", 2, 0.25, bpm)
+pressnote("E", 3, 0.25, bpm)
+pressnote("D", 4, 0.25, bpm)
+pressnote("E", 4, 0.25, bpm)
+pressnote("D", 5, 0.25, bpm)
+rest(0.25, bpm)
+pressnote("G", 2, 0.25, bpm)
+pressnote("E", 3, 0.25, bpm)
+pressnote("D", 4, 0.25, bpm)
+pressnote("E", 4, 0.25, bpm)
+pressnote("A", 4, 0.25, bpm)
+rest(0.25, bpm)
+
+--chords
+pressnote("D", 2, 1, bpm)
+--arp
+pressnote("G", 2, 0.25, bpm)
+pressnote("E", 3, 0.25, bpm)
+pressnote("D", 4, 0.25, bpm)
+pressnote("E", 4, 0.25, bpm)
+pressnote("D", 5, 0.25, bpm)
+rest(0.25, bpm)
+pressnote("G", 2, 0.25, bpm)
+pressnote("E", 3, 0.25, bpm)
+pressnote("D", 4, 0.25, bpm)
+pressnote("E", 4, 0.25, bpm)
+pressnote("A", 4, 0.25, bpm)
+rest(0.25, bpm)
+pressnote("G", 2, 0.25, bpm)
+pressnote("E", 3, 0.25, bpm)
+pressnote("D", 4, 0.25, bpm)
+pressnote("E", 4, 0.25, bpm)
+pressnote("D", 5, 0.25, bpm)
+rest(0.25, bpm)
+pressnote("G", 2, 0.25, bpm)
+pressnote("E", 3, 0.25, bpm)
+pressnote("D", 4, 0.25, bpm)
+pressnote("E", 4, 0.25, bpm)
+pressnote("A", 4, 0.25, bpm)
+rest(0.25, bpm)
+
+--chords
+pressnote("E", 1, 8, bpm)
+pressnote("A", 1, 8, bpm)
+pressnote("E", 2, 8, bpm)
+pressnote("E", 3, 8, bpm)
+pressnote("E", 4, 8, bpm)
+
+finishedSong()
