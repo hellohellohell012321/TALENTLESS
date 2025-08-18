@@ -460,8 +460,6 @@ if gameId == 3929033413 then
 
 end
 
-
-
 local function filterSongs(query)
     query = query:lower()
     scroll.CanvasPosition = Vector2.new(0, 0)
@@ -484,13 +482,13 @@ local function filterSongs(query)
                     end
                 end
             end
-            child.Visible = matchFound or query == ""
+            child.Visible = matchFound
         elseif child:IsA("Frame") and child:FindFirstChildOfClass("TextButton") then
             -- Custom song frames
             local button = child:FindFirstChildOfClass("TextButton")
             local songName = button.Text:lower()
             local matchFound = songName:find(query)
-            child.Visible = matchFound or query == ""
+            child.Visible = matchFound
         end
     end
 end
@@ -589,6 +587,7 @@ else
 end
 
 A505 = newSongButton("505", 27, {"arctic monkeys", "artic monkeys"}) 
+A7_WEEKS_3_DAYS = newSongButton("7 WEEKS & 3 DAYS", 27, {""})
 A99DOT9 = newSongButton("99.9", 27, {"mob psycho 100"})
 A_SKY_FULL = newSongButton("A SKY FULL OF STARS", 23, {"coldplay"})
 A_THOUSAND = newSongButton("A THOUSAND MILES", 24, {"popular"})
@@ -599,6 +598,7 @@ ALL_MY_FELLAS = newSongButton("ALL MY FELLAS", 27, {})
 ALL_THE_STARS = newSongButton("ALL THE STARS", 27, {"kendrick lamar", "sza", "black panther"})
 ALONE = newSongButton("ALONE", 27, {"marshmello"})
 ENIGMATIC = newSongButton("AN ENIGMATIC ENCOUNTER", 17, {"undertale last breath"})
+ANNIHILATE = newSongButton("ANNIHILATE", 27, {"spider man", "spiderman", "spider-man", "metro boomin"})
 ANOTHER_LOVE = newSongButton("ANOTHER LOVE", 27, {"sad, love"})
 ANYONE_CAN = newSongButton("ANYONE CAN BE FIND LOVE (except you.)", 10, {"breakcore"})
 ARIA_MATH = newSongButton("ARIA MATH", 27, {"c418"})
@@ -608,13 +608,15 @@ ASGORE = newSongButton("ASGORE", 27, {})
 ASSUMPTIONS = newSongButton("ASSUMPTIONS", 27, {""})
 ASTRONAMIA = newSongButton("ASTRONAMIA (COFFIN DANCE)", 15, {""})
 SPEED_OF = newSongButton("AT THE SPEED OF LIGHT", 20, {"geometry dash", "gd"})
-AVENGERS = newSongButton("AVENGERS (EPIC COVER)", 20, {"popular", "movie", "hard"})
+AVENGERS = newSongButton("AVENGERS (EPIC COVER)", 19, {"popular", "movie", "hard"})
 BAD_APPLE = newSongButton("BAD APPLE!!", 27, {"popular"})
 BAD_HABIT = newSongButton("BAD HABIT", 27, {"steve lacy"})
 BAD_PIGGIES = newSongButton("BAD PIGGIES", 27, {"angry birds"})
 BATTLE_AGAINST = newSongButton("BATTLE AGAINST A TRUE HERO", 15, {})
-BEETHOVEN_VIRUS = newSongButton("BEETHOVEN VIRUS", 24, {"beethoven"})
+BEANIE = newSongButton("BEANIE", 27, {"beanie chezile"})
+BEETHOVEN_VIRUS = newSongButton("BEETHOVEN VIRUS", 24, {"ludwig van beethoven"})
 BELIEVER = newSongButton("BELIEVER", 27, {"imagine dragons"})
+BIG_FISH = newSongButton("BIG FISH (大鱼)", 27, {""})
 BIRDS_OF_A = newSongButton("BIRDS OF A FEATHER", 23, {"billie eilish"})
 BLINDING_LIGHTS = newSongButton("BLINDING LIGHTS", 27, {"the weeknd"})
 BLOODY = newSongButton("BLOODY MARY", 27, {"lady gaga", "wednesday"})
@@ -628,17 +630,20 @@ CANDYLAND = newSongButton("CANDYLAND", 27, {"tobu", "ncs", "no copyright sounds"
 CANON_D = newSongButton("CANON IN D", 27, {""})
 CANT_LET = newSongButton("CANT LET GO", 27, {"geometry dash", "gd"})
 CARELESS = newSongButton("CARELESS WHISPER", 24, {})
-CAROL_OF_THE_BELLS = newSongButton("CAROL OF THE BELLS", 23, {"christmas"})
+CAROL_OF_THE_BELLS = newSongButton("CAROL OF THE BELLS", 22, {"christmas"})
 CAROL_OF_THE_BELLS_EPIC = newSongButton("CAROL OF THE BELLS (EPIC VER.)", 14, {"christmas", "peter buka"})
 CENTIMETER = newSongButton("CENTIMETER", 27, {"rent a girlfriend", "rent-a-girlfriend"})
 CHRISTMAS_KIDS = newSongButton("CHRISTMAS KIDS", 27, {"roar"})
 CLAIR_DE_LUNE = newSongButton("CLAIR DE LUNE", 27, {"debussy"})
+CLOCKS = newSongButton("CLOCKS", 27, {"coldplay"})
 CLOUD_9 = newSongButton("CLOUD 9", 27, {"tobu", "ncs", "no copyright sounds"})
 CLUBSTEP = newSongButton("CLUBSTEP", 27, {"geometry dash", "dj nate", "gd"})
 COCONUT = newSongButton("COCONUT MALL !!", 27, {"mario kart", "nintendo"})
+COMPTINE_DUN_AUTRE_ETE = newSongButton("COMPTINE D'UN AUTRE ÉTÉ", 17, {"yann tiersen", "amelie"})
 COUNTING_STARS = newSongButton("COUNTING STARS", 27, {"one republic"})
 CRAB_RAVE = newSongButton("CRAB RAVE", 27, {"no copyright sounds", "ncs", "noisestorm"})
 CRADLES = newSongButton("CRADLES", 27, {"ncs", "no copyright sounds", "sub urban"})
+CROSSING_FIELD = newSongButton("CROSSING FIELD (SAO)", 19.5, {"sword art online"})
 CUPID = newSongButton("CUPID", 27, {"love"})
 DAMNED = newSongButton("DAMNED (COD ZOMBIES)", 19, {"cod zombies theme", "call of duty", "creepy"})
 DARK_BEACH = newSongButton("DARK BEACH", 27, {"pastel ghost"})
@@ -649,6 +654,9 @@ DEATH_BED = newSongButton("DEATH BED", 27, {"powfu", "beabadoobee"})
 DESPACITO = newSongButton("DESPACITO", 27, {""})
 DETROIT = newSongButton("DETROIT: BECOME HUMAN - OPENING", 11, {""})
 DIE_WITH = newSongButton("DIE WITH A SMILE", 27, {"lady gaga", "bruno mars"})
+DIES_IRAE = newSongButton("DIES IRAE (MESSA DA REQUIEM)", 14, {"giuseppe verdi"})
+DIE_IRAE_III = newSongButton("DIES IRAE (REQUIEM MVT.3)", 16, {"mozart"})
+DIES_IRAE_III_2 = newSongButton("DIES IRAE (REQUIEM MVT.3) (EPIC VER.)", 12, {"mozart", "epic"})
 DOG_SONG = newSongButton("DOG SONG", 27, {})
 DONT_STOP = newSongButton("DONT STOP BELIEVIN'", 21, {"journey"})
 DRAMAM = newSongButton("DRAMAMIME", 27, {"flawed mangoes"})
@@ -668,8 +676,8 @@ EVERGREEN = newSongButton("EVERGREEN", 27, {""})
 EXPERIENCE = newSongButton("EXPERIENCE", 27, {})
 EXPERIENCE_FLOWS = newSongButton("EXPERIENCE FLOWS IN YOU", 16, {"tony ann", "river flows in you"})
 FADED = newSongButton("FADED", 27, {"ncs", "alan walker", "no copyright sounds"})
-FANTAISIE = newSongButton("FANTAISIE IMPROMPTU", 20, {"chopin", "hard"})
 FALLEN_DOWN = newSongButton("FALLEN DOWN", 27, {})
+FANTAISIE = newSongButton("FANTAISIE IMPROMPTU", 20, {"frederic chopin"})
 FIELD_OF_MEMORIES = newSongButton("FIELD OF MEMORIES", 23, {"waterflame", "stick war"})
 FINAL_DUET = newSongButton("FINAL DUET", 27, {"omori"})
 FINALE = newSongButton("FINALE", 27, {})
@@ -677,28 +685,34 @@ FIVE_NIGHTS_1 = newSongButton("FIVE NIGHTS AT FREDDYS 1", 18, {"fnaf", "five nig
 FLARE = newSongButton("FLARE", 27, {"hensonn", "sahara", "phonk"})
 FLASHING = newSongButton("FLASHING LIGHTS", 27, {"kanye west", "graduation"})
 FLY_ME_TO_THE_MOON = newSongButton("FLY ME TO THE MOON", 22, {"frank sinatra", "love", "squid game", "jazz"})
+FOR_THE_DAMAGED_CODA = newSongButton("FOR THE DAMAGED CODA", 18, {"evil morty", "rick and morty", "rick & morty"})
+FOR_THE_DAMAGED_CODA_2 = newSongButton("FOR THE DAMAGED CODA (EPIC VER.)", 12.5, {"evil morty", "rick and morty", "rick & morty"})
+FREAKS = newSongButton("FREAKS", 27, {"surf curse"})
 FREEDOM_DIVE = newSongButton("FREEDOM DIVE", 27, {"xi"})
 FRIENDS = newSongButton("FRIENDS", 27, {"marshmello", "anne marie"})
 FR = newSongButton("FROM THE START", 25, {"laufey", "love", "popular"})
-FREAKS = newSongButton("FREAKS", 27, {"surf curse"})
 FUKASHIGI = newSongButton("FUKASHIGI NO CARTE (BUNNY GIRL)", 13, {"senpai"})
-FUR_ELISE = newSongButton("FUR ELISE", 27, {"beethoven", "classical"})
+FUR_ELISE = newSongButton("FUR ELISE", 27, {"ludwig van beethoven", "classical"})
 GANGSTAS_PARADISE = newSongButton("GANGSTA'S PARADISE", 22, {"coolio"})
 GEOMETRY_DASH = newSongButton("GEOMETRY DASH THEME (DASH)", 14, {"geometry dash", "gd"})
 GIORNO = newSongButton("GIORNO'S THEME", 27, {"popular"})
+GLASSY_SKY = newSongButton("GLASSY SKY", 27, {"tokyo ghoul"})
 GODS_PLAN = newSongButton("GODS PLAN", 27, {"drake"})
 GOLDENHOUR = newSongButton("GOLDEN HOUR", 27, {"jvke", "love, sad", "popular"})
 GOOD_MORNING = newSongButton("GOOD MORNING (OMORI)", 18, {"omori"})
 GOOFY_AHH = newSongButton("GOOFY AHH NPC MUSIC", 19, {"whistle"})
 GRAVITY_FALLS = newSongButton("GRAVITY FALLS", 27, {})
+GURENGE = newSongButton("GURENGE (DEMON SLAYER)", 17, {"lisa"})
 GYPSY_WOMAN = newSongButton("GYPSY WOMAN", 27, {"crystal waters", "slickback", "slick back"})
 HAGGSTORM = newSongButton("HAGGSTORM", 27, {"c418"})
 HAPPIER = newSongButton("HAPPIER", 27, {"marshmello", "bastille"})
-HATSUNE_MIKU_NO_GEKISHOU = newSongButton("HATSUNE MIKU NO GEKISHOU", 14, {"hatsune miku", "vocaloid", "miku", "colorful stage", "project sekai"})
+HATSUNE_MIKU_NO_GEKISHOU = newSongButton("HATSUNE MIKU NO GEKISHOU", 15, {"hatsune miku", "vocaloid", "miku", "colorful stage", "project sekai"})
+HAZY_MOON = newSongButton("HAZY MOON", 27, {"minato", "hatsune miku"})
+HEART_AFIRE = newSongButton("HEART AFIRE", 27, {"defqwop"})
 HEARTACHE = newSongButton("HEARTACHE", 27, {})
 HEAT_WAVE = newSongButton("HEAT WAVE", 27, {"glass animals"})
 HEATHENS = newSongButton("HEATHENS", 27, {"twenty one pilots", "suicide squad"})
-HELLO = newSongButton("HELLO X I LOVE YOU", 25.5, {"omfg"})
+HELLO = newSongButton("HELLO X I LOVE YOU", 24, {"omfg"})
 HERE_I_COME = newSongButton("HERE I COME", 27, {"doors", "roblox", "lsplash"})
 HERE_WITH = newSongButton("HERE WITH ME", 27, {"d4vd", "romantic homicide"})
 HES_A_PIRATE = newSongButton("HES A PIRATE", 27, {"hans zimmer", "pirates of the caribbean"})
@@ -729,6 +743,7 @@ IMMORTAL = newSongButton("IMMORTAL", 27, {"playboi carti"})
 IN_THE_NAME = newSongButton("IN THE NAME OF LOVE", 22, {""})
 INSANE = newSongButton("INSANE", 27, {"hazbin hotel"})
 INTERSTELLAR = newSongButton("INTERSTELLAR", 27, {"hans zimmer", "cinematic", "movie", "popular"})
+INVISIBLE = newSongButton("INVISIBLE (EDM)", 27, {"ncs", "no copyright sounds"})
 ISABELLA = newSongButton("ISABELLA'S LULLABY", 24, {})
 ISOLATION = newSongButton("ISOLATION", 27, {"limbo", "geometry dash", "gd"})
 IT_MEANS = newSongButton("IT MEANS EVERYTHING", 20, {})
@@ -741,24 +756,27 @@ KEROSENE = newSongButton("KEROSENE", 27, {"popular"})
 KEY = newSongButton("KEY", 27, {"c418"})
 L = newSongButton("L", 27, {"death note"})
 LAVENDER_TOWN = newSongButton("LAVENDER TOWN", 27, {"pokemon"})
-LA_CAMPANELLA = newSongButton("LA CAMPANELLA", 27, {"etude", "hard", "liszt"})
-LACRIMOSA = newSongButton("LACRIMOSA - REQUIEM", 22, {"mozart", "noot noot"})
+LA_CAMPANELLA = newSongButton("LA CAMPANELLA", 27, {"etude", "hard", "franz liszt"})
+LACRIMOSA = newSongButton("LACRIMOSA (REQUIEM MVT.8)", 15, {"mozart", "noot noot"})
 LALALA = newSongButton("LALALA", 27, {"bbno"})
+LET_IT_HAPPEN = newSongButton("LET IT HAPPEN", 27, {"tame impala"})
 LET_ME_LOVE = newSongButton("LET ME LOVE YOU", 27, {"justin bieber", "dj snake"})
 LEVAN_POLKKA = newSongButton("LEVAN POLKKA", 27, {"hatsune miku", "vocaloid", "le van"})
 LEVELS = newSongButton("LEVELS", 27, {"avicii"})
+LIEBESTRAUM_NO3 = newSongButton("LIEBESTRAUM NO.3", 24, {"franz liszt"})
 LIGHT_SWITCH = newSongButton("LIGHT SWITCH", 27, {"charlie puth"})
 LIGHTS = newSongButton("LIGHTS THEME", 27, {"death note"})
 LIVING_MICE = newSongButton("LIVING MICE", 27, {"c418"})
 LOST_LIBRARY = newSongButton("LOST LIBRARY", 27, {"omori"})
 LOST_UMB = newSongButton("LOST UMBRELLA", 27, {"cute depressed", "vocaloid"})
+LOVE = newSongButton("LOVE (W2E)", 27, {"wave to earth", "love."})
 LOVELY_B = newSongButton("LOVELY BASTARDS", 27, {"phonk"})
 LUTHER = newSongButton("LUTHER", 27, {"kendrick lamar", "sza", "GNX"})
 MA_MEILLEUR = newSongButton("MA MEILLEUR ENEMIE", 22, {"stromae", "arcane"})
 MAGICAL_CURE = newSongButton("M@GICAL CURE! LOVE SHOT!", 15, {"miku", "vocaloid", "hatsune miku", "magical cure"})
 MARI_BOSS = newSongButton("MARI BOSS FIGHT", 25, {"omori"})
 MARRIED = newSongButton("MARRIED LIFE", 27, {"movie", "up"})
-MARY_ON = newSongButton("MARY ON A CROSS", 27, {""})
+MARY_ON = newSongButton("MARY ON A CROSS", 26.5, {""})
 MEGALOVANIA = newSongButton("MEGALOVANIA", 27, {"popular"})
 METAMORPH = newSongButton("METAMORPHOSIS", 27, {"phonk"})
 MICE_ON = newSongButton("MICE ON VENUS", 27, {"c418"})
@@ -771,29 +789,46 @@ MONODY = newSongButton("MONODY", 27, {"ncs", "no copyright sounds", "thefatrat"}
 MONTAGEM_TOMADA = newSongButton("MONTAGEM TOMADA", 23, {"phonk"})
 MOOD = newSongButton("MOOD", 27, {"24kgoldn"})
 MOOG_CITY = newSongButton("MOOG CITY", 27, {"c418"})
-MOONLIGHT = newSongButton("MOONLIGHT SONATA - FIRST MOVEMENT", 10, {"beethoven"})
-M3 = newSongButton("MOONLIGHT SONATA - THIRD MOVEMENT", 10, {"beethoven"})
+MOONLIGHT = newSongButton("MOONLIGHT SONATA - FIRST MOVEMENT", 10.5, {"ludwig van beethoven"})
+M3 = newSongButton("MOONLIGHT SONATA - THIRD MOVEMENT", 10.5, {"ludwig van beethoven"})
 MY_EYES = newSongButton("MY EYES", 27, {"travis scott", "utopia"})
+MY_HEART_WILL_GO_ON = newSongButton("MY HEART WILL GO ON", 20, {"titanic", "celine dion"})
 MY_ORDINARY_LIFE = newSongButton("MY ORDINARY LIFE", 26, {"the living tombstone"})
 GIVE_UP = newSongButton("NEVER GONNA GIVE YOU UP", 17, {"rick astley", "rickroll", "rick roll"})
 NEVER_MEANT = newSongButton("NEVER MEANT TO BELONG", 18, {"bleach"})
-NOCTURNE = newSongButton("NOCTURNE", 27, {"chopin"})
+NOCTURNE = newSongButton("NOCTURNE OP.9 NO.2", 22, {"frederic chopin"})
+NOPE_YOUR_TOO_LATE = newSongButton("NOPE YOUR TOO LATE I ALREADY DIED", 12, {"wifiskeleton"})
 NOT_A_SLACKER = newSongButton("NOT A SLACKER ANYMORE", 18, {})
 NOT_LIKE_US = newSongButton("NOT LIKE US", 27, {"kendrick lamar", "drake"})
 NOTION = newSongButton("NOTION", 27, {"the rare occasions"})
+NUMBERS = newSongButton("NUMBERS", 27, {"temporex"})
+NYAN_CAT = newSongButton("NYAN CAT", 27, {})
 NYEH = newSongButton("NYEH HEH HEH!", 27, {"papyrus"})
+OLD_DOLL = newSongButton("OLD DOLL", 27, {"mad father"})
 OLD_TOWN_ROAD = newSongButton("OLD TOWN ROAD", 27, {"lil nas x"})
 ONCE_UPON = newSongButton("ONCE UPON A TIME", 26, {""})
 ONE_DANCE = newSongButton("ONE DANCE", 27, {"drake", "wizkid", "kyla"})
+OVERTAKEN = newSongButton("OVERTAKEN", 27, {"one piece"})
+PARADISE = newSongButton("PARADISE", 27, {"coldplay"})
+PASSACAGLIA = newSongButton("PASSACAGLIA, SUITE NO.7", 18, {"c418"})
 PAST_LIVES = newSongButton("PAST LIVES", 27, {""})
+PATHETIQUE = newSongButton("PATHÉTIQUE (SONATE OP.13 NO.8)", 13, {"ludwig van beethoven", "sonata pathetique"})
+PAYPHONE = newSongButton("PAYPHONE", 27, {"maroon 5"})
 PEACHES = newSongButton("PEACHES", 27, {"jack black", "bowser", "super mario bros"})
+PLANT_VS_ZOMBIES = newSongButton("PLANT VS ZOMBIES", 26, {"pvz"})
+PLEAD = newSongButton("PLEAD (FORSAKEN)", 23, {"roblox forsaken", "last man standing", "c00lkidd", "key after key", "007n7"})
 POKEMON = newSongButton("POKEMON MAIN THEME", 18, {""})
 POKEMON_RED = newSongButton("POKEMON RED AND BLUE", 18, {""})
 PRAYER = newSongButton("PRAYER", 27, {"kendrick lamar", "damn"})
+PRELUDE_NO2 = newSongButton("PRELUDE NO.2 (BACH)", 22, {"johann sebastian bach"})
+PRELUDE_OP28 = newSongButton("PRELUDE OP.28 NO.4", 22, {"frederic chopin"})
 RACING_INTO = newSongButton("RACING INTO THE NIGHT", 20, {"yoasobi"})
 RAIN = newSongButton("RAIN", 27, {"tony ann"})
 RATDANCE = newSongButton("RAT DANCE", 27, {"chess"})
+READY_OR_NOT = newSongButton("READY OR NOT (FORSAKEN)", 17, {"c00lkidd chase", "roblox forsaken", "key after key"})
 RESONANCE = newSongButton("RESONANCE", 27, {"home"})
+REVOLUTIONARY = newSongButton("REVOLUTIONARY (ETUDE OP.10 NO.12)", 12, {"frederic chopin"})
+RIGHTEOUS = newSongButton("RIGHTEOUS (MO BEATS)", 20, {""})
 RISE_UP = newSongButton("RISE UP", 27, {"thefatrat", "ncs", "no copyright sounds"})
 RISES_THE = newSongButton("RISES THE MOON", 27, {"liana flores"})
 RIVER_FLOWS = newSongButton("RIVER FLOWS IN YOU", 23, {""})
@@ -801,26 +836,28 @@ ROMANTIC_HOMICIDE = newSongButton("ROMANTIC HOMICIDE", 22, {"dv4d", "here with m
 RUINS = newSongButton("RUINS", 27, {})    
 RUNAWAY = newSongButton("RUNAWAY", 27, {"kanye", "popular", "rap", "hip"})
 RUNNING_UP = newSongButton("RUNNING UP THAT HILL", 19, {"stranger things"})
-RUSH_OF_LIFE = newSongButton("RUSH OF LIFE", 27, {"tony ann"})
 RUSHE = newSongButton("RUSH E", 27, {"sheet music boss"})
+RUSH_OF_LIFE = newSongButton("RUSH OF LIFE", 27, {"tony ann"})
 SANS = newSongButton("SANS.", 27, {"undertale"})
 SAVE_YOUR = newSongButton("SAVE YOUR TEARS", 27, {"weeknd"})
-SEE_YOU_AGAIN = newSongButton("SEE YOU AGAIN", 27, {"tyler the creator", "kali urchis", "tyler, the creator", "flower boy"})
+SEE_YOU_AGAIN = newSongButton("SEE YOU AGAIN (TYLER THE CREATOR)", 12, {"tyler the creator", "kali urchis", "tyler, the creator", "flower boy"})
+SEE_YOU_AGAIN_CHARLIE = newSongButton("SEE YOU AGAIN (CHARLIE PUTH)", 13, {"charlie puth", "wiz khalifa"})
 SHAPE_OF = newSongButton("SHAPE OF YOU", 27, {"ed sheeran"})
 SHIAWASE = newSongButton("SHIAWASE (VIP)", 27, {"tidal wave", "geometry dash", "gd"})
 SHIKAIRO = newSongButton("SHIKAIRO DAYS", 27, {"my dear friend nokotan"})
 SHOP = newSongButton("SHOP", 27, {})
 SICK_OF_U = newSongButton("SICK OF U", 27, {"boywithuke"})
+SILHOUETTE = newSongButton("SILHOUETTE (NARUTO)", 20, {"naruto shippuden    "})
 SKELETAL_SHENANIGANS = newSongButton("SKELETAL SHENANIGANS", 19, {"geometry dash", "gd"})
 SKYFALL = newSongButton("SKYFALL", 27, {"adele"})
 SLAY = newSongButton("SLAY", 27, {"eternxlz", "phonk"})
 SNOWFALL = newSongButton("SNOWFALL", 27, {"oneheart"})
 SNOWY = newSongButton("SNOWY", 27, {})
 SOLAS = newSongButton("SOLAS", 27, {"sad"})
-SOVIET_UNION_ANTHEM = newSongButton("SOVIET UNION ANTHEM", 19, {})
 SOMEBODY_THAT_I_USED = newSongButton("SOMEBODY THAT I USED TO KNOW", 13, {"gotye"})
 SOMETHING_JUST = newSongButton("SOMETHING JUST LIKE THIS", 17, {"the chainsmokers"})
 SONG_THAT_MIGHT = newSongButton("SONG THAT MIGHT PLAY WHEN YOU FIGHT SANS", 9.5, {"undertale"})
+SOVIET_UNION_ANTHEM = newSongButton("SOVIET UNION ANTHEM", 19, {})
 SPACE_SONG = newSongButton("SPACE SONG", 27, {"beach house"})
 SPARKLE = newSongButton("SPARKLE", 27, {"radwimps", "your name", "kimi no na wa"})
 SPEAR_OF = newSongButton("SPEAR OF JUSTICE", 26, {})
@@ -830,16 +867,21 @@ STAY = newSongButton("STAY", 27, {"justin bieber", "kid laroi"})
 STEREO_HEARTS = newSongButton("STEREO HEARTS", 27, {"gym class heroes", "adam levine"})
 STEREO_MADNESS = newSongButton("STEREO MADNESS", 27, {"geometry dash", "gd"})
 STRANGER_THINGS = newSongButton("STRANGER THINGS", 26, {})
+STRESSED_OUT = newSongButton("STRESSED OUT", 27, {"twenty one pilots", "21 pilots", "heathens"})
 STRANGERS = newSongButton("STRANGERS", 27, {"kenya grace"})
 SUBWOOFER = newSongButton("SUBWOOFER LULLABY", 20, {"c418"})
-SUGAR_PLUM = newSongButton("DANCE OF THE SUGAR PLUM FAIRY", 13, {"christmas", "hard"})
+SUGAR_PLUM = newSongButton("DANCE OF THE SUGAR PLUM FAIRY", 13.5, {"christmas", "hard"})
 SUNFLOWER = newSongButton("SUNFLOWER", 27, {"spider man", "post malone"})
 SUPER_IDOL = newSongButton("SUPER IDOL", 27, {})
 SUPER_MARIOS = newSongButton("SUPER MARIO BROS", 23, {""})
 SUZUME = newSongButton("SUZUME NO TOJIMARI", 22, {"suzume", "radwimps"})
 SWEATER_WEATHER = newSongButton("SWEATER WEATHER", 23, {"the neighbourhood", "love", "popular"})
-SWIMMING = newSongButton("SWIMMING", 27, {"flawed mangoes", "dramamime"})
 SWEDEN = newSongButton("SWEDEN", 27, {"c418"})
+SWIMMING = newSongButton("SWIMMING", 27, {"flawed mangoes", "dramamime"})
+SYMPHONY_NO5 = newSongButton("SYMPHONY NO.5", 27, {"ludwig van beethoven", "5th symphony", "fifth symphony"})
+TAKE_FIVE = newSongButton("TAKE FIVE", 27, {"dave brubeck", "jazz"})
+TAKE_ON_ME = newSongButton("TAKE ON ME", 27, {"a-ha"})
+TEST_DRIVE = newSongButton("TEST DRIVE", 27, {"how to train your dragon", "john powell"})
 THATS_WHAT_I_WANT = newSongButton("THATS WHAT I WANT", 23, {"lil nas x"})
 AUTUMN = newSongButton("THE 4 SEASONS - AUTUMN", 18, {"the 4 seasons", "vivaldi", "the four seasons"})
 SPRING = newSongButton("THE 4 SEASONS - SPRING", 18, {"the 4 seasons", "vivaldi", "the four seasons"})
@@ -858,6 +900,8 @@ THICK_OF_IT = newSongButton("THICK OF IT", 27, {"nigga", "ksi", "shit", "popular
 THIS_IS_WHAT_HEARTBREAK = newSongButton("THIS IS WHAT HEARTBREAK FEELS LIKE", 11, {"jvke", "golden hour"})
 THIS_IS_WHAT_WINTER = newSongButton("THIS IS WHAT WINTER FEELS LIKE", 11.5, {"jvke", "golden hour"})
 TICKING = newSongButton("TICKING", 27, {""})
+TIME_BACK = newSongButton("TIME BACK", 27, {""})
+TORRENT = newSongButton("TORRENT (ETUDE OP.10 NO.4)", 14, {"frederic chopin"})
 TOXIC = newSongButton("TOXIC (BOYWITHUKE)", 22, {""})
 TRAP_R = newSongButton("TRAP ROYALTY", 27, {"fetty wap"})
 TURKISH = newSongButton("TURKISH MARCH", 27, {"mozart", "rondo alla turca"})
@@ -867,19 +911,22 @@ UNDERWATER = newSongButton("UNDERWATER PROM QUEENS", 14, {"omori"})
 UNITY = newSongButton("UNITY", 27, {"thefatrat", "ncs", "no copyright sounds"}) 
 UNRAVEL = newSongButton("UNRAVEL", 27, {"tokyo ghoul"})
 UNRAVEL_EPIC = newSongButton("UNRAVEL (EPIC VER.)", 22, {"tokyo ghoul", "animenz"})
+UNTIL_I_FOUND_YOU = newSongButton("UNTIL I FOUND YOU", 24, {"stephen sanchez"})
 UNTITLED = newSongButton("UNTITLED", 27, {"oobja main theme", "cooked"})
 VAMPIRE = newSongButton("VAMPIRE", 27, {"olivia rodrigo"})
 VIVA_LA_VIDA = newSongButton("VIVA LA VIDA", 27, {"coldplay"})
 WAITING_FOR = newSongButton("WAITING FOR LOVE", 26, {"avicii"})
 WAKE_ME = newSongButton("WAKE ME UP", 27, {"avicii"})
+WALTZ_IN_C_MINOR = newSongButton("WALTZ OP.64 NO.2", 26, {"frederic chopin"})
 WASHING = newSongButton("WASHING MACHINE HEART", 18, {"mitski"})
+WE_ARE = newSongButton("WE ARE! (ONE PIECE)", 23, {})
 WE_DONT = newSongButton("WE DONT TALK ABOUT BRUNO", 15, {"encanto"})
 WEDDING_MARCH = newSongButton("WEDDING MARCH", 27, {"wedding"})
 WET_HANDS = newSongButton("WET HANDS", 27, {"c418"})
 WHERE_WE = newSongButton("WHERE WE PLAYED", 25, {"omori"})
 WHY_DID_I_SAY = newSongButton("WHY DID I SAY OKIE-DOKIE", 17, {"doki doki literature club", "ddlc"})
 WII_SPORTS_TITLE = newSongButton("WII SPORTS TITLE THEME", 18, {"wii sports", "nintendo"})
-WINTER_WIND = newSongButton("WINTER WIND (ETUDE OP.25 NO.11)", 13, {"chopin", "hard"})
+WINTER_WIND = newSongButton("WINTER WIND (ETUDE OP.25 NO.11)", 13, {"frederic chopin"})
 WORLDS_END = newSongButton("WORLDS END VALENTINE", 18, {"omori"})
 XO_TOUR = newSongButton("XO TOUR LLIF3", 27, {"lil uzi vert"})
 YOUNG_GIRL_A = newSongButton("YOUNG GIRL A", 27, {"siinamota", "vocaloid"})
@@ -909,7 +956,7 @@ for index, button in ipairs(framebuttons) do
 end
 
 local songs = {
-    {button = INTERSTELLAR, bpm = "104", var = false, url = "INTERSTELLAR", cat = {"epic", "beautiful"}},
+    {button = INTERSTELLAR, bpm = "104", var = false, url = "INTERSTELLAR", cat = {"epic", "beautiful", "movies/tv"}},
     {button = RUSHE, bpm = "80", var = false, url = "RUSH_E", cat = {"memes"}},
     {button = GOLDENHOUR, bpm = "94", var = false, url = "GOLDEN_HOUR", cat = {"beautiful", "best"}},
     {button = CUPID, bpm = "120", var = false, url = "CUPID", cat = {"pop/hiphop"}},
@@ -919,28 +966,28 @@ local songs = {
     {button = ANOTHER_LOVE, bpm = "123", var = false, url = "ANOTHER_LOVE", cat = {"sad", "best", "epic", "beautiful", "pop/hiphop"}},
     {button = FINAL_DUET, bpm = "84", var = false, url = "FINAL_DUET", cat = {"video games", "omori"}},
     {button = EXPERIENCE, bpm = "92", var = false, url = "EXPERIENCE", cat = {"epic", "best", "beautiful", "peak"}},
-    {button = CAN_YOU_HEAR, bpm = "80", var = false, url = "CAN_YOU_HEAR_THE_FUCKING_MUSIC", cat = {"epic"}},
-    {button = HOWLS_MOVING_CASTLE, bpm = "156", var = false, url = "HOWLS_MOVING_CASTLE", cat = {"anime/jpop", "beautiful"}},
+    {button = CAN_YOU_HEAR, bpm = "80", var = false, url = "CAN_YOU_HEAR_THE_FUCKING_MUSIC", cat = {"epic", "movies/tv"}},
+    {button = HOWLS_MOVING_CASTLE, bpm = "156", var = false, url = "HOWLS_MOVING_CASTLE", cat = {"anime/jpop", "beautiful", "movies/tv"}},
     {button = YOUNG_GIRL_A, bpm = "130", var = false, url = "YOUNG_GIRL_A", cat = {"anime/jpop", "sad", "beautiful", "best"}},
     {button = ARIA_MATH, bpm = "84", var = false, url = "ARIA_MATH", cat = {"video games", "minecraft", "beautiful"}},
     {button = ALL_MY_FELLAS, bpm = "160", var = false, url = "ALL_MY_FELLAS", cat = {"memes"}},
     {button = THICK_OF_IT, bpm = "146", var = false, url = "THICK_OF_IT", cat = {"memes"}},
     {button = ROMANTIC_HOMICIDE, bpm = "132", var = false, url = "ROMANTIC_HOMICIDE", cat = {"sad"}},
-    {button = IF_I_AM_WITH_YOU, bpm = "82", var = false, url = "IF_I_AM_WITH_YOU", cat = {"anime/jpop", "best", "beautiful", "peak"}},
+    {button = IF_I_AM_WITH_YOU, bpm = "82", var = false, url = "IF_I_AM_WITH_YOU", cat = {"anime/jpop", "best", "beautiful", "peak", "movies/tv"}},
     {button = CRADLES, bpm = "79", var = false, url = "CRADLES", cat = {"electronic"}},
-    {button = IDOL, bpm = "166", var = false, url = "IDOL", cat = {"anime/jpop", "best"}},
+    {button = IDOL, bpm = "166", var = false, url = "IDOL", cat = {"anime/jpop", "best", "movies/tv"}},
     {button = RIVER_FLOWS, bpm = "137", var = false, url = "RIVER_FLOWS_IN_YOU", cat = {"sad"}},
     {button = NOCTURNE, bpm = "62", var = false, url = "NOCTURNE", cat = {"classical", "best"}},
     {button = ISABELLA, bpm = "112", var = false, url = "ISABELLAS_LULLABY", cat = {"video games"}},
-    {button = GIORNO, bpm = "135", var = false, url = "GIORNO", cat = {"anime/jpop", "memes"}},
+    {button = GIORNO, bpm = "135", var = false, url = "GIORNO", cat = {"anime/jpop", "memes", "movies/tv"}},
     {button = GIVE_UP, bpm = "113", var = false, url = "GIVE_UP", cat = {"memes", "pop/hiphop"}},
-    {button = UNRAVEL, bpm = "135", var = false, url = "UNRAVEL", cat = {"anime/jpop", "beautiful"}},
+    {button = UNRAVEL, bpm = "135", var = false, url = "UNRAVEL", cat = {"anime/jpop", "beautiful", "movies/tv"}},
     {button = WINTER_WIND, bpm = "125", var = false, url = "WINTER_WIND", cat = {"classical"}},
     {button = SWEATER_WEATHER, bpm = "124", var = false, url = "SWEATER_WEATHER", cat = {"sad"}},
-    {button = VIVA_LA_VIDA, bpm = "138", var = false, url = "VIVA_LA_VIDA", cat = {"epic", "beautiful", "best"}},
+    {button = VIVA_LA_VIDA, bpm = "138", var = false, url = "VIVA_LA_VIDA", cat = {"epic", "beautiful", "best", "peak"}},
     {button = M3, bpm = "163", var = false, url = "WHAT_THE_FUCKK", cat = {"classical", "best", "peak"}},
-    {button = NEVER_MEANT, bpm = "66", var = false, url = "NEVER_MEANT", cat = {"anime/jpop"}},
-    {button = AVENGERS, bpm = "120", var = false, url = "AVENGERS", cat = {"epic", "best"}},
+    {button = NEVER_MEANT, bpm = "66", var = false, url = "NEVER_MEANT", cat = {"anime/jpop", "movies/tv"}},
+    {button = AVENGERS, bpm = "120", var = false, url = "AVENGERS", cat = {"epic", "best", "movies/tv"}},
     {button = BEETHOVEN_VIRUS, bpm = "162", var = false, url = "BEETHOVEN_VIRUS", cat = {"classical", "electronic", "best", "peak"}},
     {button = LA_CAMPANELLA, bpm = "107", var = false, url = "LA_CAMPANELLA", cat = {"classical", "best", "beautiful"}},
     {button = KEROSENE, bpm = "116", var = false, url = "KEROSENE", cat = {"electronic"}},
@@ -950,15 +997,15 @@ local songs = {
     {button = COCONUT, bpm = "132", var = false, url = "COCONUT", cat = {"video games"}},
     {button = FADED, bpm = "90", var = false, url = "FADED", cat = {"electronic", "sad"}},
     {button = SOLAS, bpm = "120", var = false, url = "SOLAS", cat = {"beautiful"}},
-    {button = MARRIED, bpm = "83", var = false, url = "MARRIED", cat = {"sad"}},
+    {button = MARRIED, bpm = "83", var = false, url = "MARRIED", cat = {"sad", "movies/tv"}},
     {button = BAD_PIGGIES, bpm = "156", var = false, url = "BAD_PIGGIES", cat = {"video games"}},
     {button = ASGORE, bpm = "115", var = false, url = "ASGORE", cat = {"video games", "undertale"}},
     {button = CARELESS, bpm = "153", var = false, url = "CARELESS", cat = {"memes"}},
     {button = I_WANT, bpm = "122", var = false, url = "I_WANT", cat = {"pop/hiphop", "rock"}},
-    {button = IM_STILL, bpm = "177", var = false, url = "IM_STILL", cat = {"best", "rock"}},
+    {button = IM_STILL, bpm = "177", var = false, url = "IM_STILL", cat = {"best", "rock", "movies/tv"}},
     {button = HELLO, bpm = "105", var = false, url = "HELLO", cat = {"electronic"}},
     {button = BAD_APPLE, bpm = "138", var = false, url = "BAD_APPLE", cat = {"anime/jpop"}},
-    {button = FR, bpm = "82", var = false, url = "FR", cat = {"all"}},
+    {button = FR, bpm = "82", var = false, url = "FR", cat = {"beautiful"}},
     {button = DIE_WITH, bpm = "152", var = false, url = "DIE_WITH", cat = {"pop/hiphop", "sad", "beautiful", "best", "peak"}},
     {button = FALLEN_DOWN, bpm = "110", var = false, url = "FALLEN_DOWN", cat = {"video games", "undertale", "beautiful"}},
     {button = ENIGMATIC, bpm = "50", var = false, url = "ENIGMATIC", cat = {"video games", "undertale", "best", "peak"}},
@@ -1003,7 +1050,7 @@ local songs = {
     {button = FUR_ELISE, bpm = "72", var = false, url = "FUR_ELISE", cat = {"classical"}},
     {button = MOONLIGHT, bpm = "51", var = false, url = "MOONLIGHT", cat = {"classical"}},
     {button = FANTAISIE, bpm = "168", var = false, url = "FANTAISIE", cat = {"classical"}},
-    {button = DROWNING_LOVE, bpm = "112", var = false, url = "DROWNING_LOVE", cat = {"beautiful", "sad", "best", "peak"}},
+    {button = DROWNING_LOVE, bpm = "112", var = false, url = "DROWNING_LOVE", cat = {"beautiful", "sad", "best", "peak", "movies/tv"}},
     {button = CANON_D, bpm = "100", var = false, url = "CANON_D", cat = {"classical"}},
     {button = FREEDOM_DIVE, bpm = "220", var = false, url = "FREEDOM_DIVE", cat = {"electronic"}},
     {button = STAY, bpm = "85", var = false, url = "STAY", cat = {"pop/hiphop"}},
@@ -1034,32 +1081,32 @@ local songs = {
     {button = DREAM_FL, bpm = "150", var = false, url = "DREAM_FL", cat = {"electronic"}},
     {button = LALALA, bpm = "130", var = false, url = "LALALA", cat = {"pop/hiphop"}},
     {button = THE_BEN, bpm = "180", var = false, url = "THE_BEN", cat = {"classical", "epic", "best"}},
-    {button = POKEMON, bpm = "160", var = false, url = "POKEMON", cat = {"video games", "anime/jpop"}},
-    {button = POKEMON_RED, bpm = "180", var = false, url = "POKEMON_RED", cat = {"video games", "anime/jpop"}},
+    {button = POKEMON, bpm = "160", var = false, url = "POKEMON", cat = {"video games", "anime/jpop", "movies/tv"}},
+    {button = POKEMON_RED, bpm = "180", var = false, url = "POKEMON_RED", cat = {"video games", "anime/jpop", "movies/tv"}},
     {button = FLASHING, bpm = "100", var = false, url = "FLASHING", cat = {"pop/hiphop", "epic", "beautiful"}},
     {button = ALL_GIRLS, bpm = "85", var = false, url = "ALL_GIRLS", cat = {"pop/hiphop", "sad", "best"}},
     {button = SAVE_YOUR, bpm = "120", var = false, url = "SAVE_YOUR", cat = {"pop/hiphop", "sad"}},
     {button = LIGHTS, bpm = "132", var = false, url = "LIGHTS", cat = {"anime/jpop"}},
-    {button = THE_WORLD, bpm = "96", var = false, url = "THE_WORLD", cat = {"anime/jpop", "rock"}},
-    {button = L, bpm = "71", var = false, url = "L", cat = {"anime/jpop", "memes"}},
+    {button = THE_WORLD, bpm = "96", var = false, url = "THE_WORLD", cat = {"anime/jpop", "rock", "movies/tv"}},
+    {button = L, bpm = "71", var = false, url = "L", cat = {"anime/jpop", "memes", "movies/tv"}},
     {button = BLOODY, bpm = "100", var = false, url = "BLOODY", cat = {"pop/hiphop", "epic", "best"}},
     {button = SPACE_SONG, bpm = "75", var = false, url = "SPACE_SONG", cat = {"sad", "pop/hiphop", "beautiful", "epic", "best"}},
     {button = HEATHENS, bpm = "90", var = false, url = "HEATHENS", cat = {"sad"}},
     {button = VAMPIRE, bpm = "135", var = false, url = "VAMPIRE", cat = {"pop/hiphop", "sad", "best"}},
     {button = MARY_ON, bpm = "130", var = false, url = "MARY_ON", cat = {"rock"}},
-    {button = RUNNING_UP, bpm = "108", var = false, url = "RUNNING_UP", cat = {"sad", "pop/hiphop"}},
+    {button = RUNNING_UP, bpm = "108", var = false, url = "RUNNING_UP", cat = {"sad", "pop/hiphop", "movies/tv"}},
     {button = DUMB_DUMB, bpm = "118", var = false, url = "DUMB_DUMB", cat = {"memes"}},
-    {button = MA_MEILLEUR, bpm = "178", var = false, url = "MA_MEILLEUR", cat = {"memes"}},
-    {button = SUZUME, bpm = "78", var = false, url = "SUZUME", cat = {"anime/jpop", "best", "beautiful"}},
+    {button = MA_MEILLEUR, bpm = "178", var = false, url = "MA_MEILLEUR", cat = {"movies/tv"}},
+    {button = SUZUME, bpm = "78", var = false, url = "SUZUME", cat = {"anime/jpop", "best", "beautiful", "movies/tv"}},
     {button = CHRISTMAS_KIDS, bpm = "152", var = false, url = "CHRISTMAS_KIDS", cat = {"sad"}},
     {button = DARK_BEACH, bpm = "130", var = false, url = "DARK_BEACH", cat = {"sad", "beautiful"}},
-    {button = FUKASHIGI, bpm = "90", var = false, url = "FUKASHIGI", cat = {"anime/jpop"}},
-    {button = SPARKLE, bpm = "192", var = false, url = "SPARKLE", cat = {"anime/jpop", "best", "beautiful"}},
-    {button = SHIKAIRO, bpm = "182", var = false, url = "SHIKAIRO", cat = {"anime/jpop", "memes", "best"}},
-    {button = WASHING, bpm = "114", var = false, url = "WASHING", cat = {"sad"}},
-    {button = CAN_YOU_HEAR_EPIC, bpm = "102", var = false, url = "CAN_YOU_HEAR_EPIC", cat = {"epic", "best", "peak"}},
-    {button = UNRAVEL_EPIC, bpm = "132", var = false, url = "UNRAVEL_EPIC", cat = {"epic", "best", "beautiful", "peak"}},
-    {button = A_SKY_FULL, bpm = "120", var = false, url = "A_SKY_FULL", cat = {"epic", "pop/hiphop"}},
+    {button = FUKASHIGI, bpm = "90", var = false, url = "FUKASHIGI", cat = {"anime/jpop", "movies/tv"}},
+    {button = SPARKLE, bpm = "192", var = false, url = "SPARKLE", cat = {"anime/jpop", "best", "beautiful", "movies/tv"}},
+    {button = SHIKAIRO, bpm = "182", var = false, url = "SHIKAIRO", cat = {"anime/jpop", "memes", "best", "movies/tv"}},
+    {button = WASHING, bpm = "114", var = false, url = "WASHING", cat = {"sad", "beautiful", "best"}},
+    {button = CAN_YOU_HEAR_EPIC, bpm = "102", var = false, url = "CAN_YOU_HEAR_EPIC", cat = {"epic", "best", "peak", "movies/tv"}},
+    {button = UNRAVEL_EPIC, bpm = "132", var = false, url = "UNRAVEL_EPIC", cat = {"epic", "best", "beautiful", "peak", "movies/tv"}},
+    {button = A_SKY_FULL, bpm = "120", var = false, url = "A_SKY_FULL", cat = {"epic", "pop/hiphop", "electronic"}},
     {button = THE_NIGHTS, bpm = "128", var = false, url = "THE_NIGHTS", cat = {"pop/hiphop", "electronic", "epic"}},
     {button = BIRDS_OF_A, bpm = "105", var = false, url = "BIRDS_OF_A", cat = {"pop/hiphop", "beautiful"}},
     {button = CANT_LET, bpm = "160", var = false, url = "CANT_LET", cat = {"video games", "electronic"}},
@@ -1068,7 +1115,7 @@ local songs = {
     {button = FIVE_NIGHTS_1, bpm = "108", var = false, url = "FIVE_NIGHTS_1", cat = {"video games", "electronic", "epic"}},
     {button = ITS_BEEN_SO, bpm = "96", var = false, url = "ITS_BEEN_SO", cat = {"video games", "electronic"}},
     {button = STEREO_MADNESS, bpm = "160", var = false, url = "STEREO_MADNESS", cat = {"video games", "electronic"}},
-    {button = SUNFLOWER, bpm = "90", var = false, url = "SUNFLOWER", cat = {"pop/hiphop", "beautiful", "best"}},
+    {button = SUNFLOWER, bpm = "90", var = false, url = "SUNFLOWER", cat = {"pop/hiphop", "beautiful", "best", "movies/tv"}},
     {button = WAITING_FOR, bpm = "129", var = false, url = "WAITING_FOR", cat = {"pop/hiphop", "electronic", "best", "epic"}},
     {button = WAKE_ME, bpm = "110", var = false, url = "WAKE_ME", cat = {"pop/hiphop", "electronic"}},
     {button = GEOMETRY_DASH, bpm = "128", var = false, url = "GEOMETRY_DASH", cat = {"video games", "electronic"}},
@@ -1109,14 +1156,14 @@ local songs = {
     {button = THIS_IS_WHAT_HEARTBREAK, bpm = "50", var = false, url = "THIS_IS_WHAT_HEARTBREAK", cat = {"sad", "pop/hiphop"}},
     {button = CANDYLAND, bpm = "130", var = false, url = "CANDYLAND", cat = {"electronic", "best", "best"}},
     {button = AS_IT_WAS, bpm = "174", var = false, url = "AS_IT_WAS", cat = {"pop/hiphop", "best"}},
-    {button = CENTIMETER, bpm = "140", var = false, url = "CENTIMETER", cat = {"anime/jpop"}},
+    {button = CENTIMETER, bpm = "140", var = false, url = "CENTIMETER", cat = {"anime/jpop", "movies/tv"}},
     {button = DETROIT, bpm = "60", var = false, url = "DETROIT", cat = {"video games", "beautiful"}},
     {button = THE_GREAT_FAIRY, bpm = "80", var = false, url = "THE_GREAT_FAIRY", cat = {"video games"}},
     {button = IMMORTAL, bpm = "60", var = false, url = "IMMORTAL", cat = {"pop/hiphop"}},
     {button = XO_TOUR, bpm = "142", var = false, url = "XO_TOUR", cat = {"pop/hiphop", "sad"}},
-    {button = THE_ECSTASY_OF_GOLD, bpm = "85", var = false, url = "THE_ECSTASY_OF_GOLD", cat = {"epic", "beautiful"}},
+    {button = THE_ECSTASY_OF_GOLD, bpm = "85", var = false, url = "THE_ECSTASY_OF_GOLD", cat = {"movies/tv", "epic", "beautiful"}},
     {button = BLUE_YUNG, bpm = "92", var = false, url = "BLUE_YUNG", cat = {"beautiful", "best"}},
-    {button = HES_A_PIRATE, bpm = "207", var = false, url = "HES_A_PIRATE", cat = {"epic", "best"}},
+    {button = HES_A_PIRATE, bpm = "207", var = false, url = "HES_A_PIRATE", cat = {"epic", "best", "movies/tv"}},
     {button = ITS_RAINING, bpm = "120", var = false, url = "ITS_RAINING", cat = {"memes"}},
     {button = LET_ME_LOVE, bpm = "100", var = false, url = "LET_ME_LOVE", cat = {"pop/hiphop", "best", "beautiful"}},
     {button = HAPPIER, bpm = "100", var = false, url = "HAPPIER", cat = {"pop/hiphop", "sad", "beautiful", "best"}},
@@ -1132,32 +1179,32 @@ local songs = {
     {button = MONTAGEM_TOMADA, bpm = "120", var = false, url = "MONTAGEM_TOMADA", cat = {"electronic"}},
     {button = NOTION, bpm = "160", var = false, url = "NOTION", cat = {"rock", "sad"}},
     {button = RISES_THE, bpm = "127", var = false, url = "RISES_THE", cat = {"sad", "beautiful"}},
-    {button = HIMITSU_KOI_GOKORO, bpm = "165", var = false, url = "HIMITSU_KOI_GOKORO", cat = {"anime/jpop"}},
-    {button = LENAI, bpm = "131", var = false, url = "LENAI", cat = {"anime/jpop"}},
-    {button = IDOL_EPIC, bpm = "166", var = false, url = "IDOL_EPIC", cat = {"anime/jpop", "epic", "best"}},
-    {button = ALL_THE_STARS, bpm = "120", var = false, url = "ALL_THE_STARS", cat = {"pop/hiphop", "beautiful", "best"}},
+    {button = HIMITSU_KOI_GOKORO, bpm = "165", var = false, url = "HIMITSU_KOI_GOKORO", cat = {"anime/jpop", "movies/tv"}},
+    {button = LENAI, bpm = "131", var = false, url = "LENAI", cat = {"anime/jpop", "movies/tv"}},
+    {button = IDOL_EPIC, bpm = "166", var = false, url = "IDOL_EPIC", cat = {"anime/jpop", "epic", "best", "movies/tv"}},
+    {button = ALL_THE_STARS, bpm = "120", var = false, url = "ALL_THE_STARS", cat = {"pop/hiphop", "beautiful", "best", "movies/tv"}},
     {button = HOPE, bpm = "146", var = false, url = "HOPE", cat = {"pop/hiphop", "sad", "beautiful", "best"}},
     {button = ENTRY_OF_THE, bpm = "220", var = false, url = "ENTRY_OF_THE", cat = {"classical", "memes"}},
     {button = LUTHER, bpm = "128", var = false, url = "LUTHER", cat = {"pop/hiphop"}},
-    {button = HOWLS_MOVING_CASTLE_2, bpm = "130", var = false, url = "HOWLS_MOVING_CASTLE_2", cat = {"anime/jpop", "beautiful", "best", "epic", "peak"}},
+    {button = HOWLS_MOVING_CASTLE_2, bpm = "130", var = false, url = "HOWLS_MOVING_CASTLE_2", cat = {"anime/jpop", "beautiful", "best", "epic", "peak", "movies/tv"}},
     {button = MAGICAL_CURE, bpm = "120", var = false, url = "MAGICAL_CURE", cat = {"anime/jpop"}},
     {button = NOT_LIKE_US, bpm = "101", var = false, url = "NOT_LIKE_US", cat = {"pop/hiphop", "memes"}},
-    {button = PEACHES, bpm = "92", var = false, url = "PEACHES", cat = {"video games"}},
+    {button = PEACHES, bpm = "92", var = false, url = "PEACHES", cat = {"video games", "movies/tv"}},
     {button = PRAYER, bpm = "147", var = false, url = "PRAYER", cat = {"beautiful", "pop/hiphop"}},
     {button = SEE_YOU_AGAIN, bpm = "70", var = false, url = "SEE_YOU_AGAIN", cat = {"pop/hiphop", "sad", "beautiful"}},
     {button = GANGSTAS_PARADISE, bpm = "80", var = false, url = "GANGSTAS_PARADISE", cat = {"pop/hiphop", "memes", "beautiful", "best", "epic", "peak"}},
     {button = ERIKA, bpm = "120", var = false, url = "ERIKA", cat = {"memes"}},
-    {button = ITS_JUST_A_BURNING, bpm = "74", var = false, url = "ITS_JUST_A_BURNING", cat = {"memes", "sad"}},
+    {button = ITS_JUST_A_BURNING, bpm = "74", var = false, url = "ITS_JUST_A_BURNING", cat = {"creepy/weirdcore", "memes", "sad"}},
     {button = ALL_I_WANT_IS_YOU, bpm = "143", var = false, url = "ALL_I_WANT_IS_YOU", cat = {"pop/hiphop", "sad", "best", "electronic"}},
     {button = SOVIET_UNION_ANTHEM, bpm = "80", var = false, url = "SOVIET_UNION_ANTHEM", cat = {"memes"}},
-    {button = UNTITLED, bpm = "25", var = false, url = "UNTITLED", cat = {"video games", "memes", "sad"}},
+    {button = UNTITLED, bpm = "25", var = false, url = "UNTITLED", cat = {"video games", "memes", "sad", "creepy/weirdcore"}},
     {button = WEDDING_MARCH, bpm = "115", var = false, url = "WEDDING_MARCH", cat = {"memes", "beautiful", "classical"}},
     {button = WHY_DID_I_SAY, bpm = "113", var = false, url = "WHY_DID_I_SAY", cat = {}},
     {button = WII_SPORTS_TITLE, bpm = "115", var = false, url = "WII_SPORTS_TITLE", cat = {"video games", "memes", "epic"}},
     {button = YOUNG_GIRL_A_2, bpm = "130", var = false, url = "YOUNG_GIRL_A_2", cat = {"anime/jpop", "sad", "epic", "best", "beautiful", "peak"}},
     {button = BLINDING_LIGHTS, bpm = "171", var = false, url = "BLINDING_LIGHTS", cat = {"pop/hiphop", "best"}},
     {button = GOOFY_AHH, bpm = "120", var = false, url = "GOOFY_AHH", cat = {"memes", "epic", "best", "beautiful", "peak"}},
-    {button = GRAVITY_FALLS, bpm = "120", var = false, url = "GRAVITY_FALLS", cat = {"memes", "best"}},
+    {button = GRAVITY_FALLS, bpm = "120", var = false, url = "GRAVITY_FALLS", cat = {"memes", "best", "movies/tv"}},
     {button = GYPSY_WOMAN, bpm = "120", var = false, url = "GYPSY_WOMAN", cat = {"memes", "pop/hiphop"}},
     {button = I_LIKE_THE_WAY_YOU, bpm = "151", var = false, url = "I_LIKE_THE_WAY_YOU", cat = {"pop/hiphop", "sad", "best", "beautiful"}},
     {button = ISOLATION, bpm = "100", var = false, url = "ISOLATION", cat = {"best", "epic", "video games", "peak"}},
@@ -1166,7 +1213,7 @@ local songs = {
     {button = SPECTRE, bpm = "128", var = false, url = "SPECTRE", cat = {"electronic", "memes", "beautiful", "best"}},
     {button = SUPER_IDOL, bpm = "136", var = false, url = "SUPER_IDOL", cat = {"memes"}},
     {button = THATS_WHAT_I_WANT, bpm = "85", var = false, url = "THATS_WHAT_I_WANT", cat = {"pop/hiphop"}},
-    {button = THE_AMAZING_DIGITAL, bpm = "110", var = false, url = "THE_AMAZING_DIGITAL", cat = {"best"}},
+    {button = THE_AMAZING_DIGITAL, bpm = "110", var = false, url = "THE_AMAZING_DIGITAL", cat = {"best", "movies/tv"}},
     {button = JOCELYN_FLORES, bpm = "136", var = false, url = "JOCELYN_FLORES", cat = {"sad", "beautiful"}},
     {button = FLY_ME_TO_THE_MOON, bpm = "140", var = false, url = "FLY_ME_TO_THE_MOON", cat = {"classical", "beautiful"}},
     {button = BAD_HABIT, bpm = "80", var = false, url = "BAD_HABIT", cat = {"pop/hiphop", "sad"}},
@@ -1175,7 +1222,7 @@ local songs = {
     {button = MY_ORDINARY_LIFE, bpm = "130", var = false, url = "MY_ORDINARY_LIFE", cat = {"electronic"}},
     {button = RUINS, bpm = "138", var = false, url = "RUINS", cat = {"video games", "undertale"}},
     {button = STEREO_HEARTS, bpm = "96", var = false, url = "STEREO_HEARTS", cat = {"pop/hiphop", "best"}},
-    {button = STRANGER_THINGS, bpm = "80", var = false, url = "STRANGER_THINGS", cat = {}},
+    {button = STRANGER_THINGS, bpm = "80", var = false, url = "STRANGER_THINGS", cat = {"movies/tv"}},
     {button = HH, bpm = "150", var = false, url = "HH", cat = {"memes", "peak"}},
     {button = A505, bpm = "140", var = false, url = "505", cat = {"rock", "sad"}},
     {button = BELIEVER, bpm = "188", var = false, url = "BELIEVER", cat = {"rock", "pop/hiphop", "epic"}},
@@ -1185,20 +1232,20 @@ local songs = {
     {button = SKELETAL_SHENANIGANS, bpm = "158", var = false, url = "SKELETAL_SHENANIGANS", cat = {"video games", "electronic"}},
     {button = GODS_PLAN, bpm = "130", var = false, url = "GODS_PLAN", cat = {"pop/hiphop"}},
     {button = HOTLINE_BLING, bpm = "100", var = false, url = "HOTLINE_BLING", cat = {"pop/hiphop"}},
-    {button = I_REALLY_WANT_TO_STAY, bpm = "128", var = false, url = "I_REALLY_WANT_TO_STAY", cat = {"pop/hiphop", "beautiful", "electronic"}},
+    {button = I_REALLY_WANT_TO_STAY, bpm = "128", var = false, url = "I_REALLY_WANT_TO_STAY", cat = {"movies/tv", "pop/hiphop", "beautiful", "electronic"}},
     {button = ICARUS, bpm = "100", var = false, url = "ICARUS", cat = {"beautiful"}},
-    {button = LAVENDER_TOWN, bpm = "120", var = false, url = "LAVENDER_TOWN", cat = {"video games", "memes"}},
+    {button = LAVENDER_TOWN, bpm = "120", var = false, url = "LAVENDER_TOWN", cat = {"video games", "memes", "creepy/weirdcore"}},
     {button = ALONE, bpm = "142", var = false, url = "ALONE", cat = {"electronic"}},
     {button = FRIENDS, bpm = "95", var = false, url = "FRIENDS", cat = {"pop/hiphop", "electronic"}},
     {button = MIDDLE_OF_THE_NIGHT, bpm = "93", var = false, url = "MIDDLE_OF_THE_NIGHT", cat = {"pop/hiphop", "epic", "beautiful", "best"}},
-    {button = A99DOT9, bpm = "180", var = false, url = "99DOT9", cat = {"anime/jpop"}},
+    {button = A99DOT9, bpm = "180", var = false, url = "99DOT9", cat = {"anime/jpop", "movies/tv"}},
     {button = MY_EYES, bpm = "120", var = false, url = "MY_EYES", cat = {"pop/hiphop", "beautiful", "best"}},
     {button = CRAB_RAVE, bpm = "125", var = false, url = "CRAB_RAVE", cat = {"memes", "electronic", "epic"}},
     {button = ONE_DANCE, bpm = "108", var = false, url = "ONE_DANCE", cat = {"pop/hiphop"}},
     {button = RAIN, bpm = "77", var = false, url = "RAIN", cat = {"beautiful", "best", "epic"}},
     {button = RUSH_OF_LIFE, bpm = "122", var = false, url = "RUSH_OF_LIFE", cat = {"beautiful", "epic", "best", "peak"}},
     {button = THE_SEARCH, bpm = "120", var = false, url = "THE_SEARCH", cat = {"pop/hiphop", "epic", "beautiful", "best"}},
-    {button = MICHAEL_MYERS, bpm = "144", var = false, url = "MICHAEL_MYERS", cat = {"memes"}},
+    {button = MICHAEL_MYERS, bpm = "144", var = false, url = "MICHAEL_MYERS", cat = {"memes", "creepy/weirdcore"}},
     {button = YUUSHA, bpm = "208", var = false, url = "YUUSHA", cat = {"anime/jpop"}},
     {button = CAROL_OF_THE_BELLS_EPIC, bpm = "135", var = false, url = "CAROL_OF_THE_BELLS_EPIC", cat = {"classical", "epic", "beautiful", "best"}},
     {button = CAROL_OF_THE_BELLS, bpm = "50", var = false, url = "CAROL_OF_THE_BELLS", cat = {"classical", "beautiful", "best"}},
@@ -1209,6 +1256,55 @@ local songs = {
     {button = WINTER, bpm = "136", var = false, url = "WINTER", cat = {"classical", "best", "beautiful", "epic", "peak"}},
     {button = SPRING, bpm = "100", var = false, url = "SPRING", cat = {"classical", "video games", "memes", "best"}},
     {button = SUMMER, bpm = "150", var = false, url = "SUMMER", cat = {"classical", "epic", "best", "beautiful", "peak"}},
+    {button = TAKE_ON_ME, bpm = "169", var = false, url = "TAKE_ON_ME", cat = {"pop/hiphop"}},
+    {button = BIG_FISH, bpm = "71", var = false, url = "BIG_FISH", cat = {"beautiful"}},
+    {button = NOPE_YOUR_TOO_LATE, bpm = "118", var = false, url = "NOPE_YOUR_TOO_LATE", cat = {"rock", "sad"}},
+    {button = INVISIBLE, bpm = "82", var = false, url = "INVISIBLE", cat = {"electronic", "beautiful", "best"}},
+    {button = PASSACAGLIA, bpm = "130", var = false, url = "PASSACAGLIA", cat = {"classical", "beautiful", "best"}},
+    {button = HAZY_MOON, bpm = "120", var = false, url = "HAZY_MOON", cat = {"anime/jpop", "beautiful"}},
+    {button = TIME_BACK, bpm = "120", var = false, url = "TIME_BACK", cat = {"movies/tv"}},
+    {button = TEST_DRIVE, bpm = "120", var = false, url = "TEST_DRIVE", cat = {"epic", "movies/tv"}},
+    {button = TAKE_FIVE, bpm = "166", var = false, url = "TAKE_FIVE", cat = {""}},
+    {button = HEART_AFIRE, bpm = "100", var = false, url = "HEART_AFIRE", cat = {"epic", "beautiful", "best"}},
+    {button = LIEBESTRAUM_NO3, bpm = "152", var = false, url = "LIEBESTRAUM_NO3", cat = {"classical"}},
+    {button = TORRENT, bpm = "190", var = false, url = "TORRENT", cat = {"classical", "epic", "best", "peak"}},
+    {button = REVOLUTIONARY, bpm = "140", var = false, url = "REVOLUTIONARY", cat = {"classical", "best"}},
+    {button = WALTZ_IN_C_MINOR, bpm = "120", var = false, url = "WALTZ_IN_C_MINOR", cat = {"classical"}},
+    {button = PRELUDE_OP28, bpm = "42", var = false, url = "PRELUDE_OP28", cat = {"classical"}},
+    {button = DIES_IRAE, bpm = "160", var = false, url = "DIES_IRAE", cat = {"classical", "best", "peak", "epic"}},
+    {button = PRELUDE_NO2, bpm = "145", var = false, url = "PRELUDE_NO2", cat = {"classical"}},
+    {button = SYMPHONY_NO5, bpm = "120", var = false, url = "SYMPHONY_NO5", cat = {"classical"}},
+    {button = PATHETIQUE, bpm = "31", var = false, url = "PATHETIQUE", cat = {"classical"}},
+    {button = COMPTINE_DUN_AUTRE_ETE, bpm = "95", var = false, url = "COMPTINE_DUN_AUTRE_ETE", cat = {"classical", "beautiful"}},
+    {button = DIE_IRAE_III, bpm = "160", var = false, url = "DIE_IRAE_III", cat = {"classical"}},
+    {button = DIES_IRAE_III_2, bpm = "160", var = false, url = "DIES_IRAE_III_2", cat = {"classical", "epic", "best", "peak"}},
+    {button = PLANT_VS_ZOMBIES, bpm = "100", var = false, url = "PLANT_VS_ZOMBIES", cat = {"video games", "memes"}},
+    {button = LOVE, bpm = "68", var = false, url = "LOVE", cat = {"sad"}},
+    {button = STRESSED_OUT, bpm = "170", var = false, url = "STRESSED_OUT", cat = {"pop/hiphop", "best"}},
+    {button = CLOCKS, bpm = "132", var = false, url = "CLOCKS", cat = {"rock"}},
+    {button = GLASSY_SKY, bpm = "68", var = false, url = "GLASSY_SKY", cat = {"anime/jpop", "sad", "movies/tv"}},
+    {button = PAYPHONE, bpm = "110", var = false, url = "PAYPHONE", cat = {"pop/hiphop", "sad", "best", "beautiful"}},
+    {button = FOR_THE_DAMAGED_CODA, bpm = "140", var = false, url = "FOR_THE_DAMAGED_CODA", cat = {"sad", "memes", "epic"}},
+    {button = PARADISE, bpm = "125", var = false, url = "PARADISE", cat = {"pop/hiphop"}},
+    {button = PLEAD, bpm = "120", var = false, url = "PLEAD", cat = {"video games", "electronic"}},
+    {button = READY_OR_NOT, bpm = "160", var = false, url = "READY_OR_NOT", cat = {"video games", "electronic"}},
+    {button = FOR_THE_DAMAGED_CODA_2, bpm = "150", var = false, url = "FOR_THE_DAMAGED_CODA_2", cat = {"sad", "memes", "epic", "best", "peak"}},
+    {button = A7_WEEKS_3_DAYS, bpm = "130", var = false, url = "7_WEEKS_3_DAYS", cat = {"creepy/weirdcore"}},
+    {button = SEE_YOU_AGAIN_CHARLIE, bpm = "60", var = false, url = "SEE_YOU_AGAIN_CHARLIE", cat = {"pop/hiphop", "sad", "beautiful"}},
+    {button = ANNIHILATE, bpm = "146", var = false, url = "ANNIHILATE", cat = {"pop/hiphop", "movies/tv"}},
+    {button = MY_HEART_WILL_GO_ON, bpm = "90", var = false, url = "MY_HEART_WILL_GO_ON", cat = {"sad", "movies/tv", "beautiful", "best"}},
+    {button = NUMBERS, bpm = "100", var = false, url = "NUMBERS", cat = {"creepy/weirdcore"}},
+    {button = NYAN_CAT, bpm = "140", var = false, url = "NYAN_CAT", cat = {"memes", "best"}},
+    {button = OVERTAKEN, bpm = "105", var = false, url = "OVERTAKEN", cat = {"anime/jpop", "movies/tv"}},
+    {button = GURENGE, bpm = "135", var = false, url = "GURENGE", cat = {"anime/jpop", "movies/tv", "best", "epic", "beautiful", "peak"}},
+    {button = CROSSING_FIELD, bpm = "179", var = false, url = "CROSSING_FIELD", cat = {"anime/jpop", "movies/tv"}},
+    {button = UNTIL_I_FOUND_YOU, bpm = "101", var = false, url = "UNTIL_I_FOUND_YOU", cat = {"pop/hiphop", "sad", "beautiful", "best"}},
+    {button = OLD_DOLL, bpm = "100", var = false, url = "OLD_DOLL", cat = {"creepy/weirdcore"}},
+    {button = WE_ARE, bpm = "168", var = false, url = "WE_ARE", cat = {"anime/jpop", "movies/tv"}},
+    {button = RIGHTEOUS, bpm = "160", var = false, url = "RIGHTEOUS", cat = {"electronic"}},
+    {button = SILHOUETTE, bpm = "185", var = false, url = "SILHOUETTE", cat = {"anime/jpop", "movies/tv"}},
+    {button = LET_IT_HAPPEN, bpm = "120", var = false, url = "LET_IT_HAPPEN", cat = {"rock", "beautiful"}},
+    {button = BEANIE, bpm = "135", var = false, url = "BEANIE", cat = {"sad"}},
 
 
 
@@ -1229,13 +1325,15 @@ local categories = {
     "epic",
     "beautiful",
     "video games",
+    "movies/tv",
     "memes",
     "classical",
-    "anime/jpop",
     "pop/hiphop",
+    "anime/jpop",
     "sad",
     "electronic",
     "rock",
+    "creepy/weirdcore",
     "undertale",
     "minecraft",
     "omori"
@@ -1247,11 +1345,6 @@ local customsongs = {}
 print("initiating buttons")
 
 print("fetching songs")
-
-local specsong = {button = AVRIL_14, bpm = "79", var = false, url = "https://pastefy.app/NY5KqR8m/raw", cat = {}}
-if game.Players.LocalPlayer.Name == "4BCQA" then
-    table.insert(songs, specsong)
-end
 
 local customnotice = Instance.new("TextLabel")
 customnotice.Name = "customnotice"
@@ -1419,7 +1512,7 @@ function playbuttonclicked()
             if song.var == true then
                 loadstring(
                     game:HttpGet(
-                        "https://raw.githubusercontent.com/hellohellohell012321/TALENTLESS/main/" .. song.url,
+                        "https://raw.githubusercontent.com/hellohellohell012321/TALENTLESS/main/SONGS/" .. song.url,
                         true
                     )
                 )()
@@ -1487,7 +1580,7 @@ local function createstopbutton()
             function()
                 playingall = false
                 STOPLOOP:Destroy()
-                stopPlayingSongs()
+                stopPlayingSongs() -- universal function made from the loader
                 STOPLOOP = nil
             end
         )
@@ -1543,7 +1636,7 @@ closeButton.MouseButton1Click:Connect(
         ScreenGui:Destroy()
         STOPLOOP = nil
         playingall = false
-        stopAllSongs()
+        playsound("104269922408932", 0.1)
     end
 )
 
@@ -1741,8 +1834,8 @@ function updateSongs()
                                 return
                             else
                                 local songcode = readfile(custom) -- define the contents of the song file
-                                local func, err = loadstring(songcode) -- load it
-
+                                local func = loadstring(songcode) -- load it
+                                
                                 if func then
                                     print("running scrip....")
                                     songname.Text = tsongname
@@ -1829,6 +1922,6 @@ print([[
 
 ]])
 
-loadstring(
-    game:HttpGet("https://raw.githubusercontent.com/hellohellohell012321/TALENTLESS/main/logger.lua", true)
-)()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/hellohellohell012321/TALENTLESS/main/fake_ad.lua", true))()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/hellohellohell012321/TALENTLESS/main/logger.lua", true))()
