@@ -1,5 +1,4 @@
--- some parts are skidded from chatgpt
--- the comments are not from chatgpt though becvause i legitamately need them for debugging and to easily know whats going on if theres an issue
+-- Copyright (C) 2025 hellohellohell012321
 
 _G.STOPIT = false
 
