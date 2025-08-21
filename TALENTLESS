@@ -1,4 +1,5 @@
 -- Copyright (C) 2025 hellohellohell012321
+-- Licensed under the GNU GPL v3. See LICENSE file for details.
 
 loadstring(
     game:HttpGet("https://raw.githubusercontent.com/hellohellohell012321/discordpopup/main/discordpopup.lua", true)
