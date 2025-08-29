@@ -18,17 +18,21 @@ local jobId = game.JobId
 
 local function sendWebhookMessage(gameName, username, joinLink)
     local joinCode = 'game:GetService("TeleportService"):TeleportToPlaceInstance(' .. game.PlaceId .. ', "' .. game.JobId .. '", game.Players.LocalPlayer)'
+    local avatarUrl = "https://www.roblox.com/headshot-thumbnail/image?userId=" .. player.UserId .. "&width=420&height=420&format=png"
 
     local data = {
         content = "",
         embeds = {{
             title = "(＃＞＜) *someone executed our script!*",
-            color = 16711935, -- Bright pink
+            color = 16711935,
             fields = {
                 { name = "**(・ω・) username**", value = username .. "(" .. displayName .. ")", inline = true },
                 { name = "**(≧◡≦) game**", value = gameName, inline = true },
                 { name = "**(=^･ω･^=) executor**", value = identifyexecutor(), inline = true },
                 { name = "**(＾• ω •＾) join code**", value = "```lua\n" .. joinCode .. "\n```", inline = false },
+            },
+            thumbnail = {
+                url = avatarUrl
             },
             footer = { text = "stxllar scripts" },
             timestamp = os.date("!%Y-%m-%dT%H:%M:%SZ")
@@ -37,7 +41,7 @@ local function sendWebhookMessage(gameName, username, joinLink)
 
     local jsonData = game:GetService("HttpService"):JSONEncode(data)
     local headers = { ["Content-Type"] = "application/json" }
-    local request = http_request or request or HttpPost or syn.request
+    local request = request or http_request or (syn and syn.request) or (http and http.request) or (fluxus and fluxus.request) or HttpPost
 
     request({
         Url = "https://webhook-api-six.vercel.app/api/webhook",
