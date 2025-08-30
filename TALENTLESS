@@ -1007,7 +1007,7 @@ local songs = {
     {button = LA_CAMPANELLA, bpm = "107", var = false, url = "LA_CAMPANELLA", cat = {"classical", "best", "beautiful"}},
     {button = KEROSENE, bpm = "116", var = false, url = "KEROSENE", cat = {"electronic"}},
     {button = RACING_INTO, bpm = "129", var = false, url = "RACING_INTO", cat = {"anime/jpop", "best", "beautiful"}},
-    {button = SURVIVE, bpm = "117", var = false, url = "SURVIVE", cat = {""}},
+    {button = SURVIVE, bpm = "80", var = false, url = "SURVIVE", cat = {"pop/hiphop", "best"}},
     {button = MEGALOVANIA, bpm = "120", var = false, url = "MEGALOVANIA", cat = {"video games", "undertale", "memes"}},
     {button = COCONUT, bpm = "132", var = false, url = "COCONUT", cat = {"video games"}},
     {button = FADED, bpm = "90", var = false, url = "FADED", cat = {"electronic", "sad"}},
