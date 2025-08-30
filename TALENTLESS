@@ -976,7 +976,7 @@ local songs = {
     {button = GOLDENHOUR, bpm = "94", var = false, url = "GOLDEN_HOUR", cat = {"beautiful", "best"}},
     {button = CUPID, bpm = "120", var = false, url = "CUPID", cat = {"pop/hiphop"}},
     {button = RATDANCE, bpm = "120", var = false, url = "RAT_DANCE", cat = {"memes"}},
-    {button = RUNAWAY, bpm = "85", var = false, url = "RUNAWAY", cat = {"pop/hiphop"}},
+    {button = RUNAWAY, bpm = "160", var = false, url = "RUNAWAY", cat = {"pop/hiphop"}},
     {button = YOUR_REALITY, bpm = "105", var = false, url = "YOUR_REALITY", cat = {"video games", "beautiful", "best"}},
     {button = ANOTHER_LOVE, bpm = "123", var = false, url = "ANOTHER_LOVE", cat = {"sad", "best", "epic", "beautiful", "pop/hiphop"}},
     {button = FINAL_DUET, bpm = "84", var = false, url = "FINAL_DUET", cat = {"video games", "omori"}},
@@ -1684,7 +1684,6 @@ LOOPRANDOM.MouseButton1Click:Connect(
         local playedSongs = {}
 
         local function getRandomSong()
-
             if #playedSongs >= #songs then
                 playedSongs = {}
             end
@@ -1696,7 +1695,6 @@ LOOPRANDOM.MouseButton1Click:Connect(
                     return songs[ransong]
                 end
             end
-
         end
 
         while wait(1) do
