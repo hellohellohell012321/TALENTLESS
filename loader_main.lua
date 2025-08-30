@@ -700,27 +700,7 @@ function keypress(keys, beats, bpm)
     )()
 end
 
--- KEYSEQUENCE16 FUNCTION
--- KEYSEQUENCE16 FUNCTION
--- KEYSEQUENCE16 FUNCTION
-
-function keysequence16(keys, beats, bpm)
-    if _G.STOPIT then return end
-    if pausing then
-        resumeEvent.Event:Wait()
-    else
-    end
-
-    coroutine.wrap(
-        function()
-            for i = 1, #keys do
-                local key = keys:sub(i, i)
-                keypress(key, beats, bpm)
-                rest(0.25, bpm)
-            end
-        end
-    )()
-end
+-- PEDAL FUNCTIONS
 
 function pedalDown()
     if _G.STOPIT then return end
