@@ -285,7 +285,7 @@ toggle.MouseButton1Click:Connect(function()
     if frame.Visible then
         playSound(70452176150315, 0.1)
     else
-        playSound(1524549907, 0.1) 
+        playSound(1524549907, 0.1)
     end
 end)
 
@@ -535,8 +535,8 @@ local function newSongButton(name, textsize, alternateNames)
     favButton.BackgroundTransparency = 1.000
     favButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
     favButton.BorderSizePixel = 0
-    favButton.AnchorPoint = Vector2.new(1, 0.5)
-    favButton.Position = UDim2.new(1, 0, 0.5, 0)
+    favButton.AnchorPoint = Vector2.new(0, 0.5)
+    favButton.Position = UDim2.new(0, 0, 0.5, 0)
     favButton.Size = UDim2.new(0, 25, 0, 25)
     favButton.Image = "rbxassetid://76156993128854" -- unfav icon
     favButton.Visible = false
@@ -561,7 +561,7 @@ if game.Players.LocalPlayer.Name == "4BCQA" or game.Players.LocalPlayer.Name == 
 else
 end
 
-A505 = newSongButton("505", 27, {"arctic monkeys", "artic monkeys"}) 
+A505 = newSongButton("505", 27, {"arctic monkeys", "artic monkeys"})
 A7_WEEKS_3_DAYS = newSongButton("7 WEEKS & 3 DAYS", 27, {""})
 A99DOT9 = newSongButton("99.9", 27, {"mob psycho 100"})
 A_CYBERS_WORLD = newSongButton("A CYBER'S WORLD?", 24, {"toby fox"})
@@ -921,7 +921,7 @@ TURKISH = newSongButton("TURKISH MARCH", 27, {"mozart", "rondo alla turca"})
 UNDERSTAND = newSongButton("UNDERSTAND", 27, {"boywithuke"})
 UNDERTALE = newSongButton("UNDERTALE", 27, {})
 UNDERWATER = newSongButton("UNDERWATER PROM QUEENS", 14, {"omori"})
-UNITY = newSongButton("UNITY", 27, {"thefatrat", "ncs", "no copyright sounds"}) 
+UNITY = newSongButton("UNITY", 27, {"thefatrat", "ncs", "no copyright sounds"})
 UNRAVEL = newSongButton("UNRAVEL", 27, {"tokyo ghoul"})
 UNRAVEL_EPIC = newSongButton("UNRAVEL (EPIC VER.)", 22, {"tokyo ghoul", "animenz"})
 UNSTOPPABLE = newSongButton("UNSTOPPABLE", 27, {"sia"})
@@ -1452,7 +1452,7 @@ local customcat = newcat("custom songs (0)")
 customcat.MouseButton1Click:Connect(
     function()
         scroll.CanvasPosition = Vector2.new(0, 0)
-        
+
         makeAllInvisible()
 
         for _, song in ipairs(customsongbuttons) do
@@ -1508,7 +1508,7 @@ local allcats = newcat("all (" .. tostring(#songs) .. ")")
 allcats.MouseButton1Click:Connect(
     function()
         scroll.CanvasPosition = Vector2.new(0, 0)
-        
+
         makeAllInvisible()
 
         for _, song in ipairs(songs) do
@@ -1680,7 +1680,7 @@ LOOPRANDOM.MouseButton1Click:Connect(
         end
         playingall = true
         createstopbutton()
-        
+
         local playedSongs = {}
 
         local function getRandomSong()
@@ -1696,7 +1696,7 @@ LOOPRANDOM.MouseButton1Click:Connect(
                     return songs[ransong]
                 end
             end
-            
+
         end
 
         while wait(1) do
@@ -1767,6 +1767,20 @@ local function newCustomSongButton(name)
     ImageButton.Position = UDim2.new(0.816999972, 0, 0.115000002, 0)
     ImageButton.Size = UDim2.new(0, 26, 0, 27)
     ImageButton.Image = "http://www.roblox.com/asset/?id=6121397347"
+
+    local favButton = Instance.new("ImageButton") -- star button for favourites
+
+    favButton.Parent = test
+    favButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    favButton.BackgroundTransparency = 1.000
+    favButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+    favButton.BorderSizePixel = 0
+    favButton.AnchorPoint = Vector2.new(0, 0.5)
+    favButton.Position = UDim2.new(0, 0, 0.5, 0)
+    favButton.Size = UDim2.new(0, 25, 0, 25)
+    favButton.Image = "rbxassetid://76156993128854" -- unfav icon
+    favButton.Visible = false
+    favButton.Name = "favButton"
 
     return {button = test, delbutton = ImageButton, frame = customsongframe}
 end
@@ -1927,7 +1941,7 @@ function updateSongs() -- universal function so it can be called from the custom
                             else
                                 local songcode = readfile(custom) -- define the contents of the song file
                                 local func = loadstring(songcode) -- load it
-                                
+
                                 if func then
                                     print("running scrip....")
                                     songname.Text = tsongname
@@ -1935,7 +1949,7 @@ function updateSongs() -- universal function so it can be called from the custom
                                     playSound("6493287948", 0.1)
                                     NotificationLibrary:SendNotification("Success", "Began playing song.", 1)
                                     songisplaying = true
-                                    func()  
+                                    func()
                                 else
                                     print("invalid script")
                                     playSound("6493287948", 0.1)
@@ -1981,7 +1995,7 @@ function updateSongs() -- universal function so it can be called from the custom
                 else -- if yes table.find
                     print("song already added, skipping")
                 end
-            else    
+            else
                 print("its not a txt, skipping")
             end
         end
@@ -2017,38 +2031,50 @@ local function updateFavs()
     local favFileExists
     local favSongsContent
 
-    if isfile("TALENTLESS_FAV_SONGS.txt") then 
+    if isfile("TALENTLESS_FAV_SONGS.txt") then
         favFileExists = true
         favSongsContent = readfile("TALENTLESS_FAV_SONGS.txt")
     else
         favFileExists = false
     end
 
-    if favFileExists then 
+    if favFileExists then
         local allSongNames = {}
 
         for _, song in ipairs(songs) do
             table.insert(allSongNames, {button = song.button, name = song.button.Text})
         end
-        
+
+        for _, songFrame in ipairs(customsongbuttons) do
+            local btn = songFrame and songFrame:FindFirstChildOfClass("TextButton")
+            if btn then
+                table.insert(allSongNames, {button = songFrame, name = btn.Text})
+            end
+        end
+
         for line in favSongsContent:gmatch("[^\r\n]+") do
             if line ~= "" and not table.find(addedFavsNames, line) then
-                for _, entry in ipairs(allSongNames) do 
+                for _, entry in ipairs(allSongNames) do
                     if entry.name == line then
+                        if entry.button:IsA("Frame") then
+                            local btn = entry.button and entry.button:FindFirstChildOfClass("TextButton")
+                            btn.favButton.Image = "rbxassetid://137655053511068" -- fav icon
+                        else
+                            entry.button.favButton.Image = "rbxassetid://137655053511068" -- fav icon
+                        end
                         table.insert(favsongbuttons, entry.button)
-                        entry.button.favButton.Image = "rbxassetid://137655053511068" -- fav icon
                     end
                 end
                 table.insert(addedFavsNames, line)
             end
         end
     end
-    
+
     updatefavcount()
 end
 
 local function favouriteSong(name)
-    if not isfile("TALENTLESS_FAV_SONGS.txt") then 
+    if not isfile("TALENTLESS_FAV_SONGS.txt") then
         writefile("TALENTLESS_FAV_SONGS.txt", "")
     end
 
@@ -2095,6 +2121,15 @@ local function unfavouriteSong(name)
     end
 
     for i, button in ipairs(favsongbuttons) do
+        if button:IsA("Frame") then
+            local btn = button and button:FindFirstChildOfClass("TextButton")
+            if btn and btn.Text == name then
+                table.remove(favsongbuttons, i)
+                btn.favButton.Image = "rbxassetid://76156993128854" -- unfav icon
+                break
+            end
+        end
+        
         if button.Text == name then
             table.remove(favsongbuttons, i)
             button.favButton.Image = "rbxassetid://76156993128854" -- unfav icon
@@ -2122,6 +2157,14 @@ togglefavs.MouseButton1Click:Connect(function()
     for _, song in ipairs(songs) do
         song.button.favButton.Visible = not song.button.favButton.Visible
     end
+
+    for i, songFrame in ipairs(customsongbuttons) do
+        local btn = songFrame and songFrame:FindFirstChildOfClass("TextButton")
+        local fav = btn and btn:FindFirstChild("favButton")
+        if fav then
+            fav.Visible = not fav.Visible
+        end
+    end
 end)
 
 local unfavDecal = "rbxassetid://76156993128854"
@@ -2134,7 +2177,7 @@ for _, song in ipairs(songs) do
             favouriteSong(song.button.Text)
             favB.Image = favDecal
             updateFavs()
-        else 
+        else
             favB.Image = unfavDecal
             unfavouriteSong(song.button.Text)
             updateFavs()
@@ -2142,15 +2185,33 @@ for _, song in ipairs(songs) do
     end)
 end
 
+for _, songFrame in ipairs(customsongbuttons) do
+    local btn = songFrame and songFrame:FindFirstChildOfClass("TextButton")
+    local favB = btn and btn:FindFirstChild("favButton")
+    if favB then
+        favB.MouseButton1Click:Connect(function()
+            if favB.Image == unfavDecal then
+                favouriteSong(btn.Text)
+                favB.Image = favDecal
+                updateFavs()
+            else
+                favB.Image = unfavDecal
+                unfavouriteSong(btn.Text)
+                updateFavs()
+            end
+        end)
+    end
+end
+
 print([[
 
 
 
- __ __|   \     |      ____|   \  | __ __|  |      ____|   ___|   ___|  
-    |    _ \    |      __|      \ |    |    |      __|   \___ \ \___ \  
-    |   ___ \   |      |      |\  |    |    |      |           |      | 
-   _| _/    _\ _____| _____| _| \_|   _|   _____| _____| _____/ _____/  
- 
+ __ __|   \     |      ____|   \  | __ __|  |      ____|   ___|   ___|
+    |    _ \    |      __|      \ |    |    |      __|   \___ \ \___ \
+    |   ___ \   |      |      |\  |    |    |      |           |      |
+   _| _/    _\ _____| _____| _| \_|   _|   _____| _____| _____/ _____/
+
 
 
 ]])
