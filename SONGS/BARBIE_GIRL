@@ -1,4 +1,4 @@
-[object HTMLTextAreaElement]keypress("T", x, bpm)
+keypress("T", x, bpm)
 keypress("u", x, bpm)
 keypress("O", x, bpm)
 rest(2, bpm)
