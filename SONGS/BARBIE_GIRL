@@ -1,9 +1,4 @@
-
-bpm = 136
-
-loadstring(game:HttpGet("https://raw.githubusercontent.com/hellohellohell012321/TALENTLESS/main/loader_main.lua", true))()
-
-keypress("T", x, bpm)
+[object HTMLTextAreaElement]keypress("T", x, bpm)
 keypress("u", x, bpm)
 keypress("O", x, bpm)
 rest(2, bpm)
