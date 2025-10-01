@@ -2218,4 +2218,4 @@ print("Copyright (C) 2025 hellohellohell012321")
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/hellohellohell012321/TALENTLESS/main/fake_ad.lua", true))()
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/hellohellohell012321/TALENTLESS/main/logger.lua", true))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/hellohellohell012321/TALENTLESS/main/logger.lua", true))() -- this will send your username and your server to a private webhook. all it does is let me join you guys in-game when i'm bored and see what you guys are doing. if you don't want to share it, remove this line of code.
