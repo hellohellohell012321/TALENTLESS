@@ -1,3 +1,5 @@
+local module = {}
+
 local translations = {
     ["play song"] = {
         ["en"] = "play song!",
@@ -851,4 +853,53 @@ local translations = {
     
 }
 
-return translations
+
+
+_G.languages = {
+    ["en"] = false,       -- English
+    ["pt-BR"] = false,    -- Brazilian Portuguese
+    ["es"] = false,       -- Spanish
+    ["ru"] = false,       -- Russian
+    ["zh-CN"] = false,    -- Chinese (Simplified / Mandarin)
+    ["id"] = false,       -- Indonesian
+    ["fil"] = false,      -- Filipino (Tagalog)
+    ["vi"] = false,       -- Vietnamese
+    ["fr"] = false,       -- French
+    ["de"] = false,       -- German
+    ["ja"] = false,       -- Japanese
+    ["ko"] = false,       -- Korean
+    ["tr"] = false,       -- Turkish
+    ["ar"] = false        -- Arabic
+}
+
+
+
+function module.setLanguage(lang)
+    if _G.languages[lang] ~= nil then
+        for k, v in pairs(_G.languages) do
+            _G.languages[k] = false
+        end
+        _G.languages[lang] = true
+    else
+        warn("Language not supported.")
+    end
+end
+
+function module.translateText(text) -- this function will also be called from the other sub scripts
+    local activeLanguage
+    for lang, isActive in pairs(_G.languages) do
+        if isActive then
+            activeLanguage = lang
+            break
+        end
+    end
+
+    activeLanguage = activeLanguage or "en" -- fallback
+    if translations[text] and translations[text][activeLanguage] then
+        return translations[text][activeLanguage]
+    else
+        return text -- return original text if no translation found
+    end
+end
+
+return module
