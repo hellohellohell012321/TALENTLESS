@@ -874,7 +874,7 @@ _G.languages = {
 
 
 
-function module.setLanguage(lang)
+function module:setLanguage(lang)
     if _G.languages[lang] ~= nil then
         for k, v in pairs(_G.languages) do
             _G.languages[k] = false
@@ -885,7 +885,7 @@ function module.setLanguage(lang)
     end
 end
 
-function module.translateText(text) -- this function will also be called from the other sub scripts
+function module:translateText(text) -- this function will also be called from the other sub scripts
     local activeLanguage
     for lang, isActive in pairs(_G.languages) do
         if isActive then
