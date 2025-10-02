@@ -855,25 +855,6 @@ local translations = {
 
 
 
-_G.languages = {
-    ["en"] = false,       -- English
-    ["pt-BR"] = false,    -- Brazilian Portuguese
-    ["es"] = false,       -- Spanish
-    ["ru"] = false,       -- Russian
-    ["zh-CN"] = false,    -- Chinese (Simplified / Mandarin)
-    ["id"] = false,       -- Indonesian
-    ["fil"] = false,      -- Filipino (Tagalog)
-    ["vi"] = false,       -- Vietnamese
-    ["fr"] = false,       -- French
-    ["de"] = false,       -- German
-    ["ja"] = false,       -- Japanese
-    ["ko"] = false,       -- Korean
-    ["tr"] = false,       -- Turkish
-    ["ar"] = false        -- Arabic
-}
-
-
-
 function translator:setLanguage(lang)
     print("Trying to set language to:", lang)
     if _G.languages[lang] ~= nil then
