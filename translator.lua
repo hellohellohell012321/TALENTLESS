@@ -613,7 +613,7 @@ local translations = {
         ["ar"] = "تم حذف أغنيتك."
     },
 
-    ["spoof midi: what is it?"] = {
+    ["spoof midi title"] = {
         ["en"] = "spoof midi: what is it?",
         ["pt-BR"] = "falsificar midi: o que é?",
         ["es"] = "falsificar midi: ¿qué es?",
