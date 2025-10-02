@@ -1,4 +1,4 @@
-local module = {}
+local translator = {}
 
 local translations = {
     ["play song"] = {
@@ -874,18 +874,19 @@ _G.languages = {
 
 
 
-function module:setLanguage(lang)
+function translator:setLanguage(lang)
     if _G.languages[lang] ~= nil then
         for k, v in pairs(_G.languages) do
             _G.languages[k] = false
         end
         _G.languages[lang] = true
+        print("Language set to:", lang)
     else
         warn("Language not supported.")
     end
 end
 
-function module:translateText(text)
+function translator:translateText(text)
     print("translateText called with:", text)
 
     local activeLanguage
@@ -928,4 +929,4 @@ function module:translateText(text)
 end
 
 
-return module
+return translator
