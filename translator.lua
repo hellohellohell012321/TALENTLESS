@@ -875,54 +875,49 @@ _G.languages = {
 
 
 function translator:setLanguage(lang)
+    print("Trying to set language to:", lang)
     if _G.languages[lang] ~= nil then
         for k, v in pairs(_G.languages) do
             _G.languages[k] = false
+            print("Setting", k, "to false")
         end
         _G.languages[lang] = true
         print("Language set to:", lang)
     else
-        warn("Language not supported.")
+        warn("Language not supported:", lang)
     end
+    for k, v in pairs(_G.languages) do
+        print(k, v)
+    end    
 end
 
+
 function translator:translateText(text)
-    print("translateText called with:", text)
 
     local activeLanguage
 
     if _G.languages then
-        print("_G.languages found")
         for lang, isActive in pairs(_G.languages) do
-            print("Checking language:", lang, "isActive:", isActive)
             if isActive then
                 activeLanguage = lang
-                print("Active language set to:", activeLanguage)
                 break
             end
         end
     else
-        print("_G.languages is nil!")
     end
 
     activeLanguage = activeLanguage or "en"
-    print("Using language:", activeLanguage)
 
     if not translations then
-        print("translations table is nil!")
         return text
     end
 
     if translations[text] then
-        print("Found entry for text:", text)
         if translations[text][activeLanguage] then
-            print("Returning translation:", translations[text][activeLanguage])
             return translations[text][activeLanguage]
         else
-            print("No translation found for language:", activeLanguage)
         end
     else
-        print("No entry found for text:", text)
     end
 
     return text -- fallback
