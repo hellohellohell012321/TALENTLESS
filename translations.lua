@@ -609,7 +609,246 @@ local translations = {
         ["ko"] = "노래가 삭제되었습니다.",
         ["tr"] = "Şarkınız silindi.",
         ["ar"] = "تم حذف أغنيتك."
-    }
+    },
+
+    ["spoof midi: what is it?"] = {
+        ["en"] = "spoof midi: what is it?",
+        ["pt-BR"] = "falsificar midi: o que é?",
+        ["es"] = "falsificar midi: ¿qué es?",
+        ["ru"] = "подделать midi: что это?",
+        ["zh-CN"] = "伪装 midi：这是什么？",
+        ["id"] = "palsukan midi: apa itu?",
+        ["fil"] = "peke ang midi: ano ito?",
+        ["vi"] = "giả midi: đó là gì?",
+        ["fr"] = "simuler midi : qu'est-ce que c'est ?",
+        ["de"] = "midi vortäuschen: was ist das?",
+        ["ja"] = "midiを偽装：それは何？",
+        ["ko"] = "midi 스푸핑: 이게 뭐야?",
+        ["tr"] = "midi sahteleme: bu nedir?",
+        ["ar"] = "تزييف midi: ما هو؟"
+    },
+    
+    ["spoof midi info"] = {
+        ["en"] = "This option is showing because you're in the game 'piano rooms'. When 'spoof midi' is ON, talentless tells the game that all your inputs come from a real MIDI keyboard, not QWERTY! This makes autoplay more believable, since people will think you're playing a real piano. Just turn it on and play any song!",
+        ["pt-BR"] = "Esta opção aparece porque você está no jogo 'piano rooms'. Quando 'falsificar midi' está LIGADO, talentless diz ao jogo que seus inputs vêm de um teclado MIDI real, não de um QWERTY! Isso faz o autoplay parecer mais real. Basta ativar e tocar qualquer música!",
+        ["es"] = "Esta opción aparece porque estás en el juego 'piano rooms'. Cuando 'falsificar midi' está ACTIVADO, talentless le dice al juego que tus entradas vienen de un teclado MIDI real, no de QWERTY. Esto hace que el autoplay parezca más real. ¡Solo actívalo y toca cualquier canción!",
+        ["ru"] = "Эта опция появилась, потому что вы в игре 'piano rooms'. Когда 'подделать midi' включён, talentless сообщает игре, что все ваши нажатия идут с реальной MIDI-клавиатуры, а не QWERTY! Автовоспроизведение выглядит убедительнее — люди подумают, что вы играете на настоящем пианино. Просто включите и играйте любую песню!",
+        ["zh-CN"] = "此选项出现是因为你在游戏“piano rooms”中。当“伪装 midi”开启时，talentless 会告诉游戏你的输入来自真实的 MIDI 键盘，而不是 QWERTY！这样自动演奏更逼真，别人会以为你在弹钢琴。只需开启然后弹奏任意歌曲！",
+        ["id"] = "Opsi ini muncul karena kamu sedang di game 'piano rooms'. Saat 'palsukan midi' AKTIF, talentless memberi tahu game bahwa inputmu berasal dari keyboard MIDI asli, bukan QWERTY! Ini membuat autoplay lebih meyakinkan. Cukup aktifkan dan mainkan lagu apa pun!",
+        ["fil"] = "Lalabas ang opsyong ito dahil nasa laro kang 'piano rooms'. Kapag naka-ON ang 'peke ang midi', sasabihin ng talentless sa laro na galing sa totoong MIDI keyboard ang input mo, hindi QWERTY! Mas kapani-paniwala tuloy ang autoplay. I-on lang at tumugtog ng kahit anong kanta!",
+        ["vi"] = "Tùy chọn này xuất hiện vì bạn đang ở trò chơi 'piano rooms'. Khi 'giả midi' BẬT, talentless sẽ báo cho game rằng các thao tác của bạn đến từ bàn phím MIDI thật, không phải QWERTY! Điều này làm autoplay thuyết phục hơn. Chỉ cần bật lên và chơi bất kỳ bài nào!",
+        ["fr"] = "Cette option apparaît car vous êtes dans le jeu 'piano rooms'. Quand 'simuler midi' est ACTIVÉ, talentless fait croire au jeu que vos entrées viennent d’un vrai clavier MIDI, pas d’un QWERTY ! L’autoplay paraît ainsi plus crédible. Activez-le et jouez n’importe quelle chanson !",
+        ["de"] = "Diese Option erscheint, weil du im Spiel 'piano rooms' bist. Wenn 'midi vortäuschen' AKTIV ist, sagt talentless dem Spiel, dass deine Eingaben von einem echten MIDI-Keyboard kommen, nicht von QWERTY! Dadurch wirkt Autoplay glaubwürdiger. Einfach einschalten und ein Lied spielen!",
+        ["ja"] = "このオプションはゲーム「piano rooms」にいるため表示されています。「midiを偽装」をオンにすると、talentless はゲームにすべての入力がQWERTYではなく本物のMIDIキーボードから来ていると伝えます。これで自動演奏がより本物らしく見え、人々は本当にピアノを弾いていると思います。オンにして曲を弾くだけ！",
+        ["ko"] = "이 옵션은 'piano rooms' 게임에 있기 때문에 표시됩니다. 'midi 스푸핑'을 켜면, talentless가 게임에 당신의 입력이 QWERTY가 아닌 실제 MIDI 키보드에서 온 것처럼 알려줍니다! 이렇게 하면 자동 연주가 훨씬 그럴듯해집니다. 그냥 켜고 아무 노래나 연주해 보세요!",
+        ["tr"] = "Bu seçenek 'piano rooms' oyununda olduğun için görünüyor. 'midi sahteleme' AÇIK olduğunda, talentless oyuna tüm girişlerinin gerçek bir MIDI klavyeden geldiğini söyler, QWERTY’den değil! Bu, otomatik çalmayı daha inandırıcı yapar. Sadece aç ve herhangi bir şarkıyı çal!",
+        ["ar"] = "يظهر هذا الخيار لأنك في لعبة 'piano rooms'. عند تفعيل 'تزييف midi'، سيخبر talentless اللعبة أن جميع مدخلاتك تأتي من لوحة مفاتيح MIDI حقيقية، وليس QWERTY! هذا يجعل التشغيل التلقائي أكثر إقناعًا. فقط قم بتشغيله واعزف أي أغنية!"
+    },
+    
+    ["midi connect reminder"] = {
+        ["en"] = "Make sure to turn on midi connect!",
+        ["pt-BR"] = "Não esqueça de ativar o midi connect!",
+        ["es"] = "¡Asegúrate de activar midi connect!",
+        ["ru"] = "Обязательно включите midi connect!",
+        ["zh-CN"] = "记得开启 midi connect！",
+        ["id"] = "Pastikan menyalakan midi connect!",
+        ["fil"] = "Siguraduhin na naka-on ang midi connect!",
+        ["vi"] = "Nhớ bật midi connect!",
+        ["fr"] = "N’oubliez pas d’activer midi connect !",
+        ["de"] = "Stelle sicher, dass midi connect eingeschaltet ist!",
+        ["ja"] = "必ず midi connect をオンにしてください！",
+        ["ko"] = "midi connect를 꼭 켜세요!",
+        ["tr"] = "Midi connect'i açmayı unutma!",
+        ["ar"] = "تأكد من تشغيل midi connect!"
+    },
+
+    ["custom song instructions"] = {
+        ["en"] = "Convert a MIDI file into a song script using MIDI2LUA (bit.ly/midi2lua). Then, paste the full, unedited script here to add the song to your GUI in TALENTLESS!",
+        ["pt-BR"] = "Converta um arquivo MIDI em script usando MIDI2LUA (bit.ly/midi2lua). Depois, cole o script completo aqui para adicionar a música no TALENTLESS!",
+        ["es"] = "Convierte un archivo MIDI en script con MIDI2LUA (bit.ly/midi2lua). Luego pega el script completo aquí para añadir la canción en TALENTLESS.",
+        ["ru"] = "Преобразуйте MIDI-файл в скрипт через MIDI2LUA (bit.ly/midi2lua). Затем вставьте полный скрипт сюда, чтобы добавить песню в TALENTLESS!",
+        ["zh-CN"] = "使用 MIDI2LUA (bit.ly/midi2lua) 将 MIDI 文件转换为脚本。然后将完整脚本粘贴到这里，以添加歌曲到 TALENTLESS！",
+        ["id"] = "Ubah file MIDI jadi script dengan MIDI2LUA (bit.ly/midi2lua). Lalu tempel script lengkap di sini untuk menambah lagu ke TALENTLESS!",
+        ["fil"] = "I-convert ang MIDI file sa script gamit ang MIDI2LUA (bit.ly/midi2lua). Pagkatapos, i-paste ang buong script dito para maidagdag ang kanta sa TALENTLESS!",
+        ["vi"] = "Chuyển file MIDI thành script bằng MIDI2LUA (bit.ly/midi2lua). Sau đó dán script đầy đủ vào đây để thêm bài hát vào TALENTLESS!",
+        ["fr"] = "Convertissez un fichier MIDI en script avec MIDI2LUA (bit.ly/midi2lua). Puis collez le script complet ici pour ajouter la chanson à TALENTLESS !",
+        ["de"] = "Wandle eine MIDI-Datei in ein Script mit MIDI2LUA (bit.ly/midi2lua) um. Danach füge das vollständige Script hier ein, um das Lied in TALENTLESS hinzuzufügen!",
+        ["ja"] = "MIDIファイルをMIDI2LUA (bit.ly/midi2lua)でスクリプトに変換します。その後、完全なスクリプトをここに貼り付けてTALENTLESSに曲を追加してください！",
+        ["ko"] = "MIDI 파일을 MIDI2LUA (bit.ly/midi2lua)로 변환하세요. 그런 다음 전체 스크립트를 여기에 붙여 넣어 TALENTLESS에 노래를 추가하세요!",
+        ["tr"] = "Bir MIDI dosyasını MIDI2LUA (bit.ly/midi2lua) ile script'e çevir. Sonra tam script'i buraya yapıştırarak şarkıyı TALENTLESS'e ekle!",
+        ["ar"] = "حوّل ملف MIDI إلى سكربت باستخدام MIDI2LUA (bit.ly/midi2lua). ثم الصق السكربت الكامل هنا لإضافة الأغنية في TALENTLESS!"
+    },
+
+    ["insert song script"] = {
+        ["en"] = "Insert your song script and the name of your song.",
+        ["pt-BR"] = "Insira o script e o nome da sua música.",
+        ["es"] = "Inserta el script y el nombre de tu canción.",
+        ["ru"] = "Вставьте скрипт и название вашей песни.",
+        ["zh-CN"] = "输入脚本和歌曲名称。",
+        ["id"] = "Masukkan script dan nama lagumu.",
+        ["fil"] = "Ilagay ang script at pangalan ng kanta mo.",
+        ["vi"] = "Nhập script và tên bài hát của bạn.",
+        ["fr"] = "Insérez le script et le nom de votre chanson.",
+        ["de"] = "Füge dein Script und den Liednamen ein.",
+        ["ja"] = "スクリプトと曲名を入力してください。",
+        ["ko"] = "스크립트와 노래 이름을 입력하세요.",
+        ["tr"] = "Şarkı scriptini ve adını gir.",
+        ["ar"] = "أدخل السكربت واسم أغنيتك."
+    },
+
+    ["song name prompt"] = {
+        ["en"] = "What's the name of your song?",
+        ["pt-BR"] = "Qual o nome da sua música?",
+        ["es"] = "¿Cuál es el nombre de tu canción?",
+        ["ru"] = "Как называется ваша песня?",
+        ["zh-CN"] = "你的歌曲叫什么名字？",
+        ["id"] = "Apa nama lagumu?",
+        ["fil"] = "Ano ang pangalan ng kanta mo?",
+        ["vi"] = "Tên bài hát của bạn là gì?",
+        ["fr"] = "Quel est le nom de ta chanson ?",
+        ["de"] = "Wie heißt dein Lied?",
+        ["ja"] = "曲の名前は何ですか？",
+        ["ko"] = "노래 제목은 무엇인가요?",
+        ["tr"] = "Şarkının adı ne?",
+        ["ar"] = "ما اسم أغنيتك؟"
+    },
+
+    ["submit"] = {
+        ["en"] = "SUBMIT!",
+        ["pt-BR"] = "ENVIAR!",
+        ["es"] = "ENVIAR!",
+        ["ru"] = "ОТПРАВИТЬ!",
+        ["zh-CN"] = "提交！",
+        ["id"] = "KIRIM!",
+        ["fil"] = "IPASA!",
+        ["vi"] = "GỬI!",
+        ["fr"] = "ENVOYER !",
+        ["de"] = "SENDEN!",
+        ["ja"] = "送信！",
+        ["ko"] = "제출!",
+        ["tr"] = "GÖNDER!",
+        ["ar"] = "إِرْسَال!"
+    },
+
+    ["songnameexists"] = {
+        ["en"] = "You already have a song with this name.",
+        ["pt-BR"] = "Você já tem uma música com esse nome.",
+        ["es"] = "Ya tienes una canción con ese nombre.",
+        ["ru"] = "У вас уже есть песня с таким названием.",
+        ["zh-CN"] = "你已经有同名歌曲。",
+        ["id"] = "Kamu sudah punya lagu dengan nama ini.",
+        ["fil"] = "May kanta ka na sa pangalang ito.",
+        ["vi"] = "Bạn đã có bài hát với tên này.",
+        ["fr"] = "Vous avez déjà une chanson avec ce nom.",
+        ["de"] = "Du hast bereits ein Lied mit diesem Namen.",
+        ["ja"] = "この名前の曲は既にあります。",
+        ["ko"] = "이미 같은 이름의 노래가 있습니다.",
+        ["tr"] = "Bu isimde bir şarkınız zaten var.",
+        ["ar"] = "لديك بالفعل أغنية بهذا الاسم."
+    },
+    
+    ["songadded"] = {
+        ["en"] = "You have added the song \"%s\".",
+        ["pt-BR"] = "Você adicionou a música \"%s\".",
+        ["es"] = "Has añadido la canción \"%s\".",
+        ["ru"] = "Вы добавили песню \"%s\".",
+        ["zh-CN"] = "你已添加歌曲「%s」。",
+        ["id"] = "Kamu telah menambahkan lagu \"%s\".",
+        ["fil"] = "Nagdagdag ka ng kanta na \"%s\".",
+        ["vi"] = "Bạn đã thêm bài hát \"%s\".",
+        ["fr"] = "Vous avez ajouté la chanson \"%s\".",
+        ["de"] = "Du hast das Lied \"%s\" hinzugefügt.",
+        ["ja"] = "曲「%s」を追加しました。",
+        ["ko"] = "노래 \"%s\"을(를) 추가했습니다.",
+        ["tr"] = "Şarkı \"%s\" eklendi.",
+        ["ar"] = "لقد أضفت الأغنية \"%s\"."
+    },
+    
+    ["copy"] = {
+        ["en"] = "copy!",
+        ["pt-BR"] = "copiar!",
+        ["es"] = "copiar!",
+        ["ru"] = "копировать!",
+        ["zh-CN"] = "复制！",
+        ["id"] = "salin!",
+        ["fil"] = "kopya!",
+        ["vi"] = "sao chép!",
+        ["fr"] = "copier !",
+        ["de"] = "kopieren!",
+        ["ja"] = "コピー！",
+        ["ko"] = "복사!",
+        ["tr"] = "kopyala!",
+        ["ar"] = "نسخ!"
+    },
+    
+    ["help info"] = {
+        ["en"] = "Need help with TALENTLESS? Want to turn MIDI files into autoplay scripts, find tutorials, or get help from the Discord server? Click the button below to copy the link to my official website!",
+        ["pt-BR"] = "Precisa de ajuda com TALENTLESS? Quer transformar arquivos MIDI em scripts de autoplay, encontrar tutoriais ou obter ajuda no Discord? Clique no botão abaixo para copiar o link do site oficial!",
+        ["es"] = "¿Necesitas ayuda con TALENTLESS? ¿Quieres convertir archivos MIDI en scripts de autoplay, encontrar tutoriales o recibir ayuda en Discord? Haz clic en el botón abajo para copiar el enlace a mi sitio oficial!",
+        ["ru"] = "Нужна помощь с TALENTLESS? Хотите конвертировать MIDI-файлы в скрипты автоплея, найти уроки или получить помощь в Discord? Нажмите кнопку ниже, чтобы скопировать ссылку на официальный сайт!",
+        ["zh-CN"] = "需要 TALENTLESS 的帮助吗？想将 MIDI 文件转换为自动播放脚本、查找教程或在 Discord 获取帮助？点击下方按钮复制我的官方网站链接！",
+        ["id"] = "Perlu bantuan dengan TALENTLESS? Ingin mengubah file MIDI menjadi script autoplay, mencari tutorial, atau mendapatkan bantuan dari Discord? Klik tombol di bawah untuk menyalin link situs resmi saya!",
+        ["fil"] = "Kailangan mo ba ng tulong sa TALENTLESS? Gusto mo bang gawing autoplay script ang MIDI files, humanap ng tutorials, o humingi ng tulong sa Discord? I-click ang button sa ibaba para kopyahin ang link sa aking opisyal na website!",
+        ["vi"] = "Cần trợ giúp với TALENTLESS? Muốn chuyển file MIDI thành script autoplay, tìm hướng dẫn hoặc nhận trợ giúp từ server Discord? Nhấn nút bên dưới để sao chép liên kết tới website chính thức của tôi!",
+        ["fr"] = "Besoin d'aide avec TALENTLESS ? Vous voulez convertir des fichiers MIDI en scripts d'autoplay, trouver des tutoriels ou obtenir de l'aide sur Discord ? Cliquez sur le bouton ci-dessous pour copier le lien vers mon site officiel !",
+        ["de"] = "Brauchen Sie Hilfe mit TALENTLESS? Möchten Sie MIDI-Dateien in Autoplay-Skripte umwandeln, Tutorials finden oder Hilfe im Discord erhalten? Klicken Sie auf die Schaltfläche unten, um den Link zu meiner offiziellen Website zu kopieren!",
+        ["ja"] = "TALENTLESSの使い方で困っていますか？MIDIファイルを自動演奏スクリプトに変換したり、チュートリアルを探したり、Discordでサポートを受けたりできます。下のボタンをクリックして公式サイトのリンクをコピーしてください！",
+        ["ko"] = "TALENTLESS에 도움이 필요하신가요? MIDI 파일을 자동 재생 스크립트로 변환하거나, 튜토리얼을 찾거나, Discord 서버에서 도움을 받고 싶나요? 아래 버튼을 클릭하여 공식 웹사이트 링크를 복사하세요!",
+        ["tr"] = "TALENTLESS hakkında yardıma mı ihtiyacınız var? MIDI dosyalarını autoplay script’lere dönüştürmek, rehberler bulmak veya Discord sunucusundan yardım almak ister misiniz? Resmi web sitemin bağlantısını kopyalamak için aşağıdaki butona tıklayın!",
+        ["ar"] = "تحتاج مساعدة مع TALENTLESS؟ تريد تحويل ملفات MIDI إلى سكربتات تشغيل تلقائي، العثور على دروس، أو الحصول على المساعدة من سيرفر Discord؟ اضغط الزر أدناه لنسخ الرابط إلى موقعي الرسمي!"
+    },
+    
+    ["resources"] = {
+        ["en"] = "resources",
+        ["pt-BR"] = "recursos",
+        ["es"] = "recursos",
+        ["ru"] = "ресурсы",
+        ["zh-CN"] = "资源",
+        ["id"] = "sumber",
+        ["fil"] = "mga sanggunian",
+        ["vi"] = "tài nguyên",
+        ["fr"] = "ressources",
+        ["de"] = "ressourcen",
+        ["ja"] = "リソース",
+        ["ko"] = "리소스",
+        ["tr"] = "kaynaklar",
+        ["ar"] = "الموارد"
+    },
+
+    ["nevermind"] = {
+        ["en"] = "nevermind",
+        ["pt-BR"] = "deixa pra lá",
+        ["es"] = "olvídalo",
+        ["ru"] = "неважно",
+        ["zh-CN"] = "算了",
+        ["id"] = "lupakan",
+        ["fil"] = "kalimutan na",
+        ["vi"] = "thôi",
+        ["fr"] = "laisse tomber",
+        ["de"] = "egal",
+        ["ja"] = "やめる",
+        ["ko"] = "신경 쓰지 마",
+        ["tr"] = "boşver",
+        ["ar"] = "لا بأس"
+    },
+
+    ["linkcopied"] = {
+        ["en"] = "https://hellohellohell0.com has been copied to your clipboard!",
+        ["pt-BR"] = "https://hellohellohell0.com foi copiado para sua área de transferência!",
+        ["es"] = "¡https://hellohellohell0.com se ha copiado en tu portapapeles!",
+        ["ru"] = "https://hellohellohell0.com скопировано в буфер обмена!",
+        ["zh-CN"] = "https://hellohellohell0.com 已复制到剪贴板！",
+        ["id"] = "https://hellohellohell0.com telah disalin ke clipboard Anda!",
+        ["fil"] = "Na-copy na sa clipboard ang https://hellohellohell0.com!",
+        ["vi"] = "https://hellohellohell0.com đã được sao chép vào clipboard!",
+        ["fr"] = "https://hellohellohell0.com a été copié dans votre presse-papiers !",
+        ["de"] = "https://hellohellohell0.com wurde in deine Zwischenablage kopiert!",
+        ["ja"] = "https://hellohellohell0.com がクリップボードにコピーされました！",
+        ["ko"] = "https://hellohellohell0.com 가 클립보드에 복사되었습니다!",
+        ["tr"] = "https://hellohellohell0.com panoya kopyalandı!",
+        ["ar"] = "تم نسخ https://hellohellohell0.com إلى الحافظة!"
+    },    
+    
 }
 
 return translations
