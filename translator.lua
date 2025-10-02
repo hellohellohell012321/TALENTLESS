@@ -849,7 +849,25 @@ local translations = {
         ["ko"] = "https://hellohellohell0.com 가 클립보드에 복사되었습니다!",
         ["tr"] = "https://hellohellohell0.com panoya kopyalandı!",
         ["ar"] = "تم نسخ https://hellohellohell0.com إلى الحافظة!"
-    },    
+    },
+
+    ["error margin"] = {
+        ["en"] = "error margin: ",
+        ["pt-BR"] = "margem de erro: ",
+        ["es"] = "margen de error: ",
+        ["ru"] = "погрешность: ",
+        ["zh-CN"] = "误差范围：",
+        ["id"] = "batas kesalahan: ",
+        ["fil"] = "margin ng error: ",
+        ["vi"] = "sai số: ",
+        ["fr"] = "marge d’erreur : ",
+        ["de"] = "fehlertoleranz: ",
+        ["ja"] = "誤差範囲：",
+        ["ko"] = "오차 범위: ",
+        ["tr"] = "hata payı: ",
+        ["ar"] = "هامش الخطأ: "
+    },
+    
     
 }
 
