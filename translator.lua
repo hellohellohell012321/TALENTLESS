@@ -1078,7 +1078,7 @@ function translator:requestLang(frame)
             OpenSelector.Text = name
             selectedLanguage = code
             languageSelection.Visible = false
-        )
+        end)
     end
 
     UIPadding.Parent = languageSelection
