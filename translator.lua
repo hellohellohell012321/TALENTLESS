@@ -1114,12 +1114,7 @@ function translator:requestLang(frame)
 
     Proceed.MouseButton1Click:Connect(function()
         pcall(function()
-            if not isFile("TALENTLESS_language") then
-                writefile("TALENTLESS_language", selectedLanguage)
-            else
-                delfile("TALENTLESS_language")
-                writefile("TALENTLESS_language", selectedLanguage)
-            end
+            writefile("TALENTLESS_language.txt", selectedLanguage)
         end)
 
         finished = true
@@ -1169,18 +1164,18 @@ function translator:requestLang(frame)
     OpenSelector.MouseButton1Click:Connect(function()
         languageSelection.Visible = not languageSelection.Visible
         if languageSelection.Visible then
-            DropdownArrow.text = "^"
+            DropdownArrow.Text = "^"
         else
-            DropdownArrow.text = "V"
+            DropdownArrow.Text = "V"
         end
     end)
 
     DropdownArrow.MouseButton1Click:Connect(function()
         languageSelection.Visible = not languageSelection.Visible
         if languageSelection.Visible then
-            DropdownArrow.text = "^"
+            DropdownArrow.Text = "^"
         else
-            DropdownArrow.text = "V"
+            DropdownArrow.Text = "V"
         end
     end)
 
