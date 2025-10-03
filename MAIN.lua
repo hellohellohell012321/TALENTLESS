@@ -108,7 +108,7 @@ frame.Size = UDim2.new(0, 475, 0, 272)
     uic1.Name = "uic1"
     uic1.Parent = frame
 
-translator:requestLang(frame)
+translator:requestLang(frame, "first")
 
     closeButton.Name = "closeButton"
     closeButton.Parent = frame
@@ -138,11 +138,11 @@ translator:requestLang(frame)
     changeLanguageButton.Parent = frame
     changeLanguageButton.BackgroundTransparency = 1
     changeLanguageButton.LayoutOrder = 2
-    changeLanguageButton.Position = UDim2.new(0, 10, 0, 5)
+    changeLanguageButton.Position = UDim2.new(0, 30, 0, 5)
     changeLanguageButton.Size = UDim2.new(0, 30, 0, 30)
     changeLanguageButton.ZIndex = 5
     changeLanguageButton.Font = Enum.Font.SourceSansBold
-    changeLanguageButton.Text = "?"
+    changeLanguageButton.Text = "🌐"
     changeLanguageButton.TextColor3 = Color3.fromRGB(255, 255, 255)
     changeLanguageButton.TextScaled = true
 
@@ -359,11 +359,11 @@ infoButton.MouseButton1Click:Connect(
 
 changeLanguageButton.MouseButton1Click:Connect(
     function()
-        translator:requestLang(frame)
+        translator:requestLang(frame, "change")
         ScreenGui:Destroy()
         STOPLOOP = nil
         playingall = false
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/hellohellohell012321/TALENTLESS/main/TALENTLESS"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/hellohellohell012321/TALENTLESS/main/MAIN.lua"))()
     end
 )
 
