@@ -867,18 +867,63 @@ local translations = {
         ["tr"] = "hata payı: ",
         ["ar"] = "هامش الخطأ: "
     },
+
+    ["what language"] = {
+        ["en"] = "what language do you speak?",
+        ["pt-BR"] = "qual idioma você fala?",
+        ["es"] = "¿qué idioma hablas?",
+        ["ru"] = "на каком языке вы говорите?",
+        ["zh-CN"] = "你会说什么语言？",
+        ["id"] = "bahasa apa yang kamu bisa?",
+        ["fil"] = "anong wika ang sinasalita mo?",
+        ["vi"] = "bạn nói ngôn ngữ nào?",
+        ["fr"] = "quelle langue parlez-vous ?",
+        ["de"] = "welche sprache sprichst du?",
+        ["ja"] = "あなたは何語を話しますか？",
+        ["ko"] = "당신은 어떤 언어를 합니까?",
+        ["tr"] = "hangi dili konuşuyorsun?",
+        ["ar"] = "ما هي اللغة التي تتحدثها؟"
+    },
     
-    
+    ["confirm"] = {
+        ["en"] = "confirm",
+        ["pt-BR"] = "confirmar",
+        ["es"] = "confirmar",
+        ["ru"] = "подтвердить",
+        ["zh-CN"] = "确认",
+        ["id"] = "konfirmasi",
+        ["fil"] = "kumpirmahin",
+        ["vi"] = "xác nhận",
+        ["fr"] = "confirmer",
+        ["de"] = "bestätigen",
+        ["ja"] = "確認",
+        ["ko"] = "확인",
+        ["tr"] = "onayla",
+        ["ar"] = "تأكيد"
+    }
 }
 
+_G.languages = _G.languages or {
+    ["en"] = false,       -- English
+    ["pt-BR"] = false,    -- Brazilian Portuguese
+    ["es"] = false,       -- Spanish
+    ["ru"] = false,       -- Russian
+    ["zh-CN"] = false,    -- Chinese (Simplified / Mandarin)
+    ["id"] = false,       -- Indonesian
+    ["fil"] = false,      -- Filipino (Tagalog)
+    ["vi"] = false,       -- Vietnamese
+    ["fr"] = false,       -- French
+    ["de"] = false,       -- German
+    ["ja"] = false,       -- Japanese
+    ["ko"] = false,       -- Korean
+    ["tr"] = false,       -- Turkish
+    ["ar"] = false        -- Arabic
+}
 
-
-function translator:setLanguage(lang)
-    print("Trying to set language to:", lang)
+local function setLanguage(lang)
     if _G.languages[lang] ~= nil then
         for k, v in pairs(_G.languages) do
             _G.languages[k] = false
-            print("Setting", k, "to false")
         end
         _G.languages[lang] = true
         print("Language set to:", lang)
@@ -887,7 +932,7 @@ function translator:setLanguage(lang)
     end
     for k, v in pairs(_G.languages) do
         print(k, v)
-    end    
+    end
 end
 
 
@@ -922,5 +967,224 @@ function translator:translateText(text)
     return text -- fallback
 end
 
+
+local languageCodes = {
+    ["en"] = "English",
+    ["pt-BR"] = "Português (Brasil)",
+    ["es"] = "Español",
+    ["ru"] = "Русский",
+    ["zh-CN"] = "中文",
+    ["id"] = "Bahasa Indonesia",
+    ["fil"] = "Filipino",
+    ["vi"] = "Tiếng Việt",
+    ["fr"] = "Français",
+    ["de"] = "Deutsch",
+    ["ja"] = "日本語",
+    ["ko"] = "한국어",
+    ["tr"] = "Türkçe",
+    ["ar"] = "العربية"
+}
+
+function translator:requestLang(frame)
+
+    local finished = false
+    local selectedLanguage = "en"
+
+    local languageFrame = Instance.new("Frame")
+    local uic1 = Instance.new("UICorner")
+    local title = Instance.new("TextLabel")
+    local uic2 = Instance.new("UICorner")
+    local closeButton = Instance.new("TextButton")
+    local languageSelection = Instance.new("ScrollingFrame")
+    local UIListLayout = Instance.new("UIListLayout")
+    local UIPadding = Instance.new("UIPadding")
+    local whatLanguageTitle = Instance.new("TextLabel")
+    local Proceed = Instance.new("TextButton")
+    local DropdownFrame = Instance.new("Frame")
+    local OpenSelector = Instance.new("TextButton")
+    local DropdownArrow = Instance.new("TextButton")
+
+    languageFrame.Name = "languageFrame"
+    languageFrame.Parent = frame
+    languageFrame.AnchorPoint = Vector2.new(0.5, 0.5)
+    languageFrame.BackgroundColor3 = Color3.fromRGB(33, 33, 41)
+    languageFrame.Position = UDim2.new(0.5, 0, 0.5, 0)
+    languageFrame.Size = UDim2.new(0, 475, 0, 272)
+    languageFrame.ZIndex = 50
+
+    uic1.CornerRadius = UDim.new(0, 4)
+    uic1.Name = "uic1"
+    uic1.Parent = languageFrame
+
+    title.Name = "title"
+    title.Parent = languageFrame
+    title.BackgroundColor3 = Color3.fromRGB(50, 57, 73)
+    title.Size = UDim2.new(1, 0, 0, 50)
+    title.ZIndex = 2
+    title.Font = Enum.Font.SourceSansBold
+    title.Text = "TALENTLESS"
+    title.TextColor3 = Color3.fromRGB(255, 255, 255)
+    title.TextSize = 46.000
+
+    uic2.CornerRadius = UDim.new(0, 4)
+    uic2.Name = "uic2"
+    uic2.Parent = title
+
+    closeButton.Name = "closeButton"
+    closeButton.Parent = languageFrame
+    closeButton.BackgroundTransparency = 1.000
+    closeButton.Position = UDim2.new(1, -35, 0, 5)
+    closeButton.Size = UDim2.new(0, 30, 0, 30)
+    closeButton.ZIndex = 55
+    closeButton.Font = Enum.Font.SourceSansBold
+    closeButton.Text = "X"
+    closeButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+    closeButton.TextScaled = true
+
+    languageSelection.Name = "languageSelection"
+    languageSelection.Parent = languageFrame
+    languageSelection.Active = true
+    languageSelection.BackgroundColor3 = Color3.fromRGB(76, 82, 101)
+    languageSelection.BorderColor3 = Color3.fromRGB(0, 0, 0)
+    languageSelection.BorderSizePixel = 0
+    languageSelection.Position = UDim2.new(0.315789461, 0, 0.58088237, 0)
+    languageSelection.Size = UDim2.new(0, 175, 0, 84)
+    languageSelection.Visible = false
+    languageSelection.ScrollBarThickness = 1
+
+    UIListLayout.Parent = languageSelection
+    UIListLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
+    UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+    UIListLayout.Padding = UDim.new(0, 5)
+
+    for code, name in pairs(languageCodes) do
+        local button = Instance.new("TextButton")
+
+        button.Name = "languageButton"
+        button.Parent = languageSelection
+        button.BackgroundColor3 = Color3.fromRGB(76, 82, 101)
+        button.BorderColor3 = Color3.fromRGB(64, 68, 90)
+        button.LayoutOrder = 1
+        button.Position = UDim2.new(0.0514285713, 0, 0, 0)
+        button.Size = UDim2.new(0, 157, 0, 24)
+        button.Font = Enum.Font.SourceSans
+        button.Text = name
+        button.TextColor3 = Color3.fromRGB(255, 255, 255)
+        button.TextScaled = true
+        button.TextSize = 26.000
+        button.TextWrapped = true
+
+        button.MouseButton1Click:Connect(function()
+            OpenSelector.Text = name
+            selectedLanguage = code
+            languageSelection.Visible = false
+        )
+    end
+
+    UIPadding.Parent = languageSelection
+    UIPadding.PaddingTop = UDim.new(0, 5)
+
+    whatLanguageTitle.Name = "whatLanguageTitle"
+    whatLanguageTitle.Parent = languageFrame
+    whatLanguageTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    whatLanguageTitle.BackgroundTransparency = 1.000
+    whatLanguageTitle.BorderColor3 = Color3.fromRGB(0, 0, 0)
+    whatLanguageTitle.BorderSizePixel = 0
+    whatLanguageTitle.Position = UDim2.new(0.105263159, 0, 0.231617644, 0)
+    whatLanguageTitle.Size = UDim2.new(0, 374, 0, 31)
+    whatLanguageTitle.Font = Enum.Font.SourceSansBold
+    whatLanguageTitle.Text = "what language do you speak?"
+    whatLanguageTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
+    whatLanguageTitle.TextScaled = true
+    whatLanguageTitle.TextSize = 14.000
+    whatLanguageTitle.TextWrapped = true
+
+    Proceed.Name = "Proceed"
+    Proceed.Parent = languageFrame
+    Proceed.BackgroundColor3 = Color3.fromRGB(85, 170, 85)
+    Proceed.BorderColor3 = Color3.fromRGB(0, 0, 0)
+    Proceed.BorderSizePixel = 0
+    Proceed.Position = UDim2.new(0.669473708, 0, 0.871323526, 0)
+    Proceed.Size = UDim2.new(0, 157, 0, 35)
+    Proceed.Font = Enum.Font.SourceSansBold
+    Proceed.Text = "confirm"
+    Proceed.TextColor3 = Color3.fromRGB(255, 255, 255)
+    Proceed.TextSize = 28.000
+    Proceed.TextWrapped = true
+
+    Proceed.MouseButton1Click:Connect(function()
+        pcall(function()
+            if not isFile("TALENTLESS_language") then
+                writefile("TALENTLESS_language", selectedLanguage)
+            else
+                delfile("TALENTLESS_language")
+                writefile("TALENTLESS_language", selectedLanguage)
+            end
+        end)
+
+        finished = true
+        languageFrame:Destroy()
+        setLanguage(selectedLanguage)
+    end)
+
+    DropdownFrame.Name = "DropdownFrame"
+    DropdownFrame.Parent = languageFrame
+    DropdownFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    DropdownFrame.BackgroundTransparency = 1.000
+    DropdownFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+    DropdownFrame.BorderSizePixel = 0
+    DropdownFrame.Position = UDim2.new(0.316000015, 0, 0.400000006, 0)
+    DropdownFrame.Size = UDim2.new(0, 175, 0, 35)
+
+    OpenSelector.Name = "OpenSelector"
+    OpenSelector.Parent = DropdownFrame
+    OpenSelector.AnchorPoint = Vector2.new(0.5, 0.5)
+    OpenSelector.BackgroundColor3 = Color3.fromRGB(76, 82, 101)
+    OpenSelector.BorderColor3 = Color3.fromRGB(64, 68, 90)
+    OpenSelector.BorderSizePixel = 2
+    OpenSelector.Position = UDim2.new(0.388571441, 0, 0.5, 0)
+    OpenSelector.Size = UDim2.new(0, 136, 0, 32)
+    OpenSelector.Font = Enum.Font.SourceSansBold
+    OpenSelector.Text = "English"
+    OpenSelector.TextColor3 = Color3.fromRGB(255, 255, 255)
+    OpenSelector.TextScaled = true
+    OpenSelector.TextSize = 14.000
+    OpenSelector.TextWrapped = true
+
+    DropdownArrow.Name = "OpenSelector"
+    DropdownArrow.Parent = DropdownFrame
+    DropdownArrow.AnchorPoint = Vector2.new(0.5, 0.5)
+    DropdownArrow.BackgroundColor3 = Color3.fromRGB(76, 82, 101)
+    DropdownArrow.BorderColor3 = Color3.fromRGB(64, 68, 90)
+    DropdownArrow.BorderSizePixel = 2
+    DropdownArrow.Position = UDim2.new(0.868571401, 0, 0.5, 0)
+    DropdownArrow.Size = UDim2.new(0, 32, 0, 32)
+    DropdownArrow.Font = Enum.Font.SourceSansBold
+    DropdownArrow.Text = "V"
+    DropdownArrow.TextColor3 = Color3.fromRGB(255, 255, 255)
+    DropdownArrow.TextScaled = true
+    DropdownArrow.TextSize = 14.000
+    DropdownArrow.TextWrapped = true
+
+    OpenSelector.MouseButton1Click:Connect(function()
+        languageSelection.Visible = not languageSelection.Visible
+        if languageSelection.Visible then
+            DropdownArrow.text = "^"
+        else
+            DropdownArrow.text = "V"
+        end
+    end)
+
+    DropdownArrow.MouseButton1Click:Connect(function()
+        languageSelection.Visible = not languageSelection.Visible
+        if languageSelection.Visible then
+            DropdownArrow.text = "^"
+        else
+            DropdownArrow.text = "V"
+        end
+    end)
+
+    repeat wait() until finished
+end
 
 return translator
