@@ -973,7 +973,13 @@ function translator:requestLang(frame)
     local finished = false
     local selectedLanguage = "en"
 
-    if isfile("TALENTLESS_language.txt") and readfile("TALENTLESS_language.txt") ~= "" then
+    print("Checking for saved language...")
+    print("File exists:", isfile("TALENTLESS_language.txt"))
+    
+    if isfile("TALENTLESS_language.txt") then
+        local savedLang = readfile("TALENTLESS_language.txt")
+        print("Saved language:", savedLang)
+        print("Language codes has this?", languageCodes[savedLang])
         local savedLang = readfile("TALENTLESS_language.txt")
         if languageCodes[savedLang] then
             setLanguage(savedLang)
@@ -1031,6 +1037,12 @@ function translator:requestLang(frame)
     closeButton.Text = "X"
     closeButton.TextColor3 = Color3.fromRGB(255, 255, 255)
     closeButton.TextScaled = true
+
+    closeButton.MouseButton1Click:Connect(function()
+        finished = true
+        languageFrame:Destroy()
+        setLanguage(selectedLanguage)
+    end)
 
     languageSelection.Name = "languageSelection"
     languageSelection.Parent = languageFrame
