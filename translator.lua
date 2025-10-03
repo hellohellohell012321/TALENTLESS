@@ -35,23 +35,6 @@ local translations = {
         ["ar"] = "بحث..."
     },
 
-    ["credits"] = {
-        ["en"] = "piano autoplayer by hellohellohell012321",
-        ["pt-BR"] = "autoplayer de piano por hellohellohell012321",
-        ["es"] = "autoreproductor de piano por hellohellohell012321",
-        ["ru"] = "автовоспроизведение пианино от hellohellohell012321",
-        ["zh-CN"] = "钢琴自动播放器，由 hellohellohell012321 制作",
-        ["id"] = "piano autoplayer oleh hellohellohell012321",
-        ["fil"] = "piano autoplayer ni hellohellohell012321",
-        ["vi"] = "trình tự động chơi piano bởi hellohellohell012321",
-        ["fr"] = "autoplayer de piano par hellohellohell012321",
-        ["de"] = "klavier-autoplayer von hellohellohell012321",
-        ["ja"] = "ピアノ自動演奏 by hellohellohell012321",
-        ["ko"] = "피아노 자동 연주기 by hellohellohell012321",
-        ["tr"] = "piyano otomatik çalma by hellohellohell012321",
-        ["ar"] = "مشغل البيانو التلقائي من hellohellohell012321"
-    },
-
     ["songname"] = {
         ["en"] = "SONG NAME",
         ["pt-BR"] = "NOME DA MÚSICA",
@@ -989,6 +972,14 @@ function translator:requestLang(frame)
 
     local finished = false
     local selectedLanguage = "en"
+
+    if isfile("TALENTLESS_language.txt") and readfile("TALENTLESS_language.txt") ~= "" then
+        local savedLang = readfile("TALENTLESS_language.txt")
+        if languageCodes[savedLang] then
+            setLanguage(savedLang)
+            finished = true
+        end
+    end
 
     local languageFrame = Instance.new("Frame")
     local uic1 = Instance.new("UICorner")
