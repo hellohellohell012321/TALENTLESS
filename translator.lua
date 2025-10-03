@@ -968,15 +968,14 @@ local languageCodes = {
     ["ar"] = "العربية"
 }
 
-function translator:requestLang(frame)
+function translator:requestLang(frame, type)
 
     local finished = false
     local selectedLanguage = "en"
 
     print("Checking for saved language...")
-    print("File exists:", isfile("TALENTLESS_language.txt"))
     
-    if isfile("TALENTLESS_language.txt") then
+    if isfile("TALENTLESS_language.txt") and type == "first" then
         local savedLang = readfile("TALENTLESS_language.txt")
         print("Saved language:", savedLang)
         print("Language codes has this?", languageCodes[savedLang])
