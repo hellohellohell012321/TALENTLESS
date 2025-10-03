@@ -977,7 +977,7 @@ function translator:requestLang(frame)
         local savedLang = readfile("TALENTLESS_language.txt")
         if languageCodes[savedLang] then
             setLanguage(savedLang)
-            finished = true
+            return
         end
     end
 
