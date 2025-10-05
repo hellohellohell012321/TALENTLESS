@@ -1044,7 +1044,7 @@ function translator:requestLang(frame, type)
     end)
 
     languageSelection.Name = "languageSelection"
-    languageSelection.Parent = game.StarterGui.ScreenGui.frame.languageFrame
+    languageSelection.Parent = languageFrame
     languageSelection.Active = true
     languageSelection.BackgroundColor3 = Color3.fromRGB(76, 82, 101)
     languageSelection.BorderColor3 = Color3.fromRGB(0, 0, 0)
