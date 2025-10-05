@@ -3,8 +3,13 @@
 
 _G.STOPIT = false
 
-local NotificationLibrary =
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/hellohellohell012321/TALENTLESS/main/notif_lib.lua"))()
+local NotificationLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/hellohellohell012321/TALENTLESS/main/notif_lib.lua"))()
+
+local translator = loadstring(game:HttpGet("https://raw.githubusercontent.com/hellohellohell012321/TALENTLESS/main/translator.lua"))()
+
+local function translateText(text)
+    return translator:translateText(text) -- lang shouldve alr been set by main script.
+end
 
 function playSound(soundId, loudness)
     local sound = Instance.new("Sound")
@@ -30,7 +35,7 @@ lilgui["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling
 -- StarterGui.ScreenGui.Frame
 local fram = Instance.new("Frame", lilgui)
 fram["BorderSizePixel"] = 0
-fram["BackgroundColor3"] = Color3.fromRGB(32, 32, 32)
+fram["BackgroundColor3"] = Color3.fromRGB(33, 33, 41)
 fram["Size"] = UDim2.new(0, 327, 0, 119)
 fram["Position"] = UDim2.new(0.5, 0, 0.5, 0)
 fram["BorderColor3"] = Color3.fromRGB(0, 0, 0)
@@ -66,16 +71,18 @@ local bpmtext = Instance.new("TextLabel", fram)
 bpmtext["TextWrapped"] = true
 bpmtext["BorderSizePixel"] = 0
 bpmtext["TextSize"] = 14
-bpmtext["TextScaled"] = true
-bpmtext["BackgroundColor3"] = Color3.fromRGB(255, 108, 154)
+bpmtext["TextScaled"] = true    
+bpmtext["BackgroundColor3"] = Color3.fromRGB(76, 82, 101)
 bpmtext["FontFace"] =
     Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
-bpmtext["TextColor3"] = Color3.fromRGB(0, 0, 0)
+bpmtext["TextColor3"] = Color3.fromRGB(255, 255, 255)
 bpmtext["Size"] = UDim2.new(0, 122, 0, 34)
 bpmtext["BorderColor3"] = Color3.fromRGB(0, 0, 0)
 bpmtext["Text"] = "BPM: " .. tostring(bpm)
 bpmtext["Name"] = [[bpm]]
 bpmtext["Position"] = UDim2.new(0.51155, 0, 0.15823, 0)
+bpmtext.BorderColor3 = Color3.fromRGB(64, 68, 90)
+bpmtext.BorderSizePixel = 4
 
 -- StarterGui.ScreenGui.Frame.up
 local upbpm = Instance.new("TextButton", fram)
@@ -117,15 +124,17 @@ errorbox["TextWrapped"] = true
 errorbox["BorderSizePixel"] = 0
 errorbox["TextSize"] = 14
 errorbox["TextScaled"] = true
-errorbox["BackgroundColor3"] = Color3.fromRGB(255, 109, 155)
+errorbox["BackgroundColor3"] = Color3.fromRGB(76, 82, 101)
 errorbox["FontFace"] =
     Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
-errorbox["TextColor3"] = Color3.fromRGB(0, 0, 0)
+errorbox["TextColor3"] = Color3.fromRGB(255, 255, 255)
 errorbox["Size"] = UDim2.new(0, 117, 0, 31)
 errorbox["BorderColor3"] = Color3.fromRGB(0, 0, 0)
-errorbox["Text"] = [[error margin: 0.00]]
+errorbox["Text"] = translateText("error margin") .. "0.00"
 errorbox["Name"] = [[errorbox]]
 errorbox["Position"] = UDim2.new(0.11705, 0, 0.59848, 0)
+errorbox.BorderColor3 = Color3.fromRGB(64, 68, 90)
+errorbox.BorderSizePixel = 4
 
 -- StarterGui.ScreenGui.Frame.less
 local less = Instance.new("TextButton", fram)
@@ -318,7 +327,7 @@ else
 end
 
 local function updateErrorMargin()
-    errorbox.Text = "error margin: " .. tostring(errormargin)
+    errorbox.Text = translateText("error margin") .. tostring(errormargin)
 end
 
 updateErrorMargin()
