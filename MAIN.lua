@@ -40,10 +40,11 @@ local ContentProvider = game:GetService("ContentProvider")
 local assetsToPreload = {
     "rbxassetid://94707254666920", -- unfav icon
     "rbxassetid://95485559387661", -- fav icon
-    "rbxassetid://70452176150315",
-    "rbxassetid://1524549907",
-    "rbxassetid://18595195017",
-    "rbxassetid://104269922408932",
+    "rbxassetid://70452176150315", -- ui open
+    "rbxassetid://1524549907", -- ui close
+    "rbxassetid://104269922408932", -- bye bye
+    "rbxassetid://7383525713", -- notif error
+    "rbxassetid://18595195017" -- notif success
 }
 
 ContentProvider:PreloadAsync(assetsToPreload)
@@ -55,12 +56,6 @@ local function playSound(soundId, loudness)
     sound.Volume = loudness or 1
     sound:Play()
 end
-
-
--- Gui to Lua
--- Version: 3.2
-
--- Instances:
 
 local ScreenGui = Instance.new("ScreenGui")
 local frame = Instance.new("Frame")
@@ -473,11 +468,11 @@ if gameId == 3929033413 then
             spoofMidiPlz = not spoofMidiPlz
             if spoofMidiPlz then
                 spoofMidi.Text = translateText("spoof midi") .. " [x]"
-                playSound(18595195017, 0.1)
+                playSound(18595195017, 1)
                 NotificationLibrary:SendNotification("Success", translateText("midispoofon"), 5)
             else
                 spoofMidi.Text = translateText("spoof midi") .. " [ ]"
-                playSound(18595195017, 0.1) -- replace with actual sound ID for disabling
+                playSound(18595195017, 1) -- replace with actual sound ID for disabling
                 NotificationLibrary:SendNotification("Success", translateText("midispoofoff"), 5)
             end
         end
@@ -1879,7 +1874,7 @@ songisplaying = false
 
 function playbuttonclicked()
     if songisplaying then
-        playSound("7383525713", 0.1)
+        playSound("7383525713", 0.5)
         NotificationLibrary:SendNotification("Error", translateText("songplayingerror"), 1)
         return
     end
@@ -2227,7 +2222,7 @@ function updateSongs() -- universal function so it can be called from the custom
                             print("clicked!")
 
                             if songisplaying then
-                                playSound("7383525713", 0.1)
+                                playSound("7383525713", 0.5)
                                 NotificationLibrary:SendNotification("Error", translateText("songplayingerror"), 1)
                                 return
                             else
@@ -2238,13 +2233,13 @@ function updateSongs() -- universal function so it can be called from the custom
                                     print("running scrip....")
                                     songname.Text = tsongname
                                     bpmbox.Text = songbpm
-                                    playSound("18595195017", 0.1)
+                                    playSound("18595195017", 0.5)
                                     NotificationLibrary:SendNotification("Success", translateText("beganplayingnotif"), 1)
                                     songisplaying = true
                                     func()
                                 else
                                     print("invalid script")
-                                    playSound("7383525713", 0.1)
+                                    playSound("7383525713", 0.5)
                                     NotificationLibrary:SendNotification(
                                         "Error",
                                         translateText("brokensongscript"),
@@ -2271,12 +2266,12 @@ function updateSongs() -- universal function so it can be called from the custom
                                 table.remove(customsongbuttons, table.find(customsongbuttons, songbutton))
                                 table.remove(addedCustoms, table.find(addedCustoms, filepath))
                                 updatecustomcount()
-                                playSound("18595195017", 0.1)
+                                playSound("18595195017", 0.5)
                                 NotificationLibrary:SendNotification("Success", translateText("songdeleted"), 5)
                             else
                                 -- Single-click detected
                                 print("Single-click detected. Showing notification...")
-                                playSound("18595195017", 0.1)
+                                playSound("18595195017", 0.5)
                                 NotificationLibrary:SendNotification("Info", translateText("doubleclickdelete"), 3)
                             end
                             lastClick = now -- Update the last click time
