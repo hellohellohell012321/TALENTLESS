@@ -1957,14 +1957,13 @@ playingall = false
 local function createstopbutton()
     if not STOPLOOP then
         -- StarterGui.ScreenGui.Frame.scrolltab.stoploop
-        STOPLOOP = Instance.new("TextButton", bar)
+        local STOPLOOP = Instance.new("TextButton", bar)
         STOPLOOP["BorderSizePixel"] = 4
         STOPLOOP["TextSize"] = 25
         STOPLOOP["TextColor3"] = Color3.fromRGB(255, 255, 255)
         STOPLOOP["BackgroundColor3"] = Color3.fromRGB(76, 82, 101)
         STOPLOOP["FontFace"] =
             Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
-        STOPLOOP["AutomaticSize"] = Enum.AutomaticSize.XY
         STOPLOOP["Size"] = UDim2.new(0, 125, 0, 27)
         STOPLOOP["Name"] = [[stoploop]]
         STOPLOOP["BorderColor3"] = Color3.fromRGB(64, 68, 90)
