@@ -1,11 +1,6 @@
 -- Copyright (C) 2025 hellohellohell012321
 -- Licensed under the GNU GPL v3. See LICENSE file for details.
 
--- to do:
--- make the requestlang function read the current language file first
--- make a button that does requestlang; after doing so it re-executes talentless.
-
-
 local translator = loadstring(game:HttpGet("https://raw.githubusercontent.com/hellohellohell012321/TALENTLESS/main/translator.lua"))()
 
 
@@ -444,7 +439,7 @@ if gameId == 3929033413 then
     spoofMidiInfo.BorderSizePixel = 2
     spoofMidiInfo.LayoutOrder = 3
     spoofMidiInfo.Position = UDim2.new(0.919436276, 0, 0.884484231, 0)
-    spoofMidiInfo.Size = UDim2.new(0, 0, 23)
+    spoofMidiInfo.Size = UDim2.new(0, 23, 0, 23)
     spoofMidiInfo.Font = Enum.Font.SourceSansItalic
     spoofMidiInfo.Text = "?"
     spoofMidiInfo.TextColor3 = Color3.fromRGB(255, 255, 255)
@@ -470,6 +465,8 @@ if gameId == 3929033413 then
     spoofMidi.TextColor3 = Color3.fromRGB(255, 255, 255)
     spoofMidi.TextSize = 23.000
     spoofMidi.TextXAlignment = Enum.TextXAlignment.Left
+
+    fitText(spoofMidi)
 
     spoofMidi.MouseButton1Click:Connect(
         function()
@@ -618,7 +615,7 @@ local function newSongButton(name, alternateNames)
     favButton.BorderSizePixel = 0
     favButton.AnchorPoint = Vector2.new(0, 0.5)
     favButton.Position = UDim2.new(0, 0, 0.5, 0)
-    favButton.Size = UDim2.new(0, 0, 25)
+    favButton.Size = UDim2.new(0, 25, 0, 25)
     favButton.Image = "rbxassetid://94707254666920" -- unfav icon
     favButton.Visible = false
     favButton.Name = "favButton"
@@ -2044,7 +2041,7 @@ local function newCustomSongButton(name)
     ImageButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
     ImageButton.BorderSizePixel = 0
     ImageButton.Position = UDim2.new(0.816999972, 0, 0.115000002, 0)
-    ImageButton.Size = UDim2.new(0, 0, 27)
+    ImageButton.Size = UDim2.new(0, 27, 0, 27)
     ImageButton.Image = "http://www.roblox.com/asset/?id=6121397347"
 
     local favButton = Instance.new("ImageButton") -- star button for favourites
@@ -2056,7 +2053,7 @@ local function newCustomSongButton(name)
     favButton.BorderSizePixel = 0
     favButton.AnchorPoint = Vector2.new(0, 0.5)
     favButton.Position = UDim2.new(0, 0, 0.5, 0)
-    favButton.Size = UDim2.new(0, 0, 25)
+    favButton.Size = UDim2.new(0, 25, 0, 25)
     favButton.Image = "rbxassetid://94707254666920" -- unfav icon
     favButton.Visible = false
     favButton.Name = "favButton"
@@ -2429,7 +2426,7 @@ togglefavs.BackgroundTransparency = 1.000
 togglefavs.BorderColor3 = Color3.fromRGB(0, 0, 0)
 togglefavs.BorderSizePixel = 0
 togglefavs.Position = UDim2.new(0.86210525, 0, 0.0294117648, 0)
-togglefavs.Size = UDim2.new(0, 0, 25)
+togglefavs.Size = UDim2.new(0, 25, 0, 25)
 togglefavs.ZIndex = 10
 togglefavs.Image = "rbxassetid://95485559387661"
 
