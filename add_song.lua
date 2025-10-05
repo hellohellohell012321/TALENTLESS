@@ -8,6 +8,12 @@ local function playSound(soundId, loudness)
     sound:Play()
 end
 
+local translator = loadstring(game:HttpGet("https://raw.githubusercontent.com/hellohellohell012321/TALENTLESS/main/translator.lua"))()
+
+local function translateText(text)
+    return translator:translateText(text) -- lang shouldve alr been set by main script.
+end
+
 -- Gui to Lua
 -- Version: 3.2
 
@@ -46,7 +52,7 @@ insertscript.LayoutOrder = 2
 insertscript.Position = UDim2.new(0.0708699971, 0, 0.257669985, 0)
 insertscript.Size = UDim2.new(0, 218, 0, 123)
 insertscript.Font = Enum.Font.SourceSans
-insertscript.PlaceholderText = "Convert a MIDI file into a song script using MIDI2LUA (bit.ly/midi2lua). Then, paste the full, unedited script here to add the song to your GUI in TALENTLESS!"
+insertscript.PlaceholderText = translateText("custom song instructions")
 insertscript.Text = ""
 insertscript.TextColor3 = Color3.fromRGB(255, 255, 255)
 insertscript.TextSize = 14.000
@@ -61,9 +67,9 @@ newsonglabel.LayoutOrder = 1
 newsonglabel.Position = UDim2.new(0.0708699971, 0, 0.0552100018, 0)
 newsonglabel.Size = UDim2.new(0, 218, 0, 50)
 newsonglabel.Font = Enum.Font.SourceSansBold
-newsonglabel.Text = "Insert your song script and the name of your song."
+newsonglabel.Text = translateText("insert song script")
 newsonglabel.TextColor3 = Color3.fromRGB(255, 255, 255)
-newsonglabel.TextSize = 18.000
+newsonglabel.TextScaled = true
 newsonglabel.TextWrapped = true
 
 cancelButton.Name = "cancelButton"
@@ -87,7 +93,7 @@ insertsongName.LayoutOrder = 3
 insertsongName.Position = UDim2.new(0.0708699971, 0, 0.69325, 0)
 insertsongName.Size = UDim2.new(0, 218, 0, 32)
 insertsongName.Font = Enum.Font.SourceSans
-insertsongName.PlaceholderText = "What's the name of your song?"
+insertsongName.PlaceholderText = translateText("song name prompt")
 insertsongName.Text = ""
 insertsongName.TextColor3 = Color3.fromRGB(255, 255, 255)
 insertsongName.TextSize = 20
@@ -102,7 +108,7 @@ submitSong.LayoutOrder = 4
 submitSong.Position = UDim2.new(0.0708699971, 0, 0.834360003, 0)
 submitSong.Size = UDim2.new(0, 218, 0, 41)
 submitSong.Font = Enum.Font.SourceSansBold
-submitSong.Text = "SUBMIT!"
+submitSong.Text = translateText("submit")
 submitSong.TextColor3 = Color3.fromRGB(255, 255, 255)
 submitSong.TextSize = 43.000
 
@@ -188,7 +194,7 @@ for _, file in ipairs(listfiles([[./TALENTLESS_CUSTOM_SONGS]])) do
     print(tostring(file))
 	if string.find(tostring(file), songName .. ".txt") then -- if there is already a file with songname.txt in it then
         playSound("6493287948", 0.1) 
-        NotificationLibrary:SendNotification("Error", "You already have a song with this name.", 3)
+        NotificationLibrary:SendNotification("Error", translateText("songnameexists"), 3)
         songexists = true -- song does exist
         print("found a song file with the same name.")
         break
@@ -198,7 +204,7 @@ end
 if not songexists then
     writefile("TALENTLESS_CUSTOM_SONGS/" .. songName .. ".txt", scriptInput) -- write the file in the song folder as a .txt
     playSound("6493287948", 0.1) 
-    NotificationLibrary:SendNotification("Success", "You have added the song " .. songName .. ".", 10)
+    NotificationLibrary:SendNotification("Success", string.format(translateText("songadded"), songName), 10)
     insertscript.Text = ""
     insertsongName.Text = ""
 end
