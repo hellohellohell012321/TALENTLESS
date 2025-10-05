@@ -42,7 +42,7 @@ local assetsToPreload = {
     "rbxassetid://95485559387661", -- fav icon
     "rbxassetid://70452176150315",
     "rbxassetid://1524549907",
-    "rbxassetid://6493287948",
+    "rbxassetid://18595195017",
     "rbxassetid://104269922408932",
 }
 
@@ -473,11 +473,11 @@ if gameId == 3929033413 then
             spoofMidiPlz = not spoofMidiPlz
             if spoofMidiPlz then
                 spoofMidi.Text = translateText("spoof midi") .. " [x]"
-                playSound(6493287948, 0.1)
+                playSound(18595195017, 0.1)
                 NotificationLibrary:SendNotification("Success", translateText("midispoofon"), 5)
             else
                 spoofMidi.Text = translateText("spoof midi") .. " [ ]"
-                playSound(6493287948, 0.1) -- replace with actual sound ID for disabling
+                playSound(18595195017, 0.1) -- replace with actual sound ID for disabling
                 NotificationLibrary:SendNotification("Success", translateText("midispoofoff"), 5)
             end
         end
@@ -1879,7 +1879,7 @@ songisplaying = false
 
 function playbuttonclicked()
     if songisplaying then
-        playSound("6493287948", 0.1)
+        playSound("7383525713", 0.1)
         NotificationLibrary:SendNotification("Error", translateText("songplayingerror"), 1)
         return
     end
@@ -2227,8 +2227,8 @@ function updateSongs() -- universal function so it can be called from the custom
                             print("clicked!")
 
                             if songisplaying then
-                                playSound("6493287948", 0.1)
-                                NotificationLibrary:SendNotification("Error", "A song is already playing.", 1)
+                                playSound("7383525713", 0.1)
+                                NotificationLibrary:SendNotification("Error", translateText("songplayingerror"), 1)
                                 return
                             else
                                 local songcode = readfile(custom) -- define the contents of the song file
@@ -2238,13 +2238,13 @@ function updateSongs() -- universal function so it can be called from the custom
                                     print("running scrip....")
                                     songname.Text = tsongname
                                     bpmbox.Text = songbpm
-                                    playSound("6493287948", 0.1)
+                                    playSound("18595195017", 0.1)
                                     NotificationLibrary:SendNotification("Success", translateText("beganplayingnotif"), 1)
                                     songisplaying = true
                                     func()
                                 else
                                     print("invalid script")
-                                    playSound("6493287948", 0.1)
+                                    playSound("7383525713", 0.1)
                                     NotificationLibrary:SendNotification(
                                         "Error",
                                         translateText("brokensongscript"),
@@ -2271,12 +2271,12 @@ function updateSongs() -- universal function so it can be called from the custom
                                 table.remove(customsongbuttons, table.find(customsongbuttons, songbutton))
                                 table.remove(addedCustoms, table.find(addedCustoms, filepath))
                                 updatecustomcount()
-                                playSound("6493287948", 0.1)
+                                playSound("18595195017", 0.1)
                                 NotificationLibrary:SendNotification("Success", translateText("songdeleted"), 5)
                             else
                                 -- Single-click detected
                                 print("Single-click detected. Showing notification...")
-                                playSound("6493287948", 0.1)
+                                playSound("18595195017", 0.1)
                                 NotificationLibrary:SendNotification("Info", translateText("doubleclickdelete"), 3)
                             end
                             lastClick = now -- Update the last click time
