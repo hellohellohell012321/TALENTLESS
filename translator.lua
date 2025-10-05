@@ -885,6 +885,40 @@ local translations = {
         ["ar"] = "تأكيد"
     },
 
+    ["stopping..."] = {
+        ["en"] = "stopping...",
+        ["pt-BR"] = "parando...",
+        ["es"] = "deteniendo...",
+        ["ru"] = "останавливаю...",
+        ["zh-CN"] = "正在停止...",
+        ["id"] = "menghentikan...",
+        ["fil"] = "humihinto...",
+        ["vi"] = "đang dừng...",
+        ["fr"] = "arrêt...",
+        ["de"] = "stoppen...",
+        ["ja"] = "停止中...",
+        ["ko"] = "중지 중...",
+        ["tr"] = "durduruluyor...",
+        ["ar"] = "جارٍ الإيقاف..."
+    },
+
+    ["songfinished"] = {
+        ["en"] = "your song has finished.",
+        ["pt-BR"] = "sua música terminou.",
+        ["es"] = "tu canción ha terminado.",
+        ["ru"] = "твоя песня закончилась.",
+        ["zh-CN"] = "你的歌曲已结束。",
+        ["id"] = "lagumu telah selesai.",
+        ["fil"] = "tapos na ang iyong kanta.",
+        ["vi"] = "bài hát của bạn đã kết thúc.",
+        ["fr"] = "ta chanson est terminée.",
+        ["de"] = "dein lied ist beendet.",
+        ["ja"] = "曲が終了しました。",
+        ["ko"] = "노래가 끝났습니다.",
+        ["tr"] = "şarkın bitti.",
+        ["ar"] = "انتهت أغنيتك."
+    },
+    
     ["ALTALE"] = {
         ["ja"] = "アルタレ"
     },
