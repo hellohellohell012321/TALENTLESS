@@ -1044,13 +1044,13 @@ function translator:requestLang(frame, type)
     end)
 
     languageSelection.Name = "languageSelection"
-    languageSelection.Parent = languageFrame
+    languageSelection.Parent = game.StarterGui.ScreenGui.frame.languageFrame
     languageSelection.Active = true
     languageSelection.BackgroundColor3 = Color3.fromRGB(76, 82, 101)
     languageSelection.BorderColor3 = Color3.fromRGB(0, 0, 0)
     languageSelection.BorderSizePixel = 0
-    languageSelection.Position = UDim2.new(0.315789461, 0, 0.58088237, 0)
-    languageSelection.Size = UDim2.new(0, 175, 0, 84)
+    languageSelection.Position = UDim2.new(0.315999955, 0, 0.522058845, 0)
+    languageSelection.Size = UDim2.new(0, 167, 0, 84)
     languageSelection.Visible = false
     languageSelection.ScrollBarThickness = 1
 
@@ -1157,7 +1157,7 @@ function translator:requestLang(frame, type)
     DropdownArrow.Position = UDim2.new(0.868571401, 0, 0.5, 0)
     DropdownArrow.Size = UDim2.new(0, 32, 0, 32)
     DropdownArrow.Font = Enum.Font.SourceSansBold
-    DropdownArrow.Text = "V"
+    DropdownArrow.Text = "^"
     DropdownArrow.TextColor3 = Color3.fromRGB(255, 255, 255)
     DropdownArrow.TextScaled = true
     DropdownArrow.TextSize = 14.000
@@ -1166,18 +1166,18 @@ function translator:requestLang(frame, type)
     OpenSelector.MouseButton1Click:Connect(function()
         languageSelection.Visible = not languageSelection.Visible
         if languageSelection.Visible then
-            DropdownArrow.Text = "^"
+            DropdownArrow.Text = "v"
         else
-            DropdownArrow.Text = "V"
+            DropdownArrow.Text = "^"
         end
     end)
 
     DropdownArrow.MouseButton1Click:Connect(function()
         languageSelection.Visible = not languageSelection.Visible
         if languageSelection.Visible then
-            DropdownArrow.Text = "^"
+            DropdownArrow.Text = "v"
         else
-            DropdownArrow.Text = "V"
+            DropdownArrow.Text = "^"
         end
     end)
 
