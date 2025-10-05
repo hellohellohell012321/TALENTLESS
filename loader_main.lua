@@ -259,14 +259,14 @@ function stopPlayingSongs()
 
     songisplaying = false
 
-    playSound("18595195017", 0.1)
+    playSound("18595195017", 0.5)
     NotificationLibrary:SendNotification("Success", translateText("stopping..."), 1)
     lilgui:Destroy()
 end
 
 function finishedSong()
     if _G.STOPIT then return end
-    playSound("18595195017", 0.1)
+    playSound("18595195017", 0.5)
     NotificationLibrary:SendNotification("Success", translateText("songfinished"), 3)
     songisplaying = false
     lilgui:Destroy()
