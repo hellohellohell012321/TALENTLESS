@@ -25,9 +25,6 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/hellohellohell012321/
 
 wait(0.3)
 
-playSound("6493287948", 0.1)
-NotificationLibrary:SendNotification("Success", "Began playing song.", 1)
-
 -- StarterGui.ScreenGui
 lilgui = Instance.new("ScreenGui", game:GetService("CoreGui"))
 lilgui["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling
@@ -262,15 +259,15 @@ function stopPlayingSongs()
 
     songisplaying = false
 
-    playSound("6493287948", 0.1)
-    NotificationLibrary:SendNotification("Success", "Stopping...", 1)
+    playSound("18595195017", 0.1)
+    NotificationLibrary:SendNotification("Success", translateText("stopping..."), 1)
     lilgui:Destroy()
 end
 
 function finishedSong()
     if _G.STOPIT then return end
-    playSound("6493287948", 0.1)
-    NotificationLibrary:SendNotification("Success", "Your song has finished.", 3)
+    playSound("18595195017", 0.1)
+    NotificationLibrary:SendNotification("Success", translateText("songfinished"), 3)
     songisplaying = false
     lilgui:Destroy()
     lilgui = nil
@@ -287,13 +284,9 @@ local function pauseSong()
         pausebutton.Image = "http://www.roblox.com/asset/?id=86903979265676"
         resumeEvent:Fire()
         pausing = false
-        playSound("6493287948", 0.1)
-        NotificationLibrary:SendNotification("Success", "You have resumed playing.", 1)
     else
         pausing = true
         pausebutton.Image = "http://www.roblox.com/asset/?id=130610056660845"
-        playSound("6493287948", 0.1)
-        NotificationLibrary:SendNotification("Success", "You have paused your playing.", 1)
     end
 end
 
@@ -537,9 +530,8 @@ local function pressKey(keys, beats, bpm)
                     local maxRan = (beats / bpm) * 60 / 2 -- half of note hold time
                     randomOff = math.random() * maxRan -- num from 0 to maxRan (half of note hold time)
                     waittime = (beats / bpm) * 60 - randomOff
-                    
                 else -- beats to time, or if short notes...
-                    waittime = math.random(4, 12) / 100 -- random number from 0.04 to 0.12
+                    waittime = math.random(3, 8) / 100 -- random number from 0.03 to 0.08
                 end
                 
                 task.wait(waittime)
