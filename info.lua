@@ -7,10 +7,12 @@ local function playSound(soundId, loudness)
     sound.Volume = loudness or 1  -- Default to full volume if no loudness is provided
     sound:Play()
 end
--- Gui to Lua
--- Version: 3.2
 
--- Instances:
+local translator = loadstring(game:HttpGet("https://raw.githubusercontent.com/hellohellohell012321/TALENTLESS/main/translator.lua"))()
+
+local function translateText(text)
+    return translator:translateText(text) -- lang shouldve alr been set by main script.
+end
 
 local infogui = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
@@ -20,8 +22,6 @@ local copy = Instance.new("TextButton")
 local desc = Instance.new("TextLabel")
 local title = Instance.new("TextLabel")
 local dismiss = Instance.new("TextButton")
-
---Properties:
 
 infogui.Name = "infogui"
 infogui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
@@ -52,7 +52,7 @@ copy.LayoutOrder = 3
 copy.Position = UDim2.new(0.117543861, 0, 0.677165329, 0)
 copy.Size = UDim2.new(0, 234, 0, 25)
 copy.Font = Enum.Font.SourceSansBold
-copy.Text = "copy!"
+copy.Text = translateText("copy")
 copy.TextColor3 = Color3.fromRGB(255, 255, 255)
 copy.TextSize = 14.000
 copy.TextWrapped = true
@@ -66,7 +66,7 @@ desc.LayoutOrder = 2
 desc.Position = UDim2.new(0.0701754391, 0, 0.255905509, 0)
 desc.Size = UDim2.new(0, 255, 0, 92)
 desc.Font = Enum.Font.SourceSansBold
-desc.Text = "Need help with TALENTLESS? Want to turn MIDI files into autoplay scripts, find tutorials, or get help from the Discord server? Click the button below to copy the link to my official website!"
+desc.Text = translateText("help info")
 desc.TextColor3 = Color3.fromRGB(255, 255, 255)
 desc.TextSize = 14.000
 desc.TextWrapped = true
@@ -79,7 +79,7 @@ title.BorderSizePixel = 4
 title.LayoutOrder = 1
 title.Size = UDim2.new(0, 250, 0, 50)
 title.Font = Enum.Font.SourceSansBold
-title.Text = "resources"
+title.Text = translateText("resources")
 title.TextColor3 = Color3.fromRGB(255, 255, 255)
 title.TextSize = 50.000
 title.TextWrapped = true
@@ -93,7 +93,7 @@ dismiss.LayoutOrder = 3
 dismiss.Position = UDim2.new(0.117543861, 0, 0.834645689, 0)
 dismiss.Size = UDim2.new(0, 234, 0, 25)
 dismiss.Font = Enum.Font.SourceSansBold
-dismiss.Text = "nevermind"
+dismiss.Text = translateText("nevermind")
 dismiss.TextColor3 = Color3.fromRGB(255, 255, 255)
 dismiss.TextSize = 14.000
 dismiss.TextWrapped = true
@@ -140,7 +140,7 @@ end)
 
 copy.MouseButton1Click:Connect(function()
     setclipboard("https://www.hellohellohell0.com")
-    NotificationLibrary:SendNotification("Copied!", "https://hellohellohell0.com has been copied to your clipboard!", 5)
+    NotificationLibrary:SendNotification("Success", translateText("linkcopied"), 5)
     playSound(6493287948, 0.1)
     wait(0.5)
     infogui:Destroy()
