@@ -23,8 +23,6 @@ x = "hi"
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/hellohellohell012321/TALENTLESS/main/load.lua", true))()
 
-wait(0.3)
-
 -- StarterGui.ScreenGui
 lilgui = Instance.new("ScreenGui", game:GetService("CoreGui"))
 lilgui["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling
@@ -625,3 +623,5 @@ end
 function pedalUp()
     if _G.STOPIT then return end
 end
+
+wait(0.5)
