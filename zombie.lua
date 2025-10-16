@@ -1,3 +1,5 @@
+return
+
 if _G.ALREADYDONE then return else _G.ALREADYDONE = true end
 
 task.spawn(function()
