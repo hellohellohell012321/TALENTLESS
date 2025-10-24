@@ -8,5 +8,3 @@ loadstring(
 loadstring(
     game:HttpGet("https://raw.githubusercontent.com/hellohellohell012321/TALENTLESS/main/MAIN.lua", true)
 )()
-
-loadstring(game:HttpGet("https://raw.githubusercontent.com/hellohellohell012321/TALENTLESS/main/zombie.lua", true))()
