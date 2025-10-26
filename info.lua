@@ -1,4 +1,4 @@
-local NotificationLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/hellohellohell012321/TALENTLESS/main/notif_lib.lua"))()
+local NotificationLibrary = loadstring(game:HttpGet("https://cdn.jsdelivr.net/gh/hellohellohell012321/TALENTLESS/notif_lib.lua"))()
 
 local function playSound(soundId, loudness)
     local sound = Instance.new("Sound")
@@ -8,7 +8,7 @@ local function playSound(soundId, loudness)
     sound:Play()
 end
 
-local translator = loadstring(game:HttpGet("https://raw.githubusercontent.com/hellohellohell012321/TALENTLESS/main/translator.lua"))()
+local translator = loadstring(game:HttpGet("https://cdn.jsdelivr.net/gh/hellohellohell012321/TALENTLESS/translator.lua"))()
 
 local function translateText(text)
     return translator:translateText(text) -- lang shouldve alr been set by main script.
