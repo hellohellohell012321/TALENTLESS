@@ -2,9 +2,9 @@
 -- Licensed under the GNU GPL v3. See LICENSE file for details.
 
 loadstring(
-    game:HttpGet("https://cdn.jsdelivr.net/gh/hellohellohell012321/discordpopup/discordpopup.lua", true)
+    game:HttpGet("https://cdn.jsdelivr.net/gh/hellohellohell012321/discordpopup@main/discordpopup.lua", true)
 )()
 
 loadstring(
-    game:HttpGet("https://cdn.jsdelivr.net/gh/hellohellohell012321/TALENTLESS/MAIN.lua", true)
+    game:HttpGet("https://cdn.jsdelivr.net/gh/hellohellohell012321/TALENTLESS@main/MAIN.lua", true)
 )()
