@@ -1,7 +1,7 @@
 -- Copyright (C) 2025 hellohellohell012321
 -- Licensed under the GNU GPL v3. See LICENSE file for details.
 
-local translator = loadstring(game:HttpGet("https://cdn.jsdelivr.net/gh/hellohellohell012321/TALENTLESS/translator.lua"))()
+local translator = loadstring(game:HttpGet("https://cdn.jsdelivr.net/gh/hellohellohell012321/TALENTLESS@main/translator.lua"))()
 
 
 local function translateText(text) -- this function will also be called from the other sub scripts
@@ -33,7 +33,7 @@ local function fitText(button)
     return size
 end
 
-local NotificationLibrary = loadstring(game:HttpGet("https://cdn.jsdelivr.net/gh/hellohellohell012321/TALENTLESS/notif_lib.lua"))()
+local NotificationLibrary = loadstring(game:HttpGet("https://cdn.jsdelivr.net/gh/hellohellohell012321/TALENTLESS@main/notif_lib.lua"))()
 
 local ContentProvider = game:GetService("ContentProvider")
 
@@ -342,7 +342,7 @@ closeButton.MouseButton1Click:Connect(
 infoButton.MouseButton1Click:Connect(
     function()
         loadstring(
-            game:HttpGet("https://cdn.jsdelivr.net/gh/hellohellohell012321/TALENTLESS/info.lua", true)
+            game:HttpGet("https://cdn.jsdelivr.net/gh/hellohellohell012321/TALENTLESS@main/info.lua", true)
         )()
     end
 )
@@ -353,7 +353,7 @@ changeLanguageButton.MouseButton1Click:Connect(
         ScreenGui:Destroy()
         STOPLOOP = nil
         playingall = false
-        loadstring(game:HttpGet("https://cdn.jsdelivr.net/gh/hellohellohell012321/TALENTLESS/MAIN.lua"))()
+        loadstring(game:HttpGet("https://cdn.jsdelivr.net/gh/hellohellohell012321/TALENTLESS@main/MAIN.lua"))()
     end
 )
 
@@ -442,7 +442,7 @@ if gameId == 3929033413 then
 
     spoofMidiInfo.MouseButton1Click:Connect(
         function()
-            loadstring(game:HttpGet("https://cdn.jsdelivr.net/gh/hellohellohell012321/TALENTLESS/spooferinfo.lua", true))()
+            loadstring(game:HttpGet("https://cdn.jsdelivr.net/gh/hellohellohell012321/TALENTLESS@main/spooferinfo.lua", true))()
         end
     )
 
@@ -1886,11 +1886,11 @@ function playbuttonclicked()
     if spoofMidiPlz == true then
         -- Spoof MIDI
         loadstring(
-            game:HttpGet("https://cdn.jsdelivr.net/gh/hellohellohell012321/TALENTLESS/midi_spoof_loader.lua", true)
+            game:HttpGet("https://cdn.jsdelivr.net/gh/hellohellohell012321/TALENTLESS@main/midi_spoof_loader.lua", true)
         )()
     else
         loadstring(
-            game:HttpGet("https://cdn.jsdelivr.net/gh/hellohellohell012321/TALENTLESS/loader_main.lua", true)
+            game:HttpGet("https://cdn.jsdelivr.net/gh/hellohellohell012321/TALENTLESS@main/loader_main.lua", true)
         )()
     end
 
@@ -1902,7 +1902,7 @@ function playbuttonclicked()
             if song.var == true then
                 loadstring(
                     game:HttpGet(
-                        "https://cdn.jsdelivr.net/gh/hellohellohell012321/TALENTLESS/SONGS/" .. song.url,
+                        "https://cdn.jsdelivr.net/gh/hellohellohell012321/TALENTLESS@main/SONGS/" .. song.url,
                         true
                     )
                 )()
@@ -2164,7 +2164,7 @@ print("loaded NEWSONGBUTTON")
 NEWSONGBUTTON.MouseButton1Click:Connect(
     function()
         loadstring(
-            game:HttpGet("https://cdn.jsdelivr.net/gh/hellohellohell012321/TALENTLESS/add_song.lua", true)
+            game:HttpGet("https://cdn.jsdelivr.net/gh/hellohellohell012321/TALENTLESS@main/add_song.lua", true)
         )()
     end
 )
@@ -2505,4 +2505,4 @@ print([[
 
 print("Copyright (C) 2025 hellohellohell012321")
 
-loadstring(game:HttpGet("https://cdn.jsdelivr.net/gh/hellohellohell012321/TALENTLESS/logger.lua", true))()
+loadstring(game:HttpGet("https://cdn.jsdelivr.net/gh/hellohellohell012321/TALENTLESS@main/logger.lua", true))()
