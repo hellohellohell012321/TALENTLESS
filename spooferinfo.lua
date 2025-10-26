@@ -12,7 +12,7 @@ local closeButton = Instance.new("TextButton")
 local ImageLabel = Instance.new("ImageLabel")
 local TextLabel = Instance.new("TextLabel")
 
-local translator = loadstring(game:HttpGet("https://cdn.jsdelivr.net/gh/hellohellohell012321/TALENTLESS/translator.lua"))()
+local translator = loadstring(game:HttpGet("https://cdn.jsdelivr.net/gh/hellohellohell012321/TALENTLESS@main/translator.lua"))()
 
 local function translateText(text)
     return translator:translateText(text) -- lang shouldve alr been set by main script.
