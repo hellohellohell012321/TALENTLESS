@@ -1883,6 +1883,24 @@ function playbuttonclicked()
 
     bpm = tonumber(bpmbox.Text)
 
+    -- find which song to play
+
+    local songscript = false
+    task.spawn(function()
+        local songFound = false
+        for _, song in pairs(songs) do
+            if songFound == false then
+                if song.var == true then
+                    songscript = game:HttpGet(
+                        "https://cdn.jsdelivr.net/gh/hellohellohell012321/TALENTLESS@main/SONGS/" .. song.url,
+                        true
+                    )
+                songFound = true
+                end
+            end
+        end
+    end)
+
     if spoofMidiPlz == true then
         -- Spoof MIDI
         loadstring(
@@ -1894,22 +1912,8 @@ function playbuttonclicked()
         )()
     end
 
-    -- find which song to play
-
-    local songFound = false
-    for _, song in pairs(songs) do
-        if songFound == false then
-            if song.var == true then
-                loadstring(
-                    game:HttpGet(
-                        "https://cdn.jsdelivr.net/gh/hellohellohell012321/TALENTLESS@main/SONGS/" .. song.url,
-                        true
-                    )
-                )()
-            songFound = true
-            end
-        end
-    end
+    repeat wait() until songscript
+    loadstring(songscript)()
 end -- close the play song onclick function
 
 playsong.MouseButton1Click:Connect(playbuttonclicked)
