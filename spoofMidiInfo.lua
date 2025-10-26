@@ -12,6 +12,12 @@ local closeButton = Instance.new("TextButton")
 local ImageLabel = Instance.new("ImageLabel")
 local TextLabel = Instance.new("TextLabel")
 
+local translator = loadstring(game:HttpGet("https://cdn.jsdelivr.net/hellohellohell012321/TALENTLESS/translator.lua"))()
+
+local function translateText(text)
+    return translator:translateText(text) -- lang shouldve alr been set by main script.
+end
+
 --Properties:
 
 ScreenGui.Parent = game:GetService("CoreGui")
@@ -32,7 +38,7 @@ title.BorderColor3 = Color3.fromRGB(0, 0, 0)
 title.BorderSizePixel = 0
 title.Size = UDim2.new(1, 0, -0.0414047241, 50)
 title.Font = Enum.Font.SourceSansBold
-title.Text = "spoof midi: what is it?"
+title.Text = translateText("spoof midi title")
 title.TextColor3 = Color3.fromRGB(255, 255, 255)
 title.TextSize = 32.000
 
@@ -49,7 +55,7 @@ info.LayoutOrder = 1
 info.Position = UDim2.new(0.0480766296, 0, 0.620982587, 0)
 info.Size = UDim2.new(0, 347, 0, 98)
 info.Font = Enum.Font.SourceSans
-info.Text = "this option is showing because you're in the game \"piano rooms\". when \"spoof midi\" is turned ON, talentless will tell the game that all of your inputs are coming from a real midi keyboard, not a qwerty keyboard! this makes the autoplay so much more believable, because people will think you are playing on a real piano. to use it, just turn on spoof midi, and play any song!"
+info.Text = translateText("spoof midi info")
 info.TextColor3 = Color3.fromRGB(255, 255, 255)
 info.TextScaled = true
 info.TextSize = 23.000
@@ -85,7 +91,7 @@ TextLabel.BorderSizePixel = 0
 TextLabel.Position = UDim2.new(0.75, 0, 0.14994894, 0)
 TextLabel.Size = UDim2.new(0, 89, 0, 131)
 TextLabel.Font = Enum.Font.SourceSansBold
-TextLabel.Text = "make sure to turn on midi connect!"
+TextLabel.Text = translateText("midi connect reminder")
 TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel.TextScaled = true
 TextLabel.TextSize = 14.000
