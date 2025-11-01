@@ -844,7 +844,7 @@ task.spawn(function()
         local action = song[i]
         
         if action.type == "keypress" then
-            keypresstrigger(action.keys, action.beats, bpm)`
+            keypresstrigger(action.keys, action.beats, bpm)
         elseif action.type == "rest" then
             resttrigger(action.beats, bpm)
         elseif action.type == "adjustVelocity" then
