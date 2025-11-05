@@ -1,4 +1,3 @@
-rest(32, bpm)
 keypress("w", x, bpm)
 rest(0.5, bpm)
 keypress("9", x, bpm)
