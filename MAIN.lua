@@ -2018,14 +2018,12 @@ function playbuttonclicked()
     if spoofMidiPlz == true then
         -- Spoof MIDI
         loadstring(
-            game:HttpGet("https://pastefy.app/RzFl7pEY/raw", true)
+            game:HttpGet("https://cdn.jsdelivr.net/gh/hellohellohell012321/TALENTLESS@main/midi_spoof_loader.lua", true)
         )()
-        -- https://cdn.jsdelivr.net/gh/hellohellohell012321/TALENTLESS@main/midi_spoof_loader.lua
     else
         loadstring(
-            game:HttpGet("https://pastefy.app/nNA88Fy5/raw", true)
+            game:HttpGet("https://cdn.jsdelivr.net/gh/hellohellohell012321/TALENTLESS@main/loader_main.lua", true)
         )()
-        -- https://cdn.jsdelivr.net/gh/hellohellohell012321/TALENTLESS@main/loader_main.lua
     end
 
     repeat wait() until songscript
