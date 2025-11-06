@@ -1995,7 +1995,7 @@ function playbuttonclicked()
     songisplaying = true
 
     bpm = tonumber(bpmbox.Text)
-    if bpm = 0 or nil then SendNotification("Error", translateText("invalidbpm"), 3) return end
+    if bpm == 0 or nil then SendNotification("Error", translateText("invalidbpm"), 3) return end
 
     -- find which song to play
 
