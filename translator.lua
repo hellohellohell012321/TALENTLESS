@@ -918,6 +918,23 @@ local translations = {
         ["tr"] = "şarkın bitti.",
         ["ar"] = "انتهت أغنيتك."
     },
+
+    ["invalidbpm"] = {
+        ["en"] = "please put a valid bpm",
+        ["pt-BR"] = "por favor, coloque um bpm válido",
+        ["es"] = "por favor, pon un bpm válido",
+        ["ru"] = "пожалуйста, укажи допустимый bpm",
+        ["zh-CN"] = "请输入有效的 bpm",
+        ["id"] = "tolong masukkan bpm yang valid",
+        ["fil"] = "pakilagay ng valid na bpm",
+        ["vi"] = "vui lòng nhập bpm hợp lệ",
+        ["fr"] = "mets un bpm valide s'il te plaît",
+        ["de"] = "bitte gib ein gültiges bpm ein",
+        ["ja"] = "有効な bpm を入力してください",
+        ["ko"] = "유효한 bpm을 입력해주세요",
+        ["tr"] = "lütfen geçerli bir bpm gir",
+        ["ar"] = "من فضلك أدخل bpm صالحًا"
+    },    
     
     ["ALTALE"] = {
         ["ja"] = "アルタレ"
