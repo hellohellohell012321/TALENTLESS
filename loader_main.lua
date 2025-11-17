@@ -826,6 +826,7 @@ function adjustVelocitytrigger(vel)
 
     VirtualInputManager:SendKeyEvent(true, Enum.KeyCode.LeftAlt, false, game)
     VirtualInputManager:SendKeyEvent(true, keyMappings[topress], false, game)
+    VirtualInputManager:SendKeyEvent(false, keyMappings[topress], false, game)
     VirtualInputManager:SendKeyEvent(false, Enum.KeyCode.LeftAlt, false, game)
 end
 
