@@ -24,7 +24,7 @@ local title = Instance.new("TextLabel")
 local dismiss = Instance.new("TextButton")
 
 infogui.Name = "infogui"
-infogui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+infogui.Parent = game:GetService("CoreGui")
 infogui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 Frame.Parent = infogui
@@ -34,6 +34,7 @@ Frame.BorderSizePixel = 0
 Frame.Position = UDim2.new(0.5, 0, 0.5, 0)
 Frame.AnchorPoint = Vector2.new(0.5, 0.5)
 Frame.Size = UDim2.new(0, 285, 0, 269)
+Frame.ZIndex = 99
 
 UIListLayout.Parent = Frame
 UIListLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
