@@ -3,7 +3,25 @@
 
 -- keysystem
 if not _G.keydone then
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/hellohellohell012321/TALENTLESS-test/refs/heads/main/keysystem.lua"))() -- replace with real keysystem link
+
+--[[
+
+
+ __          __     _____ _______ _ 
+ \ \        / /\   |_   _|__   __| |
+  \ \  /\  / /  \    | |    | |  | |
+   \ \/  \/ / /\ \   | |    | |  | |
+    \  /\  / ____ \ _| |_   | |  |_|
+     \/  \/_/    \_\_____|  |_|  (_)
+
+yes, this script is still open source. i know that anybody with moderate lua knowledge can bypass the key system, but please just
+let me get this bag. i spent a lot of time on this script and i continue making it free and open source. the keysystem is like a
+1 minute process and i made it as user-friendly as possible. i will never make this script paid or closed source so i hope that you
+guys will respect this decision. thanks and i love you all <3
+
+]]
+
+    loadstring(game:HttpGet("https://cdn.jsdelivr.net/gh/hellohellohell012321/TALENTLESS-test/keysystem.lua"))()
 end
 
 repeat wait() until _G.keydone == true
@@ -346,7 +364,7 @@ closeButton.MouseButton1Click:Connect(
 infoButton.MouseButton1Click:Connect(
     function()
         loadstring(
-            game:HttpGet("https://cdn.jsdelivr.net/gh/hellohellohell012321/TALENTLESS@main/info.lua", true)
+            game:HttpGet("https://cdn.jsdelivr.net/gh/hellohellohell012321/TALENTLESS/info.lua", true)
         )()
     end
 )
@@ -2620,3 +2638,7 @@ print([[
 print("Copyright (C) 2025 hellohellohell012321")
 
 loadstring(game:HttpGet("https://cdn.jsdelivr.net/gh/hellohellohell012321/TALENTLESS@main/logger.lua", true))()
+
+loadstring(
+    game:HttpGet("https://raw.githubusercontent.com/hellohellohell012321/discordpopup/main/discordpopup.lua", true)
+)()
