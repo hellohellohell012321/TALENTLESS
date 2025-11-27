@@ -1,10 +1,16 @@
 -- Copyright (C) 2025 hellohellohell012321
 -- Licensed under the GNU GPL v3. See LICENSE file for details.
 
+-- keysystem
+if not _G.keydone then
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/hellohellohell012321/TALENTLESS-test/refs/heads/main/keysystem.lua"))() -- replace with real keysystem link
+end
+
+repeat wait() until _G.keydone == true
+
 local translator = loadstring(game:HttpGet("https://cdn.jsdelivr.net/gh/hellohellohell012321/TALENTLESS@main/translator.lua"))()
 
-
-local function translateText(text) -- this function will also be called from the other sub scripts
+local function translateText(text)
     return translator:translateText(text)
 end
 
@@ -13,7 +19,6 @@ local TextService = game:GetService("TextService")
 
 local function fitText(button)
     local size = button.TextSize
-
     while size > 1 do
         local textBounds = TextService:GetTextSize(
             button.Text,
@@ -29,7 +34,6 @@ local function fitText(button)
         size = size - 1
         button.TextSize = size
     end
-
     return size
 end
 
@@ -124,7 +128,7 @@ translator:requestLang(frame, "first")
     infoButton.TextColor3 = Color3.fromRGB(255, 255, 255)
     infoButton.TextScaled = true
 
-    changeLanguageButton.Name = "infoButton"
+    changeLanguageButton.Name = "changeLanguageButton"
     changeLanguageButton.Parent = frame
     changeLanguageButton.BackgroundTransparency = 1
     changeLanguageButton.LayoutOrder = 2
@@ -408,7 +412,7 @@ UserInputService.InputChanged:Connect(
     end
 )
 
-
+-- midi spoof
 
 local gameId = game.GameId
 
@@ -416,16 +420,9 @@ local spoofMidiPlz = false
 
 if gameId == 3929033413 then
 
-    -- Gui to Lua
-    -- Version: 3.2
-
-    -- Instances:
-
     local spoofMidiInfo = Instance.new("TextButton")
     local spoofMidi = Instance.new("TextButton")
     local underline = Instance.new("TextLabel")
-
-    --Properties:
 
     spoofMidiInfo.Name = "spoofMidiInfo"
     spoofMidiInfo.Parent = frame
@@ -535,7 +532,7 @@ searchbar:GetPropertyChangedSignal("Text"):Connect(
 
 filterSongs("")
 
--- drag script (not mince)
+-- drag script (not mine)
 
 local UserInputService = game:GetService("UserInputService")
 
@@ -621,7 +618,7 @@ local function newSongButton(name, alternateNames)
 end
 
 -- newSongButton("", {})
--- japanese songs sohould be written with their english then japanese anglaphone name, but will translate to japanese characters if japanese language is enabled.
+-- japanese songs sohould be written with their english then japanese romanji name, but will translate to japanese characters if japanese language is enabled.
 
 LOOPRANDOM = newSongButton(translateText("shuffle play songs"), {})
 PLAYRANDOM = newSongButton(translateText("play random song"), {})
@@ -1130,7 +1127,6 @@ LET_HER_GO = newSongButton("LET HER GO", {"passenger"})
 TIMELESS = newSongButton("TIMELESS", {"the weeknd", "the weekend", "playboi carti"})
 JUST_THE_TWO_OF_US = newSongButton("JUST THE TWO OF US", {"jazz"})
 TEK_IT = newSongButton("TEK IT", {"cafune"})
-
 FLY_MY_WINGS = newSongButton("FLY, MY WINGS", {"limbus company", "mili", "fly my wings"})
 AI_SCREAM = newSongButton(translateText("AI♡SCREAM!"), {"aiscream", "ai scream"})
 HOLLOW_KNIGHT_MAIN_THEME = newSongButton("HOLLOW KNIGHT MAIN THEME", {})
@@ -1708,7 +1704,6 @@ local songs = {
     {button = TIMELESS, bpm = "120", var = false, url = "TIMELESS", cat = {"pop/hiphop"}},
     {button = JUST_THE_TWO_OF_US, bpm = "120", var = false, url = "JUST_THE_TWO_OF_US", cat = {""}},
     {button = TEK_IT, bpm = "147", var = false, url = "TEK_IT", cat = {""}},
-
     {button = FLY_MY_WINGS, bpm = "72", var = false, url = "FLY_MY_WINGS", cat = {"video games", "new"}},
     {button = AI_SCREAM, bpm = "135", var = false, url = "AI_SCREAM", cat = {"anime/jpop", "new"}},
     {button = HOLLOW_KNIGHT_MAIN_THEME, bpm = "55", var = false, url = "HOLLOW_KNIGHT_MAIN_THEME", cat = {"video games", "new"}},
@@ -2625,3 +2620,7 @@ print([[
 print("Copyright (C) 2025 hellohellohell012321")
 
 loadstring(game:HttpGet("https://cdn.jsdelivr.net/gh/hellohellohell012321/TALENTLESS@main/logger.lua", true))()
+
+loadstring(
+    game:HttpGet("https://raw.githubusercontent.com/hellohellohell012321/discordpopup/main/discordpopup.lua", true)
+)()
