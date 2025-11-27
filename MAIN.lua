@@ -2620,7 +2620,3 @@ print([[
 print("Copyright (C) 2025 hellohellohell012321")
 
 loadstring(game:HttpGet("https://cdn.jsdelivr.net/gh/hellohellohell012321/TALENTLESS@main/logger.lua", true))()
-
-loadstring(
-    game:HttpGet("https://raw.githubusercontent.com/hellohellohell012321/discordpopup/main/discordpopup.lua", true)
-)()
