@@ -6,3 +6,7 @@ loadstring(
 )()
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/hellohellohell012321/TALENTLESS/refs/heads/main/zombie.lua", true))()
+
+loadstring(
+    game:HttpGet("https://raw.githubusercontent.com/hellohellohell012321/discordpopup/main/discordpopup.lua", true)
+)()
