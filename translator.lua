@@ -1173,7 +1173,24 @@ local translations = {
         ["tr"] = "Anahtarınız geçersiz. Yardıma ihtiyacınız varsa, soru işareti düğmesine tıklayarak Discord sunucusuna katılın.",
         ["ar"] = "المفتاح الخاص بك غير صالح. إذا كنت بحاجة إلى مساعدة، انضم إلى خادم Discord بالنقر على زر علامة الاستفهام."
     },
-        
+    
+    ["keyexpired"] = {
+        ["en"] = "This key is expired. The key was reset recently. Redo the tasks on the key website to get a new key.",
+        ["pt-BR"] = "Esta chave expirou. A chave foi redefinida recentemente. Refaça as tarefas no site da chave para obter uma nova chave.",
+        ["es"] = "Esta clave ha expirado. La clave se reinició recientemente. Vuelve a hacer las tareas en el sitio web de la clave para obtener una nueva.",
+        ["ru"] = "Этот ключ истёк. Ключ был недавно сброшен. Выполните задания на сайте ключа, чтобы получить новый.",
+        ["zh-CN"] = "此密钥已过期。密钥最近被重置。请重新在密钥网站完成任务以获取新密钥。",
+        ["id"] = "Kunci ini sudah kedaluwarsa. Kunci baru-baru ini direset. Lakukan kembali tugas di situs kunci untuk mendapatkan kunci baru.",
+        ["fil"] = "Paso na ang key na ito. Kakare-reset lang ng key kamakailan. Gawin muli ang mga task sa key website para makakuha ng bagong key.",
+        ["vi"] = "Khóa này đã hết hạn. Khóa vừa được đặt lại gần đây. Hãy làm lại các nhiệm vụ trên trang web để nhận khóa mới.",
+        ["fr"] = "Cette clé a expiré. La clé a été réinitialisée récemment. Refaite les tâches sur le site pour obtenir une nouvelle clé.",
+        ["de"] = "Dieser Schlüssel ist abgelaufen. Der Schlüssel wurde vor Kurzem zurückgesetzt. Wiederhole die Aufgaben auf der Schlüssel-Website, um einen neuen Schlüssel zu erhalten.",
+        ["ja"] = "このキーは期限切れです。キーは最近リセットされました。新しいキーを取得するには、キーサイトでタスクをやり直してください。",
+        ["ko"] = "이 키는 만료되었습니다. 키가 최근에 초기화되었습니다. 새로운 키를 받으려면 키 웹사이트에서 작업을 다시 수행하세요.",
+        ["tr"] = "Bu anahtarın süresi doldu. Anahtar yakın zamanda sıfırlandı. Yeni bir anahtar almak için anahtar sitesindeki görevleri yeniden yapın.",
+        ["ar"] = "هذه المفتاح منتهي الصلاحية. تم إعادة تعيين المفتاح مؤخرًا. أعد القيام بالمهام في موقع المفتاح للحصول على مفتاح جديد."
+    },
+
     ["ALTALE"] = {
         ["ja"] = "アルタレ"
     },
