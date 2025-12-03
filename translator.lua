@@ -1191,6 +1191,40 @@ local translations = {
         ["ar"] = "هذه المفتاح منتهي الصلاحية. تم إعادة تعيين المفتاح مؤخرًا. أعد القيام بالمهام في موقع المفتاح للحصول على مفتاح جديد."
     },
 
+    ["categories"] = {
+        ["en"] = "categories",
+        ["pt-BR"] = "categorias",
+        ["es"] = "categorías",
+        ["ru"] = "категории",
+        ["zh-CN"] = "分类",
+        ["id"] = "kategori",
+        ["fil"] = "mga kategorya",
+        ["vi"] = "thể loại",
+        ["fr"] = "catégories",
+        ["de"] = "kategorien",
+        ["ja"] = "カテゴリ",
+        ["ko"] = "카테고리",
+        ["tr"] = "kategoriler",
+        ["ar"] = "الفئات"
+    },
+    
+    ["utilities"] = {
+        ["en"] = "utilities",
+        ["pt-BR"] = "ferramentas",
+        ["es"] = "utilidades",
+        ["ru"] = "утилиты",
+        ["zh-CN"] = "实用工具",
+        ["id"] = "utilitas",
+        ["fil"] = "mga kagamitan",
+        ["vi"] = "tiện ích",
+        ["fr"] = "outils",
+        ["de"] = "dienstprogramme",
+        ["ja"] = "ユーティリティ",
+        ["ko"] = "유틸리티",
+        ["tr"] = "araçlar",
+        ["ar"] = "الأدوات"
+    },
+
     ["ALTALE"] = {
         ["ja"] = "アルタレ"
     },
