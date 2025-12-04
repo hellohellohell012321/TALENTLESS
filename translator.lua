@@ -1225,6 +1225,57 @@ local translations = {
         ["ar"] = "الأدوات"
     },
 
+    ["copynewscript"] = {
+        ["en"] = "copy new script!",
+        ["pt-BR"] = "copiar novo script!",
+        ["es"] = "copiar nuevo script!",
+        ["ru"] = "скопировать новый скрипт!",
+        ["zh-CN"] = "复制新脚本！",
+        ["id"] = "salin skrip baru!",
+        ["fil"] = "kopyahin ang bagong script!",
+        ["vi"] = "sao chép script mới!",
+        ["fr"] = "copier le nouveau script !",
+        ["de"] = "neues skript kopieren!",
+        ["ja"] = "新しいスクリプトをコピー！",
+        ["ko"] = "새 스크립트 복사!",
+        ["tr"] = "yeni scripti kopyala!",
+        ["ar"] = "نسخ البرنامج الجديد!"
+    },
+    
+    ["scriptcopied"] = {
+        ["en"] = "copied!",
+        ["pt-BR"] = "copiado!",
+        ["es"] = "¡copiado!",
+        ["ru"] = "скопировано!",
+        ["zh-CN"] = "已复制！",
+        ["id"] = "disalin!",
+        ["fil"] = "nakopya!",
+        ["vi"] = "đã sao chép!",
+        ["fr"] = "copié !",
+        ["de"] = "kopiert!",
+        ["ja"] = "コピーしました！",
+        ["ko"] = "복사됨!",
+        ["tr"] = "kopyalandı!",
+        ["ar"] = "تم النسخ!"
+    },
+    
+    ["usenewloadstring"] = {
+        ["en"] = "use TALENTLESS from the new loadstring:",
+        ["pt-BR"] = "use TALENTLESS do novo loadstring:",
+        ["es"] = "usa TALENTLESS desde el nuevo loadstring:",
+        ["ru"] = "используйте TALENTLESS из новой loadstring:",
+        ["zh-CN"] = "从新的 loadstring 使用 TALENTLESS：",
+        ["id"] = "gunakan TALENTLESS dari loadstring baru:",
+        ["fil"] = "gamitin ang TALENTLESS mula sa bagong loadstring:",
+        ["vi"] = "sử dụng TALENTLESS từ loadstring mới:",
+        ["fr"] = "utilisez TALENTLESS depuis le nouveau loadstring :",
+        ["de"] = "verwende TALENTLESS aus dem neuen Loadstring:",
+        ["ja"] = "新しい loadstring から TALENTLESS を使用：",
+        ["ko"] = "새 loadstring에서 TALENTLESS 사용:",
+        ["tr"] = "yeni loadstring'den TALENTLESS kullan:",
+        ["ar"] = "استخدم TALENTLESS من loadstring الجديد:"
+    },
+
     ["ALTALE"] = {
         ["ja"] = "アルタレ"
     },
