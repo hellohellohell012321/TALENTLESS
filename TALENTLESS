@@ -1,10 +1,149 @@
--- Copyright (C) 2025 hellohellohell012321
--- Licensed under the GNU GPL v3. See LICENSE file for details.
+-- Gui to Lua
+-- Version: 3.2
 
-loadstring(
-    game:HttpGet("https://hellohellohell0.com/talentless/script/main.lua", true)
-)()
+-- Instances:
 
-loadstring(
-    game:HttpGet("https://raw.githubusercontent.com/hellohellohell012321/discordpopup/main/discordpopup.lua", true)
-)()
+local ScreenGui = Instance.new("ScreenGui")
+local frame = Instance.new("Frame")
+local uic1 = Instance.new("UICorner")
+local title = Instance.new("TextLabel")
+local uic2 = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local TextButton = Instance.new("TextButton")
+local closeButton = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+frame.Name = "frame"
+frame.Parent = ScreenGui
+frame.AnchorPoint = Vector2.new(0.5, 0.5)
+frame.BackgroundColor3 = Color3.fromRGB(33, 33, 41)
+frame.Position = UDim2.new(0.5, 0, 0.454081625, 0)
+frame.Size = UDim2.new(0, 475, 0, 200)
+
+uic1.CornerRadius = UDim.new(0, 4)
+uic1.Name = "uic1"
+uic1.Parent = frame
+
+title.Name = "title"
+title.Parent = frame
+title.BackgroundColor3 = Color3.fromRGB(50, 57, 73)
+title.BackgroundTransparency = 1.000
+title.Position = UDim2.new(0.0273684207, 0, 0.05, 0)
+title.Size = UDim2.new(0.957894802, 0, -0.00372310635, 50)
+title.ZIndex = 2
+title.Font = Enum.Font.SourceSansBold
+title.Text = "use TALENTLESS from the new loadstring:"
+title.TextColor3 = Color3.fromRGB(255, 255, 255)
+title.TextScaled = true
+title.TextSize = 46.000
+title.TextWrapped = true
+
+uic2.CornerRadius = UDim.new(0, 4)
+uic2.Name = "uic2"
+uic2.Parent = title
+
+TextLabel.Parent = frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 0.800
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.119999997, 0, 0.310000002, 0)
+TextLabel.Size = UDim2.new(0, 366, 0, 75)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = [[pcall(function()
+loadstring(game:HttpGet(\"https://hellohellohell0.com/talentless-raw/TALENTLESS.lua", true))()
+end)]]
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+TextLabel.TextXAlignment = Enum.TextXAlignment.Left
+
+TextButton.Parent = frame
+TextButton.BackgroundColor3 = Color3.fromRGB(72, 137, 77)
+TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.BorderSizePixel = 0
+TextButton.Position = UDim2.new(0.294736832, 0, 0.745000005, 0)
+TextButton.Size = UDim2.new(0, 200, 0, 32)
+TextButton.Font = Enum.Font.SourceSansBold
+TextButton.Text = "copy new script!"
+TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.TextScaled = true
+TextButton.TextSize = 14.000
+TextButton.TextWrapped = true
+
+TextButton.MouseButton1Click:Connect(function()
+    setclipboard([[pcall(function()
+loadstring(game:HttpGet("https://hellohellohell0.com/talentless-raw/TALENTLESS.lua", true))()
+end)]])
+TextButton.Text = "copied!"
+end)
+
+closeButton.Name = "closeButton"
+closeButton.Parent = frame
+closeButton.BackgroundTransparency = 1.000
+closeButton.LayoutOrder = 1
+closeButton.Position = UDim2.new(1, -35, 0, 0)
+closeButton.Size = UDim2.new(0, 35, 0, 35)
+closeButton.ZIndex = 5
+closeButton.Font = Enum.Font.SourceSansBold
+closeButton.Text = "X"
+closeButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+closeButton.TextScaled = true
+closeButton.TextWrapped = true
+    
+    closeButton.MouseButton1Click:Connect(function()
+        ScreenGui:Destroy() 
+    end)
+    
+local UserInputService = game:GetService("UserInputService")
+
+local gui = frame
+
+local dragging
+local dragInput
+local dragStart
+local startPos
+
+local function update(input)
+    local delta = input.Position - dragStart
+    gui.Position =
+        UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+end
+
+gui.InputBegan:Connect(
+    function(input)
+        if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+            dragging = true
+            dragStart = input.Position
+            startPos = gui.Position
+
+            input.Changed:Connect(
+                function()
+                    if input.UserInputState == Enum.UserInputState.End then
+                        dragging = false
+                    end
+                end
+            )
+        end
+    end
+)
+
+gui.InputChanged:Connect(
+    function(input)
+        if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+            dragInput = input
+        end
+    end
+)
+
+UserInputService.InputChanged:Connect(
+    function(input)
+        if input == dragInput and dragging then
+            update(input)
+        end
+    end
+)
