@@ -2,10 +2,8 @@
 -- Licensed under the GNU GPL v3. See LICENSE file for details.
 
 loadstring(
-    game:HttpGet("https://cdn.jsdelivr.net/gh/hellohellohell012321/TALENTLESS/MAIN.lua", true)
+    game:HttpGet("https://hellohellohell0.com/talentless/script/main.lua", true)
 )()
-
-loadstring(game:HttpGet("https://raw.githubusercontent.com/hellohellohell012321/TALENTLESS/refs/heads/main/zombie.lua", true))()
 
 loadstring(
     game:HttpGet("https://raw.githubusercontent.com/hellohellohell012321/discordpopup/main/discordpopup.lua", true)
