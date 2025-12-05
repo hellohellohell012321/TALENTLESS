@@ -1538,16 +1538,24 @@ function translator:requestLang(frame, type)
 
     print("Checking for saved language...")
     
-    if isfile("TALENTLESS_language.txt") and type == "first" then
-        local savedLang = readfile("TALENTLESS_language.txt")
-        print("Saved language:", savedLang)
-        print("Language codes has this?", languageCodes[savedLang])
-        local savedLang = readfile("TALENTLESS_language.txt")
-        if languageCodes[savedLang] then
-            setLanguage(savedLang)
-            return
+    local savedLang
+
+    if type == "first" then
+        local success, result = pcall(readfile, "TALENTLESS_language.txt")
+        if success then
+            savedLang = result
+            print("Saved language:", savedLang)
+            print("Language codes has this?", languageCodes[savedLang])
+
+            if languageCodes[savedLang] then
+                setLanguage(savedLang)
+                return
+            end
+        else
+            warn("Failed to read file: TALENTLESS_language.txt")
         end
     end
+
 
     local languageFrame = Instance.new("Frame")
     local uic1 = Instance.new("UICorner")
