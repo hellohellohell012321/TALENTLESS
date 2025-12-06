@@ -540,6 +540,8 @@ function skipToPercentage(percentage)
                 pedalUptrigger()
             elseif action.type == "finishedSong" then
                 finishedSongtrigger()
+            elseif action.type == "pressnote" then
+                pressnotetrigger(action.note, action.octave, action.beats, bpm)
             end
         end
     end)
@@ -762,6 +764,56 @@ local function pressKey(keys, beats, bpm)
     else end
 end
 
+-- PRESSNOTE FUNCTION
+-- PRESSNOTE FUNCTION
+-- PRESSNOTE FUNCTION
+
+-- note mappings to vp keys
+
+local noteMappings = {
+    ["C"] = {[1] = "1", [2] = "8", [3] = "t", [4] = "s", [5] = "l", [6] = "m"},
+    ["C#"] = {[1] = "!", [2] = "*", [3] = "T", [4] = "S", [5] = "L"},
+    ["D"] = {[1] = "2", [2] = "9", [3] = "y", [4] = "d", [5] = "z"},
+    ["D#"] = {[1] = "@", [2] = "(", [3] = "Y", [4] = "D", [5] = "Z"},
+    ["E"] = {[1] = "3", [2] = "0", [3] = "u", [4] = "f", [5] = "x"},
+    ["F"] = {[1] = "4", [2] = "q", [3] = "i", [4] = "g", [5] = "c"},
+    ["F#"] = {[1] = "$", [2] = "Q", [3] = "I", [4] = "G", [5] = "C"},
+    ["G"] = {[1] = "5", [2] = "w", [3] = "o", [4] = "h", [5] = "v"},
+    ["G#"] = {[1] = "%", [2] = "W", [3] = "O", [4] = "H", [5] = "V"},
+    ["A"] = {[1] = "6", [2] = "e", [3] = "p", [4] = "j", [5] = "b"},
+    ["A#"] = {[1] = "^", [2] = "E", [3] = "P", [4] = "J", [5] = "B"},
+    ["B"] = {[1] = "7", [2] = "r", [3] = "a", [4] = "k", [5] = "n"}
+}
+
+-- press function
+function pressnote(note, octave, beats, bpm)
+    table.insert(song, {
+        type = "pressnote",
+        note = note,
+        octave = octave,
+        beats = beats
+    })
+end
+
+function pressnotetrigger(note, octave, beats, bpm)
+    if _G.STOPIT then return end
+    if pausing then
+        resumeEvent.Event:Wait()
+    end
+
+    local key = noteMappings[note] and noteMappings[note][octave]
+    if key then
+        -- press it asynchronously
+        coroutine.wrap(
+            function()
+                pressKey(key, beats, bpm) -- pass args to presskey
+            end
+        )()
+    else
+        warn("Invalid note or octave: " .. tostring(note) .. " octave " .. tostring(octave))
+    end
+end
+
 -- KEYPRESS FUNCTION
 -- KEYPRESS FUNCTION
 -- KEYPRESS FUNCTION
@@ -819,11 +871,26 @@ function resttrigger(beats, bpm)
     if _G.STOPIT then return end
     
     local waitTime = (beats / bpm) * 60
-    if errormargin == 0 then
-        task.wait(waitTime)
-    else
-        local randomOffset = (math.random() * 1.6 - 1) * (errormargin / 2)
-        wait(waitTime + randomOffset)
+    local offset = 0
+    
+    if errormargin ~= 0 then
+        local randomOffset = (math.random() * 2 - 1) * (errormargin / 2)
+        offset = randomOffset
+    end
+    
+    local totalWaitTime = waitTime + offset
+    local elapsed = 0
+    local checkInterval = 0.1  -- check every 0.1 seconds
+    
+    -- Break the wait into smaller chunks so we can check _G.STOPIT frequently
+    while elapsed < totalWaitTime do
+        if _G.STOPIT then return end  -- Check if we should stop
+        
+        local remainingTime = totalWaitTime - elapsed
+        local nextWait = math.min(checkInterval, remainingTime) -- either 0.1 or the remaining time when remaining time < 0.1
+        
+        task.wait(nextWait)
+        elapsed = elapsed + nextWait -- add the waited time to elapsed
     end
     
     -- update playhead stuffs
@@ -886,6 +953,8 @@ task.spawn(function()
             pedalUptrigger()
         elseif action.type == "finishedSong" then
             finishedSongtrigger()
+        elseif action.type == "pressnote" then
+            pressnotetrigger(action.note, action.octave, action.beats, bpm)
         end
     end
 end)
