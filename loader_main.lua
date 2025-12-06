@@ -275,7 +275,7 @@ local finishedLoading = false
 function stopPlayingSongs()
 
     print("stopped.")
-    _G.STOPIT = true
+    _G.STOPIT = true -- indicator for playing functions that tells it to halt.
 
     function pressKey(keys, beats, bpm)
     end
@@ -298,7 +298,7 @@ function stopPlayingSongs()
     function adjustVelocity(h)
     end
 
-    songisplaying = false
+    songisplaying = false -- indicator for telling the user they cant play when a song is playing, etc.
 
     playSound("18595195017", 0.5)
     NotificationLibrary:SendNotification("Success", translateText("stopping..."), 1)
@@ -845,11 +845,26 @@ function resttrigger(beats, bpm)
     if _G.STOPIT then return end
     
     local waitTime = (beats / bpm) * 60
-    if errormargin == 0 then
-        task.wait(waitTime)
-    else
-        local randomOffset = (math.random() * 1.6 - 1) * (errormargin / 2)
-        wait(waitTime + randomOffset)
+    local offset = 0
+    
+    if errormargin ~= 0 then
+        local randomOffset = (math.random() * 2 - 1) * (errormargin / 2)
+        offset = randomOffset
+    end
+    
+    local totalWaitTime = waitTime + offset
+    local elapsed = 0
+    local checkInterval = 0.1  -- check every 0.1 seconds
+    
+    -- Break the wait into smaller chunks so we can check _G.STOPIT frequently
+    while elapsed < totalWaitTime do
+        if _G.STOPIT then return end  -- Check if we should stop
+        
+        local remainingTime = totalWaitTime - elapsed
+        local nextWait = math.min(checkInterval, remainingTime) -- either 0.1 or the remaining time when remaining time < 0.1
+        
+        task.wait(nextWait)
+        elapsed = elapsed + nextWait -- add the waited time to elapsed
     end
     
     -- update playhead stuffs
