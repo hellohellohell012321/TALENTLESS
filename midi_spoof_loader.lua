@@ -270,6 +270,7 @@ UserInputService.InputChanged:Connect(
 )
 
 local song = {}
+local songThread
 local finishedLoading = false
 
 function stopPlayingSongs()
@@ -522,7 +523,7 @@ function skipToPercentage(percentage)
 
     updatePlayheadVisual()
 
-    task.spawn(function()
+    songThread = task.spawn(function()
         for i = targetIndex, #song do
             if _G.STOPIT or tempClear then halted = true break end
             
@@ -928,7 +929,7 @@ end
 -- MAIN SONG LOOP
 -- MAIN SONG LOOP
 
-task.spawn(function()
+songThread = task.spawn(function()
     repeat wait() until finishedLoading == true
     
     totalSongBeats = calculateTotalBeats()
@@ -955,6 +956,17 @@ task.spawn(function()
             finishedSongtrigger()
         elseif action.type == "pressnote" then
             pressnotetrigger(action.note, action.octave, action.beats, bpm)
+        end
+    end
+end)
+
+watcher = task.spawn(function()
+    while task.wait(0.1) do
+        if _G.STOPIT then
+            song = {}
+            task.cancel(songThread)
+            task.cancel(watcher)
+            return
         end
     end
 end)
