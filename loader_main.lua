@@ -1,7 +1,7 @@
 -- Copyright (C) 2025 hellohellohell012321
 -- Licensed under the GNU GPL v3. See LICENSE file for details.
 
-_G.STOPIT = false
+_G.STOPIT = true
 
 local NotificationLibrary = loadstring(game:HttpGet("https://cdn.jsdelivr.net/gh/hellohellohell012321/TALENTLESS@main/notif_lib.lua"))()
 
@@ -270,6 +270,7 @@ UserInputService.InputChanged:Connect(
 )
 
 local song = {}
+local songThread
 local finishedLoading = false
 
 function stopPlayingSongs()
@@ -521,7 +522,7 @@ function skipToPercentage(percentage)
 
     updatePlayheadVisual()
 
-    task.spawn(function()
+    songThread = task.spawn(function()
         for i = targetIndex, #song do
             if _G.STOPIT or tempClear then halted = true break end
             
@@ -845,26 +846,11 @@ function resttrigger(beats, bpm)
     if _G.STOPIT then return end
     
     local waitTime = (beats / bpm) * 60
-    local offset = 0
-    
-    if errormargin ~= 0 then
+    if errormargin == 0 then
+        task.wait(waitTime)
+    else
         local randomOffset = (math.random() * 2 - 1) * (errormargin / 2)
-        offset = randomOffset
-    end
-    
-    local totalWaitTime = waitTime + offset
-    local elapsed = 0
-    local checkInterval = 0.1  -- check every 0.1 seconds
-    
-    -- Break the wait into smaller chunks so we can check _G.STOPIT frequently
-    while elapsed < totalWaitTime do
-        if _G.STOPIT then return end  -- Check if we should stop
-        
-        local remainingTime = totalWaitTime - elapsed
-        local nextWait = math.min(checkInterval, remainingTime) -- either 0.1 or the remaining time when remaining time < 0.1
-        
-        task.wait(nextWait)
-        elapsed = elapsed + nextWait -- add the waited time to elapsed
+        wait(waitTime + randomOffset)
     end
     
     -- update playhead stuffs
@@ -902,7 +888,9 @@ end
 -- MAIN SONG LOOP
 -- MAIN SONG LOOP
 
-task.spawn(function()
+_G.STOPIT = false
+
+songThread = task.spawn(function()
     repeat wait() until finishedLoading == true
     
     totalSongBeats = calculateTotalBeats()
@@ -929,6 +917,17 @@ task.spawn(function()
             finishedSongtrigger()
         elseif action.type == "pressnote" then
             pressnotetrigger(action.note, action.octave, action.beats, bpm)
+        end
+    end
+end)
+
+watcher = task.spawn(function()
+    while task.wait(0.1) do
+        if _G.STOPIT then
+            song = {}
+            task.cancel(songThread)
+            task.cancel(watcher)
+            return
         end
     end
 end)
