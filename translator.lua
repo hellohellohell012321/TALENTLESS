@@ -1276,6 +1276,91 @@ local translations = {
         ["ar"] = "استخدم TALENTLESS من loadstring الجديد:"
     },
 
+    ["stopplayingplaylist"] = {
+        ["en"] = "STOP PLAYING PLAYLIST",
+        ["pt-BR"] = "PARAR DE TOCAR PLAYLIST",
+        ["es"] = "DETENER REPRODUCCIÓN DE LA LISTA",
+        ["ru"] = "ОСТАНОВИТЬ ВОСПРОИЗВЕДЕНИЕ ПЛЕЙЛИСТА",
+        ["zh-CN"] = "停止播放播放列表",
+        ["id"] = "HENTIKAN PEMUTARAN PLAYLIST",
+        ["fil"] = "ITIGIL ANG PAG-PLAY NG PLAYLIST",
+        ["vi"] = "DỪNG PHÁT DANH SÁCH PHÁT",
+        ["fr"] = "ARRÊTER LA LECTURE DE LA PLAYLIST",
+        ["de"] = "WIEDERGABELISTE STOPPEN",
+        ["ja"] = "プレイリストの再生を停止",
+        ["ko"] = "재생목록 재생 중지",
+        ["tr"] = "ÇALMA LİSTESİNİ DURDUR",
+        ["ar"] = "إيقاف تشغيل قائمة التشغيل"
+    },
+    
+    ["playlist"] = {
+        ["en"] = "PLAYLIST",
+        ["pt-BR"] = "PLAYLIST",
+        ["es"] = "LISTA",
+        ["ru"] = "ПЛЕЙЛИСТ",
+        ["zh-CN"] = "播放列表",
+        ["id"] = "PLAYLIST",
+        ["fil"] = "PLAYLIST",
+        ["vi"] = "DS PHÁT",
+        ["fr"] = "PLAYLIST",
+        ["de"] = "PLAYLIST",
+        ["ja"] = "プレイリスト",
+        ["ko"] = "재생목록",
+        ["tr"] = "ÇALMA LİSTESİ",
+        ["ar"] = "قائمة التشغيل"
+    },
+
+    ["shuffleplaylist"] = {
+        ["en"] = "SHUFFLE PLAYLIST",
+        ["pt-BR"] = "ALEATÓRIO",
+        ["es"] = "ALEAT.",
+        ["ru"] = "ПЕРЕМЕШАТЬ",
+        ["zh-CN"] = "随机播放",
+        ["id"] = "ACAK",
+        ["fil"] = "SHUFFLE",
+        ["vi"] = "XÁO TRỘN",
+        ["fr"] = "ALÉATOIRE",
+        ["de"] = "MISCHEN",
+        ["ja"] = "シャッフル",
+        ["ko"] = "셔플",
+        ["tr"] = "KARIŞTIR",
+        ["ar"] = "عشوائي"
+    },
+    
+    ["playplaylist"] = {
+        ["en"] = "PLAY PLAYLIST",
+        ["pt-BR"] = "REPRODUZIR",
+        ["es"] = "REPROD.",
+        ["ru"] = "ИГРАТЬ",
+        ["zh-CN"] = "播放",
+        ["id"] = "PUTAR",
+        ["fil"] = "PLAY",
+        ["vi"] = "PHÁT",
+        ["fr"] = "LIRE",
+        ["de"] = "ABSPIELEN",
+        ["ja"] = "再生",
+        ["ko"] = "재생",
+        ["tr"] = "ÇAL",
+        ["ar"] = "تشغيل"
+    },    
+
+    ["playlisttooshort"] = {
+        ["en"] = "You have less than 2 songs in your playlist.",
+        ["pt-BR"] = "Você tem menos de 2 músicas na sua playlist.",
+        ["es"] = "Tienes menos de 2 canciones en tu lista.",
+        ["ru"] = "У вас меньше 2 песен в плейлисте.",
+        ["zh-CN"] = "你的播放列表中少于2首歌曲。",
+        ["id"] = "Daftar putar Anda kurang dari 2 lagu.",
+        ["fil"] = "Mas mababa sa 2 ang kanta sa playlist mo.",
+        ["vi"] = "Playlist của bạn có ít hơn 2 bài hát.",
+        ["fr"] = "Vous avez moins de 2 chansons dans votre playlist.",
+        ["de"] = "Du hast weniger als 2 Songs in deiner Playlist.",
+        ["ja"] = "プレイリストに2曲未満しかありません。",
+        ["ko"] = "재생목록에 2곡 미만이 있습니다.",
+        ["tr"] = "Çalma listenizde 2'den az şarkı var.",
+        ["ar"] = "لديك أقل من أغنيتين في قائمة التشغيل."
+    },
+        
     ["ALTALE"] = {
         ["ja"] = "アルタレ"
     },
