@@ -1294,21 +1294,21 @@ local translations = {
     },
     
     ["playlist"] = {
-        ["en"] = "PLAYLIST",
-        ["pt-BR"] = "PLAYLIST",
-        ["es"] = "LISTA",
-        ["ru"] = "ПЛЕЙЛИСТ",
+        ["en"] = "playlist",
+        ["pt-BR"] = "playlist",
+        ["es"] = "lista",
+        ["ru"] = "плейлист",
         ["zh-CN"] = "播放列表",
-        ["id"] = "PLAYLIST",
-        ["fil"] = "PLAYLIST",
-        ["vi"] = "DS PHÁT",
-        ["fr"] = "PLAYLIST",
-        ["de"] = "PLAYLIST",
+        ["id"] = "playlist",
+        ["fil"] = "playlist",
+        ["vi"] = "ds phát",
+        ["fr"] = "playlist",
+        ["de"] = "playlist",
         ["ja"] = "プレイリスト",
         ["ko"] = "재생목록",
-        ["tr"] = "ÇALMA LİSTESİ",
+        ["tr"] = "çalma listesi",
         ["ar"] = "قائمة التشغيل"
-    },
+    },    
 
     ["shuffleplaylist"] = {
         ["en"] = "SHUFFLE PLAYLIST",
@@ -1360,7 +1360,7 @@ local translations = {
         ["tr"] = "Çalma listenizde 2'den az şarkı var.",
         ["ar"] = "لديك أقل من أغنيتين في قائمة التشغيل."
     },
-        
+
     ["ALTALE"] = {
         ["ja"] = "アルタレ"
     },
