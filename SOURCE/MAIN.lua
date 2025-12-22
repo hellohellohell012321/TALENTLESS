@@ -1,4 +1,5 @@
 -- Copyright (C) 2025 hellohellohell012321
+-- -- Copyright (C) 2025 hellohellohell012321
 -- Licensed under the GNU GPL v3. See LICENSE file for details.
 
 --[[
@@ -15,11 +16,12 @@ If you're looking into how TALENTLESS functions etc, this script is for you. Mak
 
 ]]
 
-local translator = loadstring(game:HttpGet("https://cdn.jsdelivr.net/gh/hellohellohell012321/TALENTLESS@main/translator.lua"))()
+local translator = loadstring(game:HttpGet("https://cdn.jsdelivr.net/gh/hellohellohell012321/TALENTLESS/translator.lua"))()
 
 local function translateText(text)
     return translator:translateText(text)
 end
+
 
 local TextService = game:GetService("TextService")
 
@@ -43,13 +45,21 @@ local function fitText(button)
     return size
 end
 
-local NotificationLibrary = loadstring(game:HttpGet("https://cdn.jsdelivr.net/gh/hellohellohell012321/TALENTLESS@main/notif_lib.lua"))()
+local NotificationLibrary = loadstring(game:HttpGet("https://cdn.jsdelivr.net/gh/hellohellohell012321/TALENTLESS/notif_lib.lua"))()
 
 local ContentProvider = game:GetService("ContentProvider")
 
+local unfavDecal = "rbxassetid://94707254666920"
+local favDecal = "rbxassetid://95485559387661"
+
+local addSongToPlaylistDecal = "rbxassetid://131827423757726"
+local removeSongFromPlaylistDecal = "rbxassetid://100154109194536"
+
 local assetsToPreload = {
-    "rbxassetid://94707254666920", -- unfav icon
-    "rbxassetid://95485559387661", -- fav icon
+    unfavDecal,
+    favDecal,
+    addSongToPlaylistDecal,
+    removeSongFromPlaylistDecal,
     "rbxassetid://70452176150315", -- ui open
     "rbxassetid://1524549907", -- ui close
     "rbxassetid://104269922408932", -- bye bye
@@ -71,10 +81,10 @@ local ScreenGui = Instance.new("ScreenGui")
 local frame = Instance.new("Frame")
 local closeButton = Instance.new("TextButton")
 local infoButton = Instance.new("TextButton")
-local changeLanguageButton = Instance.new("TextButton")
+local changeLanguageButton = Instance.new("ImageButton")
 local title = Instance.new("TextLabel")
-local uic2 = Instance.new("UICorner")
 local uic1 = Instance.new("UICorner")
+local uic2 = Instance.new("UICorner")
 local categoriesFrame = Instance.new("ScrollingFrame")
 local categoriesLayout = Instance.new("UIListLayout")
 local categoriesPadding = Instance.new("UIPadding")
@@ -84,15 +94,24 @@ local barlist = Instance.new("UIListLayout")
 local barpadding = Instance.new("UIPadding")
 local padding = Instance.new("UIPadding")
 local creds = Instance.new("TextLabel")
-local bar = Instance.new("Frame")
+local bar = Instance.new("ScrollingFrame")
 local songname = Instance.new("TextLabel")
 local bpmbox = Instance.new("TextBox")
 local playsong = Instance.new("TextButton")
 local toggle = Instance.new("TextButton")
 local searchframe = Instance.new("Frame")
 local searchbar = Instance.new("TextBox")
+local barseperator = Instance.new("Frame")
+local songOptionsFrame = Instance.new("Frame")
+local favSongButton = Instance.new("ImageButton")
+local addSongToPlaylistButton = Instance.new("ImageButton")
+local tagsFrame = Instance.new("Frame")
+local tagsListLayout = Instance.new("UIListLayout")
+local tagsPadding = Instance.new("UIPadding")
 
---Properties:
+local snowpile = Instance.new("ImageLabel")
+local xmaslights = Instance.new("ImageLabel")
+
 
 ScreenGui.Parent = game:GetService("CoreGui")
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
@@ -112,39 +131,38 @@ translator:requestLang(frame, "first")
 
     closeButton.Name = "closeButton"
     closeButton.Parent = frame
-    closeButton.BackgroundTransparency = 1
+    closeButton.BackgroundTransparency = 1.000
     closeButton.LayoutOrder = 1
-    closeButton.Position = UDim2.new(1, -35, 0, 5)
-    closeButton.Size = UDim2.new(0, 30, 0, 30)
+    closeButton.Position = UDim2.new(1, -40, 0, 4)
+    closeButton.Size = UDim2.new(0, 35, 0, 35)
     closeButton.ZIndex = 5
     closeButton.Font = Enum.Font.SourceSansBold
     closeButton.Text = "X"
     closeButton.TextColor3 = Color3.fromRGB(255, 255, 255)
     closeButton.TextScaled = true
+    closeButton.TextWrapped = true
 
     infoButton.Name = "infoButton"
     infoButton.Parent = frame
-    infoButton.BackgroundTransparency = 1
+    infoButton.BackgroundTransparency = 1.000
     infoButton.LayoutOrder = 2
-    infoButton.Position = UDim2.new(0, 5, 0, 5)
-    infoButton.Size = UDim2.new(0, 30, 0, 30)
+    infoButton.Position = UDim2.new(0, 5, 0, 4)
+    infoButton.Size = UDim2.new(0, 35, 0, 35)
     infoButton.ZIndex = 5
     infoButton.Font = Enum.Font.SourceSansBold
     infoButton.Text = "?"
     infoButton.TextColor3 = Color3.fromRGB(255, 255, 255)
     infoButton.TextScaled = true
+    infoButton.TextWrapped = true
 
     changeLanguageButton.Name = "changeLanguageButton"
     changeLanguageButton.Parent = frame
-    changeLanguageButton.BackgroundTransparency = 1
+    changeLanguageButton.BackgroundTransparency = 1.000
     changeLanguageButton.LayoutOrder = 2
-    changeLanguageButton.Position = UDim2.new(0, 33, 0, 10)
-    changeLanguageButton.Size = UDim2.new(0, 22, 0, 22)
+    changeLanguageButton.Position = UDim2.new(0, 43, 0, 5)
+    changeLanguageButton.Size = UDim2.new(0, 35, 0, 35)
     changeLanguageButton.ZIndex = 5
-    changeLanguageButton.Font = Enum.Font.SourceSansBold
-    changeLanguageButton.Text = "🌐"
-    changeLanguageButton.TextColor3 = Color3.fromRGB(255, 255, 255)
-    changeLanguageButton.TextScaled = true
+    changeLanguageButton.Image = "rbxassetid://123593076590814"
 
     title.Name = "title"
     title.Parent = frame
@@ -244,7 +262,7 @@ translator:requestLang(frame, "first")
     creds.TextColor3 = Color3.fromRGB(255, 255, 255)
     creds.TextSize = 14
     creds.TextTransparency = 0.320
-    creds.ZIndex = 2
+    creds.ZIndex = 3
 
     bar.Name = "bar"
     bar.Parent = frame
@@ -254,8 +272,23 @@ translator:requestLang(frame, "first")
     bar.BorderColor3 = Color3.fromRGB(0, 0, 0)
     bar.BorderSizePixel = 0
     bar.Position = UDim2.new(1.05001855, -173, 0.20220229, 0)
-    bar.Size = UDim2.new(0, 143, 0, 150)
+    bar.Size = UDim2.new(0, 144, 0, 217)
+    bar.ScrollBarThickness = 3
     bar.ZIndex = 0
+    bar.AutomaticCanvasSize = Enum.AutomaticSize.Y
+
+        barlist.Name = "barlist"
+        barlist.Parent = bar
+        barlist.SortOrder = Enum.SortOrder.LayoutOrder
+        barlist.Padding = UDim.new(0, 10)
+        barlist.HorizontalAlignment = Enum.HorizontalAlignment.Center
+
+        barpadding.Name = "barpadding"
+        barpadding.Parent = bar
+        barpadding.PaddingLeft = UDim.new(0, 5)
+        barpadding.PaddingRight = UDim.new(0, 5)
+        barpadding.PaddingTop = UDim.new(0, 10)
+        barpadding.PaddingBottom = UDim.new(0, 5)
 
         songname.Name = "songname"
         songname.Parent = bar
@@ -303,18 +336,80 @@ translator:requestLang(frame, "first")
         playsong.LayoutOrder = 3
         fitText(playsong)
 
-        barlist.Name = "barlist"
-        barlist.Parent = bar
-        barlist.SortOrder = Enum.SortOrder.LayoutOrder
-        barlist.Padding = UDim.new(0, 10)
-        barlist.HorizontalAlignment = Enum.HorizontalAlignment.Center
+        songOptionsFrame.Name = "songOptionsFrame"
+        songOptionsFrame.Parent = bar
+        songOptionsFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+        songOptionsFrame.BackgroundTransparency = 1.000
+        songOptionsFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+        songOptionsFrame.BorderSizePixel = 0
+        songOptionsFrame.LayoutOrder = 4
+        songOptionsFrame.Position = UDim2.new(0.0300751887, 0, 0.822222233, 0)
+        songOptionsFrame.Size = UDim2.new(0, 125, 0, 38)
 
-        barpadding.Name = "categoriesPadding"
-        barpadding.Parent = bar
-        barpadding.PaddingLeft = UDim.new(0, 5)
-        barpadding.PaddingRight = UDim.new(0, 5)
-        barpadding.PaddingTop = UDim.new(0, 10)
-        barpadding.PaddingBottom = UDim.new(0, 5)
+            favSongButton.Parent = songOptionsFrame
+            favSongButton.BackgroundTransparency = 1
+            favSongButton.Position = UDim2.new(0.7, 0, 0, 0)
+            favSongButton.Size = UDim2.new(0, 38, 0, 38)
+            favSongButton.Image = unfavDecal
+
+            addSongToPlaylistButton.Parent = songOptionsFrame
+            addSongToPlaylistButton.BackgroundTransparency = 1
+            addSongToPlaylistButton.BorderSizePixel = 0
+            addSongToPlaylistButton.Position = UDim2.new(0, 0, 0, 0)
+            addSongToPlaylistButton.Size = UDim2.new(0, 38, 0, 38)
+            addSongToPlaylistButton.Image = addSongToPlaylistDecal
+
+        barseperator.Name = "barseperator"
+        barseperator.Parent = bar
+        barseperator.BackgroundColor3 = Color3.fromRGB(64, 68, 90)
+        barseperator.LayoutOrder = 5
+        barseperator.Position = UDim2.new(-0.251879692, 0, 1.17777777, 0)
+        barseperator.Size = UDim2.new(0, 137, 0, 8)
+
+        tagsFrame.Name = "tagsFrame"
+        tagsFrame.Parent = bar
+        tagsFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+        tagsFrame.BackgroundTransparency = 1.000
+        tagsFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+        tagsFrame.BorderSizePixel = 0
+        tagsFrame.LayoutOrder = 6
+        tagsFrame.Position = UDim2.new(-0.195488721, 0, 1.31851852, 0)
+        tagsFrame.Size = UDim2.new(0, 137, 0, 157)
+
+            tagsListLayout.Name = "tagsListLayout"
+            tagsListLayout.Parent = tagsFrame
+            tagsListLayout.FillDirection = Enum.FillDirection.Horizontal
+            tagsListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+            tagsListLayout.Padding = UDim.new(0, 10)
+            tagsListLayout.Wraps = true
+
+            tagsPadding.Name = "tagsPadding"
+            tagsPadding.Parent = tagsFrame
+            tagsPadding.PaddingBottom = UDim.new(0, 5)
+            tagsPadding.PaddingLeft = UDim.new(0, 5)
+            tagsPadding.PaddingRight = UDim.new(0, 5)
+
+    snowpile.Name = "snowpile"
+    snowpile.Parent = frame
+    snowpile.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    snowpile.BackgroundTransparency = 1.000
+    snowpile.BorderColor3 = Color3.fromRGB(0, 0, 0)
+    snowpile.BorderSizePixel = 0
+    snowpile.Position = UDim2.new(-0.0149999997, 0, 0.716000021, 0)
+    snowpile.Size = UDim2.new(0, 202, 0, 192)
+    snowpile.Image = "rbxassetid://124461981242866"
+    
+    xmaslights.Name = "xmaslights"
+    xmaslights.Parent = frame
+    xmaslights.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    xmaslights.BackgroundTransparency = 1.000
+    xmaslights.BorderColor3 = Color3.fromRGB(0, 0, 0)
+    xmaslights.BorderSizePixel = 0
+    xmaslights.Position = UDim2.new(-0.0484210514, 0, 0.0147058824, 0)
+    xmaslights.Size = UDim2.new(0, 520, 0, 100)
+    xmaslights.ZIndex = 2
+    xmaslights.Image = "rbxassetid://850806532"
+
 
 toggle.Name = "toggle"
 toggle.Parent = ScreenGui
@@ -363,7 +458,7 @@ changeLanguageButton.MouseButton1Click:Connect(
         ScreenGui:Destroy()
         STOPLOOP = nil
         playingall = false
-        loadstring(game:HttpGet("https://cdn.jsdelivr.net/gh/hellohellohell012321/TALENTLESS@main/MAIN.lua"))()
+        loadstring(game:HttpGet("https://hellohellohell0.com/talentless-raw/MAIN.lua", true))()
     end
 )
 
@@ -445,7 +540,7 @@ if gameId == 3929033413 then
 
     spoofMidiInfo.MouseButton1Click:Connect(
         function()
-            loadstring(game:HttpGet("https://cdn.jsdelivr.net/gh/hellohellohell012321/TALENTLESS@main/spooferinfo.lua", true))()
+            loadstring(game:HttpGet("https://cdn.jsdelivr.net/gh/hellohellohell012321/TALENTLESS/spooferinfo.lua", true))()
         end
     )
 
@@ -495,12 +590,17 @@ if gameId == 3929033413 then
     underline.TextSize = 14.000
 end
 
+local dontSearchIndex = {
+    "+",
+
+}
+
 local function filterSongs(query)
     query = query:lower()
     scroll.CanvasPosition = Vector2.new(0, 0)
     for _, child in pairs(scroll:GetChildren()) do
         if child:IsA("TextButton") then
-            if child.Text ~= "+" then
+            if child.Text ~= "+" and child ~= PLAYRANDOM and child ~= LOOPRANDOM and child ~= PLAYPLAYLISTBUTTON and child ~= SHUFFLEPLAYLISTBUTTON then
                 -- Regular song buttons
                 local songName = child.Text:lower()
                 local alternateNamesStr = child:GetAttribute("AlternateNames") or ""
@@ -519,6 +619,8 @@ local function filterSongs(query)
                     end
                 end
                 child.Visible = matchFound
+            else
+                child.Visible = false
             end
         elseif child:IsA("Frame") and child:FindFirstChildOfClass("TextButton") then
             -- Custom song frames
@@ -614,7 +716,7 @@ local function newSongButton(name, alternateNames)
     favButton.AnchorPoint = Vector2.new(0, 0.5)
     favButton.Position = UDim2.new(0, 0, 0.5, 0)
     favButton.Size = UDim2.new(0, 25, 0, 25)
-    favButton.Image = "rbxassetid://94707254666920" -- unfav icon
+    favButton.Image = unfavDecal
     favButton.Visible = false
     favButton.Name = "favButton"
 
@@ -624,16 +726,20 @@ local function newSongButton(name, alternateNames)
 end
 
 -- newSongButton("", {})
--- japanese songs sohould be written with their english or romanji name, but will translate to japanese characters if japanese language is enabled.
+-- japanese songs sohould be written with their english then japanese romanji name, but will translate to japanese characters if japanese language is enabled.
 
 LOOPRANDOM = newSongButton(translateText("shuffle play songs"), {})
+LOOPRANDOM.LayoutOrder = 1
+
 PLAYRANDOM = newSongButton(translateText("play random song"), {})
+PLAYRANDOM.LayoutOrder = 1
 
 local seperator = Instance.new("Frame")
 seperator.Name = "seperator"
 seperator.Parent = scroll
 seperator.BackgroundColor3 = Color3.fromRGB(64, 68, 90)
 seperator.Size = UDim2.new(0, 200, 0, 8)
+seperator.LayoutOrder = 2
 
 GOLDENHOUR = newSongButton("GOLDEN HOUR", {"jvke", "love, sad", "popular"})
 YOUNG_GIRL_A = newSongButton(translateText("YOUNG GIRL A"), {"siinamota", "vocaloid"})
@@ -645,9 +751,6 @@ SNOWFALL = newSongButton("SNOWFALL", {"oneheart"})
 BOHEMIAN_RHAPSODY = newSongButton("BOHEMIAN RHAPSODY", {"queen"})
 RENAI_CIRCULATION = newSongButton(translateText("RENAI CIRCULATION"), {"bakemonogatari"})
 WE_NOT_LIKE_U = newSongButton("WE NOT LIKE YOU", {"nettspend"})
-
-
-
 
 local framebuttons = {}
 
@@ -665,8 +768,16 @@ table.sort(
 )
 
 for index, button in ipairs(framebuttons) do
-    button.LayoutOrder = index
+    button.LayoutOrder = index + 3 -- so theyre still under seperator and other buttons
 end
+
+
+MANGOMANGOMANGO = newSongButton("MANGO MANGO MANGO", {})
+MANGOMANGOMANGO.LayoutOrder = #framebuttons + 1
+DEATH_WALTZ = newSongButton("DEATH WALTZ (WARNING)", {})
+DEATH_WALTZ.LayoutOrder = #framebuttons + 1
+
+-- hungarian will nto work
 
 local songs = {
     {button = GOLDENHOUR, bpm = "94", var = false, url = "GOLDEN_HOUR", cat = {"beautiful", "best"}},
@@ -685,6 +796,11 @@ for _, song in ipairs(songs) do
     print("song loaded: " .. song.button.Name)
 end
 
+-- Store original layout orders for later restoration
+for _, song in ipairs(songs) do
+    song.button:SetAttribute("OriginalLayoutOrder", song.button.LayoutOrder)
+end
+
 local categories = {
     "new",
     "peak",
@@ -697,16 +813,19 @@ local categories = {
     "classical",
     "pop/hiphop",
     "anime/jpop",
+    "seasonal",
     "sad",
     "electronic",
     "rock",
     "creepy/weirdcore",
     "undertale",
     "deltarune",
+    "geometry dash",
     "minecraft",
     "omori"
 } -- The main table for unique categories
 
+-- add the song category as one of its alternate names
 for _, songButton in ipairs(songs) do
 	for _, category in ipairs(songButton.cat) do
 		local current = songButton.button:GetAttribute("AlternateNames") or ""
@@ -722,8 +841,13 @@ for _, songButton in ipairs(songs) do
 	end
 end
 
+
 local folderexists = false
 local customsongbuttons = {}
+-- format {buttonFrame = songframe, var = false, file = custom}
+
+local playlist = {}
+
 local favsongbuttons = {}
 
 print("initiating buttons")
@@ -743,19 +867,89 @@ customnotice.TextColor3 = Color3.fromRGB(255, 255, 255)
 customnotice.TextSize = 25.000
 customnotice.TextWrapped = true
 
-local function newcategory(name)
+
+
+local categoryButtons = {}
+local utilsButtons = {}
+
+local utilsTab = Instance.new("TextButton")
+utilsTab.Parent = categoriesFrame
+utilsTab.BackgroundColor3 = Color3.fromRGB(76, 82, 101)
+utilsTab.BorderColor3 = Color3.fromRGB(64, 68, 90)
+utilsTab.BorderSizePixel = 2
+utilsTab.Size = UDim2.new(0, 100, 0, 25)
+utilsTab.Font = Enum.Font.SourceSansBold
+utilsTab.Text = translateText("utilities") .. " ▲"
+utilsTab.TextColor3 = Color3.fromRGB(255, 255, 255)
+utilsTab.TextSize = 18
+utilsTab.LayoutOrder = 1 --- should always be at the top
+
+fitText(utilsTab)
+
+local categoriesTab = Instance.new("TextButton")
+categoriesTab.Parent = categoriesFrame
+categoriesTab.BackgroundColor3 = Color3.fromRGB(76, 82, 101)
+categoriesTab.BorderColor3 = Color3.fromRGB(64, 68, 90)
+categoriesTab.BorderSizePixel = 2
+categoriesTab.Size = UDim2.new(0, 100, 0, 25)
+categoriesTab.Font = Enum.Font.SourceSansBold
+categoriesTab.Text = translateText("categories") .. " ▲"
+categoriesTab.TextColor3 = Color3.fromRGB(255, 255, 255)
+categoriesTab.TextSize = 18
+categoriesTab.LayoutOrder = 100 -- so its below the categories when they drop down
+
+fitText(categoriesTab)
+
+local categoriesOpen = false
+local utilsOpen = false
+
+utilsTab.MouseButton1Click:Connect(function()
+    utilsOpen = not utilsOpen
+    for _, button in ipairs(utilsButtons) do
+        button.Visible = utilsOpen
+    end
+    if utilsOpen then
+        utilsTab.Text = translateText("utilities") .. " ▼"
+    else
+        utilsTab.Text = translateText("utilities") .. " ▲"
+    end
+end)
+
+categoriesTab.MouseButton1Click:Connect(function()
+    categoriesOpen = not categoriesOpen
+    for _, button in ipairs(categoryButtons) do
+        button.Visible = categoriesOpen
+    end
+    if categoriesOpen then
+        categoriesTab.Text = translateText("categories") .. " ▼"
+    else
+        categoriesTab.Text = translateText("categories") .. " ▲"
+    end
+end)
+
+
+local function newcategory(name, type, layoutorder)
     local TextButton = Instance.new("TextButton")
     TextButton.Parent = categoriesFrame
     TextButton.BackgroundColor3 = Color3.fromRGB(76, 82, 101)
     TextButton.BorderColor3 = Color3.fromRGB(64, 68, 90)
     TextButton.BorderSizePixel = 2
     TextButton.Size = UDim2.new(0, 100, 0, 25)
-    TextButton.Font = Enum.Font.SourceSansBold
+    TextButton.Font = Enum.Font.SourceSans
     TextButton.Text = name
     TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
     TextButton.TextSize = 14
+    TextButton.Visible = false
 
     fitText(TextButton)
+
+    if type == "cat" then 
+        table.insert(categoryButtons, TextButton)
+        TextButton.LayoutOrder = #categoryButtons + 101
+    elseif type == "utils" then
+        table.insert(utilsButtons, TextButton)
+        TextButton.LayoutOrder = #utilsButtons + 1
+    end
 
     return TextButton
 end
@@ -763,24 +957,160 @@ end
 local function makeAllInvisible()
     for _, song in ipairs(songs) do
         song.button.Visible = false
+        song.button.LayoutOrder = song.button:GetAttribute("OriginalLayoutOrder") or song.button.LayoutOrder
     end
 
     for _, song in ipairs(customsongbuttons) do
-        song.Visible = false
+        song.buttonFrame.Visible = false
+        song.buttonFrame.LayoutOrder = song.buttonFrame:GetAttribute("OriginalLayoutOrder") or song.buttonFrame.LayoutOrder
     end
 
     for _, song in ipairs(favsongbuttons) do
         song.Visible = false
     end
 
+    removePlaylistArrows()
+    
     PLAYRANDOM.Visible = false
     LOOPRANDOM.Visible = false
-    customnotice.Visible = false
+    PLAYPLAYLISTBUTTON.Visible = false
+    SHUFFLEPLAYLISTBUTTON.Visible = false
+    if NEWSONGBUTTON then NEWSONGBUTTON.Visible = false end
+    if customnotice then customnotice.Visible = false end
+end
+
+local function updateOptionsFrameButtons()
+    for _, song in ipairs(songs) do
+        if song.var == true then
+            if table.find(favsongbuttons, song.button) then
+                favSongButton.Image = favDecal
+            else
+                favSongButton.Image = unfavDecal
+            end
+            if table.find(playlist, song) then
+                addSongToPlaylistButton.Image = removeSongFromPlaylistDecal
+            else
+                addSongToPlaylistButton.Image = addSongToPlaylistDecal
+            end
+        end
+    end
+
+    for _, song in ipairs(customsongbuttons) do
+        if song.var == true then
+            if table.find(favsongbuttons, song.buttonFrame) then
+                favSongButton.Image = favDecal
+            else
+                favSongButton.Image = unfavDecal
+            end
+            if table.find(playlist, song) then
+                addSongToPlaylistButton.Image = removeSongFromPlaylistDecal
+            else
+                addSongToPlaylistButton.Image = addSongToPlaylistDecal
+            end
+        end
+    end
+end
+
+local function createstopbutton(ttype)
+    if not STOPLOOP then
+        -- StarterGui.ScreenGui.Frame.scrolltab.stoploop
+        local STOPLOOP = Instance.new("TextButton", bar)
+        STOPLOOP["BorderSizePixel"] = 4
+        STOPLOOP["TextSize"] = 25
+        STOPLOOP["TextColor3"] = Color3.fromRGB(255, 255, 255)
+        STOPLOOP["BackgroundColor3"] = Color3.fromRGB(76, 82, 101)
+        STOPLOOP["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
+        STOPLOOP["Size"] = UDim2.new(0, 125, 0, 27)
+        STOPLOOP["Name"] = [[stoploop]]
+        STOPLOOP["BorderColor3"] = Color3.fromRGB(64, 68, 90)
+
+        local buttonText
+
+        if ttype == "looprandom" then
+            buttonText = translateText("stoploopingsongs")
+        elseif ttype == "playlist" then
+            buttonText = translateText("stopplayingplaylist")
+        else -- fallback if it fails somehow
+            buttonText = translateText("stoploopingsongs")
+        end
+
+        STOPLOOP["Text"] = buttonText
+        STOPLOOP.LayoutOrder = 4
+
+        fitText(STOPLOOP)
+
+        STOPLOOP.MouseButton1Click:Connect(
+            function()
+                playingall = false
+                STOPLOOP:Destroy()
+                stopPlayingSongs() -- universal function made from the loader
+                STOPLOOP = nil
+            end
+        )
+    end
+end
+
+local function addTag(tagvalue)
+    local tag = Instance.new("TextLabel")
+    tag.Parent = tagsFrame
+    tag.BackgroundColor3 = Color3.fromRGB(76, 82, 101)
+    tag.BorderSizePixel = 0
+    tag.Size = UDim2.new(0, 0, 0, 21) -- width will be adjusted
+    tag.Font = Enum.Font.SourceSans
+    tag.TextColor3 = Color3.fromRGB(255, 255, 255)
+    tag.TextSize = 14
+    tag.Text = tagvalue:lower()
+    tag.TextXAlignment = Enum.TextXAlignment.Center
+
+    -- Measure text
+    local textSize = TextService:GetTextSize(
+        tagvalue,
+        tag.TextSize,
+        tag.Font,
+        Vector2.new(math.huge, 21)
+    )
+
+    -- padding so text isn't touching the edges
+    local padding = 12
+
+    tag.Size = UDim2.new(0, textSize.X + padding, 0, 21)
+
+    -- rounded corners
+    local UICorner = Instance.new("UICorner")
+    UICorner.CornerRadius = UDim.new(0, 21)
+    UICorner.Parent = tag
+end
+
+local function updateFrameTags()
+    for _, tag in ipairs(tagsFrame:GetChildren()) do
+        if tag:IsA("TextLabel") then
+            tag:Destroy()
+        end
+    end
+
+    for _, songButton in ipairs(songs) do
+        if songButton.var == true then
+            local alternateNames = songButton.button:GetAttribute("AlternateNames") or ""
+            local alternateNames = alternateNames:split(",")
+            for _, altName in ipairs(alternateNames) do -- we already added the categories as alt names
+                if altName ~= "" then
+                    addTag(altName)
+                end
+            end
+        end
+    end
+
+    tagsFrame.Size = UDim2.new(
+        tagsFrame.Size.X.Scale,
+        tagsFrame.Size.X.Offset,
+        0,
+        tagsListLayout.AbsoluteContentSize.Y
+    )
 end
 
 
 
-local customcat = newcategory(translateText("custom songs") .. " (0)")
+local customcat = newcategory(translateText("custom songs") .. " (0)", "utils")
 
 customcat.MouseButton1Click:Connect(
     function()
@@ -789,20 +1119,21 @@ customcat.MouseButton1Click:Connect(
         makeAllInvisible()
 
         for _, song in ipairs(customsongbuttons) do
-            song.Visible = true
+            song.buttonFrame.Visible = true
         end
 
+        NEWSONGBUTTON.Visible = true
         customnotice.Visible = true
     end
 )
 
 function updatecustomcount()
-    customcat.Text = translateText("custom songs") .. " (" .. tostring(#customsongbuttons - 1) .. ")"
+    customcat.Text = translateText("custom songs") .. " (" .. tostring(#customsongbuttons) .. ")"
 end
 
 
 
-local favcat = newcategory(translateText("favourites"))
+local favcat = newcategory(translateText("favourites"), "utils")
 
 favcat.MouseButton1Click:Connect(
     function()
@@ -825,7 +1156,395 @@ updatefavcount()
 
 
 
-local othercats = newcategory(translateText("other"))
+-- PLAYLIST
+-- PLAYLIST
+-- PLAYLIST
+
+local function updatePlaylistLayout()
+    -- Reset all songs to their normal layout order first
+    for _, song in ipairs(songs) do
+        song.button.LayoutOrder = song.button:GetAttribute("OriginalLayoutOrder") or song.button.LayoutOrder
+    end
+    
+    for _, song in ipairs(customsongbuttons) do
+        song.buttonFrame.LayoutOrder = song.buttonFrame:GetAttribute("OriginalLayoutOrder") or song.buttonFrame.LayoutOrder
+    end
+    
+    -- Now set playlist-specific layout orders
+    for index, song in ipairs(playlist) do
+        local targetButton = song.button or song.buttonFrame
+        if targetButton then
+            targetButton.LayoutOrder = index + 3
+        end
+    end
+end
+
+local playlistButtonWrappers = {} -- Track wrappers to clean up
+
+local function createPlaylistArrows(songButton, song, index)
+    local isCustomSong = songButton:IsA("Frame")
+    local actualButton, deleteButton, wrapper
+    
+    if isCustomSong then
+        -- For custom songs, get the actual button and delete button from the frame
+        actualButton = songButton:FindFirstChild("button")
+        deleteButton = songButton:FindFirstChild("ImageButton")
+        wrapper = songButton -- Use the existing frame as wrapper
+        
+        -- Hide delete button in playlist view
+        if deleteButton then
+            deleteButton.Visible = false
+        end
+        
+        -- Adjust button size and position to make room for arrows
+        if actualButton then
+            actualButton.Position = UDim2.new(0, 0, 0, 0)
+            actualButton.Size = UDim2.new(0, 108, 1, 0) -- Takes left 108px
+            fitText(actualButton)
+        end
+    else
+        -- For regular songs, create new wrapper
+        wrapper = Instance.new("Frame")
+        wrapper.Name = "playlistWrapper"
+        wrapper.Parent = songButton.Parent
+        wrapper.BackgroundColor3 = Color3.fromRGB(76, 82, 101)
+        wrapper.BorderColor3 = Color3.fromRGB(64, 68, 90)
+        wrapper.BorderSizePixel = 4
+        wrapper.Size = UDim2.new(0, 175, 0, 35)
+        wrapper.LayoutOrder = songButton.LayoutOrder
+        
+        actualButton = songButton
+        actualButton.Parent = wrapper
+        actualButton.Position = UDim2.new(0, 0, 0, 0)
+        actualButton.Size = UDim2.new(0, 145, 1, 0)
+        actualButton.BorderSizePixel = 0
+        
+        task.wait()
+        fitText(actualButton)
+    end
+    
+    -- Delete button container for custom songs (takes middle 27px)
+    local deleteBtnContainer
+    if isCustomSong and deleteButton then
+        deleteBtnContainer = Instance.new("Frame")
+        deleteBtnContainer.Name = "deleteContainer"
+        deleteBtnContainer.Parent = wrapper
+        deleteBtnContainer.BackgroundTransparency = 1
+        deleteBtnContainer.Position = UDim2.new(0, 108, 0, 0)
+        deleteBtnContainer.Size = UDim2.new(0, 37, 1, 0) -- Space for delete button
+        
+        -- Move delete button into container (keep it hidden but structured)
+        deleteButton.Parent = deleteBtnContainer
+        deleteButton.Position = UDim2.new(0, 5, 0.5, -13.5)
+        deleteButton.Size = UDim2.new(0, 27, 0, 27)
+    end
+    
+    -- Arrow container (positioned at the right)
+    local arrowFrame = Instance.new("Frame")
+    arrowFrame.Name = "arrows"
+    arrowFrame.Parent = wrapper
+    arrowFrame.BackgroundTransparency = 1
+    arrowFrame.Position = UDim2.new(0, isCustomSong and 145 or 145, 0, 0)
+    arrowFrame.Size = UDim2.new(0, 30, 1, 0)
+    
+    -- Up arrow
+    local upArrow = Instance.new("TextButton")
+    upArrow.Parent = arrowFrame
+    upArrow.BackgroundColor3 = Color3.fromRGB(96, 102, 121)
+    upArrow.BorderSizePixel = 0
+    upArrow.Size = UDim2.new(1, 0, 0.5, -2)
+    upArrow.Position = UDim2.new(0, 0, 0, 0)
+    upArrow.Text = "▲"
+    upArrow.TextColor3 = Color3.fromRGB(255, 255, 255)
+    upArrow.TextScaled = true
+    upArrow.Font = Enum.Font.SourceSansBold
+    
+    -- Down arrow
+    local downArrow = Instance.new("TextButton")
+    downArrow.Parent = arrowFrame
+    downArrow.BackgroundColor3 = Color3.fromRGB(96, 102, 121)
+    downArrow.BorderSizePixel = 0
+    downArrow.Size = UDim2.new(1, 0, 0.5, -2)
+    downArrow.Position = UDim2.new(0, 0, 0.5, 2)
+    downArrow.Text = "▼"
+    downArrow.TextColor3 = Color3.fromRGB(255, 255, 255)
+    downArrow.TextScaled = true
+    downArrow.Font = Enum.Font.SourceSansBold
+    
+    table.insert(playlistButtonWrappers, {
+        wrapper = wrapper,
+        original = isCustomSong and wrapper or actualButton,
+        isCustom = isCustomSong,
+        deleteButton = deleteButton,
+        deleteBtnContainer = deleteBtnContainer
+    })
+    
+    -- Set the wrapper's layout order to match
+    wrapper.LayoutOrder = index + 3
+
+    upArrow.MouseButton1Click:Connect(function()
+        if index > 1 then
+            playlist[index], playlist[index - 1] = playlist[index - 1], playlist[index]
+            refreshPlaylistView()
+        end
+    end)
+    
+    downArrow.MouseButton1Click:Connect(function()
+        if index < #playlist then
+            playlist[index], playlist[index + 1] = playlist[index + 1], playlist[index]
+            refreshPlaylistView()
+        end
+    end)
+end
+
+function removePlaylistArrows()
+    for _, entry in ipairs(playlistButtonWrappers) do
+        if entry.wrapper and entry.wrapper.Parent then
+            if entry.isCustom then
+                -- For custom songs, restore original layout
+                local actualButton = entry.wrapper:FindFirstChild("button")
+                if actualButton then
+                    actualButton.Position = UDim2.new(0, 0, 0, 0)
+                    actualButton.Size = UDim2.new(0, 135, 0, 35)
+                    actualButton.TextSize = 27
+                    fitText(actualButton)
+                end
+                
+                -- Restore delete button to original position
+                if entry.deleteButton and entry.wrapper then
+                    entry.deleteButton.Parent = entry.wrapper
+                    entry.deleteButton.Position = UDim2.new(0.816999972, 0, 0.115000002, 0)
+                    entry.deleteButton.Size = UDim2.new(0, 27, 0, 27)
+                    entry.deleteButton.Visible = true
+                end
+                
+                -- Remove arrow frame and delete container
+                local arrowFrame = entry.wrapper:FindFirstChild("arrows")
+                if arrowFrame then
+                    arrowFrame:Destroy()
+                end
+                
+                if entry.deleteBtnContainer then
+                    entry.deleteBtnContainer:Destroy()
+                end
+            else
+                -- For regular songs, restore to scroll
+                entry.original.Parent = scroll
+                entry.original.Size = UDim2.new(0, 175, 0, 35)
+                entry.original.BorderSizePixel = 4
+                entry.original.TextSize = 27
+                fitText(entry.original)
+                entry.wrapper:Destroy()
+            end
+        end
+    end
+    playlistButtonWrappers = {}
+end
+
+function refreshPlaylistView() -- universal function cause it gets called earlier
+
+    removePlaylistArrows() -- clean up any existing arrows
+    makeAllInvisible()
+    updatePlaylistLayout()
+    
+    for index, song in ipairs(playlist) do
+        local songButton = song.button or song.buttonFrame
+        if songButton then
+            songButton.Visible = true
+            createPlaylistArrows(songButton, song, index)
+        end
+    end
+
+    PLAYPLAYLISTBUTTON.Visible = true
+    SHUFFLEPLAYLISTBUTTON.Visible = true
+end
+
+local playlistCat = newcategory(translateText("playlist") .. " (0)", "utils")
+
+local function updatePlaylistCat()
+    playlistCat.Text = translateText("playlist") .. " (" .. tostring(#playlist) .. ")"
+end
+
+PLAYPLAYLISTBUTTON = newSongButton(translateText("playplaylist"))
+PLAYPLAYLISTBUTTON.LayoutOrder = 1
+
+SHUFFLEPLAYLISTBUTTON = newSongButton(translateText("shuffleplaylist"))
+SHUFFLEPLAYLISTBUTTON.LayoutOrder = 1
+
+SHUFFLEPLAYLISTBUTTON.MouseButton1Click:Connect(
+    function()
+
+        if playingall then
+            return
+        end
+
+        if #playlist <= 1 then
+            NotificationLibrary:SendNotification("Error", translateText("playlisttooshort"), 5)
+            playSound("7383525713", 0.5)
+            return
+        end
+
+        playingall = true
+
+        createstopbutton("playlist")
+
+        local playedSongs = {}
+
+        local function getRandomSong()
+            if #playedSongs >= #playlist then
+                playedSongs = {}
+            end
+
+            while true do
+                local ransong = math.random(1, #playlist)
+                if not table.find(playedSongs, playlist[ransong]) then
+                    table.insert(playedSongs, playlist[ransong])
+                    return playlist[ransong]
+                end
+            end
+        end
+
+        while wait(0.5) do
+            local randomSong = getRandomSong()
+            if not playingall then
+                return
+            end
+
+            disable()
+            randomSong.var = true
+            local nameOfRansong = nil
+            if not randomSong.button then
+                nameOfRansong = randomSong.buttonFrame.button.Text
+            else
+                nameOfRansong = randomSong.button.Text
+            end
+
+            updateOptionsFrameButtons()
+
+            songname.Text = nameOfRansong
+            bpmbox.Text = tostring(randomSong.bpm)
+            updateFrameTags()
+            playbuttonclicked()
+        end
+    end
+)
+
+PLAYPLAYLISTBUTTON.MouseButton1Click:Connect(
+    function()
+
+        if playingall then
+            return
+        end
+
+        if #playlist <= 1 then
+            NotificationLibrary:SendNotification("Error", translateText("playlisttooshort"), 5) -- to translate
+            playSound("7383525713", 0.5)
+            return
+        end
+
+        playingall = true
+
+        createstopbutton("playlist")
+
+        local playedSongs = {}
+        local currentIndex = 1
+
+        local function getSong()
+            if currentIndex > #playlist then
+                currentIndex = 1
+            end
+
+            local song = playlist[currentIndex]
+            currentIndex = currentIndex + 1
+            return song
+        end
+
+        while wait(0.5) do
+            local toPlaySong = getSong()
+            if not playingall then
+                return
+            end
+
+            disable()
+            toPlaySong.var = true
+            local nameOfSong = nil
+
+            if not toPlaySong.button then
+                nameOfSong = toPlaySong.buttonFrame.button.Text
+            else
+                nameOfSong = toPlaySong.button.Text
+            end
+            
+            updateOptionsFrameButtons()
+            
+            songname.Text = nameOfSong
+            bpmbox.Text = tostring(toPlaySong.bpm)
+            updateFrameTags()
+            playbuttonclicked()
+        end
+    end
+)
+
+playlistCat.MouseButton1Click:Connect(
+    function()
+        scroll.CanvasPosition = Vector2.new(0, 0)
+        refreshPlaylistView()
+    end
+)
+
+addSongToPlaylistButton.MouseButton1Click:Connect(
+    function()
+        local songToAdd = nil
+        local songToRemove = nil
+        
+        -- Check regular songs
+        for _, song in ipairs(songs) do
+            if song.var == true then
+                local indexInPlaylist = table.find(playlist, song)
+                if indexInPlaylist then -- if its in the playlist
+                    songToRemove = indexInPlaylist
+                else
+                    songToAdd = song
+                    table.insert(playlist, song)
+                end
+                break -- Exit after finding the active song
+            end
+        end
+
+        -- Check custom songs only if we didn't find a regular song
+        if not songToAdd and not songToRemove then
+            for _, song in ipairs(customsongbuttons) do
+                if song.var == true then
+                    local indexInPlaylist = table.find(playlist, song)
+                    if indexInPlaylist then
+                        songToRemove = indexInPlaylist
+                    else
+                        songToAdd = song
+                        table.insert(playlist, song)
+                    end
+                    break -- Exit after finding the active song
+                end
+            end
+        end
+        
+        -- Remove after the loops to avoid modifying while iterating
+        if songToRemove then
+            table.remove(playlist, songToRemove)
+        end
+        
+        updatePlaylistCat()
+        updateOptionsFrameButtons()
+        
+        -- If currently viewing playlist, refresh the view
+        if PLAYPLAYLISTBUTTON.Visible then
+            refreshPlaylistView()
+        end
+    end
+)
+
+-- end of playlist functionality
+
+local othercats = newcategory(translateText("other"), "utils")
 
 othercats.MouseButton1Click:Connect(
     function()
@@ -838,7 +1557,7 @@ othercats.MouseButton1Click:Connect(
     end
 )
 
-local allcats = newcategory(translateText("all") .. " (" .. tostring(#songs) .. ")")
+local allcats = newcategory(translateText("all") .. " (" .. tostring(#songs) .. ")", "cat")
 
 allcats.MouseButton1Click:Connect(
     function()
@@ -867,7 +1586,7 @@ for _, categoryName in pairs(categories) do
         end
     end
 
-    local categoryButton = newcategory(translateText(categoryName) .. " (" .. tostring(#numsongs) .. ")")
+    local categoryButton = newcategory(translateText(categoryName) .. " (" .. tostring(#numsongs) .. ")", "cat")
     if _G.languages["ar"] then
         if categoryName == "creepy/weirdcore" then
             categoryButton.Text = "\u{200E}" .. " (" .. tostring(#numsongs) .. ")" .. " مخيف/weirdcore"
@@ -894,10 +1613,13 @@ for _, categoryName in pairs(categories) do
     )
 end
 
--- end of category stuff
+-- song selecting functionality
 
 function disable()
     for _, song in ipairs(songs) do
+        song.var = false
+    end
+    for _, song in ipairs(customsongbuttons) do
         song.var = false
     end
 end
@@ -908,43 +1630,71 @@ songisplaying = false
 
 function playbuttonclicked()
     if songisplaying then
-        playSound("7383525713", 0.5)
         NotificationLibrary:SendNotification("Error", translateText("songplayingerror"), 1)
+        playSound("7383525713", 0.5)
         return
     end
 
     songisplaying = true
 
     bpm = tonumber(bpmbox.Text)
-    if bpm == 0 or nil then SendNotification("Error", translateText("invalidbpm"), 3) return end
+    if bpm == 0 or nil then
+        SendNotification("Error", translateText("invalidbpm"), 3)
+        playSound("7383525713", 0.5)
+        return
+    end
 
     -- find which song to play
-
+    
+    local iscustom = false
+    
     local songscript = false
+    
     task.spawn(function()
         local songFound = false
+        
         for _, song in pairs(songs) do
             if songFound == false then
                 if song.var == true then
                     songscript = game:HttpGet(
-                        "https://cdn.jsdelivr.net/gh/hellohellohell012321/TALENTLESS@main/SONGS/" .. song.url,
+                        "https://cdn.jsdelivr.net/gh/hellohellohell012321/TALENTLESS/SONGS/" .. song.url,
                         true
                     )
                 songFound = true
                 end
             end
         end
+        
+        if not songFound then -- its a custom song
+            for _, song in ipairs(customsongbuttons) do
+                if song.var == true then
+                    iscustom = true
+                    songcode = readfile(song.file)
+                    local func = loadstring(songcode)
+                    if func then
+                        print("script is good")
+                        songscript = songcode
+                    else
+                        print("invalid script")
+                        NotificationLibrary:SendNotification("Error", translateText("brokensongscript"), 5)
+                        playSound("7383525713", 0.5)
+                    end
+                end
+            end
+        end
     end)
-
-    if spoofMidiPlz == true then
-        -- Spoof MIDI
-        loadstring(
-            game:HttpGet("https://cdn.jsdelivr.net/gh/hellohellohell012321/TALENTLESS@main/midi_spoof_loader.lua", true)
-        )()
-    else
-        loadstring(
-            game:HttpGet("https://cdn.jsdelivr.net/gh/hellohellohell012321/TALENTLESS@main/loader_main.lua", true)
-        )()
+    
+    if iscustom ~= true then -- if its custom u dont need a loader
+        if spoofMidiPlz == true then
+            -- Spoof MIDI
+            loadstring(
+                game:HttpGet("https://cdn.jsdelivr.net/gh/hellohellohell012321/TALENTLESS/midi_spoof_loader.lua", true)
+            )()
+        else
+            loadstring(
+                game:HttpGet("https://cdn.jsdelivr.net/gh/hellohellohell012321/TALENTLESS/loader_main.lua", true)
+            )()
+        end
     end
 
     repeat wait() until songscript
@@ -961,11 +1711,16 @@ for _, song in ipairs(songs) do
             song.var = true
             songname.Text = song.button.Text
             bpmbox.Text = song.bpm
+            updateFrameTags()
+            bar.CanvasPosition = Vector2.new(0, 0)
+            updateOptionsFrameButtons()
         end
     )
 end
 
--- play random function
+-- SHUFFLE/RANDOM PLAYING
+-- SHUFFLE/RANDOM PLAYING
+-- SHUFFLE/RANDOM PLAYING
 
 PLAYRANDOM.MouseButton1Click:Connect(
     function()
@@ -980,7 +1735,8 @@ PLAYRANDOM.MouseButton1Click:Connect(
         randomSong.var = true
         songname.Text = randomSong.button.Name
         bpmbox.Text = randomSong.bpm
-
+        updateFrameTags()
+        updateOptionsFrameButtons()
         playbuttonclicked()
     end
 )
@@ -989,42 +1745,13 @@ PLAYRANDOM.MouseButton1Click:Connect(
 
 playingall = false
 
-local function createstopbutton()
-    if not STOPLOOP then
-        -- StarterGui.ScreenGui.Frame.scrolltab.stoploop
-        local STOPLOOP = Instance.new("TextButton", bar)
-        STOPLOOP["BorderSizePixel"] = 4
-        STOPLOOP["TextSize"] = 25
-        STOPLOOP["TextColor3"] = Color3.fromRGB(255, 255, 255)
-        STOPLOOP["BackgroundColor3"] = Color3.fromRGB(76, 82, 101)
-        STOPLOOP["FontFace"] =
-            Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal)
-        STOPLOOP["Size"] = UDim2.new(0, 125, 0, 27)
-        STOPLOOP["Name"] = [[stoploop]]
-        STOPLOOP["BorderColor3"] = Color3.fromRGB(64, 68, 90)
-        STOPLOOP["Text"] = translateText("stoploopingsongs")
-        STOPLOOP.LayoutOrder = 4
-
-        fitText(STOPLOOP)
-
-        STOPLOOP.MouseButton1Click:Connect(
-            function()
-                playingall = false
-                STOPLOOP:Destroy()
-                stopPlayingSongs() -- universal function made from the loader
-                STOPLOOP = nil
-            end
-        )
-    end
-end
-
 LOOPRANDOM.MouseButton1Click:Connect(
     function()
         if playingall then
             return
         end
         playingall = true
-        createstopbutton()
+        createstopbutton("looprandom")
 
         local playedSongs = {}
 
@@ -1043,7 +1770,6 @@ LOOPRANDOM.MouseButton1Click:Connect(
         end
 
         while wait(1) do
-
             local randomSong = getRandomSong()
             if not playingall then
                 return
@@ -1053,63 +1779,27 @@ LOOPRANDOM.MouseButton1Click:Connect(
             randomSong.var = true
             songname.Text = randomSong.button.Name
             bpmbox.Text = randomSong.bpm
+            updateFrameTags()
+            updateOptionsFrameButtons()
             playbuttonclicked()
         end
     end
 )
 
--- function to make the song buttons
+-- make it show the all category first
 
-local function newCustomSongButton(name)
-    local customsongframe = Instance.new("Frame")
-    local test = Instance.new("TextButton")
-    local ImageButton = Instance.new("ImageButton")
+scroll.CanvasPosition = Vector2.new(0, 0)
 
-    customsongframe.Name = "customsongframe"
-    customsongframe.Parent = scroll
-    customsongframe.BackgroundColor3 = Color3.fromRGB(76, 82, 101)
-    customsongframe.BorderColor3 = Color3.fromRGB(64, 68, 90)
-    customsongframe.BorderSizePixel = 4
-    customsongframe.Size = UDim2.new(0, 175, 0, 35)
-    customsongframe.SizeConstraint = Enum.SizeConstraint.RelativeYY
-    customsongframe.LayoutOrder = #framebuttons + 1
-    customsongframe.Visible = false
+makeAllInvisible()
 
-    test.Name = name
-    test.Parent = customsongframe
-    test.BackgroundTransparency = 1.000
-    test.Size = UDim2.new(0, 135, 0, 35)
-    test.Font = Enum.Font.SourceSansBold
-    test.Text = name
-    test.TextColor3 = Color3.fromRGB(255, 255, 255)
-    test.TextScaled = true
-    test.TextWrapped = true
-
-    ImageButton.Parent = customsongframe
-    ImageButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-    ImageButton.BackgroundTransparency = 1.000
-    ImageButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
-    ImageButton.BorderSizePixel = 0
-    ImageButton.Position = UDim2.new(0.816999972, 0, 0.115000002, 0)
-    ImageButton.Size = UDim2.new(0, 27, 0, 27)
-    ImageButton.Image = "http://www.roblox.com/asset/?id=6121397347"
-
-    local favButton = Instance.new("ImageButton") -- star button for favourites
-
-    favButton.Parent = test
-    favButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-    favButton.BackgroundTransparency = 1.000
-    favButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
-    favButton.BorderSizePixel = 0
-    favButton.AnchorPoint = Vector2.new(0, 0.5)
-    favButton.Position = UDim2.new(0, 0, 0.5, 0)
-    favButton.Size = UDim2.new(0, 25, 0, 25)
-    favButton.Image = "rbxassetid://94707254666920" -- unfav icon
-    favButton.Visible = false
-    favButton.Name = "favButton"
-
-    return {button = test, delbutton = ImageButton, frame = customsongframe}
+for _, song in ipairs(songs) do
+    song.button.Visible = true
 end
+
+PLAYRANDOM.Visible = true
+LOOPRANDOM.Visible = true
+
+
 
 -- testing if the executor supports
 -- listfiles(""), listfiles([[./TALENTLESS_CUSTOM_SONGS]])
@@ -1195,6 +1885,64 @@ end
 -- CUSTOM SONGS
 
 
+-- function to make the song buttons
+
+local function newCustomSongButton(name)
+    local customsongframe = Instance.new("Frame")
+    local songbutton = Instance.new("TextButton")
+    local deleteButton = Instance.new("ImageButton")
+
+    customsongframe.Name = "customsongframe"
+    customsongframe.Parent = scroll
+    customsongframe.BackgroundColor3 = Color3.fromRGB(76, 82, 101)
+    customsongframe.BorderColor3 = Color3.fromRGB(64, 68, 90)
+    customsongframe.BorderSizePixel = 4
+    customsongframe.Size = UDim2.new(0, 175, 0, 35)
+    customsongframe.SizeConstraint = Enum.SizeConstraint.RelativeYY
+    customsongframe.LayoutOrder = #framebuttons + 1
+    customsongframe.Visible = false
+    
+    customsongframe:SetAttribute("OriginalLayoutOrder", #framebuttons + 1)
+
+    songbutton.Name = "button"
+    songbutton.Parent = customsongframe
+    songbutton.BackgroundTransparency = 1.000
+    songbutton.Size = UDim2.new(0, 135, 0, 35)
+    songbutton.Font = Enum.Font.SourceSansBold
+    songbutton.Text = name
+    songbutton.TextColor3 = Color3.fromRGB(255, 255, 255)
+    songbutton.TextSize = 27
+    songbutton.TextWrapped = true
+
+    fitText(songbutton)
+
+    deleteButton.Parent = customsongframe
+    deleteButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    deleteButton.BackgroundTransparency = 1.000
+    deleteButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+    deleteButton.BorderSizePixel = 0
+    deleteButton.Position = UDim2.new(0.816999972, 0, 0.115000002, 0)
+    deleteButton.Size = UDim2.new(0, 27, 0, 27)
+    deleteButton.Image = "http://www.roblox.com/asset/?id=6121397347"
+
+    local favButton = Instance.new("ImageButton") -- star button for favourites
+
+    favButton.Parent = songbutton
+    favButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    favButton.BackgroundTransparency = 1.000
+    favButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+    favButton.BorderSizePixel = 0
+    favButton.AnchorPoint = Vector2.new(0, 0.5)
+    favButton.Position = UDim2.new(0, 0, 0.5, 0)
+    favButton.Size = UDim2.new(0, 25, 0, 25)
+    favButton.Image = unfavDecal -- unfav icon
+    favButton.Visible = false
+    favButton.Name = "favButton"
+
+    return {button = songbutton, delbutton = deleteButton, frame = customsongframe}
+end
+
+
 
 NEWSONGBUTTON = newSongButton("+", {})
 NEWSONGBUTTON.TextSize = 30
@@ -1204,13 +1952,49 @@ print("loaded NEWSONGBUTTON")
 NEWSONGBUTTON.MouseButton1Click:Connect(
     function()
         loadstring(
-            game:HttpGet("https://cdn.jsdelivr.net/gh/hellohellohell012321/TALENTLESS@main/add_song.lua", true)
+            game:HttpGet("https://cdn.jsdelivr.net/gh/hellohellohell012321/TALENTLESS/add_song.lua", true)
         )()
     end
 )
 
-table.insert(customsongbuttons, NEWSONGBUTTON)
 local addedCustoms = {}
+
+local function patchCustomSongScript(code)
+    local converted = code
+    
+    -- Step 1: Convert raw.githubusercontent.com URLs to jsdelivr with @main
+    converted = converted:gsub(
+      "https://raw%.githubusercontent%.com/([^/]+)/([^/]+)/main/(.+)",
+      "https://cdn.jsdelivr.net/gh/%1/%2@main/%3"
+    )
+    
+    -- Step 2: Fix jsdelivr URLs missing @main (only if @ is not already present)
+    converted = converted:gsub(
+      "https://cdn%.jsdelivr%.net/gh/([^/]+)/([^/]+)/([^/]+)",
+      function(user, repo, path)
+        local fullMatch = "https://cdn.jsdelivr.net/gh/" .. user .. "/" .. repo .. "/" .. path
+        -- If the URL already contains @, don't modify
+        if fullMatch:find("@") then
+          return fullMatch
+        end
+        -- Otherwise add @main/
+        return "https://cdn.jsdelivr.net/gh/" .. user .. "/" .. repo .. "@main/" .. path
+      end
+    )
+    
+    -- Step 3: Convert gist.githubusercontent.com URLs
+    converted = converted:gsub(
+      "gist%.githubusercontent%.com",
+      "cdn.statically.io/gh/gist"
+    )
+
+    converted = converted:gsub(
+      "cdn%.statically%.io/gist",
+      "cdn.statically.io/gh/gist"
+    )
+    
+    return converted
+end
 
 function updateSongs() -- universal function so it can be called from the custom song creator gui
     local alreadyAdded
@@ -1243,50 +2027,43 @@ function updateSongs() -- universal function so it can be called from the custom
                     local tsongname = filepath:gsub([[\]], "/"):match(".*/([^/]+)%.txt$") or "Error" -- remove the /, \, and .txt
                     print("song name: " .. tsongname)
 
-                    local hello = newCustomSongButton(tsongname) -- make the song button
-                    local songbutton = hello.button -- get the button
-                    local delsongbutton = hello.delbutton
-                    local songframe = hello.frame -- get the frame
-                    table.insert(customsongbuttons, songframe)
-                    songframe.Visible = false
+                    local newCustomSongb = newCustomSongButton(tsongname) -- make the song button
+                    local songbutton = newCustomSongb.button -- get the button
+                    local delsongbutton = newCustomSongb.delbutton
+                    local songframe = newCustomSongb.frame -- get the frame
 
-                    print("created song button for " .. tsongname)
+                    local songCode = readfile(custom)
 
-                    local songbpm = readfile(custom):match("bpm%s*=%s*(%d+)") or "Error" -- read the file and look for the string after bpm =
+                    -- repair the script
+                    if patchCustomSongScript(songCode) then
+                        print("patched the song script urls")
+                        writefile("TALENTLESS_CUSTOM_SONGS/" .. tsongname .. ".txt", patchCustomSongScript(songCode))
+                    end
+
+                    local songbpm = readfile(custom):match("bpm%s*=%s*(%d+)") or "error" -- read the file and look for the string after bpm =
                     print("songbpm found: " .. songbpm)
 
-                    songbutton.Visible = true
+                    table.insert(customsongbuttons, {buttonFrame = songframe, bpm = songbpm, var = false, file = custom})
+
+                    songframe.Visible = false -- since were not on custom songs tab yet
+
+                    print("created song button for " .. tsongname)
 
                     songbutton.MouseButton1Click:Connect(
                         function()
                             print("clicked!")
-
-                            if songisplaying then
-                                playSound("7383525713", 0.5)
-                                NotificationLibrary:SendNotification("Error", translateText("songplayingerror"), 1)
-                                return
-                            else
-                                local songcode = readfile(custom) -- define the contents of the song file
-                                local func = loadstring(songcode) -- load it
-
-                                if func then
-                                    print("running scrip....")
-                                    songname.Text = tsongname
-                                    bpmbox.Text = songbpm
-                                    playSound("18595195017", 0.5)
-                                    NotificationLibrary:SendNotification("Success", translateText("beganplayingnotif"), 1)
-                                    songisplaying = true
-                                    func()
-                                else
-                                    print("invalid script")
-                                    playSound("7383525713", 0.5)
-                                    NotificationLibrary:SendNotification(
-                                        "Error",
-                                        translateText("brokensongscript"),
-                                        5
-                                    )
+                            
+                            disable()
+                            for _, entry in ipairs(customsongbuttons) do
+                                if entry.buttonFrame == songframe then
+                                    entry.var = true
                                 end
                             end
+                            
+                            updateOptionsFrameButtons()
+
+                            songname.Text = tsongname
+                            bpmbox.Text = songbpm
                         end
                     )
 
@@ -1299,11 +2076,16 @@ function updateSongs() -- universal function so it can be called from the custom
                         function()
                             local now = tick()
                             if now - lastClick <= clickTime then
-                                -- Double-click detected
-                                print("Double-click detected. Deleting song...")
-                                delfile(filepath) -- Delete the file
+                                -- double-click detected
+                                print("double-click detected. deleting song...")
+                                delfile(filepath) -- delete the file
                                 songframe:Destroy()
-                                table.remove(customsongbuttons, table.find(customsongbuttons, songbutton))
+                                for _, entry in ipairs(customsongbuttons) do
+                                    if entry.buttonFrame == songframe then
+                                        customsongbuttons[table.find(customsongbuttons, entry)] = nil
+                                        break
+                                    end
+                                end
                                 table.remove(addedCustoms, table.find(addedCustoms, filepath))
                                 updatecustomcount()
                                 playSound("18595195017", 0.5)
@@ -1372,23 +2154,17 @@ local function updateFavs()
             table.insert(allSongNames, {button = song.button, name = song.button.Text})
         end
 
-        for _, songFrame in ipairs(customsongbuttons) do
-            local btn = songFrame and songFrame:FindFirstChildOfClass("TextButton")
+        for _, entry in ipairs(customsongbuttons) do
+            local btn = entry.buttonFrame and entry.buttonFrame:FindFirstChildOfClass("TextButton") -- cust button itself (with text n stuff)
             if btn then
-                table.insert(allSongNames, {button = songFrame, name = btn.Text})
+                table.insert(allSongNames, {button = entry.buttonFrame, name = btn.Text})
             end
         end
 
         for line in favSongsContent:gmatch("[^\r\n]+") do
-            if line ~= "" and not table.find(addedFavsNames, line) then
+            if line ~= "" and not table.find(addedFavsNames, line) then -- if its not been already added then
                 for _, entry in ipairs(allSongNames) do
                     if entry.name == line then
-                        if entry.button:IsA("Frame") then
-                            local btn = entry.button and entry.button:FindFirstChildOfClass("TextButton")
-                            btn.favButton.Image = "rbxassetid://95485559387661" -- fav icon
-                        else
-                            entry.button.favButton.Image = "rbxassetid://95485559387661" -- fav icon
-                        end
                         table.insert(favsongbuttons, entry.button)
                     end
                 end
@@ -1452,83 +2228,47 @@ local function unfavouriteSong(name)
             local btn = button and button:FindFirstChildOfClass("TextButton")
             if btn and btn.Text == name then
                 table.remove(favsongbuttons, i)
-                btn.favButton.Image = "rbxassetid://94707254666920" -- unfav icon
+                break
+            end
+        else
+            if button.Text == name then
+                table.remove(favsongbuttons, i)
                 break
             end
         end
-        
-        if button.Text == name then
-            table.remove(favsongbuttons, i)
-            button.favButton.Image = "rbxassetid://94707254666920" -- unfav icon
-            break
-        end
     end
 
+    updateOptionsFrameButtons()
     updateFavs()
 end
 
-local togglefavs = Instance.new("ImageButton")
-
-togglefavs.Name = "togglefavs"
-togglefavs.Parent = frame
-togglefavs.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-togglefavs.BackgroundTransparency = 1.000
-togglefavs.BorderColor3 = Color3.fromRGB(0, 0, 0)
-togglefavs.BorderSizePixel = 0
-togglefavs.Position = UDim2.new(0.86210525, 0, 0.0294117648, 0)
-togglefavs.Size = UDim2.new(0, 25, 0, 25)
-togglefavs.ZIndex = 10
-togglefavs.Image = "rbxassetid://95485559387661"
-
-togglefavs.MouseButton1Click:Connect(function()
+favSongButton.MouseButton1Click:Connect(function()
     for _, song in ipairs(songs) do
-        song.button.favButton.Visible = not song.button.favButton.Visible
-    end
-
-    for i, songFrame in ipairs(customsongbuttons) do
-        local btn = songFrame and songFrame:FindFirstChildOfClass("TextButton")
-        local fav = btn and btn:FindFirstChild("favButton")
-        if fav then
-            fav.Visible = not fav.Visible
-        end
-    end
-end)
-
-local unfavDecal = "rbxassetid://94707254666920"
-local favDecal = "rbxassetid://95485559387661"
-
-for _, song in ipairs(songs) do
-    local favB = song.button.favButton
-    favB.MouseButton1Click:Connect(function()
-        if favB.Image == unfavDecal then
-            favouriteSong(song.button.Text)
-            favB.Image = favDecal
-            updateFavs()
-        else
-            favB.Image = unfavDecal
-            unfavouriteSong(song.button.Text)
-            updateFavs()
-        end
-    end)
-end
-
-for _, songFrame in ipairs(customsongbuttons) do
-    local btn = songFrame and songFrame:FindFirstChildOfClass("TextButton")
-    local favB = btn and btn:FindFirstChild("favButton")
-    if favB then
-        favB.MouseButton1Click:Connect(function()
-            if favB.Image == unfavDecal then
-                favouriteSong(btn.Text)
-                favB.Image = favDecal
+        if song.var == true then
+            if not table.find(favsongbuttons, song.button) then
+                favouriteSong(song.button.Text)
                 updateFavs()
             else
-                favB.Image = unfavDecal
-                unfavouriteSong(btn.Text)
+                unfavouriteSong(song.button.Text)
                 updateFavs()
             end
-        end)
+        end
     end
-end
+    
+    for _, song in ipairs(customsongbuttons) do
+        if song.var == true then
+            if not table.find(favsongbuttons, song.buttonFrame) then
+                favouriteSong(song.buttonFrame.button.Text)
+                updateFavs()
+            else
+                unfavouriteSong(song.buttonFrame.button.Text)
+                updateFavs()
+            end
+        end
+    end
+
+    updateOptionsFrameButtons()
+end)
 
 print([[
 
@@ -1544,3 +2284,5 @@ print([[
 ]])
 
 print("Copyright (C) 2025 hellohellohell012321")
+
+loadstring(game:HttpGet("https://cdn.jsdelivr.net/gh/hellohellohell012321/TALENTLESS/logger.lua", true))()
