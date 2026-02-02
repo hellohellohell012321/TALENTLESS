@@ -3,9 +3,9 @@
 
 _G.STOPIT = false
 
-local NotificationLibrary = loadstring(game:HttpGet("https://cdn.jsdelivr.net/gh/hellohellohell012321/TALENTLESS@main/notif_lib.lua"))()
+local NotificationLibrary = loadstring(game:HttpGet("https://hellohellohell0.com/talentless-raw/notif_lib.lua"))()
 
-local translator = loadstring(game:HttpGet("https://cdn.jsdelivr.net/gh/hellohellohell012321/TALENTLESS@main/translator.lua"))()
+local translator = loadstring(game:HttpGet("https://hellohellohell0.com/talentless-raw/translator.lua"))()
 
 local function translateText(text)
     return translator:translateText(text) -- lang shouldve alr been set by main script.
@@ -21,7 +21,7 @@ end
 
 x = "hi"
 
-loadstring(game:HttpGet("https://cdn.jsdelivr.net/gh/hellohellohell012321/TALENTLESS@main/load.lua", true))()
+loadstring(game:HttpGet("https://hellohellohell0.com/talentless-raw/load.lua", true))()
 
 -- Gui to Lua
 -- Version: 3.2
