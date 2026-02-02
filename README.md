@@ -6,4 +6,3 @@ LICENSE: GPLv3 applies only to the non-obfuscated source files in this repositor
 
 The following files are proprietary and not open-source:
 - main.lua (obfuscated)
-- keysystem.lua (obfuscated)
