@@ -1,22 +1,7 @@
 -- Copyright (C) 2025 hellohellohell012321
 -- Licensed under the GNU GPL v3. See LICENSE file for details.
 
---[[
-
-This file is a version of TALENTLESS that includes all of the functionality in the original script except only a few songs are added to the song index.
-
-The goal of this file is to provide an open-source version of talentless for developers and scripters. Other than the number of songs, this script is
-completely identical to the real TALENTLESS.
-
-Why did i make this? Simply put, it's so that people don't bypass the keysystem. The main script that has the hundreds of songs is obfuscated so that I can
-continue generating revenue while providing you guys a free high quality script.
-
-If you're looking into how TALENTLESS functions etc, this script is for you. Make sure to ask for permission before using/modifying/distributing this code.
-
-NOTES:
-- all files loaded (e.g. translator.lua) via their URLs from hellohellohell0.com are identical to the ones found in this github repository under the same file name.
-
-]]
+-- PLEASE READ THE README.md IN THIS REPOSITORY.
 
 local translator = loadstring(game:HttpGet("https://hellohellohell0.com/talentless-raw/translator.lua", true))()
 
