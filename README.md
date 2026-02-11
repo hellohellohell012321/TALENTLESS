@@ -31,4 +31,5 @@ Please make sure to ask for permission before using, modifying, or distributing 
 ---
 
 *Copyright (C) 2025 hellohellohell012321*
+
 *LICENSE: GPLv3 applies to all files in this repository.*
