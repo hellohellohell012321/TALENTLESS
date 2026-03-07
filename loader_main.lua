@@ -300,6 +300,7 @@ function stopPlayingSongs()
     end
 
     songisplaying = false -- indicator for telling the user they cant play when a song is playing, etc.
+    _G.songisplaying = false
 
     playSound("18595195017", 0.5)
     NotificationLibrary:SendNotification("Success", translateText("stopping..."), 1)
@@ -318,6 +319,7 @@ local function finishedSongtrigger()
     playSound("18595195017", 0.5)
     NotificationLibrary:SendNotification("Success", translateText("songfinished"), 3)
     songisplaying = false
+    _G.songisplaying = false
     lilgui:Destroy()
     lilgui = nil
     _G.STOPIT = true
