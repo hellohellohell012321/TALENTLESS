@@ -20,13 +20,14 @@ Please make sure to ask for permission before using, modifying, or distributing 
 
 ---
 
-**If you have any questions, open a ticket and I’ll gladly help clarify the differences between the open and closed-source versions.**
+**If you have any questions, open a ticket in the Discord and I’ll gladly help clarify the differences between the open and closed-source versions: https://hellohellohell0.com/discord.**
 
 ---
 
 **NOTES:**
 
 * All files loaded via URLs from hellohellohell0.com (e.g., `translator.lua`) are identical to the files in this GitHub repository with the same name.
+* The `SONGS` folder in this repository is still the one accessed by the published/distributed version of TALENTLESS.
 
 ---
 
