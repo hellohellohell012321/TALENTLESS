@@ -1,4 +1,4 @@
-rest(272, bpm)
+
 keypress("y", x, bpm)
 keypress("i", x, bpm)
 keypress("p", x, bpm)
