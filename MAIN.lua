@@ -1,14 +1,13 @@
--- Copyright (C) 2025 hellohellohell012321
+-- Copyright (C) 2026 hellohellohell012321
 -- Licensed under the GNU GPL v3. See LICENSE file for details.
 
--- PLEASE READ THE README.md IN THIS REPOSITORY.
+-- PLEASE READ THE README.MD IN THIS REPOSITORY
 
 local translator = loadstring(game:HttpGet("https://hellohellohell0.com/talentless-raw/translator.lua", true))()
 
 local function translateText(text)
     return translator:translateText(text)
 end
-
 
 local TextService = game:GetService("TextService")
 
@@ -96,9 +95,10 @@ local tagsFrame = Instance.new("Frame")
 local tagsListLayout = Instance.new("UIListLayout")
 local tagsPadding = Instance.new("UIPadding")
 
-local snowpile = Instance.new("ImageLabel")
-local xmaslights = Instance.new("ImageLabel")
-
+--[[
+    local snowpile = Instance.new("ImageLabel")
+    local xmaslights = Instance.new("ImageLabel")
+]]
 
 ScreenGui.Parent = game:GetService("CoreGui")
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
@@ -376,26 +376,28 @@ translator:requestLang(frame, "first")
             tagsPadding.PaddingLeft = UDim.new(0, 5)
             tagsPadding.PaddingRight = UDim.new(0, 5)
 
-    snowpile.Name = "snowpile"
-    snowpile.Parent = frame
-    snowpile.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-    snowpile.BackgroundTransparency = 1.000
-    snowpile.BorderColor3 = Color3.fromRGB(0, 0, 0)
-    snowpile.BorderSizePixel = 0
-    snowpile.Position = UDim2.new(-0.0149999997, 0, 0.716000021, 0)
-    snowpile.Size = UDim2.new(0, 202, 0, 192)
-    snowpile.Image = "rbxassetid://124461981242866"
-    
-    xmaslights.Name = "xmaslights"
-    xmaslights.Parent = frame
-    xmaslights.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-    xmaslights.BackgroundTransparency = 1.000
-    xmaslights.BorderColor3 = Color3.fromRGB(0, 0, 0)
-    xmaslights.BorderSizePixel = 0
-    xmaslights.Position = UDim2.new(-0.0484210514, 0, 0.0147058824, 0)
-    xmaslights.Size = UDim2.new(0, 520, 0, 100)
-    xmaslights.ZIndex = 2
-    xmaslights.Image = "rbxassetid://850806532"
+    --[[
+        snowpile.Name = "snowpile"
+        snowpile.Parent = frame
+        snowpile.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+        snowpile.BackgroundTransparency = 1.000
+        snowpile.BorderColor3 = Color3.fromRGB(0, 0, 0)
+        snowpile.BorderSizePixel = 0
+        snowpile.Position = UDim2.new(-0.0149999997, 0, 0.716000021, 0)
+        snowpile.Size = UDim2.new(0, 202, 0, 192)
+        snowpile.Image = "rbxassetid://124461981242866"
+        
+        xmaslights.Name = "xmaslights"
+        xmaslights.Parent = frame
+        xmaslights.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+        xmaslights.BackgroundTransparency = 1.000
+        xmaslights.BorderColor3 = Color3.fromRGB(0, 0, 0)
+        xmaslights.BorderSizePixel = 0
+        xmaslights.Position = UDim2.new(-0.0484210514, 0, 0.0147058824, 0)
+        xmaslights.Size = UDim2.new(0, 520, 0, 100)
+        xmaslights.ZIndex = 2
+        xmaslights.Image = "rbxassetid://850806532"
+    ]]
 
 
 toggle.Name = "toggle"
@@ -713,31 +715,21 @@ local function newSongButton(name, alternateNames)
 end
 
 -- newSongButton("", {})
--- japanese songs sohould be written with their english then japanese romanji name, but will translate to japanese characters if japanese language is enabled.
+-- japanese songs sohould be written with their english then japanese romanji name
 
 LOOPRANDOM = newSongButton(translateText("shuffle play songs"), {})
-LOOPRANDOM.LayoutOrder = 1
+LOOPRANDOM.LayoutOrder = 0
 
 PLAYRANDOM = newSongButton(translateText("play random song"), {})
-PLAYRANDOM.LayoutOrder = 1
+PLAYRANDOM.LayoutOrder = 0
 
 local seperator = Instance.new("Frame")
 seperator.Name = "seperator"
 seperator.Parent = scroll
 seperator.BackgroundColor3 = Color3.fromRGB(64, 68, 90)
 seperator.Size = UDim2.new(0, 200, 0, 8)
-seperator.LayoutOrder = 2
+seperator.LayoutOrder = 1
 
-GOLDENHOUR = newSongButton("GOLDEN HOUR", {"jvke", "love, sad", "popular"})
-YOUNG_GIRL_A = newSongButton(translateText("YOUNG GIRL A"), {"siinamota", "vocaloid"})
-M3 = newSongButton("MOONLIGHT SONATA - THIRD MOVEMENT", {"ludwig van beethoven"})
-UNDERTALE = newSongButton("UNDERTALE", {})
-TURKISH = newSongButton("TURKISH MARCH", {"mozart", "rondo alla turca"})
-UNRAVEL_EPIC = newSongButton("UNRAVEL (ANIMENZ ARR.)", {"tokyo ghoul", "animenz", "unravel epic"})
-SNOWFALL = newSongButton("SNOWFALL", {"oneheart"})
-BOHEMIAN_RHAPSODY = newSongButton("BOHEMIAN RHAPSODY", {"queen"})
-RENAI_CIRCULATION = newSongButton(translateText("RENAI CIRCULATION"), {"bakemonogatari"})
-WE_NOT_LIKE_U = newSongButton("WE NOT LIKE YOU", {"nettspend"})
 
 local framebuttons = {}
 
@@ -758,26 +750,35 @@ for index, button in ipairs(framebuttons) do
     button.LayoutOrder = index + 3 -- so theyre still under seperator and other buttons
 end
 
-
-MANGOMANGOMANGO = newSongButton("MANGO MANGO MANGO", {})
-MANGOMANGOMANGO.LayoutOrder = #framebuttons + 1
-DEATH_WALTZ = newSongButton("DEATH WALTZ (WARNING)", {})
-DEATH_WALTZ.LayoutOrder = #framebuttons + 1
-
 -- hungarian will nto work
 
 local songs = {
-    {button = GOLDENHOUR, bpm = "94", var = false, url = "GOLDEN_HOUR", cat = {"beautiful", "best"}},
-    {button = YOUNG_GIRL_A, bpm = "130", var = false, url = "YOUNG_GIRL_A", cat = {"anime/jpop", "sad", "beautiful", "best"}},
-    {button = M3, bpm = "163", var = false, url = "WHAT_THE_FUCKK", cat = {"classical", "best", "peak"}},
-    {button = UNDERTALE, bpm = "100", var = false, url = "UNDERTALE", cat = {"video games", "undertale", "best", "epic"}},
-    {button = TURKISH, bpm = "92", var = false, url = "TURKISH", cat = {"classical"}},
-    {button = UNRAVEL_EPIC, bpm = "132", var = false, url = "UNRAVEL_EPIC", cat = {"epic", "best", "beautiful", "peak", "movies/tv"}},
-    {button = SNOWFALL, bpm = "96", var = false, url = "SNOWFALL", cat = {"beautiful", "sad", "best"}},
-    {button = BOHEMIAN_RHAPSODY, bpm = "80", var = false, url = "BOHEMIAN_RHAPSODY", cat = {"rock"}},
-    {button = RENAI_CIRCULATION, bpm = "120", var = false, url = "RENAI_CIRCULATION", cat = {"anime/jpop", "memes", "peak", "best"}},
-    {button = WE_NOT_LIKE_U, bpm = "155", var = false, url = "WE_NOT_LIKE_U", cat = {"pop/hiphop", "memes", "new"}},
+    {button = newSongButton("GOLDEN HOUR", {"jvke"}), bpm = "94", var = false, url = "GOLDEN_HOUR", cat = {"beautiful", "best"}},
+    {button = newSongButton("YOUNG GIRL A", {"siinamota", "vocaloid"}), bpm = "130", var = false, url = "YOUNG_GIRL_A", cat = {"anime/jpop", "sad", "beautiful", "best"}},
+    {button = newSongButton("MOONLIGHT SONATA - THIRD MOVEMENT", {"ludwig van beethoven"}), bpm = "163", var = false, url = "WHAT_THE_FUCKK", cat = {"classical", "best", "peak"}},
+    {button = newSongButton("UNDERTALE", {}), bpm = "100", var = false, url = "UNDERTALE", cat = {"video games", "undertale", "best", "epic"}},
+    {button = newSongButton("TURKISH MARCH", {"mozart", "rondo alla turca"}), bpm = "92", var = false, url = "TURKISH", cat = {"classical"}},
+    {button = newSongButton("UNRAVEL (ANIMENZ ARR.)", {"tokyo ghoul", "animenz", "unravel epic"}), bpm = "132", var = false, url = "UNRAVEL_EPIC", cat = {"epic", "best", "beautiful", "peak", "movies/tv"}},
+    {button = newSongButton("SNOWFALL", {"oneheart"}), bpm = "96", var = false, url = "SNOWFALL", cat = {"beautiful", "sad", "best"}},
+    {button = newSongButton("BOHEMIAN RHAPSODY", {"queen"}), bpm = "80", var = false, url = "BOHEMIAN_RHAPSODY", cat = {"rock"}},
+    {button = newSongButton("RENAI CIRCULATION", {"bakemonogatari"}), bpm = "120", var = false, url = "RENAI_CIRCULATION", cat = {"anime/jpop", "memes", "best"}},
+    {button = newSongButton("WE NOT LIKE YOU", {"nettspend"}), bpm = "155", var = false, url = "WE_NOT_LIKE_U", cat = {"pop/hiphop", "memes"}},
+    {button = newSongButton("FLIGHT (MAN OF STEEL)", {"hans zimmer"}), bpm = "80", var = false, url = "FLIGHT", cat = {"movies/tv"}},
 }
+
+local sortedSongs = {}
+
+for _, song in ipairs(songs) do
+    table.insert(sortedSongs, song)
+end
+
+table.sort(sortedSongs, function(a, b)
+    return a.button.Name:lower() < b.button.Name:lower()
+end)
+
+for i, song in ipairs(sortedSongs) do
+    song.button.LayoutOrder = i + 1
+end
 
 for _, song in ipairs(songs) do
     print("song loaded: " .. song.button.Name)
@@ -800,8 +801,8 @@ local categories = {
     "classical",
     "pop/hiphop",
     "anime/jpop",
-    "seasonal",
     "sad",
+    "seasonal",
     "electronic",
     "rock",
     "creepy/weirdcore",
@@ -809,7 +810,8 @@ local categories = {
     "deltarune",
     "geometry dash",
     "minecraft",
-    "omori"
+    "omori",
+    "ddlc"
 } -- The main table for unique categories
 
 -- add the song category as one of its alternate names
@@ -1613,16 +1615,16 @@ end
 
 disable()
 
-songisplaying = false
+_G.songisplaying = false
 
 function playbuttonclicked()
-    if songisplaying then
+    if _G.songisplaying then
         NotificationLibrary:SendNotification("Error", translateText("songplayingerror"), 1)
         playSound("7383525713", 0.5)
         return
     end
 
-    songisplaying = true
+    _G.songisplaying = true -- the loader script turns this variable to false when the user stops the song or when the song ends
 
     bpm = tonumber(bpmbox.Text)
     if bpm == 0 or nil then
@@ -1644,7 +1646,7 @@ function playbuttonclicked()
             if songFound == false then
                 if song.var == true then
                     songscript = game:HttpGet(
-                        "https://cdn.jsdelivr.net/gh/hellohellohell012321/TALENTLESS/SONGS/" .. song.url,
+                        "https://hellohellohell0.com/talentless-raw/SONGS/" .. song.url,
                         true
                     )
                 songFound = true
@@ -1737,6 +1739,12 @@ LOOPRANDOM.MouseButton1Click:Connect(
         if playingall then
             return
         end
+
+        if _G.songisplaying then
+            NotificationLibrary:SendNotification("Error", translateText("songplayingerror"), 1)
+            return
+        end
+        
         playingall = true
         createstopbutton("looprandom")
 
@@ -1939,7 +1947,7 @@ print("loaded NEWSONGBUTTON")
 NEWSONGBUTTON.MouseButton1Click:Connect(
     function()
         loadstring(
-            game:HttpGet("https://cdn.jsdelivr.net/gh/hellohellohell012321/TALENTLESS/add_song.lua", true)
+            game:HttpGet("https://hellohellohell0.com/talentless-raw/add_song.lua", true)
         )()
     end
 )
@@ -1949,24 +1957,16 @@ local addedCustoms = {}
 local function patchCustomSongScript(code)
     local converted = code
     
-    -- Step 1: Convert raw.githubusercontent.com URLs to jsdelivr with @main
+    -- Step 1: Convert raw.githubusercontent.com URLs
     converted = converted:gsub(
-      "https://raw%.githubusercontent%.com/([^/]+)/([^/]+)/main/(.+)",
-      "https://cdn.jsdelivr.net/gh/%1/%2@main/%3"
+        "https://raw%.githubusercontent%.com/[^/]+/[^/]+/[^/]+/(.+)",
+        "https://hellohellohell0.com/talentless-raw/%1"
     )
-    
-    -- Step 2: Fix jsdelivr URLs missing @main (only if @ is not already present)
+
+    -- Step 2: Convert jsdelivr URLs (with or without @branch)
     converted = converted:gsub(
-      "https://cdn%.jsdelivr%.net/gh/([^/]+)/([^/]+)/([^/]+)",
-      function(user, repo, path)
-        local fullMatch = "https://cdn.jsdelivr.net/gh/" .. user .. "/" .. repo .. "/" .. path
-        -- If the URL already contains @, don't modify
-        if fullMatch:find("@") then
-          return fullMatch
-        end
-        -- Otherwise add @main/
-        return "https://cdn.jsdelivr.net/gh/" .. user .. "/" .. repo .. "@main/" .. path
-      end
+        "https://cdn%.jsdelivr%.net/gh/[^/]+/[^/@]+/?[^/]*/(.+)",
+        "https://hellohellohell0.com/talentless-raw/%1"
     )
     
     -- Step 3: Convert gist.githubusercontent.com URLs
@@ -2275,6 +2275,6 @@ print([[
 
 ]])
 
-print("Copyright (C) 2025 hellohellohell012321")
+print("Copyright (C) 2026 hellohellohell012321")
 
-loadstring(game:HttpGet("https://cdn.jsdelivr.net/gh/hellohellohell012321/TALENTLESS/logger.lua", true))()
+loadstring(game:HttpGet("https://hellohellohell0.com/talentless-raw/logger.lua", true))()
