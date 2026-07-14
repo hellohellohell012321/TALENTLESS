@@ -140,7 +140,7 @@ end
 end)
 
 copy.MouseButton1Click:Connect(function()
-    setclipboard("https://www.hellohellohell0.com")
+    setclipboard("https://www.hellohellohell0.com/discord")
     NotificationLibrary:SendNotification("Success", translateText("linkcopied"), 5)
     playSound(6493287948, 0.1)
     wait(0.5)
