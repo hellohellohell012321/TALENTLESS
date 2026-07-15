@@ -1,7 +1,7 @@
--- Gui to Lua
--- Version: 3.2
-
--- Instances:
+-- Copyright (C) 2026 hellohellohell012321
+-- All Rights Reserved. Licensed under a custom source-available license.
+-- See LICENSE file for details. Use, modification, or distribution
+-- requires prior written permission from the copyright holder.
 
 local ScreenGui = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
@@ -9,7 +9,7 @@ local title = Instance.new("TextLabel")
 local uic2 = Instance.new("UICorner")
 local info = Instance.new("TextLabel")
 local closeButton = Instance.new("TextButton")
-local ImageLabel = Instance.new("ImageLabel")
+local ImageLabel = Instance.new("ImageLa    bel")
 local TextLabel = Instance.new("TextLabel")
 
 local translator = loadstring(game:HttpGet("https://hellohellohell0.com/talentless-raw/translator.lua"))()
