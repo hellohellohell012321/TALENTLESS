@@ -1,3 +1,8 @@
+-- Copyright (C) 2026 hellohellohell012321
+-- All Rights Reserved. Licensed under a custom source-available license.
+-- See LICENSE file for details. Use, modification, or distribution
+-- requires prior written permission from the copyright holder.
+
 local TweenService = game:GetService("TweenService")
 local Players = game:GetService("Players")
 
