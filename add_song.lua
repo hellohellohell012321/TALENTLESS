@@ -1,5 +1,7 @@
--- Copyright (C) 2025 hellohellohell012321
--- Licensed under the GNU GPL v3. See LICENSE file for details.
+-- Copyright (C) 2026 hellohellohell012321
+-- All Rights Reserved. Licensed under a custom source-available license.
+-- See LICENSE file for details. Use, modification, or distribution
+-- requires prior written permission from the copyright holder.
 
 local NotificationLibrary = loadstring(game:HttpGet("https://hellohellohell0.com/talentless-raw/notif_lib.lua"))()
 
@@ -17,11 +19,6 @@ local function translateText(text)
     return translator:translateText(text) -- lang shouldve alr been set by main script.
 end
 
--- Gui to Lua
--- Version: 3.2
-
--- Instances:
-
 local addgui = Instance.new("ScreenGui")
 local newsongframe = Instance.new("Frame")
 local insertscript = Instance.new("TextBox")
@@ -30,8 +27,6 @@ local cancelButton = Instance.new("TextButton")
 local insertsongName = Instance.new("TextBox")
 local submitSong = Instance.new("TextButton")
 local UIListLayout = Instance.new("UIListLayout")
-
---Properties:
 
 addgui.Name = "addgui"
 addgui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
@@ -60,6 +55,8 @@ insertscript.Text = ""
 insertscript.TextColor3 = Color3.fromRGB(255, 255, 255)
 insertscript.TextSize = 14.000
 insertscript.TextWrapped = true
+insertscript.MultiLine = true
+insertscript.ClearTextOnFocus = false
 
 newsonglabel.Name = "newsonglabel"
 newsonglabel.Parent = newsongframe
