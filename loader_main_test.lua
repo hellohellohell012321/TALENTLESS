@@ -1,5 +1,7 @@
--- Copyright (C) 2025 hellohellohell012321
--- Licensed under the GNU GPL v3. See LICENSE file for details.
+-- Copyright (C) 2026 hellohellohell012321
+-- All Rights Reserved. Licensed under a custom source-available license.
+-- See LICENSE file for details. Use, modification, or distribution
+-- requires prior written permission from the copyright holder.
 
 _G.STOPIT = true
 
@@ -401,6 +403,7 @@ less.MouseButton1Click:Connect(
 VirtualInputManager = game:GetService("VirtualInputManager")
 
 local RunService = game:GetService("RunService")
+
 local function preciseWait(seconds)
     local start = os.clock()
     -- Busy wait for sub-frame precision, but yield if there's still > 0.015s left
