@@ -1,7 +1,7 @@
 -- Copyright (C) 2026 hellohellohell012321
--- Licensed under the GNU GPL v3. See LICENSE file for details.
-
--- PLEASE READ THE README.MD IN THIS REPOSITORY
+-- All Rights Reserved. Licensed under a custom source-available license.
+-- See LICENSE file for details. Use, modification, or distribution
+-- requires prior written permission from the copyright holder.
 
 local translator = loadstring(game:HttpGet("https://hellohellohell0.com/talentless-raw/translator.lua", true))()
 
