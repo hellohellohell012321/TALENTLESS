@@ -1,5 +1,7 @@
--- Copyright (C) 2025 hellohellohell012321
--- Licensed under the GNU GPL v3. See LICENSE file for details.
+-- Copyright (C) 2026 hellohellohell012321
+-- All Rights Reserved. Licensed under a custom source-available license.
+-- See LICENSE file for details. Use, modification, or distribution
+-- requires prior written permission from the copyright holder.
 
 _G.STOPIT = false
 
@@ -346,7 +348,7 @@ pausebutton.MouseButton1Click:Connect(pauseSong)
 
 stopbutton.MouseButton1Click:Connect(stopPlayingSongs)
 
-local function updatebpmtext()
+function updatebpmtext()
     bpmtext.Text = "BPM: " .. tostring(bpm)
 end
 
