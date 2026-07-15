@@ -1,3 +1,8 @@
+-- Copyright (C) 2026 hellohellohell012321
+-- All Rights Reserved. Licensed under a custom source-available license.
+-- See LICENSE file for details. Use, modification, or distribution
+-- requires prior written permission from the copyright holder.
+
 local NotificationLibrary = loadstring(game:HttpGet("https://hellohellohell0.com/talentless-raw/notif_lib.lua"))()
 
 local function playSound(soundId, loudness)
@@ -140,7 +145,7 @@ end
 end)
 
 copy.MouseButton1Click:Connect(function()
-    setclipboard("https://www.hellohellohell0.com/discord")
+    setclipboard("https://www.hellohellohell0.com")
     NotificationLibrary:SendNotification("Success", translateText("linkcopied"), 5)
     playSound(6493287948, 0.1)
     wait(0.5)
