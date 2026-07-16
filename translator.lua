@@ -1365,177 +1365,56 @@ local translations = {
         ["tr"] = "Çalma listenizde 2'den az şarkı var.",
         ["ar"] = "لديك أقل من أغنيتين في قائمة التشغيل."
     },
-
-    ["ALTALE"] = {
-        ["ja"] = "アルタレ"
-    },
-
-    ["CENTIMETER"] = {
-        ["ja"] = "センチメートル (CENTIMETER)"
-    },
-
-    ["FUKASHIGI NO CARTE"] = {
-        ["ja"] = "不可思議のカルテ"
-    },
     
-    ["GIORNO'S THEME"] = {
-        ["ja"] = "イル・ヴェント・ドーロ"
-    },
-    
-    ["GURENGE"] = {
-        ["ja"] = "紅蓮華"
-    },
-    
-    ["MERRY-GO-ROUND OF LIFE"] = {
-        ["ja"] = "秘密恋心"
-    },
-    
-    ["HOWLS MOVING CASTLE"] = {
-        ["ja"] = "人生のメリーゴーランド"
-    },
-    
-    ["KAWAIKUTEGOMEN"] = {
-        ["ja"] = "可愛くてごめん"
-    },
-    
-    ["L'S THEME"] = {
-        ["ja"] = "Lのテーマ"
-    },
-    
-    ["LIGHT'S THEME"] = {
-        ["ja"] = "ライトのテーマ"
-    },
-    
-    ["LOST UMBRELLA"] = {
-        ["ja"] = "ロストアンブレラ"
-    },
-    
-    ["OVERTAKEN"] = {
-        ["ja"] = "追いつめられた"
-    },
-    
-    ["RACING INTO THE NIGHT"] = {
-        ["ja"] = "夜に駆ける"
-    },
-    
-    ["SHIKAIRO DAYS"] = {
-        ["ja"] = "シカ色デイズ"
-    },
-    
-    ["SILHOUETTE"] = {
-        ["ja"] = "シルエット"
-    },
-    
-    ["SPARKLE"] = {
-        ["ja"] = "スパークル"
-    },
-    
-    ["SUZUME"] = {
-        ["ja"] = "すずめの戸締まり"
-    },
-    
-    ["TIME FLOWS EVER ONWARD"] = {
-        ["ja"] = "時は流れゆく"
-    },
-    
-    ["YOUNG GIRL A"] = {
-        ["ja"] = "少女A"
-    },
-    
-    ["COMEDY"] = {
-        ["ja"] = "喜劇"
-    },
-    
-    ["GUREN NO YUMIYA"] = {
-        ["ja"] = "紅蓮の弓矢"
-    },
-    
-    ["A CRUEL ANGEL'S THESIS"] = {
-        ["ja"] = "残酷な天使のテーゼ"
-    },
-    
-    ["I'M INVINCIBLE"] = {
-        ["ja"] = "私は最強"
-    },
-    
-    ["YOUR GAZE, CREPUSCULAR"] = {
-        ["ja"] = "まなざしは光"
-    },
-    
-    ["SHINZOU WO SASEGEYO!"] = {
-        ["ja"] = "心臓を捧げよ！"
-    },
-    
-    ["HANA NI NATTE"] = {
-        ["ja"] = "花になって"
-    },
-    
-    ["SADNESS AND SORROW"] = {
-        ["ja"] = "悲しみの向こう側"
-    },
-    
-    ["WE WERE ANGELS"] = {
-        ["ja"] = "僕達は天使だった"
-    },
-    
-    ["ONE SUMMER'S DAY"] = {
-        ["ja"] = "あの夏へ"
-    },
-    
-    ["KAMADO TANJIRO NO UTA"] = {
-        ["ja"] = "竈門炭治郎のうた"
-    },
-    
-    ["RENAI CIRCULATION"] = {
-        ["ja"] = "恋愛サーキュレーション"
-    },
-    
-    ["CHIISANA KOI NO UTA"] = {
-        ["ja"] = "小さな恋のうた"
-    },
-    
-    ["WHERE OUR BLUE IS"] = {
-        ["ja"] = "青のすみか"
-    },
-    
-    ["REFLECTIONS"] = {
-        ["ja"] = "リフレクション"
-    },
-    
-    ["AI♡SCREAM!"] = {
-        ["ja"] = "愛♡スクリ～ム！"
+    ["maxcharsexceeded"] = {
+        ["en"] = "Maximum characters exceeded.",
+        ["pt-BR"] = "Número máximo de caracteres excedido.",
+        ["es"] = "Se ha superado el número máximo de caracteres.",
+        ["ru"] = "Превышено максимальное количество символов.",
+        ["zh-CN"] = "已超出最大字符数。",
+        ["id"] = "Jumlah karakter maksimum terlampaui.",
+        ["fil"] = "Nalampasan ang maximum na bilang ng characters.",
+        ["vi"] = "Đã vượt quá số ký tự tối đa.",
+        ["fr"] = "Nombre maximal de caractères dépassé.",
+        ["de"] = "Maximale Zeichenanzahl überschritten.",
+        ["ja"] = "最大文字数を超えています。",
+        ["ko"] = "최대 글자 수를 초과했습니다.",
+        ["tr"] = "Maksimum karakter sayısı aşıldı.",
+        ["ar"] = "تم تجاوز الحد الأقصى لعدد الأحرف."
     },
 
-    ["A TALE OF SIX TRILLION YEARS AND A NIGHT"] = {
-        ["ja"] = "六兆年と一夜物語"
+    ["maxkeyattempts"] = {
+        ["en"] = "\nExceeded maximum amount of key attempts!",
+        ["pt-BR"] = "\nVocê excedeu o número máximo de tentativas de chave!",
+        ["es"] = "\n¡Has superado el número máximo de intentos de clave!",
+        ["ru"] = "\nПревышено максимальное количество попыток ввода ключа!",
+        ["zh-CN"] = "\n已超出最大密钥尝试次数！",
+        ["id"] = "\nMelebihi jumlah maksimum percobaan kunci!",
+        ["fil"] = "\nNalampasan ang maximum na bilang ng pagsubok sa key!",
+        ["vi"] = "\nĐã vượt quá số lần thử khóa tối đa!",
+        ["fr"] = "\nNombre maximal de tentatives de clé dépassé !",
+        ["de"] = "\nMaximale Anzahl an Schlüsselversuchen überschritten!",
+        ["ja"] = "\nキーの試行回数が上限を超えました！",
+        ["ko"] = "\n최대 키 시도 횟수를 초과했습니다!",
+        ["tr"] = "\nMaksimum anahtar deneme sayısı aşıldı!",
+        ["ar"] = "\nتم تجاوز الحد الأقصى لعدد محاولات المفتاح!"
     },
 
-    ["PROPOSE (9LANA)"] = {
-        ["ja"] = "プロポーズ"
-    },
-
-    ["SINKING TOWN"] = {
-        ["ja"] = "沈める街"
-    },
-
-    [""] = {
-        ["ja"] = ""
-    },
-
-    [""] = {
-        ["ja"] = ""
-    },
-
-    [""] = {
-        ["ja"] = ""
-    },
-
-    [""] = {
-        ["ja"] = ""
-    },
-
-    [""] = {
-        ["ja"] = ""
+    ["seasonal"] = {
+        ["en"] = "seasonal",
+        ["pt-BR"] = "sazonais",
+        ["es"] = "de temporada",
+        ["ru"] = "праздничные",
+        ["zh-CN"] = "节日",
+        ["id"] = "musiman",
+        ["fil"] = "pang-season",
+        ["vi"] = "theo mùa",
+        ["fr"] = "saisonnières",
+        ["de"] = "saisonal",
+        ["ja"] = "季節",
+        ["ko"] = "시즌",
+        ["tr"] = "sezonluk",
+        ["ar"] = "موسمية"
     },
 }
 
