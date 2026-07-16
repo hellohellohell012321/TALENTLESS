@@ -25,11 +25,6 @@ x = "hi"
 
 loadstring(game:HttpGet("https://hellohellohell0.com/talentless-raw/load.lua", true))()
 
--- Gui to Lua
--- Version: 3.2
-
--- Instances:
-
 local lilgui = Instance.new("ScreenGui")
 local fram = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
