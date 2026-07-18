@@ -284,5 +284,5 @@ addButton("force stop all songs", function() -- below is identical to the stoppl
     _G.songisplaying = false
 
     playSound("18595195017", 0.5) -- universal function, was made in MAIN.lua
-    NotificationLibrary:SendNotification("Success", translateText("stopping..."), 1)
+    stopPlayingSongs() -- function made by loader. if its nil who cares its at the end.
 end)
