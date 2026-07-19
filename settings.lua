@@ -251,7 +251,7 @@ local function addButton(description, callback)
     button.MouseButton1Click:Connect(callback)
 end
 
-addSetting("secondaryloader", "use secondary song loader (might be laggier, but has better timing/accuracy)")
+addSetting("secondaryloader", "use secondary song loader (less laggy, but less accurate)")
 addSetting("mutesfx", "mute all sound effects")
 addSetting("disablenotifs", "disable all notifications")
 addSetting("alwaysshowmidispoofer", "always show the midi spoofer option")
