@@ -13,7 +13,11 @@ local function translateText(text)
     return translator:translateText(text) -- lang shouldve alr been set by main script.
 end
 
-function playSound(soundId, loudness)
+local function playSound(soundId, loudness)
+    if _G.talentlessSettings and _G.talentlessSettings["mutesfx"] == true then
+        return
+    end
+    
     local sound = Instance.new("Sound")
     sound.SoundId = "rbxassetid://" .. soundId
     sound.Parent = game.Players.LocalPlayer.Character or game.Players.LocalPlayer
@@ -133,7 +137,7 @@ errorbox.BorderSizePixel = 4
 errorbox.Position = UDim2.new(0.129282534, -2, 0.505622864, 0)
 errorbox.Size = UDim2.new(0, 117, 0, 31)
 errorbox.Font = Enum.Font.SourceSansBold
-errorbox.Text = "error margin: 0.00"
+errorbox.Text = translateText("error margin") .. "0"
 errorbox.TextColor3 = Color3.fromRGB(255, 255, 255)
 errorbox.TextScaled = true
 errorbox.TextSize = 14.000
@@ -278,9 +282,6 @@ function stopPlayingSongs()
     function pressKey(keys, beats, bpm)
     end
 
-    function pressnote(note, octave, beats, bpm)
-    end
-
     function rest(beats, bpm)
     end
 
@@ -367,20 +368,20 @@ if not errormargin then
 else
 end
 
-local function updateErrorMargin()
-    errorbox.Text = translateText("error margin") .. tostring(errormargin)
-end
-
-updateErrorMargin()
-
 local function round(num, decimalPlaces)
     local mult = 10 ^ decimalPlaces
     return math.floor(num * mult + 0.5) / mult
 end
 
+local function updateErrorMargin()
+    errorbox.Text = translateText("error margin") .. tostring(round(errormargin * 100, 2))
+end
+
+updateErrorMargin()
+
 more.MouseButton1Click:Connect(
     function()
-        errormargin = round(errormargin + 0.005, 3)
+        errormargin = round(errormargin + 0.01, 3)
         updateErrorMargin()
     end
 )
@@ -390,25 +391,12 @@ less.MouseButton1Click:Connect(
         if errormargin <= 0 then
             return
         end
-        errormargin = round(errormargin - 0.005, 3)
+        errormargin = round(errormargin - 0.01, 3)
         updateErrorMargin()
     end
 )
 
 VirtualInputManager = game:GetService("VirtualInputManager")
-
-local RunService = game:GetService("RunService")
-
-local function preciseWait(seconds)
-    local start = os.clock()
-    -- Busy wait for sub-frame precision, but yield if there's still > 0.015s left
-    while os.clock() - start < seconds do
-        if seconds - (os.clock() - start) > 0.015 then
-            RunService.Heartbeat:Wait()
-        end
-    end
-end
-
 
 -- PLAYHEAD FUNCTIONS
 -- PLAYHEAD FUNCTIONS
@@ -541,7 +529,7 @@ function skipToPercentage(percentage)
             local action = song[i]
             
             if action.type == "keypress" then
-                keypresstrigger(action.keys, action.beats, bpm)
+                keypresstrigger(action.keys, action.beats, bpm, (action.mergeCount or 1) > 1)
             elseif action.type == "rest" then
                 resttrigger(action.beats, bpm)
             elseif action.type == "adjustVelocity" then
@@ -552,8 +540,6 @@ function skipToPercentage(percentage)
                 pedalUptrigger()
             elseif action.type == "finishedSong" then
                 finishedSongtrigger()
-            elseif action.type == "pressnote" then
-                pressnotetrigger(action.note, action.octave, action.beats, bpm)
             end
         end
     end)
@@ -591,7 +577,7 @@ local keyMappings = {
     ["n"] = Enum.KeyCode.N, ["N"] = Enum.KeyCode.N, ["m"] = Enum.KeyCode.M, ["M"] = Enum.KeyCode.M
 }
 
-local function pressKey(keys, beats, bpm)
+local function pressKey(keys, beats, bpm, isChord)
     if _G.STOPIT then return end
 
     local shiftApplied = false
@@ -618,170 +604,109 @@ local function pressKey(keys, beats, bpm)
         table.insert(table.find(shiftKeys, key) and shiftRequired or nonShift, key)
     end
 
-    -- Press non-shift keys first
-    for _, key in ipairs(nonShift) do
-
-        local agf = errormargin * 100 -- so 0.01 is 1
-        if math.random(1, 500) <= agf then -- 0.01 is 1/175 chance, 0.04 is 4/175 which is a 2.3%
-            VirtualInputManager:SendKeyEvent(true, Enum.KeyCode.LeftShift, false, game) -- shift if it applies
-            shiftApplied = true
-            print("shift applied")
+    local function triggerPress(key, shift)
+        if errormargin ~= 0 then
+            if math.random() < 0.5 then -- 50% chance to apply jitter
+                task.wait((math.random() - 0.5) * errormargin)
+            end
         end
 
+        if shift then
+            VirtualInputManager:SendKeyEvent(true, Enum.KeyCode.LeftShift, false, game)
+        end
+
+        if not _G.talentlessSettings or
+        _G.talentlessSettings and _G.talentlessSettings["disablefakeaccidents"] == false then
+            local agf = errormargin * 100 -- so 0.01 is 1
+            if math.random(1, 1000) <= agf then
+                VirtualInputManager:SendKeyEvent(not shift, Enum.KeyCode.LeftShift, false, game) -- shift/unshift if it applies
+                shiftApplied = true
+                print("shift/unshift applied")
+            end
+        end
+        
+        if ctrlRequired then
+            VirtualInputManager:SendKeyEvent(true, Enum.KeyCode.LeftControl, false, game)
+        end
+        
+        VirtualInputManager:SendKeyEvent(true, keyMappings[key], false, game)
+
+        if ctrlRequired then
+            VirtualInputManager:SendKeyEvent(false, Enum.KeyCode.LeftControl, false, game)
+        end
+
+        if shiftApplied == true then
+            if not shift then
+                VirtualInputManager:SendKeyEvent(false, Enum.KeyCode.LeftShift, false, game) -- turn shift off if shift was applied to a non-shift
+                shiftApplied = false
+            end
+        end
+
+        if shift then
+            VirtualInputManager:SendKeyEvent(false, Enum.KeyCode.LeftShift, false, game)
+        end
+
+        local waittime
+        local randomOff
+
+        if shorts == false then
+            local noteTime = (beats / bpm) * 60
+            local maxRan = noteTime * 0.4 -- 40% of note hold time
+            randomOff = math.random() * maxRan -- num from 0 to maxRan
+            waittime = noteTime * 0.9 - randomOff -- note is held from 0.5-0.9 of its original duration.
+
+            if errormargin ~= 0 then
+                local extraSpread = noteTime * errormargin * 2 
+                waittime = waittime + (math.random() * 2 - 1) * extraSpread
+            end
+        else -- if short notes...
+            local baseMin, baseMax = 0.03, 0.08
+            if errormargin ~= 0 then
+                baseMin = baseMin - errormargin / 4 
+                baseMax = baseMax + errormargin / 4
+            end
+            baseMin = math.max(baseMin, 0.02) -- floor so it never goes negative/too tiny
+
+            waittime = baseMin + math.random() * (baseMax - baseMin)
+        end
+        
+        task.wait(waittime)
+        
+        VirtualInputManager:SendKeyEvent(false, keyMappings[key], false, game)
+    end
+
+    -- Press non-shift keys first
+    for _, key in ipairs(nonShift) do
         coroutine.wrap(
             function()
-                
-                if ctrlRequired then
-                    VirtualInputManager:SendKeyEvent(true, Enum.KeyCode.LeftControl, false, game)
-                end
-
-                VirtualInputManager:SendKeyEvent(true, keyMappings[key], false, game)
-
-                if ctrlRequired then
-                    VirtualInputManager:SendKeyEvent(false, Enum.KeyCode.LeftControl, false, game)
-                end
-
-                if shiftApplied == true then
-                    VirtualInputManager:SendKeyEvent(false, Enum.KeyCode.LeftShift, false, game) -- turn shift off if shift was applied
-                    shiftApplied = false
-                end
-
-                local waittime
-                local randomOff
-
-                if shorts == false then
-                    local maxRan = (beats / bpm) * 60 / 2 -- half of note hold time
-                    randomOff = math.random() * maxRan -- num from 0 to maxRan (half of note hold time)
-                    waittime = (beats / bpm) * 60 - randomOff
-                else -- beats to time, or if short notes...
-                    waittime = math.random(3, 8) / 100 -- random number from 0.03 to 0.08
-                end
-                
-                preciseWait(waittime)
-                
-                VirtualInputManager:SendKeyEvent(false, keyMappings[key], false, game)
+                triggerPress(key, false)
             end
         )()
-
-        if errormargin ~= 0 then
+        if isChord and errormargin ~= 0 then
             if math.random() < 0.5 then -- 50% chance to apply delay
-                preciseWait(math.random() * errormargin / 3) -- make the delay 0-half of the error margin
+                task.wait((math.random() - 0.5) * errormargin)
             end
-        else end
+        end
     end
 
     -- Press shift-required keys
     if #shiftRequired > 0 then
         for _, key in ipairs(shiftRequired) do
-            
-            VirtualInputManager:SendKeyEvent(true, Enum.KeyCode.LeftShift, false, game)
-            
-            local agf = errormargin * 100 -- so 0.01 is 1
-            if math.random(1, 500) <= agf then -- 0.01 is 1/200 chance, 0.04 is 4/200
-                VirtualInputManager:SendKeyEvent(false, Enum.KeyCode.LeftShift, false, game) -- unshift if it applies
-                unshiftApplied = true
-                print("unshift applied")
-            end
-
             coroutine.wrap(
                 function()
-                    
-                    if ctrlRequired then
-                        VirtualInputManager:SendKeyEvent(true, Enum.KeyCode.LeftControl, false, game)
-                    end
-    
-                    VirtualInputManager:SendKeyEvent(true, keyMappings[key], false, game)
-    
-                    if ctrlRequired then
-                        VirtualInputManager:SendKeyEvent(false, Enum.KeyCode.LeftControl, false, game)
-                    end
-
-                    if unshiftApplied == false then
-                        VirtualInputManager:SendKeyEvent(false, Enum.KeyCode.LeftShift, false, game)
-                    end
-
-                    local waittime
-                    local randomOff
-
-                    if shorts == false then
-                        local maxRan = (beats / bpm) * 60 / 2 -- half of note hold time
-                        randomOff = math.random() * maxRan -- num from 0 to maxRan (half of note hold time)
-                        waittime = (beats / bpm) * 60 - randomOff
-                    else
-
-                        waittime = math.random(4, 12) / 100 -- beats to secs, OR random number from 0.044 to 0.12
-                    end
-                    preciseWait(waittime)
-
-                    VirtualInputManager:SendKeyEvent(false, keyMappings[key], false, game)
+                    triggerPress(key, true)
                 end
             )()
-
-            if errormargin ~= 0 then
+            if isChord and errormargin ~= 0 then
                 if math.random() < 0.5 then -- 50% chance to apply delay
-                    preciseWait(math.random() * errormargin / 3)
+                    task.wait((math.random() - 0.5) * errormargin)
                 end
-            else
             end
         end
     end
 
     if ctrlRequired then
         VirtualInputManager:SendKeyEvent(false, Enum.KeyCode.LeftControl, false, game)
-    end
-
-    if errormargin ~= 0 then
-        preciseWait(math.random() * (errormargin * 2)) -- make the delay 0-half of the error margin
-    else end
-end
-
--- PRESSNOTE FUNCTION
--- PRESSNOTE FUNCTION
--- PRESSNOTE FUNCTION
-
--- note mappings to vp keys
-
-local noteMappings = {
-    ["C"] = {[1] = "1", [2] = "8", [3] = "t", [4] = "s", [5] = "l", [6] = "m"},
-    ["C#"] = {[1] = "!", [2] = "*", [3] = "T", [4] = "S", [5] = "L"},
-    ["D"] = {[1] = "2", [2] = "9", [3] = "y", [4] = "d", [5] = "z"},
-    ["D#"] = {[1] = "@", [2] = "(", [3] = "Y", [4] = "D", [5] = "Z"},
-    ["E"] = {[1] = "3", [2] = "0", [3] = "u", [4] = "f", [5] = "x"},
-    ["F"] = {[1] = "4", [2] = "q", [3] = "i", [4] = "g", [5] = "c"},
-    ["F#"] = {[1] = "$", [2] = "Q", [3] = "I", [4] = "G", [5] = "C"},
-    ["G"] = {[1] = "5", [2] = "w", [3] = "o", [4] = "h", [5] = "v"},
-    ["G#"] = {[1] = "%", [2] = "W", [3] = "O", [4] = "H", [5] = "V"},
-    ["A"] = {[1] = "6", [2] = "e", [3] = "p", [4] = "j", [5] = "b"},
-    ["A#"] = {[1] = "^", [2] = "E", [3] = "P", [4] = "J", [5] = "B"},
-    ["B"] = {[1] = "7", [2] = "r", [3] = "a", [4] = "k", [5] = "n"}
-}
-
--- press function
-function pressnote(note, octave, beats, bpm)
-    table.insert(song, {
-        type = "pressnote",
-        note = note,
-        octave = octave,
-        beats = beats
-    })
-end
-
-function pressnotetrigger(note, octave, beats, bpm)
-    if _G.STOPIT then return end
-    if pausing then
-        resumeEvent.Event:Wait()
-    end
-
-    local key = noteMappings[note] and noteMappings[note][octave]
-    if key then
-        -- press it asynchronously
-        coroutine.wrap(
-            function()
-                pressKey(key, beats, bpm) -- pass args to presskey
-            end
-        )()
-    else
-        warn("Invalid note or octave: " .. tostring(note) .. " octave " .. tostring(octave))
     end
 end
 
@@ -791,22 +716,29 @@ end
 
 -- the one used in most talentless songs
 function keypress(keys, beats, bpm) -- bpm will not be added to the table, because it can be changed.
-    table.insert(song, {
-        type = "keypress",
-        keys = keys,
-        beats = beats
-    })
+    local last = song[#song]
+
+    if last and last.type == "keypress" and last.beats == beats and keys:sub(1,5) ~= "Ctrl+" and last.keys:sub(1,5) ~= "Ctrl+" then
+        last.keys = last.keys .. keys
+        last.mergeCount = (last.mergeCount or 1) + 1
+    else
+        table.insert(song, {
+            type = "keypress",
+            keys = keys,
+            beats = beats,
+            mergeCount = 1
+        })
+    end
 end
 
-function keypresstrigger(keys, beats, bpm)
+function keypresstrigger(keys, beats, bpm, isChord)
     if _G.STOPIT then return end
     if pausing then
         resumeEvent.Event:Wait()
-    else
     end
     coroutine.wrap(
         function()
-            pressKey(keys, beats, bpm)
+            pressKey(keys, beats, bpm, isChord)
         end
     )()
 end
@@ -858,12 +790,7 @@ function resttrigger(beats, bpm)
     if _G.STOPIT then return end
     
     local waitTime = (beats / bpm) * 60
-    if errormargin == 0 then
-        preciseWait(waitTime)
-    else
-        local randomOffset = (math.random() * 2 - 1) * (errormargin / 2)
-        preciseWait(waitTime + randomOffset)
-    end
+    task.wait(waitTime)
     
     -- update playhead stuffs
     currentSongPosition = currentSongPosition + beats
@@ -916,7 +843,7 @@ songThread = task.spawn(function()
         local action = song[i]
         
         if action.type == "keypress" then
-            keypresstrigger(action.keys, action.beats, bpm)
+            keypresstrigger(action.keys, action.beats, bpm, (action.mergeCount or 1) > 1)
         elseif action.type == "rest" then
             resttrigger(action.beats, bpm)
         elseif action.type == "adjustVelocity" then
@@ -927,8 +854,6 @@ songThread = task.spawn(function()
             pedalUptrigger()
         elseif action.type == "finishedSong" then
             finishedSongtrigger()
-        elseif action.type == "pressnote" then
-            pressnotetrigger(action.note, action.octave, action.beats, bpm)
         end
     end
 end)
@@ -938,7 +863,6 @@ watcher = task.spawn(function()
         if _G.STOPIT then
             song = {}
             task.cancel(songThread)
-            task.cancel(watcher)
             return
         end
     end
