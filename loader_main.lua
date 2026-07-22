@@ -717,7 +717,7 @@ local function noteHoldWait(beats, bpm, shorts)
     local waittime
     local randomOff
 
-    if shorts == false then
+    if not shorts then
         local noteTime = (beats / bpm) * 60
         local maxRan = noteTime * 0.4 -- 40% of note hold time
         randomOff = math.random() * maxRan -- num from 0 to maxRan
@@ -728,7 +728,12 @@ local function noteHoldWait(beats, bpm, shorts)
             waittime = waittime + (math.random() * 2 - 1) * extraSpread
         end
     else -- if short notes...
-        local baseMin, baseMax = 0.02, 0.09
+        local beatDuration = 60 / bpm          -- length of one beat in seconds
+        local safeCeiling = beatDuration / 8 -- never take up more than half a beat
+
+        local baseMin = 0.01
+        local baseMax = math.max(0.09, safeCeiling)
+
         if errormargin ~= 0 then
             baseMax = baseMax + errormargin / 2
         end
