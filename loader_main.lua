@@ -3,7 +3,7 @@
 -- See LICENSE file for details. Use, modification, or distribution
 -- requires prior written permission from the copyright holder.
 
-_G.STOPIT = true
+_G.STOPIT = false
 
 local NotificationLibrary = loadstring(game:HttpGet("https://hellohellohell0.com/talentless-raw/notif_lib.lua"))()
 
@@ -305,6 +305,17 @@ function stopPlayingSongs()
     lilgui:Destroy()
 end
 
+if _G.toggleUiTalentless and _G.toggleUiTalentless:IsA("TextButton") then
+    _G.toggleUiTalentless.MouseButton1Click:Connect(function()
+        fram.Visible = not fram.Visible
+        if fram.Visible then
+            playSound(70452176150315, 0.1)
+        else
+            playSound(1524549907, 0.1)
+        end
+    end)
+end
+
 function finishedSong()
     table.insert(song, {
         type = "finishedSong"
@@ -490,7 +501,7 @@ function getSkipIndex(percentage) -- function to return the part of the song to 
     local targetBeats = (percentage / 100) * totalBeats
     local currentBeats = 0
     local targetIndex = 1
-    
+       
     for i, action in pairs(song) do
         if action.type == "rest" then
             currentBeats = currentBeats + action.beats
@@ -561,6 +572,119 @@ end
 -- PRESSKEY FUNCTION
 -- PRESSKEY FUNCTION
 
+local midiKeyMappings = {
+    ["Ctrl+1"] = 21,    -- A0
+    ["Ctrl+2"] = 22,    -- A#0/Bb0  
+    ["Ctrl+3"] = 23,    -- B0
+
+    ["Ctrl+4"] = 24,    -- C1
+    ["Ctrl+5"] = 25,    -- C#1/Db1
+    ["Ctrl+6"] = 26,    -- D1
+    ["Ctrl+7"] = 27,    -- D#1/Eb1
+    ["Ctrl+8"] = 28,    -- E1
+    ["Ctrl+9"] = 29,    -- F1
+    ["Ctrl+0"] = 30,    -- F#1/Gb1
+    ["Ctrl+q"] = 31,    -- G1
+    ["Ctrl+w"] = 32,    -- G#1/Ab1
+    ["Ctrl+e"] = 33,    -- A1
+    ["Ctrl+r"] = 34,    -- A#1/Bb1
+    ["Ctrl+t"] = 35,    -- B1
+
+    ["1"] = 36,         -- C2
+    ["!"] = 37,         -- C#2/Db2 (Shift+1)
+    ["2"] = 38,         -- D2
+    ["@"] = 39,         -- D#2/Eb2 (Shift+2)
+    ["3"] = 40,         -- E2
+    ["4"] = 41,         -- F2
+    ["$"] = 42,         -- F#2/Gb2 (Shift+4)
+    ["5"] = 43,         -- G2
+    ["%"] = 44,         -- G#2/Ab2 (Shift+5)
+    ["6"] = 45,         -- A2
+    ["^"] = 46,         -- A#2/Bb2 (Shift+6)
+    ["7"] = 47,         -- B2
+
+    ["8"] = 48,         -- C3
+    ["*"] = 49,         -- C#3/Db3 (Shift+8)
+    ["9"] = 50,         -- D3
+    ["("] = 51,         -- D#3/Eb3 (Shift+9)
+    ["0"] = 52,         -- E3
+    ["q"] = 53,         -- F3
+    ["Q"] = 54,         -- F#3/Gb3 (Shift+q)
+    ["w"] = 55,         -- G3
+    ["W"] = 56,         -- G#3/Ab3 (Shift+w)
+    ["e"] = 57,         -- A3
+    ["E"] = 58,         -- A#3/Bb3 (Shift+e)
+    ["r"] = 59,         -- B3
+
+    ["t"] = 60,         -- C4 (Middle C)
+    ["T"] = 61,         -- C#4/Db4 (Shift+t)
+    ["y"] = 62,         -- D4
+    ["Y"] = 63,         -- D#4/Eb4 (Shift+y)
+    ["u"] = 64,         -- E4
+    ["i"] = 65,         -- F4
+    ["I"] = 66,         -- F#4/Gb4 (Shift+i)
+    ["o"] = 67,         -- G4
+    ["O"] = 68,         -- G#4/Ab4 (Shift+o)
+    ["p"] = 69,         -- A4 (440Hz)
+    ["P"] = 70,         -- A#4/Bb4 (Shift+p)
+    ["a"] = 71,         -- B4
+
+    ["s"] = 72,         -- C5
+    ["S"] = 73,         -- C#5/Db5 (Shift+s)
+    ["d"] = 74,         -- D5
+    ["D"] = 75,         -- D#5/Eb5 (Shift+d)
+    ["f"] = 76,         -- E5
+    ["g"] = 77,         -- F5
+    ["G"] = 78,         -- F#5/Gb5 (Shift+g)
+    ["h"] = 79,         -- G5
+    ["H"] = 80,         -- G#5/Ab5 (Shift+h)
+    ["j"] = 81,         -- A5
+    ["J"] = 82,         -- A#5/Bb5 (Shift+j)
+    ["k"] = 83,         -- B5
+
+    ["l"] = 84,         -- C6
+    ["L"] = 85,         -- C#6/Db6 (Shift+l)
+    ["z"] = 86,         -- D6
+    ["Z"] = 87,         -- D#6/Eb6 (Shift+z)
+    ["x"] = 88,         -- E6
+    ["c"] = 89,         -- F6
+    ["C"] = 90,         -- F#6/Gb6 (Shift+c)
+    ["v"] = 91,         -- G6
+    ["V"] = 92,         -- G#6/Ab6 (Shift+v)
+    ["b"] = 93,         -- A6
+    ["B"] = 94,         -- A#6/Bb6 (Shift+b)
+    ["n"] = 95,         -- B6
+
+    ["m"] = 96,         -- C7
+    ["M"] = 97,         -- C#7/Db7 (Shift+m)
+    ["Ctrl+u"] = 98,    -- D7
+    ["Ctrl+i"] = 99,    -- D#7/Eb7
+    ["Ctrl+o"] = 100,   -- E7
+    ["Ctrl+p"] = 101,   -- F7
+    ["Ctrl+a"] = 102,   -- F#7/Gb7
+    ["Ctrl+s"] = 103,   -- G7
+    ["Ctrl+d"] = 104,   -- G#7/Ab7
+    ["Ctrl+f"] = 105,   -- A7
+    ["Ctrl+g"] = 106,   -- A#7/Bb7
+    ["Ctrl+h"] = 107,   -- B7
+    ["Ctrl+j"] = 108,   -- C8
+}
+
+local midiNumpadMappings = {
+    [0] = Enum.KeyCode.KeypadZero,        -- NUM0
+    [1] = Enum.KeyCode.KeypadOne,         -- NUM1  
+    [2] = Enum.KeyCode.KeypadTwo,         -- NUM2
+    [3] = Enum.KeyCode.KeypadThree,       -- NUM3
+    [4] = Enum.KeyCode.KeypadFour,        -- NUM4
+    [5] = Enum.KeyCode.KeypadFive,        -- NUM5
+    [6] = Enum.KeyCode.KeypadSix,         -- NUM6
+    [7] = Enum.KeyCode.KeypadSeven,       -- NUM7
+    [8] = Enum.KeyCode.KeypadEight,       -- NUM8
+    [9] = Enum.KeyCode.KeypadNine,        -- NUM9
+    [10] = Enum.KeyCode.KeypadMinus,      -- - (minus)
+    [11] = Enum.KeyCode.KeypadPlus        -- + (plus)
+}
+
 local shiftKeys = {
     "!","@","#","$","%","^","&","*","(",")",
     "Q","W","E","R","T","Y","U","I","O","P",
@@ -589,8 +713,37 @@ local keyMappings = {
     ["n"] = Enum.KeyCode.N, ["N"] = Enum.KeyCode.N, ["m"] = Enum.KeyCode.M, ["M"] = Enum.KeyCode.M
 }
 
-local function pressKey(keys, beats, bpm, isChord)
-    if _G.STOPIT then return end
+local function noteHoldWait(beats, bpm, shorts)
+    local waittime
+    local randomOff
+
+    if shorts == false then
+        local noteTime = (beats / bpm) * 60
+        local maxRan = noteTime * 0.4 -- 40% of note hold time
+        randomOff = math.random() * maxRan -- num from 0 to maxRan
+        waittime = noteTime * 0.9 - randomOff -- note is held from 0.5-0.9 of its original duration.
+
+        if errormargin ~= 0 then
+            local extraSpread = noteTime * errormargin * 2 
+            waittime = waittime + (math.random() * 2 - 1) * extraSpread
+        end
+    else -- if short notes...
+        local baseMin, baseMax = 0.02, 0.09
+        if errormargin ~= 0 then
+            baseMax = baseMax + errormargin / 2
+        end
+
+        waittime = baseMin + math.random() * (baseMax - baseMin)
+    end
+
+    task.wait(waittime)
+end
+
+local function triggerPress(key, beats, bpm, shift, ctrlRequired)
+
+    if not keyMappings[key] and not midiKeyMappings[key] then
+        return
+    end
 
     local shiftApplied = false
     local unshiftApplied = false
@@ -602,34 +755,41 @@ local function pressKey(keys, beats, bpm, isChord)
         shorts = true
     end
 
-    local shiftRequired, nonShift = {}, {}
-    local ctrlRequired = false
+    local digit1
+    local digit2 
+    local digit3
+    local digit4
+    local midiVel
 
-    if keys:sub(1, 5) == "Ctrl+" then
-        ctrlRequired = true
-        keys = keys:sub(6) -- remove ctrl+
-    end
+    if _G.midiSpoof then
+        digit1 = math.floor(midiKeyMappings[key] / 12) -- get the octave number
+        digit2 = math.floor(midiKeyMappings[key] % 12) -- get the note number within the octave
+        print(key .. ": " .. midiKeyMappings[key])
 
-    -- seperate shift and no shift
-    for i = 1, #keys do
-        local key = keys:sub(i, i)
-        table.insert(table.find(shiftKeys, key) and shiftRequired or nonShift, key)
-    end
-
-    local function triggerPress(key, shift)
-        if errormargin ~= 0 then
-            if math.random() < 0.5 then -- 50% chance to apply jitter
-                task.wait((math.random() - 0.5) * errormargin)
-            end
+        if vel then
+            midiVel = math.floor(vel * 127)
+        else
+            midiVel = 64
         end
 
+        digit3 = math.floor(midiVel / 12) -- velocity digit 1
+        digit4 = math.floor(midiVel % 12) -- velocity digit 2
+    end
+
+    if errormargin ~= 0 then
+        if math.random() < 0.5 then -- 50% chance to apply jitter
+            task.wait((math.random() * 0.5 - 0.25) * errormargin) -- +- quarter of errormargin
+        end
+    end
+
+    if not _G.midiSpoof then
         if shift then
             VirtualInputManager:SendKeyEvent(true, Enum.KeyCode.LeftShift, false, game)
         end
 
         if not _G.talentlessSettings or
-        _G.talentlessSettings and _G.talentlessSettings["disablefakeaccidents"] == false then
-            local agf = errormargin * 100 -- so 0.01 is 1
+        _G.talentlessSettings and not _G.talentlessSettings["disableaccidents"] then
+            local agf = errormargin * 100
             if math.random(1, 1000) <= agf then
                 VirtualInputManager:SendKeyEvent(not shift, Enum.KeyCode.LeftShift, false, game) -- shift/unshift if it applies
                 shiftApplied = true
@@ -658,67 +818,116 @@ local function pressKey(keys, beats, bpm, isChord)
             VirtualInputManager:SendKeyEvent(false, Enum.KeyCode.LeftShift, false, game)
         end
 
-        local waittime
-        local randomOff
-
-        if shorts == false then
-            local noteTime = (beats / bpm) * 60
-            local maxRan = noteTime * 0.4 -- 40% of note hold time
-            randomOff = math.random() * maxRan -- num from 0 to maxRan
-            waittime = noteTime * 0.9 - randomOff -- note is held from 0.5-0.9 of its original duration.
-
-            if errormargin ~= 0 then
-                local extraSpread = noteTime * errormargin * 2 
-                waittime = waittime + (math.random() * 2 - 1) * extraSpread
-            end
-        else -- if short notes...
-            local baseMin, baseMax = 0.03, 0.08
-            if errormargin ~= 0 then
-                baseMin = baseMin - errormargin / 4 
-                baseMax = baseMax + errormargin / 4
-            end
-            baseMin = math.max(baseMin, 0.02) -- floor so it never goes negative/too tiny
-
-            waittime = baseMin + math.random() * (baseMax - baseMin)
-        end
-        
-        task.wait(waittime)
+        noteHoldWait(beats, bpm, shorts)
         
         VirtualInputManager:SendKeyEvent(false, keyMappings[key], false, game)
-    end
+    else -- midispoof is on
+        
+        -- Note-ON sequence
+        VirtualInputManager:SendKeyEvent(true, Enum.KeyCode.KeypadMultiply, false, game)
+        VirtualInputManager:SendKeyEvent(false, Enum.KeyCode.KeypadMultiply, false, game)
+        VirtualInputManager:SendKeyEvent(true, midiNumpadMappings[digit1], false, game)
+        VirtualInputManager:SendKeyEvent(false, midiNumpadMappings[digit1], false, game)
+        VirtualInputManager:SendKeyEvent(true, midiNumpadMappings[digit2], false, game)
+        VirtualInputManager:SendKeyEvent(false, midiNumpadMappings[digit2], false, game)
+        VirtualInputManager:SendKeyEvent(true, midiNumpadMappings[digit3], false, game)
+        VirtualInputManager:SendKeyEvent(false, midiNumpadMappings[digit3], false, game)
+        VirtualInputManager:SendKeyEvent(true, midiNumpadMappings[digit4], false, game)
+        VirtualInputManager:SendKeyEvent(false, midiNumpadMappings[digit4], false, game)
 
-    -- Press non-shift keys first
-    for _, key in ipairs(nonShift) do
-        coroutine.wrap(
-            function()
-                triggerPress(key, false)
-            end
-        )()
-        if isChord and errormargin ~= 0 then
-            if math.random() < 0.5 then -- 50% chance to apply delay
-                task.wait((math.random() - 0.5) * errormargin)
+        noteHoldWait(beats, bpm, shorts)
+        
+        -- Note-OFF sequence (multiply + octave + note + 0 + 0)
+        VirtualInputManager:SendKeyEvent(true, Enum.KeyCode.KeypadMultiply, false, game)
+        VirtualInputManager:SendKeyEvent(false, Enum.KeyCode.KeypadMultiply, false, game)
+        VirtualInputManager:SendKeyEvent(true, midiNumpadMappings[digit1], false, game)  -- same octave
+        VirtualInputManager:SendKeyEvent(false, midiNumpadMappings[digit1], false, game)
+        VirtualInputManager:SendKeyEvent(true, midiNumpadMappings[digit2], false, game)  -- same note
+        VirtualInputManager:SendKeyEvent(false, midiNumpadMappings[digit2], false, game)
+        VirtualInputManager:SendKeyEvent(true, midiNumpadMappings[0], false, game)       -- vel=0
+        VirtualInputManager:SendKeyEvent(false, midiNumpadMappings[0], false, game)
+        VirtualInputManager:SendKeyEvent(true, midiNumpadMappings[0], false, game)       -- vel=0
+        VirtualInputManager:SendKeyEvent(false, midiNumpadMappings[0], false, game)
+    end
+end
+
+local function pressKey(keys, beats, bpm, isChord)
+    if _G.STOPIT then return end
+
+    local shiftRequired, nonShift, toPressMidi = {}, {}, {}
+    local ctrlRequired = false
+
+    if _G.midiSpoof then
+        if keys:sub(1, 5) == "Ctrl+" then
+            table.insert(toPressMidi, keys) -- insert the whole string as 1 entry
+        else 
+            for i = 1, #keys do
+                local key = keys:sub(i, i)
+                table.insert(toPressMidi, key)
             end
         end
-    end
 
-    -- Press shift-required keys
-    if #shiftRequired > 0 then
-        for _, key in ipairs(shiftRequired) do
+        -- Press
+        for _, key in ipairs(toPressMidi) do
             coroutine.wrap(
                 function()
-                    triggerPress(key, true)
+                    triggerPress(key, beats, bpm, false)
                 end
             )()
             if isChord and errormargin ~= 0 then
                 if math.random() < 0.5 then -- 50% chance to apply delay
-                    task.wait((math.random() - 0.5) * errormargin)
+                    task.wait((math.random() - 0.5) * errormargin) -- +- half of errormargin
                 end
             end
         end
-    end
+    else
+        if keys:sub(1, 5) == "Ctrl+" then
+            ctrlRequired = true
+            keys = keys:sub(6) -- remove ctrl+
+        end
 
-    if ctrlRequired then
-        VirtualInputManager:SendKeyEvent(false, Enum.KeyCode.LeftControl, false, game)
+        if not ctrlRequired then
+            -- seperate shift and no shift
+            for i = 1, #keys do
+                local key = keys:sub(i, i)
+                table.insert(table.find(shiftKeys, key) and shiftRequired or nonShift, key)
+            end
+        end
+
+        -- Press non-shift keys first
+        for _, key in ipairs(nonShift) do
+            coroutine.wrap(
+                function()
+                    triggerPress(key, beats, bpm, false, ctrlRequired)
+                end
+            )()
+            if isChord and errormargin ~= 0 then
+                if math.random() < 0.5 then -- 50% chance to apply delay
+                    task.wait((math.random() - 0.5) * errormargin) -- +- half of errormargin
+                end
+            end
+        end
+
+        -- Press shift-required keys
+        if #shiftRequired > 0 then
+            for _, key in ipairs(shiftRequired) do
+                coroutine.wrap(
+                    function()
+                        triggerPress(key, beats, bpm, true, ctrlRequired)
+                    end
+                )()
+                if isChord and errormargin ~= 0 then
+                    if math.random() < 0.5 then -- 50% chance to apply delay
+                        task.wait((math.random() - 0.5) * errormargin)
+                    end
+                end
+            end
+        end
+
+        if ctrlRequired then
+            VirtualInputManager:SendKeyEvent(false, Enum.KeyCode.LeftControl, false, game)
+        end
+
     end
 end
 
@@ -726,7 +935,7 @@ end
 -- KEYPRESS FUNCTION
 -- KEYPRESS FUNCTION
 
--- the one used in most talentless songs
+-- the one used in like all songs
 function keypress(keys, beats, bpm) -- bpm will not be added to the table, because it can be changed.
     local last = song[#song]
 
@@ -766,25 +975,30 @@ function adjustVelocity(vel)
     })
 end
 
-function adjustVelocitytrigger(vel)
+function adjustVelocitytrigger(velo)
     if _G.STOPIT then return end
-    local velocityMap = "58qrupdhl"
 
-    vel = math.clamp(vel, 0, 1)
-
-    if vel < 0.27 then
-        topress = "2"
-    elseif vel >= 0.88 then
-        topress = "c"
+    if _G.midiSpoof then 
+        vel = velo
     else
-        local index = math.floor((vel - 0.27) / 0.61 * (#velocityMap - 2)) + 2
-        topress = velocityMap:sub(index, index)
-    end
+        local velocityMap = "58qrupdhl"
 
-    VirtualInputManager:SendKeyEvent(true, Enum.KeyCode.LeftAlt, false, game)
-    VirtualInputManager:SendKeyEvent(true, keyMappings[topress], false, game)
-    VirtualInputManager:SendKeyEvent(false, keyMappings[topress], false, game)
-    VirtualInputManager:SendKeyEvent(false, Enum.KeyCode.LeftAlt, false, game)
+        velo = math.clamp(velo, 0, 1)
+
+        if velo < 0.27 then
+            topress = "2"
+        elseif velo >= 0.88 then
+            topress = "c"
+        else
+            local index = math.floor((velo - 0.27) / 0.61 * (#velocityMap - 2)) + 2
+            topress = velocityMap:sub(index, index)
+        end
+
+        VirtualInputManager:SendKeyEvent(true, Enum.KeyCode.LeftAlt, false, game)
+        VirtualInputManager:SendKeyEvent(true, keyMappings[topress], false, game)
+        VirtualInputManager:SendKeyEvent(false, keyMappings[topress], false, game)
+        VirtualInputManager:SendKeyEvent(false, Enum.KeyCode.LeftAlt, false, game)
+    end
 end
 
 -- REST FUNCTION
@@ -802,7 +1016,12 @@ function resttrigger(beats, bpm)
     if _G.STOPIT then return end
     
     local waitTime = (beats / bpm) * 60
-    preciseWait(waitTime)
+
+    if _G.talentlessSettings and _G.talentlessSettings["secondaryloader"] then
+        preciseWait(waitTime)
+    else
+        task.wait(waitTime)
+    end
     
     -- update playhead stuffs
     currentSongPosition = currentSongPosition + beats
@@ -838,8 +1057,6 @@ end
 -- MAIN SONG LOOP
 -- MAIN SONG LOOP
 -- MAIN SONG LOOP
-
-_G.STOPIT = false
 
 songThread = task.spawn(function()
     repeat wait() until finishedLoading == true
@@ -879,3 +1096,43 @@ watcher = task.spawn(function()
         end
     end
 end)
+
+-- load settings
+
+if not _G.talentlessSettings then -- it was run before the main script
+
+    _G.talentlessSettings = {}
+
+    local settingsOptions = {
+        "secondaryloader",
+        "mutesfx",
+        "disablenotifs",
+        "alwaysshowmidispoofer",
+        "disableaccidents"
+    }
+
+    if isfile("TALENTLESS_settings.txt") then
+        print("settings file found")
+        local settingsCode = readfile("TALENTLESS_settings.txt")
+
+        local func = loadstring(settingsCode)
+        if func then
+            print("settings file is good")
+            loadstring(settingsCode)()
+        else
+            print("settings file is broken")
+            NotificationLibrary:SendNotification("Error", "Someting went wrong loading your settings. Your settings have been reset.", 5)
+            playSound("7383525713", 0.5)
+        end
+
+        for _, option in ipairs(settingsOptions) do
+            if not string.find(settingsCode, option) then -- they may not have this option saved; due to a new update etc.
+                _G.talentlessSettings[option] = false
+            end
+        end
+    else
+        for _, option in ipairs(settingsOptions) do
+            _G.talentlessSettings[option] = false
+        end
+    end
+end
