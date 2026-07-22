@@ -729,15 +729,15 @@ local function noteHoldWait(beats, bpm, shorts)
         end
     else -- if short notes...
         local beatDuration = 60 / bpm          -- length of one beat in seconds
-        local safeCeiling = beatDuration / 4 -- never take up more than half a beat
+        local safeCeiling = beatDuration / 4
 
         local baseMin = 0.01
         local baseMax = math.max(0.1, safeCeiling)
-        
+
         waittime = baseMin + math.random() * (baseMax - baseMin)
     end
 
-    task.wait(waittime)
+    preciseWait(waittime)
 end
 
 local function triggerPress(key, beats, bpm, shift, ctrlRequired)
