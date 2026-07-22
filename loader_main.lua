@@ -732,7 +732,7 @@ local function noteHoldWait(beats, bpm, shorts)
         local safeCeiling = beatDuration / 8 -- never take up more than half a beat
 
         local baseMin = 0.01
-        local baseMax = math.max(0.09, safeCeiling)
+        local baseMax = 0.13
 
         if errormargin ~= 0 then
             baseMax = baseMax + errormargin / 2
