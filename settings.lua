@@ -3,6 +3,12 @@
 -- See LICENSE file for details. Use, modification, or distribution
 -- requires prior written permission from the copyright holder.
 
+local translator = loadstring(game:HttpGet("https://hellohellohell0.com/talentless-raw/translator.lua", true))()
+
+local function translateText(text) -- this function will also be called from the other sub scripts
+    return translator:translateText(text)
+end
+
 local settings = Instance.new("ScreenGui")
 local frame = Instance.new("Frame")
 local uic1 = Instance.new("UICorner")
@@ -15,7 +21,7 @@ local UIPadding = Instance.new("UIPadding")
 local UIListLayout = Instance.new("UIListLayout")
 
 settings.Name = "settings"
-settings.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+settings.Parent = game:GetService("CoreGui")
 settings.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 frame.Name = "frame"
@@ -24,6 +30,7 @@ frame.AnchorPoint = Vector2.new(0.5, 0.5)
 frame.BackgroundColor3 = Color3.fromRGB(33, 33, 41)
 frame.Position = UDim2.new(0.5, 0, 0.5, 0)
 frame.Size = UDim2.new(0, 315, 0, 272)
+frame.ZIndex = 99
 
     uic1.CornerRadius = UDim.new(0, 4)
     uic1.Name = "uic1"
@@ -35,7 +42,7 @@ frame.Size = UDim2.new(0, 315, 0, 272)
     title.Size = UDim2.new(1, 0, -0.011029412, 50)
     title.ZIndex = 2
     title.Font = Enum.Font.SourceSansBold
-    title.Text = "settings"
+    title.Text = translateText("settings")
     title.TextColor3 = Color3.fromRGB(255, 255, 255)
     title.TextSize = 46.000
 
@@ -66,6 +73,8 @@ frame.Size = UDim2.new(0, 315, 0, 272)
     settingsFrame.Position = UDim2.new(0, 0, 0.172794119, 0)
     settingsFrame.Size = UDim2.new(0, 315, 0, 225)
     settingsFrame.ScrollBarThickness = 5
+    settingsFrame.AutomaticCanvasSize = Enum.AutomaticSize.Y
+    settingsFrame.CanvasSize = UDim2.new(0, 0, 0, 0)
 
         uic3.CornerRadius = UDim.new(0, 4)
         uic3.Name = "uic3"
@@ -74,6 +83,7 @@ frame.Size = UDim2.new(0, 315, 0, 272)
         UIPadding.Parent = settingsFrame
         UIPadding.PaddingLeft = UDim.new(0, 20)
         UIPadding.PaddingTop = UDim.new(0, 20)
+        UIPadding.PaddingBottom = UDim.new(0, 20)
 
         UIListLayout.Parent = settingsFrame
         UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
@@ -148,11 +158,9 @@ local function createString()
     return string
 end
 
-
 local function updateSettingsFile()
     writefile("TALENTLESS_settings.txt", createString())
 end
-
 
 local function addSetting(key, description)
 
@@ -193,7 +201,7 @@ local function addSetting(key, description)
     settingsLabel.Text = description
     settingsLabel.TextScaled = true
 
-    if _G.talentlessSettings[key] == true then
+    if _G.talentlessSettings and _G.talentlessSettings[key] == true then
         checkBox.Text = "x"
     else
         checkBox.Text = ""
@@ -208,6 +216,8 @@ local function addSetting(key, description)
         end
         updateSettingsFile()
     end)
+
+    return checkBox
 
 end
 
@@ -251,12 +261,39 @@ local function addButton(description, callback)
     button.MouseButton1Click:Connect(callback)
 end
 
-addSetting("secondaryloader", "use secondary song loader (less laggy, but less accurate)")
-addSetting("mutesfx", "mute all sound effects")
-addSetting("disablenotifs", "disable all notifications")
-addSetting("alwaysshowmidispoofer", "always show the midi spoofer option")
+local secondaryLoaderCheckbox = addSetting("secondaryloader", translateText("secondaryloadertoggle"))
+addSetting("disablefeaturedsongs", translateText("disablefeaturedsongs"))
+addSetting("mutesfx", translateText("muteallsfx"))
+addSetting("disablenotifs", translateText("disableallnotifs"))
+addSetting("alwaysshowmidispoofer", translateText("alwaysshowmidispoofer"))
+addSetting("disableaccidents", translateText("disablefakeaccidents"))
 
-addButton("force stop all songs", function() -- below is identical to the stopplayingsongs function found in the loaders
+if not isfile("TALENTLESS_settings.txt") then
+    local checkBoxArrow = Instance.new("TextLabel")
+    checkBoxArrow.Name = "checkBoxArrow"
+    checkBoxArrow.Parent = frame
+    checkBoxArrow.BackgroundTransparency = 1
+    checkBoxArrow.Size = UDim2.new(0, 100, 0, 31)
+    checkBoxArrow.Position = UDim2.new(0, -93, 0, 64) -- 20px UIPaddingLeft - 105px offset, 47px settingsFrame Y + 20px UIPaddingTop
+    checkBoxArrow.Text = translateText("trythis") .. " →"
+    checkBoxArrow.TextColor3 = Color3.fromRGB(255, 255, 255)
+    checkBoxArrow.Font = Enum.Font.SourceSansBold
+    checkBoxArrow.TextSize = 25
+    checkBoxArrow.TextXAlignment = Enum.TextXAlignment.Right
+    checkBoxArrow.ZIndex = 5 
+
+    local TweenService = game:GetService("TweenService")
+    local tweenInfo = TweenInfo.new(1.2, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut, -1, true)
+    local fadeTween = TweenService:Create(checkBoxArrow, tweenInfo, {TextTransparency = 1})
+    fadeTween:Play()
+
+    secondaryLoaderCheckbox.MouseButton1Click:Connect(function()
+        fadeTween:Cancel()
+        checkBoxArrow:Destroy()
+    end)
+end
+
+addButton(translateText("forcestopallsongs"), function() -- below is identical to the stopplayingsongs function found in the loaders
     _G.STOPIT = true -- indicator for playing functions that tells it to halt.
 
     function pressKey(keys, beats, bpm)
