@@ -729,7 +729,7 @@ local function noteHoldWait(beats, bpm, shorts)
         end
     else -- if short notes...
         local beatDuration = 60 / bpm          -- length of one beat in seconds
-        local safeCeiling = beatDuration / 4
+        local safeCeiling = beatDuration / 6
 
         local baseMin = 0.01
         local baseMax = math.max(0.1, safeCeiling)
@@ -1101,11 +1101,11 @@ end)
 -- load settings
 
 if not _G.talentlessSettings then -- it was run before the main script
-
     _G.talentlessSettings = {}
 
     local settingsOptions = {
         "secondaryloader",
+        "disablefeaturedsongs",
         "mutesfx",
         "disablenotifs",
         "alwaysshowmidispoofer",
