@@ -1416,6 +1416,210 @@ local translations = {
         ["tr"] = "sezonluk",
         ["ar"] = "موسمية"
     },
+
+    ["secondaryloadertoggle"] = {
+        ["en"] = "use secondary song loader (more accurate, but may be laggy)",
+        ["pt-BR"] = "usar carregador secundário de músicas (mais preciso, porém pode travar)",
+        ["es"] = "usar cargador secundario de canciones (más preciso, pero puede tener lag)",
+        ["ru"] = "использовать вторичный загрузчик песен (точнее, но может лагать)",
+        ["zh-CN"] = "使用次要歌曲加载器（更准确，但可能会卡顿）",
+        ["id"] = "gunakan pemuat lagu sekunder (lebih akurat, tapi bisa lag)",
+        ["fil"] = "gamitin ang secondary song loader (mas accurate, pero posibleng magkaroon ng lag)",
+        ["vi"] = "dùng trình tải bài hát phụ (chính xác hơn, nhưng có thể giật)",
+        ["fr"] = "utiliser le chargeur de chansons secondaire (plus précis, mais peut lag)",
+        ["de"] = "sekundären Song-Loader verwenden (genauer, aber kann laggen)",
+        ["ja"] = "セカンダリソングローダーを使用（精度は高いがラグが出る場合あり）",
+        ["ko"] = "보조 노래 로더 사용 (더 정확하지만 렉이 있을 수 있음)",
+        ["tr"] = "ikincil şarkı yükleyiciyi kullan (daha doğru, ama lag yapabilir)",
+        ["ar"] = "استخدام محمّل الأغاني الثانوي (دقة أعلى، لكنه قد يسبب تأخرًا)"
+    },
+
+    ["muteallsfx"] = {
+        ["en"] = "mute all sound effects",
+        ["pt-BR"] = "silenciar todos os efeitos sonoros",
+        ["es"] = "silenciar todos los efectos de sonido",
+        ["ru"] = "отключить все звуковые эффекты",
+        ["zh-CN"] = "静音所有音效",
+        ["id"] = "bisukan semua efek suara",
+        ["fil"] = "i-mute lahat ng sound effects",
+        ["vi"] = "tắt tiếng tất cả hiệu ứng âm thanh",
+        ["fr"] = "couper tous les effets sonores",
+        ["de"] = "alle Soundeffekte stummschalten",
+        ["ja"] = "すべての効果音をミュート",
+        ["ko"] = "모든 효과음 음소거",
+        ["tr"] = "tüm ses efektlerini sustur",
+        ["ar"] = "كتم جميع المؤثرات الصوتية"
+    },
+
+    ["disableallnotifs"] = {
+        ["en"] = "disable all notifications",
+        ["pt-BR"] = "desativar todas as notificações",
+        ["es"] = "desactivar todas las notificaciones",
+        ["ru"] = "отключить все уведомления",
+        ["zh-CN"] = "禁用所有通知",
+        ["id"] = "nonaktifkan semua notifikasi",
+        ["fil"] = "i-disable lahat ng notifications",
+        ["vi"] = "tắt tất cả thông báo",
+        ["fr"] = "désactiver toutes les notifications",
+        ["de"] = "alle Benachrichtigungen deaktivieren",
+        ["ja"] = "すべての通知を無効にする",
+        ["ko"] = "모든 알림 비활성화",
+        ["tr"] = "tüm bildirimleri devre dışı bırak",
+        ["ar"] = "تعطيل جميع الإشعارات"
+    },
+
+    ["alwaysshowmidispoofer"] = {
+        ["en"] = "always show the midi spoofer option",
+        ["pt-BR"] = "sempre mostrar a opção de falsificar midi",
+        ["es"] = "mostrar siempre la opción de falsificar midi",
+        ["ru"] = "всегда показывать опцию подделки midi",
+        ["zh-CN"] = "始终显示midi伪装选项",
+        ["id"] = "selalu tampilkan opsi palsukan midi",
+        ["fil"] = "laging ipakita ang opsyon na peke ang midi",
+        ["vi"] = "luôn hiển thị tùy chọn giả midi",
+        ["fr"] = "toujours afficher l'option simuler midi",
+        ["de"] = "midi vortäuschen-Option immer anzeigen",
+        ["ja"] = "midi偽装オプションを常に表示",
+        ["ko"] = "midi 스푸핑 옵션 항상 표시",
+        ["tr"] = "midi sahteleme seçeneğini her zaman göster",
+        ["ar"] = "إظهار خيار تزييف midi دائمًا"
+    },
+
+    ["keyvaliduntil"] = {
+        ["en"] = "Thank you! This key is valid until: ",
+        ["pt-BR"] = "Obrigado! Esta chave é válida até: ",
+        ["es"] = "¡Gracias! Esta clave es válida hasta: ",
+        ["ru"] = "Спасибо! Этот ключ действителен до: ",
+        ["zh-CN"] = "谢谢！此密钥有效期至：",
+        ["id"] = "Terima kasih! Kunci ini berlaku hingga: ",
+        ["fil"] = "Salamat! Ang key na ito ay valid hanggang: ",
+        ["vi"] = "Cảm ơn bạn! Khóa này có hiệu lực đến: ",
+        ["fr"] = "Merci ! Cette clé est valide jusqu'au : ",
+        ["de"] = "Danke! Dieser Schlüssel ist gültig bis: ",
+        ["ja"] = "ありがとうございます！このキーの有効期限：",
+        ["ko"] = "감사합니다! 이 키는 다음까지 유효합니다: ",
+        ["tr"] = "Teşekkürler! Bu anahtar şu tarihe kadar geçerli: ",
+        ["ar"] = "شكرًا لك! هذا المفتاح صالح حتى: "
+    },
+
+    ["forcestopallsongs"] = {
+        ["en"] = "force stop all songs",
+        ["pt-BR"] = "forçar parada de todas as músicas",
+        ["es"] = "forzar detención de todas las canciones",
+        ["ru"] = "принудительно остановить все песни",
+        ["zh-CN"] = "强制停止所有歌曲",
+        ["id"] = "paksa hentikan semua lagu",
+        ["fil"] = "sapilitang itigil lahat ng kanta",
+        ["vi"] = "buộc dừng tất cả bài hát",
+        ["fr"] = "forcer l'arrêt de toutes les chansons",
+        ["de"] = "alle Lieder zwangsweise stoppen",
+        ["ja"] = "すべての曲を強制停止",
+        ["ko"] = "모든 노래 강제 중지",
+        ["tr"] = "tüm şarkıları zorla durdur",
+        ["ar"] = "إيقاف جميع الأغاني قسرًا"
+    },
+
+    ["settings"] = {
+        ["en"] = "settings",
+        ["pt-BR"] = "configurações",
+        ["es"] = "ajustes",
+        ["ru"] = "настройки",
+        ["zh-CN"] = "设置",
+        ["id"] = "pengaturan",
+        ["fil"] = "mga setting",
+        ["vi"] = "cài đặt",
+        ["fr"] = "paramètres",
+        ["de"] = "einstellungen",
+        ["ja"] = "設定",
+        ["ko"] = "설정",
+        ["tr"] = "ayarlar",
+        ["ar"] = "الإعدادات"
+    },
+
+    ["nintendo"] = {
+        ["en"] = "nintendo",
+        ["pt-BR"] = "nintendo",
+        ["es"] = "nintendo",
+        ["ru"] = "nintendo",
+        ["zh-CN"] = "任天堂",
+        ["id"] = "nintendo",
+        ["fil"] = "nintendo",
+        ["vi"] = "nintendo",
+        ["fr"] = "nintendo",
+        ["de"] = "nintendo",
+        ["ja"] = "任天堂",
+        ["ko"] = "닌텐도",
+        ["tr"] = "nintendo",
+        ["ar"] = "نينتندو"
+    },
+
+    ["disablefakeaccidents"] = {
+        ["en"] = "disable fake accidents when your error margin is increased",
+        ["pt-BR"] = "desativar erros falsos quando sua margem de erro for aumentada",
+        ["es"] = "desactivar errores falsos cuando tu margen de error sea aumentado",
+        ["ru"] = "отключить имитацию ошибок при увеличении погрешности",
+        ["zh-CN"] = "增加误差范围时禁用虚假失误",
+        ["id"] = "nonaktifkan kesalahan palsu saat batas kesalahan ditingkatkan",
+        ["fil"] = "i-disable ang fake na pagkakamali kapag tumaas ang margin ng error",
+        ["vi"] = "tắt lỗi giả khi sai số của bạn được tăng lên",
+        ["fr"] = "désactiver les fausses erreurs lorsque votre marge d'erreur est augmentée",
+        ["de"] = "gefälschte Fehler deaktivieren, wenn deine Fehlertoleranz erhöht wird",
+        ["ja"] = "誤差範囲を増やしたときの偽の誤操作を無効にする",
+        ["ko"] = "오차 범위가 증가할 때 가짜 실수 비활성화",
+        ["tr"] = "hata payınız arttığında sahte hataları devre dışı bırak",
+        ["ar"] = "تعطيل الأخطاء المزيفة عند زيادة هامش الخطأ"
+    },
+
+    ["disablefeaturedsongs"] = {
+        ["en"] = "disable featured songs",
+        ["pt-BR"] = "desativar músicas em destaque",
+        ["es"] = "desactivar canciones destacadas",
+        ["ru"] = "отключить рекомендуемые песни",
+        ["zh-CN"] = "禁用精选歌曲",
+        ["id"] = "nonaktifkan lagu unggulan",
+        ["fil"] = "i-disable ang mga featured na kanta",
+        ["vi"] = "tắt bài hát nổi bật",
+        ["fr"] = "désactiver les chansons en vedette",
+        ["de"] = "hervorgehobene Lieder deaktivieren",
+        ["ja"] = "注目の曲を無効にする",
+        ["ko"] = "추천 노래 비활성화",
+        ["tr"] = "öne çıkan şarkıları devre dışı bırak",
+        ["ar"] = "تعطيل الأغاني المميزة"
+    },
+
+    ["FEATURED"] = {
+        ["en"] = "FEATURED",
+        ["pt-BR"] = "DESTAQUE",
+        ["es"] = "DESTACADO",
+        ["ru"] = "ТОП",
+        ["zh-CN"] = "精选",
+        ["id"] = "UNGGULAN",
+        ["fil"] = "TAMPOK",
+        ["vi"] = "NỔI BẬT",
+        ["fr"] = "VEDETTE",
+        ["de"] = "TOP",
+        ["ja"] = "注目",
+        ["ko"] = "추천",
+        ["tr"] = "ÖNE ÇIKAN",
+        ["ar"] = "مميز"
+    },
+
+    ["trythis"] = {
+        ["en"] = "try this?",
+        ["pt-BR"] = "que tal isso?",
+        ["es"] = "¿probar esto?",
+        ["ru"] = "попробуй?",
+        ["zh-CN"] = "试试这个？",
+        ["id"] = "coba ini?",
+        ["fil"] = "subukan ito?",
+        ["vi"] = "thử cái này?",
+        ["fr"] = "essaie ça ?",
+        ["de"] = "probier das mal?",
+        ["ja"] = "これ試してみる？",
+        ["ko"] = "이거 한번 써볼래?",
+        ["tr"] = "bunu dene?",
+        ["ar"] = "جرّب هذا؟"
+    },
 }
 
 _G.languages = _G.languages or {
@@ -1593,11 +1797,17 @@ function translator:requestLang(frame, type)
     languageSelection.Size = UDim2.new(0, 167, 0, 84)
     languageSelection.Visible = false
     languageSelection.ScrollBarThickness = 1
+    languageSelection.AutomaticCanvasSize = Enum.AutomaticSize.Y
+    languageSelection.CanvasSize = UDim2.new(0, 0, 0, 0)
 
     UIListLayout.Parent = languageSelection
     UIListLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
     UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
     UIListLayout.Padding = UDim.new(0, 5)
+
+    UIPadding.Parent = languageSelection
+    UIPadding.PaddingTop = UDim.new(0, 5)
+    UIPadding.PaddingBottom = UDim.new(0, 5)
 
     for code, name in pairs(languageCodes) do
         local button = Instance.new("TextButton")
@@ -1622,9 +1832,6 @@ function translator:requestLang(frame, type)
             languageSelection.Visible = false
         end)
     end
-
-    UIPadding.Parent = languageSelection
-    UIPadding.PaddingTop = UDim.new(0, 5)
 
     whatLanguageTitle.Name = "whatLanguageTitle"
     whatLanguageTitle.Parent = languageFrame
