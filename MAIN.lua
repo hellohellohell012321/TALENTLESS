@@ -55,7 +55,11 @@ local assetsToPreload = {
 
 ContentProvider:PreloadAsync(assetsToPreload)
 
-local function playSound(soundId, loudness)
+function playSound(soundId, loudness)
+    if _G.talentlessSettings["mutesfx"] == true then
+        return
+    end
+    
     local sound = Instance.new("Sound")
     sound.SoundId = "rbxassetid://" .. soundId
     sound.Parent = game.Players.LocalPlayer.Character or game.Players.LocalPlayer
@@ -84,7 +88,7 @@ local bar = Instance.new("ScrollingFrame")
 local songname = Instance.new("TextLabel")
 local bpmbox = Instance.new("TextBox")
 local playsong = Instance.new("TextButton")
-local toggle = Instance.new("TextButton")
+_G.toggleUiTalentless = Instance.new("TextButton") -- global var, in case we need to toggle the loader's ui
 local searchframe = Instance.new("Frame")
 local searchbar = Instance.new("TextBox")
 local barseperator = Instance.new("Frame")
@@ -94,11 +98,7 @@ local addSongToPlaylistButton = Instance.new("ImageButton")
 local tagsFrame = Instance.new("Frame")
 local tagsListLayout = Instance.new("UIListLayout")
 local tagsPadding = Instance.new("UIPadding")
-
---[[
-    local snowpile = Instance.new("ImageLabel")
-    local xmaslights = Instance.new("ImageLabel")
-]]
+local settingsButton = Instance.new("ImageButton")
 
 ScreenGui.Parent = game:GetService("CoreGui")
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
@@ -151,6 +151,15 @@ translator:requestLang(frame, "first")
     changeLanguageButton.ZIndex = 5
     changeLanguageButton.Image = "rbxassetid://123593076590814"
 
+    settingsButton.Name = "settingsButton"
+    settingsButton.Parent = frame
+    settingsButton.BackgroundTransparency = 1.000
+    settingsButton.LayoutOrder = 2
+    settingsButton.Position = UDim2.new(0, 87, 0, 7)
+    settingsButton.Size = UDim2.new(0, 31, 0, 31)
+    settingsButton.ZIndex = 5
+    settingsButton.Image = "rbxassetid://9405931578"
+
     title.Name = "title"
     title.Parent = frame
     title.BackgroundColor3 = Color3.fromRGB(50, 57, 73)
@@ -170,8 +179,8 @@ translator:requestLang(frame, "first")
     categoriesFrame.Active = true
     categoriesFrame.BackgroundColor3 = Color3.fromRGB(46, 46, 46)
     categoriesFrame.BackgroundTransparency = 1.000
-    categoriesFrame.Position = UDim2.new(0.0105263162, 0, 0.183819935, 0)
-    categoriesFrame.Size = UDim2.new(0, 111, 0, 222)
+    categoriesFrame.Position = UDim2.new(0, 0, 0.184, 0)
+    categoriesFrame.Size = UDim2.new(0, 118, 0, 222)
     categoriesFrame.ZIndex = 0
     categoriesFrame.ScrollBarThickness = 3
     categoriesFrame.AutomaticCanvasSize = Enum.AutomaticSize.Y
@@ -196,8 +205,8 @@ translator:requestLang(frame, "first")
     scroll.BackgroundTransparency = 1.000
     scroll.BorderColor3 = Color3.fromRGB(0, 0, 0)
     scroll.BorderSizePixel = 0
-    scroll.Position = UDim2.new(0.266860753, 0, 0.183819935, 0)
-    scroll.Size = UDim2.new(0, 198, 0, 222)
+    scroll.Position = UDim2.new(0.248, 0, 0.184, 0)
+    scroll.Size = UDim2.new(0, 206, 0, 222)
     scroll.CanvasPosition = Vector2.new(0, 17.4999962)
     scroll.HorizontalScrollBarInset = Enum.ScrollBarInset.Always
     scroll.ScrollBarThickness = 3
@@ -219,15 +228,17 @@ translator:requestLang(frame, "first")
     searchframe.BackgroundColor3 = Color3.fromRGB(33, 33, 41)
     searchframe.BorderColor3 = Color3.fromRGB(0, 0, 0)
     searchframe.BorderSizePixel = 0
-    searchframe.Position = UDim2.new(0.246315792, 0, 0.183823526, 0)
-    searchframe.Size = UDim2.new(0, 208, 0, 38)
+    searchframe.Position = UDim2.new(0.463, 0, 0.184, 0)
+    searchframe.Size = UDim2.new(0, 201, 0, 43)
+    searchframe.AnchorPoint = Vector2.new(0.5, 0)
 
         searchbar.Name = "searchbar"
         searchbar.Parent = searchframe
         searchbar.BackgroundColor3 = Color3.fromRGB(96, 102, 121)
         searchbar.BorderColor3 = Color3.fromRGB(0, 0, 0)
         searchbar.BorderSizePixel = 0
-        searchbar.Position = UDim2.new(0.158292323, 0, 0.278571635, 0)
+        searchbar.Position = UDim2.new(0.5, 0, 0.5, 0)
+        searchbar.AnchorPoint = Vector2.new(0.5, 0.5)
         searchbar.Size = UDim2.new(0, 150, 0, 20)
         searchbar.Font = Enum.Font.SourceSansBold
         searchbar.PlaceholderText = translateText("search")
@@ -258,11 +269,12 @@ translator:requestLang(frame, "first")
     bar.BackgroundTransparency = 1.000
     bar.BorderColor3 = Color3.fromRGB(0, 0, 0)
     bar.BorderSizePixel = 0
-    bar.Position = UDim2.new(1.05001855, -173, 0.20220229, 0)
+    bar.Position = UDim2.new(1.05, -173, 0.202, 0)
     bar.Size = UDim2.new(0, 144, 0, 217)
     bar.ScrollBarThickness = 3
     bar.ZIndex = 0
     bar.AutomaticCanvasSize = Enum.AutomaticSize.Y
+    bar.CanvasSize = UDim2.new(0, 0, 0, 0)
 
         barlist.Name = "barlist"
         barlist.Parent = bar
@@ -275,7 +287,7 @@ translator:requestLang(frame, "first")
         barpadding.PaddingLeft = UDim.new(0, 5)
         barpadding.PaddingRight = UDim.new(0, 5)
         barpadding.PaddingTop = UDim.new(0, 10)
-        barpadding.PaddingBottom = UDim.new(0, 5)
+        barpadding.PaddingBottom = UDim.new(0, 30)
 
         songname.Name = "songname"
         songname.Parent = bar
@@ -377,6 +389,10 @@ translator:requestLang(frame, "first")
             tagsPadding.PaddingRight = UDim.new(0, 5)
 
     --[[
+
+        local snowpile = Instance.new("ImageLabel")
+        local xmaslights = Instance.new("ImageLabel")
+
         snowpile.Name = "snowpile"
         snowpile.Parent = frame
         snowpile.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -399,23 +415,73 @@ translator:requestLang(frame, "first")
         xmaslights.Image = "rbxassetid://850806532"
     ]]
 
+    local summerTitle = Instance.new("TextLabel")
+    local summerUIGradient = Instance.new("UIGradient")
+    local summerTitleUic = Instance.new("UICorner")
 
-toggle.Name = "toggle"
-toggle.Parent = ScreenGui
-toggle.BackgroundColor3 = Color3.fromRGB(50, 57, 73)
-toggle.BorderColor3 = Color3.fromRGB(64, 68, 90)
-toggle.BorderSizePixel = 4
-toggle.AnchorPoint = Vector2.new(0, 0.5)
-toggle.Position = UDim2.new(0, 0, 0.5, 0)
-toggle.Size = UDim2.new(0, 136, 0, 40)
-toggle.Font = Enum.Font.SourceSansBold
-toggle.Text = translateText("toggle ui")
-toggle.TextColor3 = Color3.fromRGB(255, 255, 255)
-toggle.TextScaled = true
+    summerTitle.Name = "summerTitle"
+    summerTitle.Parent = title
+    summerTitle.BackgroundColor3 = Color3.fromRGB(50, 57, 73)
+    summerTitle.BackgroundTransparency = 1.000
+    summerTitle.Size = UDim2.new(1, 0, 0, 50)
+    summerTitle.ZIndex = 2
+    summerTitle.Font = Enum.Font.SourceSansBold
+    summerTitle.Text = "TALENTLESS"
+    summerTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
+    summerTitle.TextSize = 46.000
+
+    summerUIGradient.Color = ColorSequence.new{
+        ColorSequenceKeypoint.new(0.00, Color3.fromRGB(251, 132, 133)),
+        ColorSequenceKeypoint.new(0.43, Color3.fromRGB(251, 219, 162)),
+        ColorSequenceKeypoint.new(1.00, Color3.fromRGB(132, 202, 216)),
+        ColorSequenceKeypoint.new(1.00, Color3.fromRGB(251, 132, 133))
+    }
+    summerUIGradient.Parent = summerTitle
+
+    summerTitleUic.CornerRadius = UDim.new(0, 4)
+    summerTitleUic.Name = "uic2"
+    summerTitleUic.Parent = title2
+
+    local sunFrame = Instance.new("Frame")
+    local sunImg = Instance.new("ImageLabel")
+
+    sunFrame.Name = "sun"
+    sunFrame.Parent = frame
+    sunFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    sunFrame.BackgroundTransparency = 1.000
+    sunFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+    sunFrame.BorderSizePixel = 0
+    sunFrame.ClipsDescendants = true
+    sunFrame.Position = UDim2.new(0.614229023, 0, 0.183823526, 0)
+    sunFrame.Size = UDim2.new(0, 183, 0, 126)
+
+    sunImg.Name = "sun"
+    sunImg.Parent = sunFrame
+    sunImg.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    sunImg.BackgroundTransparency = 1.000
+    sunImg.BorderColor3 = Color3.fromRGB(0, 0, 0)
+    sunImg.BorderSizePixel = 0
+    sunImg.Position = UDim2.new(0.446296722, 0, -0.515285671, 0)
+    sunImg.Size = UDim2.new(0, 136, 0, 113)
+    sunImg.Image = "rbxassetid://3515784850"
+
+
+_G.toggleUiTalentless.Name = "toggle"
+_G.toggleUiTalentless.Parent = ScreenGui
+_G.toggleUiTalentless.BackgroundColor3 = Color3.fromRGB(50, 57, 73)
+_G.toggleUiTalentless.BorderColor3 = Color3.fromRGB(64, 68, 90)
+_G.toggleUiTalentless.BorderSizePixel = 4
+_G.toggleUiTalentless.AnchorPoint = Vector2.new(0, 0.5)
+_G.toggleUiTalentless.Position = UDim2.new(0, 0, 0.5, 0)
+_G.toggleUiTalentless.Size = UDim2.new(0, 136, 0, 40)
+_G.toggleUiTalentless.Font = Enum.Font.SourceSansBold
+_G.toggleUiTalentless.Text = translateText("toggle ui")
+_G.toggleUiTalentless.TextColor3 = Color3.fromRGB(255, 255, 255)
+_G.toggleUiTalentless.TextScaled = true
 
 -- buttons
 
-toggle.MouseButton1Click:Connect(function()
+_G.toggleUiTalentless.MouseButton1Click:Connect(function()
     frame.Visible = not frame.Visible
     if frame.Visible then
         playSound(70452176150315, 0.1)
@@ -451,11 +517,19 @@ changeLanguageButton.MouseButton1Click:Connect(
     end
 )
 
+settingsButton.MouseButton1Click:Connect(
+    function()
+        loadstring(
+            game:HttpGet("https://hellohellohell0.com/talentless-raw/settings.lua", true)
+        )()
+    end
+)
+
 -- drag script (not mine)
 
 local UserInputService = game:GetService("UserInputService")
 
-local gui = toggle
+local gui = _G.toggleUiTalentless
 
 local dragging
 local dragInput
@@ -502,17 +576,20 @@ UserInputService.InputChanged:Connect(
     end
 )
 
+_G.talentlessSettings = {} -- set it to blank so nothing will nil and break
+
 -- midi spoof
 
 local gameId = game.GameId
 
-local spoofMidiPlz = false
+local spoofMidiInfo
+local spoofMidi
+local underline
 
-if gameId == 3929033413 then
-
-    local spoofMidiInfo = Instance.new("TextButton")
-    local spoofMidi = Instance.new("TextButton")
-    local underline = Instance.new("TextLabel")
+local function showMidiSpoofer()
+    spoofMidiInfo = Instance.new("TextButton")
+    spoofMidi = Instance.new("TextButton")
+    underline = Instance.new("TextLabel")
 
     spoofMidiInfo.Name = "spoofMidiInfo"
     spoofMidiInfo.Parent = frame
@@ -552,8 +629,8 @@ if gameId == 3929033413 then
 
     spoofMidi.MouseButton1Click:Connect(
         function()
-            spoofMidiPlz = not spoofMidiPlz
-            if spoofMidiPlz then
+            _G.midiSpoof = not _G.midiSpoof
+            if _G.midiSpoof then
                 spoofMidi.Text = translateText("spoof midi") .. " [x]"
                 playSound(18595195017, 1)
                 NotificationLibrary:SendNotification("Success", translateText("midispoofon"), 5)
@@ -579,13 +656,43 @@ if gameId == 3929033413 then
     underline.TextSize = 14.000
 end
 
+local function hideMidiSpoofer()
+    if spoofMidiInfo then spoofMidiInfo:Destroy() end
+    if spoofMidi then spoofMidi:Destroy() end
+    if underline then underline:Destroy() end
+end
+
+if gameId == 3929033413 then
+    showMidiSpoofer()
+else
+    _G.talentlessSettings["alwaysshowmidispoofer"] = false -- if its saved in the settings file as true, it'll be toggled on later
+
+    task.spawn(function()
+        local lastValue = _G.talentlessSettings["alwaysshowmidispoofer"]
+    
+        while true do
+            local currentValue = _G.talentlessSettings["alwaysshowmidispoofer"]
+    
+            if currentValue ~= lastValue then
+                if currentValue == true then
+                    showMidiSpoofer()
+                else
+                    hideMidiSpoofer()
+                end
+                lastValue = currentValue
+            end
+    
+            task.wait(0.1)
+        end
+    end)
+end
+
 local dontSearchIndex = {
     "+",
-
 }
 
 local function filterSongs(query)
-    query = query:lower()
+    query = query:lower():gsub("'", "")
     scroll.CanvasPosition = Vector2.new(0, 0)
     for _, child in pairs(scroll:GetChildren()) do
         if child:IsA("TextButton") then
@@ -695,20 +802,6 @@ local function newSongButton(name, alternateNames)
 
     button:SetAttribute("AlternateNames", table.concat(alternateNames or {}, ","))
 
-    local favButton = Instance.new("ImageButton") -- star button for favourites
-
-    favButton.Parent = button
-    favButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-    favButton.BackgroundTransparency = 1.000
-    favButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
-    favButton.BorderSizePixel = 0
-    favButton.AnchorPoint = Vector2.new(0, 0.5)
-    favButton.Position = UDim2.new(0, 0, 0.5, 0)
-    favButton.Size = UDim2.new(0, 25, 0, 25)
-    favButton.Image = unfavDecal
-    favButton.Visible = false
-    favButton.Name = "favButton"
-
     fitText(button)
     
     return button
@@ -750,8 +843,6 @@ for index, button in ipairs(framebuttons) do
     button.LayoutOrder = index + 3 -- so theyre still under seperator and other buttons
 end
 
--- hungarian will nto work
-
 local songs = {
     {button = newSongButton("GOLDEN HOUR", {"jvke"}), bpm = "94", var = false, url = "GOLDEN_HOUR", cat = {"beautiful", "best"}},
     {button = newSongButton("YOUNG GIRL A", {"siinamota", "vocaloid"}), bpm = "130", var = false, url = "YOUNG_GIRL_A", cat = {"anime/jpop", "sad", "beautiful", "best"}},
@@ -777,7 +868,7 @@ table.sort(sortedSongs, function(a, b)
 end)
 
 for i, song in ipairs(sortedSongs) do
-    song.button.LayoutOrder = i + 1
+    song.button.LayoutOrder = i + 5
 end
 
 for _, song in ipairs(songs) do
@@ -788,6 +879,75 @@ end
 for _, song in ipairs(songs) do
     song.button:SetAttribute("OriginalLayoutOrder", song.button.LayoutOrder)
 end
+
+-- featured songs
+
+local featured = {"FALLEN DOWN", "FANTAISIE IMPROMPTU", "DROWNING LOVE", "BLINDING LIGHTS"} -- insert strings of the songbutton's text
+local featuredItems = {}
+
+local featuredFont = Font.new(
+    "rbxasset://fonts/families/SourceSansPro.json",
+    Enum.FontWeight.Bold,
+    Enum.FontStyle.Italic
+)
+
+for _, song in ipairs(songs) do
+    local i = table.find(featured, song.button.Text)
+    if i then
+        local featuredLabel = Instance.new("TextLabel")
+
+        featuredLabel.Parent = song.button
+        featuredLabel.Name = "featuredLabel"
+        featuredLabel.AnchorPoint = Vector2.new(1, 0)
+        featuredLabel.BackgroundColor3 = Color3.fromRGB(255, 67, 57)
+        featuredLabel.BorderColor3 = Color3.fromRGB(255, 255, 255)
+        featuredLabel.Position = UDim2.new(1.04, 0, -0.18, 0)
+        featuredLabel.Size = UDim2.new(0, 54, 0, 12)
+        featuredLabel.FontFace = featuredFont
+        featuredLabel.Text = translateText("FEATURED")
+        featuredLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+        featuredLabel.TextScaled = true
+
+        table.insert(featuredItems, {
+            song = song,
+            label = featuredLabel,
+            featuredOrder = i + 1
+        })
+    end
+end
+
+local function updateFeaturedSongsState()
+    local disabled = _G.talentlessSettings and _G.talentlessSettings["disablefeaturedsongs"]
+    for _, item in ipairs(featuredItems) do
+        item.label.Visible = not disabled
+        if disabled then
+            local originalOrder = item.song.button:GetAttribute("OriginalLayoutOrder")
+            if originalOrder then
+                item.song.button.LayoutOrder = originalOrder
+            end
+        else
+            item.song.button.LayoutOrder = item.featuredOrder
+        end
+    end
+end
+
+-- Apply initial layout order & visibility based on current setting
+updateFeaturedSongsState()
+
+task.spawn(function()
+    local lastValue = _G.talentlessSettings and _G.talentlessSettings["disablefeaturedsongs"]
+
+    while true do
+        local currentValue = _G.talentlessSettings and _G.talentlessSettings["disablefeaturedsongs"]
+
+        if currentValue ~= lastValue then
+            updateFeaturedSongsState()
+            lastValue = currentValue
+        end
+
+        task.wait(0.1)
+    end
+end)
 
 local categories = {
     "new",
@@ -804,12 +964,14 @@ local categories = {
     "sad",
     "seasonal",
     "electronic",
+    "phonk/funk",
     "rock",
     "creepy/weirdcore",
     "undertale",
     "deltarune",
-    "geometry dash",
     "minecraft",
+    "nintendo",
+    "geometry dash",
     "omori",
     "ddlc"
 } -- The main table for unique categories
@@ -829,7 +991,6 @@ for _, songButton in ipairs(songs) do
 		songButton.button:SetAttribute("AlternateNames", table.concat(currentList, ","))
 	end
 end
-
 
 local folderexists = false
 local customsongbuttons = {}
@@ -882,14 +1043,14 @@ categoriesTab.BorderColor3 = Color3.fromRGB(64, 68, 90)
 categoriesTab.BorderSizePixel = 2
 categoriesTab.Size = UDim2.new(0, 100, 0, 25)
 categoriesTab.Font = Enum.Font.SourceSansBold
-categoriesTab.Text = translateText("categories") .. " ▲"
+categoriesTab.Text = translateText("categories") .. " ▼"
 categoriesTab.TextColor3 = Color3.fromRGB(255, 255, 255)
 categoriesTab.TextSize = 18
 categoriesTab.LayoutOrder = 100 -- so its below the categories when they drop down
 
 fitText(categoriesTab)
 
-local categoriesOpen = false
+local categoriesOpen = true
 local utilsOpen = false
 
 utilsTab.MouseButton1Click:Connect(function()
@@ -915,7 +1076,6 @@ categoriesTab.MouseButton1Click:Connect(function()
         categoriesTab.Text = translateText("categories") .. " ▲"
     end
 end)
-
 
 local function newcategory(name, type, layoutorder)
     local TextButton = Instance.new("TextButton")
@@ -1426,7 +1586,7 @@ PLAYPLAYLISTBUTTON.MouseButton1Click:Connect(
         end
 
         if #playlist <= 1 then
-            NotificationLibrary:SendNotification("Error", translateText("playlisttooshort"), 5) -- to translate
+            NotificationLibrary:SendNotification("Error", translateText("playlisttooshort"), 5)
             playSound("7383525713", 0.5)
             return
         end
@@ -1560,6 +1720,7 @@ allcats.MouseButton1Click:Connect(
 
         PLAYRANDOM.Visible = true
         LOOPRANDOM.Visible = true
+        updateFeaturedSongsState()
     end
 )
 
@@ -1598,8 +1759,16 @@ for _, categoryName in pairs(categories) do
                     end
                 end
             end
+
+            updateFeaturedSongsState()
         end
     )
+end
+
+-- categories visible upon execution
+
+for _, button in ipairs(categoryButtons) do
+    button.Visible = true
 end
 
 -- song selecting functionality
@@ -1674,16 +1843,9 @@ function playbuttonclicked()
     end)
     
     if iscustom ~= true then -- if its custom u dont need a loader
-        if spoofMidiPlz == true then
-            -- Spoof MIDI
-            loadstring(
-                game:HttpGet("https://hellohellohell0.com/talentless-raw/midi_spoof_loader.lua", true)
-            )()
-        else
-            loadstring(
-                game:HttpGet("https://hellohellohell0.com/talentless-raw/loader_main.lua", true)
-            )()
-        end
+        loadstring(
+            game:HttpGet("https://hellohellohell0.com/talentless-raw/loader_main.lua", true)
+        )()
     end
 
     repeat wait() until songscript
@@ -2016,7 +2178,7 @@ function updateSongs() -- universal function so it can be called from the custom
                     print("its a txt file, continuing")
 
                     table.insert(addedCustoms, filepath) -- add the file to the addedCustoms table
-                    local tsongname = filepath:gsub([[\]], "/"):match(".*/([^/]+)%.txt$") or "Error" -- remove the /, \, and .txt
+                    local tsongname = filepath:gsub([[\]], "/"):match(".*/([^/]+)%.txt$") or "Error" -- remove the /, \, and .txt to get custom song button text.
                     print("song name: " .. tsongname)
 
                     local newCustomSongb = newCustomSongButton(tsongname) -- make the song button
@@ -2118,6 +2280,71 @@ updateSongs()
 
 
 
+-- SETTINGS
+-- SETTINGS
+-- SETTINGS
+
+
+
+local settingsOptions = {
+    "secondaryloader",
+    "disablefeaturedsongs",
+    "mutesfx",
+    "disablenotifs",
+    "alwaysshowmidispoofer",
+    "disableaccidents"
+}
+
+if isfile("TALENTLESS_settings.txt") then
+    print("settings file found")
+    local settingsCode = readfile("TALENTLESS_settings.txt")
+
+    local func = loadstring(settingsCode)
+    if func then
+        print("settings file is good")
+        loadstring(settingsCode)()
+    else
+        print("settings file is broken")
+        NotificationLibrary:SendNotification("Error", "Someting went wrong loading your settings. Your settings have been reset.", 5)
+        playSound("7383525713", 0.5)
+    end
+
+    for _, option in ipairs(settingsOptions) do
+        if not string.find(settingsCode, option) then -- they may not have this option saved; due to a new update etc.
+            _G.talentlessSettings[option] = false
+        end
+    end
+else
+    for _, option in ipairs(settingsOptions) do
+        _G.talentlessSettings[option] = false
+    end
+
+    local settingsArrow = Instance.new("TextLabel")
+    settingsArrow.Name = "settingsArrow"
+    settingsArrow.Parent = frame
+    settingsArrow.BackgroundTransparency = 1
+    settingsArrow.Size = UDim2.new(0, 31, 0, 20)
+    settingsArrow.Position = UDim2.new(0, 87, 0, -20) -- sits just above settingsButton
+    settingsArrow.Text = "↓"
+    settingsArrow.TextColor3 = Color3.fromRGB(255, 255, 255)
+    settingsArrow.Font = Enum.Font.SourceSansBold
+    settingsArrow.TextSize = 40
+    settingsArrow.ZIndex = 5
+
+    local TweenService = game:GetService("TweenService")
+    local tweenInfo = TweenInfo.new(0.8, Enum.EasingStyle.Sine, Enum.EasingDirection.InOut, -1, true)
+    local fadeTween = TweenService:Create(settingsArrow, tweenInfo, {TextTransparency = 1})
+    
+    fadeTween:Play()
+
+    settingsButton.MouseButton1Click:Connect(function()
+        fadeTween:Cancel()
+        settingsArrow:Destroy()
+    end)    
+end
+
+
+
 -- FAVOURITE SONGS
 -- FAVOURITE SONGS
 -- FAVOURITE SONGS
@@ -2199,7 +2426,7 @@ local function unfavouriteSong(name)
     local currentFavs = readfile("TALENTLESS_FAV_SONGS.txt")
     local newFavs = {}
 
-    -- add all the favs to newfavs table if its not blank and if its no the song to unfavourite
+    -- add all the favs to newfavs table if its not blank and if its not the song to unfavourite
     for line in currentFavs:gmatch("[^\r\n]+") do
         if line ~= "" and line ~= name then
             table.insert(newFavs, line)
@@ -2222,7 +2449,7 @@ local function unfavouriteSong(name)
                 table.remove(favsongbuttons, i)
                 break
             end
-        else
+        else -- if it's not in a frame its a normal song button
             if button.Text == name then
                 table.remove(favsongbuttons, i)
                 break
